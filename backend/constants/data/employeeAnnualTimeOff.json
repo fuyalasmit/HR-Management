@@ -1,0 +1,8906 @@
+[
+  {
+    "id": 1,
+    "employeeEmpId": 1,
+    "timeOffId": 1,
+    "yearNumber": 2015,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 2,
+    "employeeEmpId": 1,
+    "timeOffId": 2,
+    "yearNumber": 2015,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 3,
+    "employeeEmpId": 1,
+    "timeOffId": 3,
+    "yearNumber": 2015,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 4,
+    "employeeEmpId": 1,
+    "timeOffId": 1,
+    "yearNumber": 2016,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 5,
+    "employeeEmpId": 1,
+    "timeOffId": 2,
+    "yearNumber": 2016,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 6,
+    "employeeEmpId": 1,
+    "timeOffId": 3,
+    "yearNumber": 2016,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 7,
+    "employeeEmpId": 1,
+    "timeOffId": 1,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 8,
+    "employeeEmpId": 1,
+    "timeOffId": 2,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 9,
+    "employeeEmpId": 1,
+    "timeOffId": 3,
+    "yearNumber": 2019,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 10,
+    "employeeEmpId": 1,
+    "timeOffId": 1,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 11,
+    "employeeEmpId": 1,
+    "timeOffId": 2,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 12,
+    "employeeEmpId": 1,
+    "timeOffId": 3,
+    "yearNumber": 2023,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 13,
+    "employeeEmpId": 3,
+    "timeOffId": 1,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 14,
+    "employeeEmpId": 3,
+    "timeOffId": 2,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 15,
+    "employeeEmpId": 3,
+    "timeOffId": 3,
+    "yearNumber": 2019,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 16,
+    "employeeEmpId": 3,
+    "timeOffId": 1,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 17,
+    "employeeEmpId": 3,
+    "timeOffId": 2,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 18,
+    "employeeEmpId": 3,
+    "timeOffId": 3,
+    "yearNumber": 2021,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 19,
+    "employeeEmpId": 3,
+    "timeOffId": 1,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 20,
+    "employeeEmpId": 3,
+    "timeOffId": 2,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 21,
+    "employeeEmpId": 3,
+    "timeOffId": 3,
+    "yearNumber": 2023,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 22,
+    "employeeEmpId": 4,
+    "timeOffId": 1,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 23,
+    "employeeEmpId": 4,
+    "timeOffId": 2,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 24,
+    "employeeEmpId": 4,
+    "timeOffId": 3,
+    "yearNumber": 2021,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 25,
+    "employeeEmpId": 4,
+    "timeOffId": 1,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 26,
+    "employeeEmpId": 4,
+    "timeOffId": 2,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 27,
+    "employeeEmpId": 4,
+    "timeOffId": 3,
+    "yearNumber": 2023,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 28,
+    "employeeEmpId": 5,
+    "timeOffId": 1,
+    "yearNumber": 2012,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 29,
+    "employeeEmpId": 5,
+    "timeOffId": 2,
+    "yearNumber": 2012,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 30,
+    "employeeEmpId": 5,
+    "timeOffId": 3,
+    "yearNumber": 2012,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 31,
+    "employeeEmpId": 5,
+    "timeOffId": 1,
+    "yearNumber": 2013,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 32,
+    "employeeEmpId": 5,
+    "timeOffId": 2,
+    "yearNumber": 2013,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 33,
+    "employeeEmpId": 5,
+    "timeOffId": 3,
+    "yearNumber": 2013,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 34,
+    "employeeEmpId": 5,
+    "timeOffId": 1,
+    "yearNumber": 2014,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 35,
+    "employeeEmpId": 5,
+    "timeOffId": 2,
+    "yearNumber": 2014,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 36,
+    "employeeEmpId": 5,
+    "timeOffId": 3,
+    "yearNumber": 2014,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 37,
+    "employeeEmpId": 5,
+    "timeOffId": 1,
+    "yearNumber": 2017,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 38,
+    "employeeEmpId": 5,
+    "timeOffId": 2,
+    "yearNumber": 2017,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 39,
+    "employeeEmpId": 5,
+    "timeOffId": 3,
+    "yearNumber": 2017,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 40,
+    "employeeEmpId": 6,
+    "timeOffId": 1,
+    "yearNumber": 2018,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 41,
+    "employeeEmpId": 6,
+    "timeOffId": 2,
+    "yearNumber": 2018,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 42,
+    "employeeEmpId": 6,
+    "timeOffId": 3,
+    "yearNumber": 2018,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 43,
+    "employeeEmpId": 6,
+    "timeOffId": 1,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 44,
+    "employeeEmpId": 6,
+    "timeOffId": 2,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 45,
+    "employeeEmpId": 6,
+    "timeOffId": 3,
+    "yearNumber": 2019,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 46,
+    "employeeEmpId": 6,
+    "timeOffId": 1,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 47,
+    "employeeEmpId": 6,
+    "timeOffId": 2,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 48,
+    "employeeEmpId": 6,
+    "timeOffId": 3,
+    "yearNumber": 2023,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 49,
+    "employeeEmpId": 7,
+    "timeOffId": 1,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 50,
+    "employeeEmpId": 7,
+    "timeOffId": 2,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 51,
+    "employeeEmpId": 7,
+    "timeOffId": 3,
+    "yearNumber": 2020,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 52,
+    "employeeEmpId": 7,
+    "timeOffId": 1,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 53,
+    "employeeEmpId": 7,
+    "timeOffId": 2,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 54,
+    "employeeEmpId": 7,
+    "timeOffId": 3,
+    "yearNumber": 2021,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 55,
+    "employeeEmpId": 7,
+    "timeOffId": 1,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 56,
+    "employeeEmpId": 7,
+    "timeOffId": 2,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 57,
+    "employeeEmpId": 7,
+    "timeOffId": 3,
+    "yearNumber": 2022,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 58,
+    "employeeEmpId": 7,
+    "timeOffId": 1,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 59,
+    "employeeEmpId": 7,
+    "timeOffId": 2,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 60,
+    "employeeEmpId": 7,
+    "timeOffId": 3,
+    "yearNumber": 2023,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 61,
+    "employeeEmpId": 8,
+    "timeOffId": 1,
+    "yearNumber": 2018,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 62,
+    "employeeEmpId": 8,
+    "timeOffId": 2,
+    "yearNumber": 2018,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 63,
+    "employeeEmpId": 8,
+    "timeOffId": 3,
+    "yearNumber": 2018,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 22.5
+  },
+  {
+    "id": 64,
+    "employeeEmpId": 8,
+    "timeOffId": 1,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 65,
+    "employeeEmpId": 8,
+    "timeOffId": 2,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 66,
+    "employeeEmpId": 8,
+    "timeOffId": 3,
+    "yearNumber": 2021,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 22.5
+  },
+  {
+    "id": 67,
+    "employeeEmpId": 9,
+    "timeOffId": 1,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 68,
+    "employeeEmpId": 9,
+    "timeOffId": 2,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 22.5
+  },
+  {
+    "id": 69,
+    "employeeEmpId": 9,
+    "timeOffId": 3,
+    "yearNumber": 2019,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 70,
+    "employeeEmpId": 9,
+    "timeOffId": 1,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 71,
+    "employeeEmpId": 9,
+    "timeOffId": 2,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 72,
+    "employeeEmpId": 9,
+    "timeOffId": 3,
+    "yearNumber": 2021,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 73,
+    "employeeEmpId": 10,
+    "timeOffId": 1,
+    "yearNumber": 2017,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 74,
+    "employeeEmpId": 10,
+    "timeOffId": 2,
+    "yearNumber": 2017,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 75,
+    "employeeEmpId": 10,
+    "timeOffId": 3,
+    "yearNumber": 2017,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 76,
+    "employeeEmpId": 10,
+    "timeOffId": 1,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 77,
+    "employeeEmpId": 10,
+    "timeOffId": 2,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 78,
+    "employeeEmpId": 10,
+    "timeOffId": 3,
+    "yearNumber": 2021,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 79,
+    "employeeEmpId": 11,
+    "timeOffId": 1,
+    "yearNumber": 2016,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 80,
+    "employeeEmpId": 11,
+    "timeOffId": 2,
+    "yearNumber": 2016,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 81,
+    "employeeEmpId": 11,
+    "timeOffId": 3,
+    "yearNumber": 2016,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 82,
+    "employeeEmpId": 11,
+    "timeOffId": 1,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 83,
+    "employeeEmpId": 11,
+    "timeOffId": 2,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 84,
+    "employeeEmpId": 11,
+    "timeOffId": 3,
+    "yearNumber": 2019,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 85,
+    "employeeEmpId": 11,
+    "timeOffId": 1,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 86,
+    "employeeEmpId": 11,
+    "timeOffId": 2,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 87,
+    "employeeEmpId": 11,
+    "timeOffId": 3,
+    "yearNumber": 2020,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 88,
+    "employeeEmpId": 12,
+    "timeOffId": 1,
+    "yearNumber": 2014,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 89,
+    "employeeEmpId": 12,
+    "timeOffId": 2,
+    "yearNumber": 2014,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 90,
+    "employeeEmpId": 12,
+    "timeOffId": 3,
+    "yearNumber": 2014,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 91,
+    "employeeEmpId": 13,
+    "timeOffId": 1,
+    "yearNumber": 2013,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 92,
+    "employeeEmpId": 13,
+    "timeOffId": 2,
+    "yearNumber": 2013,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 93,
+    "employeeEmpId": 13,
+    "timeOffId": 3,
+    "yearNumber": 2013,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 94,
+    "employeeEmpId": 13,
+    "timeOffId": 1,
+    "yearNumber": 2015,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 95,
+    "employeeEmpId": 13,
+    "timeOffId": 2,
+    "yearNumber": 2015,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 96,
+    "employeeEmpId": 13,
+    "timeOffId": 3,
+    "yearNumber": 2015,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 97,
+    "employeeEmpId": 14,
+    "timeOffId": 1,
+    "yearNumber": 2018,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 98,
+    "employeeEmpId": 14,
+    "timeOffId": 2,
+    "yearNumber": 2018,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 99,
+    "employeeEmpId": 14,
+    "timeOffId": 3,
+    "yearNumber": 2018,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 100,
+    "employeeEmpId": 14,
+    "timeOffId": 1,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 22.5
+  },
+  {
+    "id": 101,
+    "employeeEmpId": 14,
+    "timeOffId": 2,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 102,
+    "employeeEmpId": 14,
+    "timeOffId": 3,
+    "yearNumber": 2019,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 103,
+    "employeeEmpId": 14,
+    "timeOffId": 1,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 104,
+    "employeeEmpId": 14,
+    "timeOffId": 2,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 105,
+    "employeeEmpId": 14,
+    "timeOffId": 3,
+    "yearNumber": 2021,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 106,
+    "employeeEmpId": 15,
+    "timeOffId": 1,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 107,
+    "employeeEmpId": 15,
+    "timeOffId": 2,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 108,
+    "employeeEmpId": 15,
+    "timeOffId": 3,
+    "yearNumber": 2021,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 109,
+    "employeeEmpId": 15,
+    "timeOffId": 1,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 22.5
+  },
+  {
+    "id": 110,
+    "employeeEmpId": 15,
+    "timeOffId": 2,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 111,
+    "employeeEmpId": 15,
+    "timeOffId": 3,
+    "yearNumber": 2022,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 112,
+    "employeeEmpId": 16,
+    "timeOffId": 1,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 113,
+    "employeeEmpId": 16,
+    "timeOffId": 2,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 52.5
+  },
+  {
+    "id": 114,
+    "employeeEmpId": 16,
+    "timeOffId": 3,
+    "yearNumber": 2023,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 115,
+    "employeeEmpId": 17,
+    "timeOffId": 1,
+    "yearNumber": 2012,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 116,
+    "employeeEmpId": 17,
+    "timeOffId": 2,
+    "yearNumber": 2012,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 117,
+    "employeeEmpId": 17,
+    "timeOffId": 3,
+    "yearNumber": 2012,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 118,
+    "employeeEmpId": 17,
+    "timeOffId": 1,
+    "yearNumber": 2017,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 119,
+    "employeeEmpId": 17,
+    "timeOffId": 2,
+    "yearNumber": 2017,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 120,
+    "employeeEmpId": 17,
+    "timeOffId": 3,
+    "yearNumber": 2017,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 121,
+    "employeeEmpId": 18,
+    "timeOffId": 1,
+    "yearNumber": 2018,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 122,
+    "employeeEmpId": 18,
+    "timeOffId": 2,
+    "yearNumber": 2018,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 22.5
+  },
+  {
+    "id": 123,
+    "employeeEmpId": 18,
+    "timeOffId": 3,
+    "yearNumber": 2018,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 124,
+    "employeeEmpId": 18,
+    "timeOffId": 1,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 125,
+    "employeeEmpId": 18,
+    "timeOffId": 2,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 126,
+    "employeeEmpId": 18,
+    "timeOffId": 3,
+    "yearNumber": 2019,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 127,
+    "employeeEmpId": 18,
+    "timeOffId": 1,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 128,
+    "employeeEmpId": 18,
+    "timeOffId": 2,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 129,
+    "employeeEmpId": 18,
+    "timeOffId": 3,
+    "yearNumber": 2022,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 130,
+    "employeeEmpId": 19,
+    "timeOffId": 1,
+    "yearNumber": 2015,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 131,
+    "employeeEmpId": 19,
+    "timeOffId": 2,
+    "yearNumber": 2015,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 132,
+    "employeeEmpId": 19,
+    "timeOffId": 3,
+    "yearNumber": 2015,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 133,
+    "employeeEmpId": 19,
+    "timeOffId": 1,
+    "yearNumber": 2016,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 134,
+    "employeeEmpId": 19,
+    "timeOffId": 2,
+    "yearNumber": 2016,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 135,
+    "employeeEmpId": 19,
+    "timeOffId": 3,
+    "yearNumber": 2016,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 136,
+    "employeeEmpId": 19,
+    "timeOffId": 1,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 137,
+    "employeeEmpId": 19,
+    "timeOffId": 2,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 138,
+    "employeeEmpId": 19,
+    "timeOffId": 3,
+    "yearNumber": 2021,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 139,
+    "employeeEmpId": 20,
+    "timeOffId": 1,
+    "yearNumber": 2013,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 52.5
+  },
+  {
+    "id": 140,
+    "employeeEmpId": 20,
+    "timeOffId": 2,
+    "yearNumber": 2013,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 141,
+    "employeeEmpId": 20,
+    "timeOffId": 3,
+    "yearNumber": 2013,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 142,
+    "employeeEmpId": 20,
+    "timeOffId": 1,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 143,
+    "employeeEmpId": 20,
+    "timeOffId": 2,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 144,
+    "employeeEmpId": 20,
+    "timeOffId": 3,
+    "yearNumber": 2021,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 145,
+    "employeeEmpId": 20,
+    "timeOffId": 1,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 146,
+    "employeeEmpId": 20,
+    "timeOffId": 2,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 147,
+    "employeeEmpId": 20,
+    "timeOffId": 3,
+    "yearNumber": 2022,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 148,
+    "employeeEmpId": 20,
+    "timeOffId": 1,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 149,
+    "employeeEmpId": 20,
+    "timeOffId": 2,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 150,
+    "employeeEmpId": 20,
+    "timeOffId": 3,
+    "yearNumber": 2023,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 151,
+    "employeeEmpId": 21,
+    "timeOffId": 1,
+    "yearNumber": 2014,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 152,
+    "employeeEmpId": 21,
+    "timeOffId": 2,
+    "yearNumber": 2014,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 153,
+    "employeeEmpId": 21,
+    "timeOffId": 3,
+    "yearNumber": 2014,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 154,
+    "employeeEmpId": 21,
+    "timeOffId": 1,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 155,
+    "employeeEmpId": 21,
+    "timeOffId": 2,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 156,
+    "employeeEmpId": 21,
+    "timeOffId": 3,
+    "yearNumber": 2021,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 157,
+    "employeeEmpId": 22,
+    "timeOffId": 1,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 158,
+    "employeeEmpId": 22,
+    "timeOffId": 2,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 159,
+    "employeeEmpId": 22,
+    "timeOffId": 3,
+    "yearNumber": 2021,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 160,
+    "employeeEmpId": 22,
+    "timeOffId": 1,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 161,
+    "employeeEmpId": 22,
+    "timeOffId": 2,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 162,
+    "employeeEmpId": 22,
+    "timeOffId": 3,
+    "yearNumber": 2022,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 163,
+    "employeeEmpId": 23,
+    "timeOffId": 1,
+    "yearNumber": 2014,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 164,
+    "employeeEmpId": 23,
+    "timeOffId": 2,
+    "yearNumber": 2014,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 165,
+    "employeeEmpId": 23,
+    "timeOffId": 3,
+    "yearNumber": 2014,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 166,
+    "employeeEmpId": 23,
+    "timeOffId": 1,
+    "yearNumber": 2015,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 22.5
+  },
+  {
+    "id": 167,
+    "employeeEmpId": 23,
+    "timeOffId": 2,
+    "yearNumber": 2015,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 168,
+    "employeeEmpId": 23,
+    "timeOffId": 3,
+    "yearNumber": 2015,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 169,
+    "employeeEmpId": 23,
+    "timeOffId": 1,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 170,
+    "employeeEmpId": 23,
+    "timeOffId": 2,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 171,
+    "employeeEmpId": 23,
+    "timeOffId": 3,
+    "yearNumber": 2023,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 172,
+    "employeeEmpId": 24,
+    "timeOffId": 1,
+    "yearNumber": 2018,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 173,
+    "employeeEmpId": 24,
+    "timeOffId": 2,
+    "yearNumber": 2018,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 174,
+    "employeeEmpId": 24,
+    "timeOffId": 3,
+    "yearNumber": 2018,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 175,
+    "employeeEmpId": 24,
+    "timeOffId": 1,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 176,
+    "employeeEmpId": 24,
+    "timeOffId": 2,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 177,
+    "employeeEmpId": 24,
+    "timeOffId": 3,
+    "yearNumber": 2023,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 178,
+    "employeeEmpId": 25,
+    "timeOffId": 1,
+    "yearNumber": 2015,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 179,
+    "employeeEmpId": 25,
+    "timeOffId": 2,
+    "yearNumber": 2015,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 180,
+    "employeeEmpId": 25,
+    "timeOffId": 3,
+    "yearNumber": 2015,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 181,
+    "employeeEmpId": 26,
+    "timeOffId": 1,
+    "yearNumber": 2012,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 182,
+    "employeeEmpId": 26,
+    "timeOffId": 2,
+    "yearNumber": 2012,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 183,
+    "employeeEmpId": 26,
+    "timeOffId": 3,
+    "yearNumber": 2012,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 184,
+    "employeeEmpId": 26,
+    "timeOffId": 1,
+    "yearNumber": 2015,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 185,
+    "employeeEmpId": 26,
+    "timeOffId": 2,
+    "yearNumber": 2015,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 186,
+    "employeeEmpId": 26,
+    "timeOffId": 3,
+    "yearNumber": 2015,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 187,
+    "employeeEmpId": 26,
+    "timeOffId": 1,
+    "yearNumber": 2016,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 188,
+    "employeeEmpId": 26,
+    "timeOffId": 2,
+    "yearNumber": 2016,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 189,
+    "employeeEmpId": 26,
+    "timeOffId": 3,
+    "yearNumber": 2016,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 190,
+    "employeeEmpId": 26,
+    "timeOffId": 1,
+    "yearNumber": 2018,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 191,
+    "employeeEmpId": 26,
+    "timeOffId": 2,
+    "yearNumber": 2018,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 192,
+    "employeeEmpId": 26,
+    "timeOffId": 3,
+    "yearNumber": 2018,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 193,
+    "employeeEmpId": 26,
+    "timeOffId": 1,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 194,
+    "employeeEmpId": 26,
+    "timeOffId": 2,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 195,
+    "employeeEmpId": 26,
+    "timeOffId": 3,
+    "yearNumber": 2019,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 196,
+    "employeeEmpId": 27,
+    "timeOffId": 1,
+    "yearNumber": 2013,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 197,
+    "employeeEmpId": 27,
+    "timeOffId": 2,
+    "yearNumber": 2013,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 45
+  },
+  {
+    "id": 198,
+    "employeeEmpId": 27,
+    "timeOffId": 3,
+    "yearNumber": 2013,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 199,
+    "employeeEmpId": 27,
+    "timeOffId": 1,
+    "yearNumber": 2018,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 200,
+    "employeeEmpId": 27,
+    "timeOffId": 2,
+    "yearNumber": 2018,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 201,
+    "employeeEmpId": 27,
+    "timeOffId": 3,
+    "yearNumber": 2018,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 202,
+    "employeeEmpId": 27,
+    "timeOffId": 1,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 203,
+    "employeeEmpId": 27,
+    "timeOffId": 2,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 204,
+    "employeeEmpId": 27,
+    "timeOffId": 3,
+    "yearNumber": 2019,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 205,
+    "employeeEmpId": 28,
+    "timeOffId": 1,
+    "yearNumber": 2018,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 206,
+    "employeeEmpId": 28,
+    "timeOffId": 2,
+    "yearNumber": 2018,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 22.5
+  },
+  {
+    "id": 207,
+    "employeeEmpId": 28,
+    "timeOffId": 3,
+    "yearNumber": 2018,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 208,
+    "employeeEmpId": 28,
+    "timeOffId": 1,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 209,
+    "employeeEmpId": 28,
+    "timeOffId": 2,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 210,
+    "employeeEmpId": 28,
+    "timeOffId": 3,
+    "yearNumber": 2020,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 60
+  },
+  {
+    "id": 211,
+    "employeeEmpId": 28,
+    "timeOffId": 1,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 212,
+    "employeeEmpId": 28,
+    "timeOffId": 2,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 213,
+    "employeeEmpId": 28,
+    "timeOffId": 3,
+    "yearNumber": 2021,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 214,
+    "employeeEmpId": 29,
+    "timeOffId": 1,
+    "yearNumber": 2017,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 215,
+    "employeeEmpId": 29,
+    "timeOffId": 2,
+    "yearNumber": 2017,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 216,
+    "employeeEmpId": 29,
+    "timeOffId": 3,
+    "yearNumber": 2017,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 217,
+    "employeeEmpId": 30,
+    "timeOffId": 1,
+    "yearNumber": 2018,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 218,
+    "employeeEmpId": 30,
+    "timeOffId": 2,
+    "yearNumber": 2018,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 219,
+    "employeeEmpId": 30,
+    "timeOffId": 3,
+    "yearNumber": 2018,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 220,
+    "employeeEmpId": 30,
+    "timeOffId": 1,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 221,
+    "employeeEmpId": 30,
+    "timeOffId": 2,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 222,
+    "employeeEmpId": 30,
+    "timeOffId": 3,
+    "yearNumber": 2023,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 223,
+    "employeeEmpId": 31,
+    "timeOffId": 1,
+    "yearNumber": 2016,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 224,
+    "employeeEmpId": 31,
+    "timeOffId": 2,
+    "yearNumber": 2016,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 52.5
+  },
+  {
+    "id": 225,
+    "employeeEmpId": 31,
+    "timeOffId": 3,
+    "yearNumber": 2016,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 226,
+    "employeeEmpId": 31,
+    "timeOffId": 1,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 227,
+    "employeeEmpId": 31,
+    "timeOffId": 2,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 45
+  },
+  {
+    "id": 228,
+    "employeeEmpId": 31,
+    "timeOffId": 3,
+    "yearNumber": 2021,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 229,
+    "employeeEmpId": 31,
+    "timeOffId": 1,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 230,
+    "employeeEmpId": 31,
+    "timeOffId": 2,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 231,
+    "employeeEmpId": 31,
+    "timeOffId": 3,
+    "yearNumber": 2022,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 232,
+    "employeeEmpId": 32,
+    "timeOffId": 1,
+    "yearNumber": 2017,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 233,
+    "employeeEmpId": 32,
+    "timeOffId": 2,
+    "yearNumber": 2017,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 234,
+    "employeeEmpId": 32,
+    "timeOffId": 3,
+    "yearNumber": 2017,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 235,
+    "employeeEmpId": 32,
+    "timeOffId": 1,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 236,
+    "employeeEmpId": 32,
+    "timeOffId": 2,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 237,
+    "employeeEmpId": 32,
+    "timeOffId": 3,
+    "yearNumber": 2019,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 238,
+    "employeeEmpId": 32,
+    "timeOffId": 1,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 239,
+    "employeeEmpId": 32,
+    "timeOffId": 2,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 240,
+    "employeeEmpId": 32,
+    "timeOffId": 3,
+    "yearNumber": 2023,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 241,
+    "employeeEmpId": 33,
+    "timeOffId": 1,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 242,
+    "employeeEmpId": 33,
+    "timeOffId": 2,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 243,
+    "employeeEmpId": 33,
+    "timeOffId": 3,
+    "yearNumber": 2019,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 244,
+    "employeeEmpId": 33,
+    "timeOffId": 1,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 245,
+    "employeeEmpId": 33,
+    "timeOffId": 2,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 246,
+    "employeeEmpId": 33,
+    "timeOffId": 3,
+    "yearNumber": 2020,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 247,
+    "employeeEmpId": 33,
+    "timeOffId": 1,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 248,
+    "employeeEmpId": 33,
+    "timeOffId": 2,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 249,
+    "employeeEmpId": 33,
+    "timeOffId": 3,
+    "yearNumber": 2021,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 250,
+    "employeeEmpId": 33,
+    "timeOffId": 1,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 251,
+    "employeeEmpId": 33,
+    "timeOffId": 2,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 252,
+    "employeeEmpId": 33,
+    "timeOffId": 3,
+    "yearNumber": 2022,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 253,
+    "employeeEmpId": 34,
+    "timeOffId": 1,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 254,
+    "employeeEmpId": 34,
+    "timeOffId": 2,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 255,
+    "employeeEmpId": 34,
+    "timeOffId": 3,
+    "yearNumber": 2021,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 22.5
+  },
+  {
+    "id": 256,
+    "employeeEmpId": 34,
+    "timeOffId": 1,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 60
+  },
+  {
+    "id": 257,
+    "employeeEmpId": 34,
+    "timeOffId": 2,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 22.5
+  },
+  {
+    "id": 258,
+    "employeeEmpId": 34,
+    "timeOffId": 3,
+    "yearNumber": 2022,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 259,
+    "employeeEmpId": 34,
+    "timeOffId": 1,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 260,
+    "employeeEmpId": 34,
+    "timeOffId": 2,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 261,
+    "employeeEmpId": 34,
+    "timeOffId": 3,
+    "yearNumber": 2023,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 262,
+    "employeeEmpId": 35,
+    "timeOffId": 1,
+    "yearNumber": 2017,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 263,
+    "employeeEmpId": 35,
+    "timeOffId": 2,
+    "yearNumber": 2017,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 264,
+    "employeeEmpId": 35,
+    "timeOffId": 3,
+    "yearNumber": 2017,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 265,
+    "employeeEmpId": 35,
+    "timeOffId": 1,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 22.5
+  },
+  {
+    "id": 266,
+    "employeeEmpId": 35,
+    "timeOffId": 2,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 267,
+    "employeeEmpId": 35,
+    "timeOffId": 3,
+    "yearNumber": 2022,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 268,
+    "employeeEmpId": 36,
+    "timeOffId": 1,
+    "yearNumber": 2018,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 269,
+    "employeeEmpId": 36,
+    "timeOffId": 2,
+    "yearNumber": 2018,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 270,
+    "employeeEmpId": 36,
+    "timeOffId": 3,
+    "yearNumber": 2018,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 271,
+    "employeeEmpId": 38,
+    "timeOffId": 1,
+    "yearNumber": 2013,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 272,
+    "employeeEmpId": 38,
+    "timeOffId": 2,
+    "yearNumber": 2013,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 273,
+    "employeeEmpId": 38,
+    "timeOffId": 3,
+    "yearNumber": 2013,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 22.5
+  },
+  {
+    "id": 274,
+    "employeeEmpId": 38,
+    "timeOffId": 1,
+    "yearNumber": 2014,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 275,
+    "employeeEmpId": 38,
+    "timeOffId": 2,
+    "yearNumber": 2014,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 276,
+    "employeeEmpId": 38,
+    "timeOffId": 3,
+    "yearNumber": 2014,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 277,
+    "employeeEmpId": 38,
+    "timeOffId": 1,
+    "yearNumber": 2015,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 278,
+    "employeeEmpId": 38,
+    "timeOffId": 2,
+    "yearNumber": 2015,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 279,
+    "employeeEmpId": 38,
+    "timeOffId": 3,
+    "yearNumber": 2015,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 280,
+    "employeeEmpId": 38,
+    "timeOffId": 1,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 281,
+    "employeeEmpId": 38,
+    "timeOffId": 2,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 282,
+    "employeeEmpId": 38,
+    "timeOffId": 3,
+    "yearNumber": 2021,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 22.5
+  },
+  {
+    "id": 283,
+    "employeeEmpId": 38,
+    "timeOffId": 1,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 284,
+    "employeeEmpId": 38,
+    "timeOffId": 2,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 67.5
+  },
+  {
+    "id": 285,
+    "employeeEmpId": 38,
+    "timeOffId": 3,
+    "yearNumber": 2023,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 286,
+    "employeeEmpId": 39,
+    "timeOffId": 1,
+    "yearNumber": 2018,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 287,
+    "employeeEmpId": 39,
+    "timeOffId": 2,
+    "yearNumber": 2018,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 288,
+    "employeeEmpId": 39,
+    "timeOffId": 3,
+    "yearNumber": 2018,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 289,
+    "employeeEmpId": 39,
+    "timeOffId": 1,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 290,
+    "employeeEmpId": 39,
+    "timeOffId": 2,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 291,
+    "employeeEmpId": 39,
+    "timeOffId": 3,
+    "yearNumber": 2020,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 292,
+    "employeeEmpId": 39,
+    "timeOffId": 1,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 293,
+    "employeeEmpId": 39,
+    "timeOffId": 2,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 294,
+    "employeeEmpId": 39,
+    "timeOffId": 3,
+    "yearNumber": 2021,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 295,
+    "employeeEmpId": 39,
+    "timeOffId": 1,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 296,
+    "employeeEmpId": 39,
+    "timeOffId": 2,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 297,
+    "employeeEmpId": 39,
+    "timeOffId": 3,
+    "yearNumber": 2022,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 298,
+    "employeeEmpId": 39,
+    "timeOffId": 1,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 299,
+    "employeeEmpId": 39,
+    "timeOffId": 2,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 300,
+    "employeeEmpId": 39,
+    "timeOffId": 3,
+    "yearNumber": 2023,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 301,
+    "employeeEmpId": 40,
+    "timeOffId": 1,
+    "yearNumber": 2012,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 302,
+    "employeeEmpId": 40,
+    "timeOffId": 2,
+    "yearNumber": 2012,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 303,
+    "employeeEmpId": 40,
+    "timeOffId": 3,
+    "yearNumber": 2012,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 304,
+    "employeeEmpId": 40,
+    "timeOffId": 1,
+    "yearNumber": 2014,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 22.5
+  },
+  {
+    "id": 305,
+    "employeeEmpId": 40,
+    "timeOffId": 2,
+    "yearNumber": 2014,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 306,
+    "employeeEmpId": 40,
+    "timeOffId": 3,
+    "yearNumber": 2014,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 307,
+    "employeeEmpId": 41,
+    "timeOffId": 1,
+    "yearNumber": 2017,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 308,
+    "employeeEmpId": 41,
+    "timeOffId": 2,
+    "yearNumber": 2017,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 309,
+    "employeeEmpId": 41,
+    "timeOffId": 3,
+    "yearNumber": 2017,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 310,
+    "employeeEmpId": 41,
+    "timeOffId": 1,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 22.5
+  },
+  {
+    "id": 311,
+    "employeeEmpId": 41,
+    "timeOffId": 2,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 312,
+    "employeeEmpId": 41,
+    "timeOffId": 3,
+    "yearNumber": 2022,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 313,
+    "employeeEmpId": 41,
+    "timeOffId": 1,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 314,
+    "employeeEmpId": 41,
+    "timeOffId": 2,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 315,
+    "employeeEmpId": 41,
+    "timeOffId": 3,
+    "yearNumber": 2023,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 316,
+    "employeeEmpId": 42,
+    "timeOffId": 1,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 317,
+    "employeeEmpId": 42,
+    "timeOffId": 2,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 318,
+    "employeeEmpId": 42,
+    "timeOffId": 3,
+    "yearNumber": 2020,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 319,
+    "employeeEmpId": 42,
+    "timeOffId": 1,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 320,
+    "employeeEmpId": 42,
+    "timeOffId": 2,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 321,
+    "employeeEmpId": 42,
+    "timeOffId": 3,
+    "yearNumber": 2021,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 322,
+    "employeeEmpId": 42,
+    "timeOffId": 1,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 323,
+    "employeeEmpId": 42,
+    "timeOffId": 2,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 324,
+    "employeeEmpId": 42,
+    "timeOffId": 3,
+    "yearNumber": 2022,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 325,
+    "employeeEmpId": 42,
+    "timeOffId": 1,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 326,
+    "employeeEmpId": 42,
+    "timeOffId": 2,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 327,
+    "employeeEmpId": 42,
+    "timeOffId": 3,
+    "yearNumber": 2023,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 328,
+    "employeeEmpId": 43,
+    "timeOffId": 1,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 329,
+    "employeeEmpId": 43,
+    "timeOffId": 2,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 330,
+    "employeeEmpId": 43,
+    "timeOffId": 3,
+    "yearNumber": 2019,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 331,
+    "employeeEmpId": 43,
+    "timeOffId": 1,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 332,
+    "employeeEmpId": 43,
+    "timeOffId": 2,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 333,
+    "employeeEmpId": 43,
+    "timeOffId": 3,
+    "yearNumber": 2020,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 22.5
+  },
+  {
+    "id": 334,
+    "employeeEmpId": 43,
+    "timeOffId": 1,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 335,
+    "employeeEmpId": 43,
+    "timeOffId": 2,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 336,
+    "employeeEmpId": 43,
+    "timeOffId": 3,
+    "yearNumber": 2023,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 337,
+    "employeeEmpId": 44,
+    "timeOffId": 1,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 338,
+    "employeeEmpId": 44,
+    "timeOffId": 2,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 339,
+    "employeeEmpId": 44,
+    "timeOffId": 3,
+    "yearNumber": 2019,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 340,
+    "employeeEmpId": 44,
+    "timeOffId": 1,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 22.5
+  },
+  {
+    "id": 341,
+    "employeeEmpId": 44,
+    "timeOffId": 2,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 342,
+    "employeeEmpId": 44,
+    "timeOffId": 3,
+    "yearNumber": 2021,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 343,
+    "employeeEmpId": 44,
+    "timeOffId": 1,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 344,
+    "employeeEmpId": 44,
+    "timeOffId": 2,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 345,
+    "employeeEmpId": 44,
+    "timeOffId": 3,
+    "yearNumber": 2023,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 346,
+    "employeeEmpId": 45,
+    "timeOffId": 1,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 347,
+    "employeeEmpId": 45,
+    "timeOffId": 2,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 348,
+    "employeeEmpId": 45,
+    "timeOffId": 3,
+    "yearNumber": 2022,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 349,
+    "employeeEmpId": 45,
+    "timeOffId": 1,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 350,
+    "employeeEmpId": 45,
+    "timeOffId": 2,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 351,
+    "employeeEmpId": 45,
+    "timeOffId": 3,
+    "yearNumber": 2023,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 352,
+    "employeeEmpId": 46,
+    "timeOffId": 1,
+    "yearNumber": 2015,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 353,
+    "employeeEmpId": 46,
+    "timeOffId": 2,
+    "yearNumber": 2015,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 354,
+    "employeeEmpId": 46,
+    "timeOffId": 3,
+    "yearNumber": 2015,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 355,
+    "employeeEmpId": 46,
+    "timeOffId": 1,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 356,
+    "employeeEmpId": 46,
+    "timeOffId": 2,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 357,
+    "employeeEmpId": 46,
+    "timeOffId": 3,
+    "yearNumber": 2019,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 22.5
+  },
+  {
+    "id": 358,
+    "employeeEmpId": 46,
+    "timeOffId": 1,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 359,
+    "employeeEmpId": 46,
+    "timeOffId": 2,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 360,
+    "employeeEmpId": 46,
+    "timeOffId": 3,
+    "yearNumber": 2020,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 361,
+    "employeeEmpId": 46,
+    "timeOffId": 1,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 362,
+    "employeeEmpId": 46,
+    "timeOffId": 2,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 363,
+    "employeeEmpId": 46,
+    "timeOffId": 3,
+    "yearNumber": 2023,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 364,
+    "employeeEmpId": 47,
+    "timeOffId": 1,
+    "yearNumber": 2011,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 365,
+    "employeeEmpId": 47,
+    "timeOffId": 2,
+    "yearNumber": 2011,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 366,
+    "employeeEmpId": 47,
+    "timeOffId": 3,
+    "yearNumber": 2011,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 367,
+    "employeeEmpId": 47,
+    "timeOffId": 1,
+    "yearNumber": 2012,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 368,
+    "employeeEmpId": 47,
+    "timeOffId": 2,
+    "yearNumber": 2012,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 369,
+    "employeeEmpId": 47,
+    "timeOffId": 3,
+    "yearNumber": 2012,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 370,
+    "employeeEmpId": 47,
+    "timeOffId": 1,
+    "yearNumber": 2016,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 371,
+    "employeeEmpId": 47,
+    "timeOffId": 2,
+    "yearNumber": 2016,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 22.5
+  },
+  {
+    "id": 372,
+    "employeeEmpId": 47,
+    "timeOffId": 3,
+    "yearNumber": 2016,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 373,
+    "employeeEmpId": 47,
+    "timeOffId": 1,
+    "yearNumber": 2017,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 374,
+    "employeeEmpId": 47,
+    "timeOffId": 2,
+    "yearNumber": 2017,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 375,
+    "employeeEmpId": 47,
+    "timeOffId": 3,
+    "yearNumber": 2017,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 376,
+    "employeeEmpId": 47,
+    "timeOffId": 1,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 377,
+    "employeeEmpId": 47,
+    "timeOffId": 2,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 22.5
+  },
+  {
+    "id": 378,
+    "employeeEmpId": 47,
+    "timeOffId": 3,
+    "yearNumber": 2019,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 379,
+    "employeeEmpId": 47,
+    "timeOffId": 1,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 380,
+    "employeeEmpId": 47,
+    "timeOffId": 2,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 381,
+    "employeeEmpId": 47,
+    "timeOffId": 3,
+    "yearNumber": 2020,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 382,
+    "employeeEmpId": 47,
+    "timeOffId": 1,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 383,
+    "employeeEmpId": 47,
+    "timeOffId": 2,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 22.5
+  },
+  {
+    "id": 384,
+    "employeeEmpId": 47,
+    "timeOffId": 3,
+    "yearNumber": 2023,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 385,
+    "employeeEmpId": 48,
+    "timeOffId": 1,
+    "yearNumber": 2018,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 386,
+    "employeeEmpId": 48,
+    "timeOffId": 2,
+    "yearNumber": 2018,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 387,
+    "employeeEmpId": 48,
+    "timeOffId": 3,
+    "yearNumber": 2018,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 388,
+    "employeeEmpId": 48,
+    "timeOffId": 1,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 389,
+    "employeeEmpId": 48,
+    "timeOffId": 2,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 390,
+    "employeeEmpId": 48,
+    "timeOffId": 3,
+    "yearNumber": 2022,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 391,
+    "employeeEmpId": 48,
+    "timeOffId": 1,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 392,
+    "employeeEmpId": 48,
+    "timeOffId": 2,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 393,
+    "employeeEmpId": 48,
+    "timeOffId": 3,
+    "yearNumber": 2023,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 394,
+    "employeeEmpId": 49,
+    "timeOffId": 1,
+    "yearNumber": 2012,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 395,
+    "employeeEmpId": 49,
+    "timeOffId": 2,
+    "yearNumber": 2012,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 396,
+    "employeeEmpId": 49,
+    "timeOffId": 3,
+    "yearNumber": 2012,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 397,
+    "employeeEmpId": 49,
+    "timeOffId": 1,
+    "yearNumber": 2016,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 398,
+    "employeeEmpId": 49,
+    "timeOffId": 2,
+    "yearNumber": 2016,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 399,
+    "employeeEmpId": 49,
+    "timeOffId": 3,
+    "yearNumber": 2016,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 400,
+    "employeeEmpId": 49,
+    "timeOffId": 1,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 401,
+    "employeeEmpId": 49,
+    "timeOffId": 2,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 402,
+    "employeeEmpId": 49,
+    "timeOffId": 3,
+    "yearNumber": 2020,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 403,
+    "employeeEmpId": 49,
+    "timeOffId": 1,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 404,
+    "employeeEmpId": 49,
+    "timeOffId": 2,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 405,
+    "employeeEmpId": 49,
+    "timeOffId": 3,
+    "yearNumber": 2021,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 406,
+    "employeeEmpId": 50,
+    "timeOffId": 1,
+    "yearNumber": 2018,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 407,
+    "employeeEmpId": 50,
+    "timeOffId": 2,
+    "yearNumber": 2018,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 408,
+    "employeeEmpId": 50,
+    "timeOffId": 3,
+    "yearNumber": 2018,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 409,
+    "employeeEmpId": 50,
+    "timeOffId": 1,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 410,
+    "employeeEmpId": 50,
+    "timeOffId": 2,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 411,
+    "employeeEmpId": 50,
+    "timeOffId": 3,
+    "yearNumber": 2020,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 412,
+    "employeeEmpId": 50,
+    "timeOffId": 1,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 413,
+    "employeeEmpId": 50,
+    "timeOffId": 2,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 414,
+    "employeeEmpId": 50,
+    "timeOffId": 3,
+    "yearNumber": 2022,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 415,
+    "employeeEmpId": 51,
+    "timeOffId": 1,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 416,
+    "employeeEmpId": 51,
+    "timeOffId": 2,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 417,
+    "employeeEmpId": 51,
+    "timeOffId": 3,
+    "yearNumber": 2021,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 22.5
+  },
+  {
+    "id": 418,
+    "employeeEmpId": 51,
+    "timeOffId": 1,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 419,
+    "employeeEmpId": 51,
+    "timeOffId": 2,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 420,
+    "employeeEmpId": 51,
+    "timeOffId": 3,
+    "yearNumber": 2023,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 421,
+    "employeeEmpId": 54,
+    "timeOffId": 1,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 422,
+    "employeeEmpId": 54,
+    "timeOffId": 2,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 423,
+    "employeeEmpId": 54,
+    "timeOffId": 3,
+    "yearNumber": 2020,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 424,
+    "employeeEmpId": 55,
+    "timeOffId": 1,
+    "yearNumber": 2016,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 425,
+    "employeeEmpId": 55,
+    "timeOffId": 2,
+    "yearNumber": 2016,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 426,
+    "employeeEmpId": 55,
+    "timeOffId": 3,
+    "yearNumber": 2016,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 427,
+    "employeeEmpId": 55,
+    "timeOffId": 1,
+    "yearNumber": 2017,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 428,
+    "employeeEmpId": 55,
+    "timeOffId": 2,
+    "yearNumber": 2017,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 429,
+    "employeeEmpId": 55,
+    "timeOffId": 3,
+    "yearNumber": 2017,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 430,
+    "employeeEmpId": 55,
+    "timeOffId": 1,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 431,
+    "employeeEmpId": 55,
+    "timeOffId": 2,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 432,
+    "employeeEmpId": 55,
+    "timeOffId": 3,
+    "yearNumber": 2020,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 433,
+    "employeeEmpId": 56,
+    "timeOffId": 1,
+    "yearNumber": 2016,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 434,
+    "employeeEmpId": 56,
+    "timeOffId": 2,
+    "yearNumber": 2016,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 435,
+    "employeeEmpId": 56,
+    "timeOffId": 3,
+    "yearNumber": 2016,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 436,
+    "employeeEmpId": 56,
+    "timeOffId": 1,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 437,
+    "employeeEmpId": 56,
+    "timeOffId": 2,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 438,
+    "employeeEmpId": 56,
+    "timeOffId": 3,
+    "yearNumber": 2019,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 439,
+    "employeeEmpId": 57,
+    "timeOffId": 1,
+    "yearNumber": 2016,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 440,
+    "employeeEmpId": 57,
+    "timeOffId": 2,
+    "yearNumber": 2016,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 441,
+    "employeeEmpId": 57,
+    "timeOffId": 3,
+    "yearNumber": 2016,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 442,
+    "employeeEmpId": 57,
+    "timeOffId": 1,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 443,
+    "employeeEmpId": 57,
+    "timeOffId": 2,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 22.5
+  },
+  {
+    "id": 444,
+    "employeeEmpId": 57,
+    "timeOffId": 3,
+    "yearNumber": 2023,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 445,
+    "employeeEmpId": 58,
+    "timeOffId": 1,
+    "yearNumber": 2016,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 446,
+    "employeeEmpId": 58,
+    "timeOffId": 2,
+    "yearNumber": 2016,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 447,
+    "employeeEmpId": 58,
+    "timeOffId": 3,
+    "yearNumber": 2016,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 448,
+    "employeeEmpId": 59,
+    "timeOffId": 1,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 449,
+    "employeeEmpId": 59,
+    "timeOffId": 2,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 450,
+    "employeeEmpId": 59,
+    "timeOffId": 3,
+    "yearNumber": 2021,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 451,
+    "employeeEmpId": 60,
+    "timeOffId": 1,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 452,
+    "employeeEmpId": 60,
+    "timeOffId": 2,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 453,
+    "employeeEmpId": 60,
+    "timeOffId": 3,
+    "yearNumber": 2021,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 454,
+    "employeeEmpId": 61,
+    "timeOffId": 1,
+    "yearNumber": 2017,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 455,
+    "employeeEmpId": 61,
+    "timeOffId": 2,
+    "yearNumber": 2017,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 456,
+    "employeeEmpId": 61,
+    "timeOffId": 3,
+    "yearNumber": 2017,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 457,
+    "employeeEmpId": 61,
+    "timeOffId": 1,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 458,
+    "employeeEmpId": 61,
+    "timeOffId": 2,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 459,
+    "employeeEmpId": 61,
+    "timeOffId": 3,
+    "yearNumber": 2020,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 460,
+    "employeeEmpId": 61,
+    "timeOffId": 1,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 461,
+    "employeeEmpId": 61,
+    "timeOffId": 2,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 462,
+    "employeeEmpId": 61,
+    "timeOffId": 3,
+    "yearNumber": 2023,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 463,
+    "employeeEmpId": 62,
+    "timeOffId": 1,
+    "yearNumber": 2013,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 464,
+    "employeeEmpId": 62,
+    "timeOffId": 2,
+    "yearNumber": 2013,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 465,
+    "employeeEmpId": 62,
+    "timeOffId": 3,
+    "yearNumber": 2013,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 466,
+    "employeeEmpId": 62,
+    "timeOffId": 1,
+    "yearNumber": 2014,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 467,
+    "employeeEmpId": 62,
+    "timeOffId": 2,
+    "yearNumber": 2014,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 468,
+    "employeeEmpId": 62,
+    "timeOffId": 3,
+    "yearNumber": 2014,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 45
+  },
+  {
+    "id": 469,
+    "employeeEmpId": 62,
+    "timeOffId": 1,
+    "yearNumber": 2015,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 470,
+    "employeeEmpId": 62,
+    "timeOffId": 2,
+    "yearNumber": 2015,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 471,
+    "employeeEmpId": 62,
+    "timeOffId": 3,
+    "yearNumber": 2015,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 472,
+    "employeeEmpId": 62,
+    "timeOffId": 1,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 473,
+    "employeeEmpId": 62,
+    "timeOffId": 2,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 474,
+    "employeeEmpId": 62,
+    "timeOffId": 3,
+    "yearNumber": 2021,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 475,
+    "employeeEmpId": 62,
+    "timeOffId": 1,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 476,
+    "employeeEmpId": 62,
+    "timeOffId": 2,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 477,
+    "employeeEmpId": 62,
+    "timeOffId": 3,
+    "yearNumber": 2022,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 478,
+    "employeeEmpId": 63,
+    "timeOffId": 1,
+    "yearNumber": 2018,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 479,
+    "employeeEmpId": 63,
+    "timeOffId": 2,
+    "yearNumber": 2018,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 480,
+    "employeeEmpId": 63,
+    "timeOffId": 3,
+    "yearNumber": 2018,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 481,
+    "employeeEmpId": 63,
+    "timeOffId": 1,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 482,
+    "employeeEmpId": 63,
+    "timeOffId": 2,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 483,
+    "employeeEmpId": 63,
+    "timeOffId": 3,
+    "yearNumber": 2019,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 484,
+    "employeeEmpId": 63,
+    "timeOffId": 1,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 22.5
+  },
+  {
+    "id": 485,
+    "employeeEmpId": 63,
+    "timeOffId": 2,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 486,
+    "employeeEmpId": 63,
+    "timeOffId": 3,
+    "yearNumber": 2021,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 487,
+    "employeeEmpId": 64,
+    "timeOffId": 1,
+    "yearNumber": 2017,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 488,
+    "employeeEmpId": 64,
+    "timeOffId": 2,
+    "yearNumber": 2017,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 489,
+    "employeeEmpId": 64,
+    "timeOffId": 3,
+    "yearNumber": 2017,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 490,
+    "employeeEmpId": 64,
+    "timeOffId": 1,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 22.5
+  },
+  {
+    "id": 491,
+    "employeeEmpId": 64,
+    "timeOffId": 2,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 492,
+    "employeeEmpId": 64,
+    "timeOffId": 3,
+    "yearNumber": 2019,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 493,
+    "employeeEmpId": 64,
+    "timeOffId": 1,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 494,
+    "employeeEmpId": 64,
+    "timeOffId": 2,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 495,
+    "employeeEmpId": 64,
+    "timeOffId": 3,
+    "yearNumber": 2022,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 496,
+    "employeeEmpId": 64,
+    "timeOffId": 1,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 497,
+    "employeeEmpId": 64,
+    "timeOffId": 2,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 498,
+    "employeeEmpId": 64,
+    "timeOffId": 3,
+    "yearNumber": 2023,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 499,
+    "employeeEmpId": 65,
+    "timeOffId": 1,
+    "yearNumber": 2015,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 500,
+    "employeeEmpId": 65,
+    "timeOffId": 2,
+    "yearNumber": 2015,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 501,
+    "employeeEmpId": 65,
+    "timeOffId": 3,
+    "yearNumber": 2015,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 502,
+    "employeeEmpId": 65,
+    "timeOffId": 1,
+    "yearNumber": 2017,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 503,
+    "employeeEmpId": 65,
+    "timeOffId": 2,
+    "yearNumber": 2017,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 504,
+    "employeeEmpId": 65,
+    "timeOffId": 3,
+    "yearNumber": 2017,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 505,
+    "employeeEmpId": 65,
+    "timeOffId": 1,
+    "yearNumber": 2018,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 506,
+    "employeeEmpId": 65,
+    "timeOffId": 2,
+    "yearNumber": 2018,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 507,
+    "employeeEmpId": 65,
+    "timeOffId": 3,
+    "yearNumber": 2018,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 508,
+    "employeeEmpId": 65,
+    "timeOffId": 1,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 509,
+    "employeeEmpId": 65,
+    "timeOffId": 2,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 22.5
+  },
+  {
+    "id": 510,
+    "employeeEmpId": 65,
+    "timeOffId": 3,
+    "yearNumber": 2023,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 511,
+    "employeeEmpId": 66,
+    "timeOffId": 1,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 512,
+    "employeeEmpId": 66,
+    "timeOffId": 2,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 513,
+    "employeeEmpId": 66,
+    "timeOffId": 3,
+    "yearNumber": 2021,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 514,
+    "employeeEmpId": 68,
+    "timeOffId": 1,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 515,
+    "employeeEmpId": 68,
+    "timeOffId": 2,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 516,
+    "employeeEmpId": 68,
+    "timeOffId": 3,
+    "yearNumber": 2019,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 517,
+    "employeeEmpId": 68,
+    "timeOffId": 1,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 518,
+    "employeeEmpId": 68,
+    "timeOffId": 2,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 519,
+    "employeeEmpId": 68,
+    "timeOffId": 3,
+    "yearNumber": 2020,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 520,
+    "employeeEmpId": 68,
+    "timeOffId": 1,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 521,
+    "employeeEmpId": 68,
+    "timeOffId": 2,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 522,
+    "employeeEmpId": 68,
+    "timeOffId": 3,
+    "yearNumber": 2021,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 523,
+    "employeeEmpId": 68,
+    "timeOffId": 1,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 524,
+    "employeeEmpId": 68,
+    "timeOffId": 2,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 525,
+    "employeeEmpId": 68,
+    "timeOffId": 3,
+    "yearNumber": 2022,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 60
+  },
+  {
+    "id": 526,
+    "employeeEmpId": 68,
+    "timeOffId": 1,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 527,
+    "employeeEmpId": 68,
+    "timeOffId": 2,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 528,
+    "employeeEmpId": 68,
+    "timeOffId": 3,
+    "yearNumber": 2023,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 529,
+    "employeeEmpId": 69,
+    "timeOffId": 1,
+    "yearNumber": 2015,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 530,
+    "employeeEmpId": 69,
+    "timeOffId": 2,
+    "yearNumber": 2015,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 531,
+    "employeeEmpId": 69,
+    "timeOffId": 3,
+    "yearNumber": 2015,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 532,
+    "employeeEmpId": 69,
+    "timeOffId": 1,
+    "yearNumber": 2018,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 533,
+    "employeeEmpId": 69,
+    "timeOffId": 2,
+    "yearNumber": 2018,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 22.5
+  },
+  {
+    "id": 534,
+    "employeeEmpId": 69,
+    "timeOffId": 3,
+    "yearNumber": 2018,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 535,
+    "employeeEmpId": 69,
+    "timeOffId": 1,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 22.5
+  },
+  {
+    "id": 536,
+    "employeeEmpId": 69,
+    "timeOffId": 2,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 537,
+    "employeeEmpId": 69,
+    "timeOffId": 3,
+    "yearNumber": 2021,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 538,
+    "employeeEmpId": 69,
+    "timeOffId": 1,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 539,
+    "employeeEmpId": 69,
+    "timeOffId": 2,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 540,
+    "employeeEmpId": 69,
+    "timeOffId": 3,
+    "yearNumber": 2022,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 541,
+    "employeeEmpId": 69,
+    "timeOffId": 1,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 22.5
+  },
+  {
+    "id": 542,
+    "employeeEmpId": 69,
+    "timeOffId": 2,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 543,
+    "employeeEmpId": 69,
+    "timeOffId": 3,
+    "yearNumber": 2023,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 544,
+    "employeeEmpId": 70,
+    "timeOffId": 1,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 545,
+    "employeeEmpId": 70,
+    "timeOffId": 2,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 546,
+    "employeeEmpId": 70,
+    "timeOffId": 3,
+    "yearNumber": 2019,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 547,
+    "employeeEmpId": 70,
+    "timeOffId": 1,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 548,
+    "employeeEmpId": 70,
+    "timeOffId": 2,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 549,
+    "employeeEmpId": 70,
+    "timeOffId": 3,
+    "yearNumber": 2022,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 90
+  },
+  {
+    "id": 550,
+    "employeeEmpId": 70,
+    "timeOffId": 1,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 551,
+    "employeeEmpId": 70,
+    "timeOffId": 2,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 552,
+    "employeeEmpId": 70,
+    "timeOffId": 3,
+    "yearNumber": 2023,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 553,
+    "employeeEmpId": 71,
+    "timeOffId": 1,
+    "yearNumber": 2016,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 554,
+    "employeeEmpId": 71,
+    "timeOffId": 2,
+    "yearNumber": 2016,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 555,
+    "employeeEmpId": 71,
+    "timeOffId": 3,
+    "yearNumber": 2016,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 556,
+    "employeeEmpId": 71,
+    "timeOffId": 1,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 557,
+    "employeeEmpId": 71,
+    "timeOffId": 2,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 558,
+    "employeeEmpId": 71,
+    "timeOffId": 3,
+    "yearNumber": 2021,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 559,
+    "employeeEmpId": 71,
+    "timeOffId": 1,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 560,
+    "employeeEmpId": 71,
+    "timeOffId": 2,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 561,
+    "employeeEmpId": 71,
+    "timeOffId": 3,
+    "yearNumber": 2023,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 562,
+    "employeeEmpId": 72,
+    "timeOffId": 1,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 563,
+    "employeeEmpId": 72,
+    "timeOffId": 2,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 564,
+    "employeeEmpId": 72,
+    "timeOffId": 3,
+    "yearNumber": 2020,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 565,
+    "employeeEmpId": 72,
+    "timeOffId": 1,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 566,
+    "employeeEmpId": 72,
+    "timeOffId": 2,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 567,
+    "employeeEmpId": 72,
+    "timeOffId": 3,
+    "yearNumber": 2023,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 568,
+    "employeeEmpId": 73,
+    "timeOffId": 1,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 22.5
+  },
+  {
+    "id": 569,
+    "employeeEmpId": 73,
+    "timeOffId": 2,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 570,
+    "employeeEmpId": 73,
+    "timeOffId": 3,
+    "yearNumber": 2020,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 571,
+    "employeeEmpId": 73,
+    "timeOffId": 1,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 572,
+    "employeeEmpId": 73,
+    "timeOffId": 2,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 573,
+    "employeeEmpId": 73,
+    "timeOffId": 3,
+    "yearNumber": 2023,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 574,
+    "employeeEmpId": 74,
+    "timeOffId": 1,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 575,
+    "employeeEmpId": 74,
+    "timeOffId": 2,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 576,
+    "employeeEmpId": 74,
+    "timeOffId": 3,
+    "yearNumber": 2019,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 22.5
+  },
+  {
+    "id": 577,
+    "employeeEmpId": 74,
+    "timeOffId": 1,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 578,
+    "employeeEmpId": 74,
+    "timeOffId": 2,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 579,
+    "employeeEmpId": 74,
+    "timeOffId": 3,
+    "yearNumber": 2020,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 580,
+    "employeeEmpId": 74,
+    "timeOffId": 1,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 22.5
+  },
+  {
+    "id": 581,
+    "employeeEmpId": 74,
+    "timeOffId": 2,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 582,
+    "employeeEmpId": 74,
+    "timeOffId": 3,
+    "yearNumber": 2022,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 583,
+    "employeeEmpId": 74,
+    "timeOffId": 1,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 584,
+    "employeeEmpId": 74,
+    "timeOffId": 2,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 585,
+    "employeeEmpId": 74,
+    "timeOffId": 3,
+    "yearNumber": 2023,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 45
+  },
+  {
+    "id": 586,
+    "employeeEmpId": 75,
+    "timeOffId": 1,
+    "yearNumber": 2014,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 587,
+    "employeeEmpId": 75,
+    "timeOffId": 2,
+    "yearNumber": 2014,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 588,
+    "employeeEmpId": 75,
+    "timeOffId": 3,
+    "yearNumber": 2014,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 589,
+    "employeeEmpId": 75,
+    "timeOffId": 1,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 590,
+    "employeeEmpId": 75,
+    "timeOffId": 2,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 591,
+    "employeeEmpId": 75,
+    "timeOffId": 3,
+    "yearNumber": 2021,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 592,
+    "employeeEmpId": 76,
+    "timeOffId": 1,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 593,
+    "employeeEmpId": 76,
+    "timeOffId": 2,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 594,
+    "employeeEmpId": 76,
+    "timeOffId": 3,
+    "yearNumber": 2021,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 52.5
+  },
+  {
+    "id": 595,
+    "employeeEmpId": 76,
+    "timeOffId": 1,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 596,
+    "employeeEmpId": 76,
+    "timeOffId": 2,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 597,
+    "employeeEmpId": 76,
+    "timeOffId": 3,
+    "yearNumber": 2023,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 598,
+    "employeeEmpId": 77,
+    "timeOffId": 1,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 599,
+    "employeeEmpId": 77,
+    "timeOffId": 2,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 600,
+    "employeeEmpId": 77,
+    "timeOffId": 3,
+    "yearNumber": 2020,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 22.5
+  },
+  {
+    "id": 601,
+    "employeeEmpId": 77,
+    "timeOffId": 1,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 602,
+    "employeeEmpId": 77,
+    "timeOffId": 2,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 603,
+    "employeeEmpId": 77,
+    "timeOffId": 3,
+    "yearNumber": 2021,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 604,
+    "employeeEmpId": 77,
+    "timeOffId": 1,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 605,
+    "employeeEmpId": 77,
+    "timeOffId": 2,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 606,
+    "employeeEmpId": 77,
+    "timeOffId": 3,
+    "yearNumber": 2022,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 607,
+    "employeeEmpId": 78,
+    "timeOffId": 1,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 608,
+    "employeeEmpId": 78,
+    "timeOffId": 2,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 609,
+    "employeeEmpId": 78,
+    "timeOffId": 3,
+    "yearNumber": 2022,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 22.5
+  },
+  {
+    "id": 610,
+    "employeeEmpId": 78,
+    "timeOffId": 1,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 611,
+    "employeeEmpId": 78,
+    "timeOffId": 2,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 612,
+    "employeeEmpId": 78,
+    "timeOffId": 3,
+    "yearNumber": 2023,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 613,
+    "employeeEmpId": 79,
+    "timeOffId": 1,
+    "yearNumber": 2011,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 614,
+    "employeeEmpId": 79,
+    "timeOffId": 2,
+    "yearNumber": 2011,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 615,
+    "employeeEmpId": 79,
+    "timeOffId": 3,
+    "yearNumber": 2011,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 616,
+    "employeeEmpId": 79,
+    "timeOffId": 1,
+    "yearNumber": 2012,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 617,
+    "employeeEmpId": 79,
+    "timeOffId": 2,
+    "yearNumber": 2012,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 618,
+    "employeeEmpId": 79,
+    "timeOffId": 3,
+    "yearNumber": 2012,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 619,
+    "employeeEmpId": 79,
+    "timeOffId": 1,
+    "yearNumber": 2014,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 620,
+    "employeeEmpId": 79,
+    "timeOffId": 2,
+    "yearNumber": 2014,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 621,
+    "employeeEmpId": 79,
+    "timeOffId": 3,
+    "yearNumber": 2014,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 622,
+    "employeeEmpId": 79,
+    "timeOffId": 1,
+    "yearNumber": 2018,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 623,
+    "employeeEmpId": 79,
+    "timeOffId": 2,
+    "yearNumber": 2018,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 624,
+    "employeeEmpId": 79,
+    "timeOffId": 3,
+    "yearNumber": 2018,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 625,
+    "employeeEmpId": 80,
+    "timeOffId": 1,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 626,
+    "employeeEmpId": 80,
+    "timeOffId": 2,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 627,
+    "employeeEmpId": 80,
+    "timeOffId": 3,
+    "yearNumber": 2020,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 628,
+    "employeeEmpId": 80,
+    "timeOffId": 1,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 629,
+    "employeeEmpId": 80,
+    "timeOffId": 2,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 630,
+    "employeeEmpId": 80,
+    "timeOffId": 3,
+    "yearNumber": 2021,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 631,
+    "employeeEmpId": 80,
+    "timeOffId": 1,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 632,
+    "employeeEmpId": 80,
+    "timeOffId": 2,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 633,
+    "employeeEmpId": 80,
+    "timeOffId": 3,
+    "yearNumber": 2023,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 634,
+    "employeeEmpId": 81,
+    "timeOffId": 1,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 635,
+    "employeeEmpId": 81,
+    "timeOffId": 2,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 636,
+    "employeeEmpId": 81,
+    "timeOffId": 3,
+    "yearNumber": 2019,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 637,
+    "employeeEmpId": 82,
+    "timeOffId": 1,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 638,
+    "employeeEmpId": 82,
+    "timeOffId": 2,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 639,
+    "employeeEmpId": 82,
+    "timeOffId": 3,
+    "yearNumber": 2021,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 640,
+    "employeeEmpId": 82,
+    "timeOffId": 1,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 641,
+    "employeeEmpId": 82,
+    "timeOffId": 2,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 642,
+    "employeeEmpId": 82,
+    "timeOffId": 3,
+    "yearNumber": 2022,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 643,
+    "employeeEmpId": 82,
+    "timeOffId": 1,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 644,
+    "employeeEmpId": 82,
+    "timeOffId": 2,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 645,
+    "employeeEmpId": 82,
+    "timeOffId": 3,
+    "yearNumber": 2023,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 646,
+    "employeeEmpId": 83,
+    "timeOffId": 1,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 647,
+    "employeeEmpId": 83,
+    "timeOffId": 2,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 648,
+    "employeeEmpId": 83,
+    "timeOffId": 3,
+    "yearNumber": 2020,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 22.5
+  },
+  {
+    "id": 649,
+    "employeeEmpId": 83,
+    "timeOffId": 1,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 650,
+    "employeeEmpId": 83,
+    "timeOffId": 2,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 651,
+    "employeeEmpId": 83,
+    "timeOffId": 3,
+    "yearNumber": 2021,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 652,
+    "employeeEmpId": 83,
+    "timeOffId": 1,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 653,
+    "employeeEmpId": 83,
+    "timeOffId": 2,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 654,
+    "employeeEmpId": 83,
+    "timeOffId": 3,
+    "yearNumber": 2023,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 655,
+    "employeeEmpId": 84,
+    "timeOffId": 1,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 656,
+    "employeeEmpId": 84,
+    "timeOffId": 2,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 60
+  },
+  {
+    "id": 657,
+    "employeeEmpId": 84,
+    "timeOffId": 3,
+    "yearNumber": 2022,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 658,
+    "employeeEmpId": 84,
+    "timeOffId": 1,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 659,
+    "employeeEmpId": 84,
+    "timeOffId": 2,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 660,
+    "employeeEmpId": 84,
+    "timeOffId": 3,
+    "yearNumber": 2023,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 661,
+    "employeeEmpId": 85,
+    "timeOffId": 1,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 662,
+    "employeeEmpId": 85,
+    "timeOffId": 2,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 663,
+    "employeeEmpId": 85,
+    "timeOffId": 3,
+    "yearNumber": 2021,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 664,
+    "employeeEmpId": 85,
+    "timeOffId": 1,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 665,
+    "employeeEmpId": 85,
+    "timeOffId": 2,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 666,
+    "employeeEmpId": 85,
+    "timeOffId": 3,
+    "yearNumber": 2022,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 667,
+    "employeeEmpId": 85,
+    "timeOffId": 1,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 668,
+    "employeeEmpId": 85,
+    "timeOffId": 2,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 669,
+    "employeeEmpId": 85,
+    "timeOffId": 3,
+    "yearNumber": 2023,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 45
+  },
+  {
+    "id": 670,
+    "employeeEmpId": 86,
+    "timeOffId": 1,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 671,
+    "employeeEmpId": 86,
+    "timeOffId": 2,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 672,
+    "employeeEmpId": 86,
+    "timeOffId": 3,
+    "yearNumber": 2021,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 673,
+    "employeeEmpId": 88,
+    "timeOffId": 1,
+    "yearNumber": 2014,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 674,
+    "employeeEmpId": 88,
+    "timeOffId": 2,
+    "yearNumber": 2014,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 22.5
+  },
+  {
+    "id": 675,
+    "employeeEmpId": 88,
+    "timeOffId": 3,
+    "yearNumber": 2014,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 676,
+    "employeeEmpId": 88,
+    "timeOffId": 1,
+    "yearNumber": 2016,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 677,
+    "employeeEmpId": 88,
+    "timeOffId": 2,
+    "yearNumber": 2016,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 678,
+    "employeeEmpId": 88,
+    "timeOffId": 3,
+    "yearNumber": 2016,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 679,
+    "employeeEmpId": 88,
+    "timeOffId": 1,
+    "yearNumber": 2017,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 680,
+    "employeeEmpId": 88,
+    "timeOffId": 2,
+    "yearNumber": 2017,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 22.5
+  },
+  {
+    "id": 681,
+    "employeeEmpId": 88,
+    "timeOffId": 3,
+    "yearNumber": 2017,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 682,
+    "employeeEmpId": 88,
+    "timeOffId": 1,
+    "yearNumber": 2018,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 683,
+    "employeeEmpId": 88,
+    "timeOffId": 2,
+    "yearNumber": 2018,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 684,
+    "employeeEmpId": 88,
+    "timeOffId": 3,
+    "yearNumber": 2018,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 685,
+    "employeeEmpId": 89,
+    "timeOffId": 1,
+    "yearNumber": 2015,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 686,
+    "employeeEmpId": 89,
+    "timeOffId": 2,
+    "yearNumber": 2015,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 687,
+    "employeeEmpId": 89,
+    "timeOffId": 3,
+    "yearNumber": 2015,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 688,
+    "employeeEmpId": 89,
+    "timeOffId": 1,
+    "yearNumber": 2017,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 689,
+    "employeeEmpId": 89,
+    "timeOffId": 2,
+    "yearNumber": 2017,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 690,
+    "employeeEmpId": 89,
+    "timeOffId": 3,
+    "yearNumber": 2017,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 691,
+    "employeeEmpId": 89,
+    "timeOffId": 1,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 692,
+    "employeeEmpId": 89,
+    "timeOffId": 2,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 693,
+    "employeeEmpId": 89,
+    "timeOffId": 3,
+    "yearNumber": 2020,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 694,
+    "employeeEmpId": 90,
+    "timeOffId": 1,
+    "yearNumber": 2014,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 695,
+    "employeeEmpId": 90,
+    "timeOffId": 2,
+    "yearNumber": 2014,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 696,
+    "employeeEmpId": 90,
+    "timeOffId": 3,
+    "yearNumber": 2014,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 697,
+    "employeeEmpId": 90,
+    "timeOffId": 1,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 698,
+    "employeeEmpId": 90,
+    "timeOffId": 2,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 699,
+    "employeeEmpId": 90,
+    "timeOffId": 3,
+    "yearNumber": 2020,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 700,
+    "employeeEmpId": 90,
+    "timeOffId": 1,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 701,
+    "employeeEmpId": 90,
+    "timeOffId": 2,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 702,
+    "employeeEmpId": 90,
+    "timeOffId": 3,
+    "yearNumber": 2022,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 703,
+    "employeeEmpId": 91,
+    "timeOffId": 1,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 67.5
+  },
+  {
+    "id": 704,
+    "employeeEmpId": 91,
+    "timeOffId": 2,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 705,
+    "employeeEmpId": 91,
+    "timeOffId": 3,
+    "yearNumber": 2019,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 706,
+    "employeeEmpId": 91,
+    "timeOffId": 1,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 707,
+    "employeeEmpId": 91,
+    "timeOffId": 2,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 708,
+    "employeeEmpId": 91,
+    "timeOffId": 3,
+    "yearNumber": 2022,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 709,
+    "employeeEmpId": 91,
+    "timeOffId": 1,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 22.5
+  },
+  {
+    "id": 710,
+    "employeeEmpId": 91,
+    "timeOffId": 2,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 711,
+    "employeeEmpId": 91,
+    "timeOffId": 3,
+    "yearNumber": 2023,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 712,
+    "employeeEmpId": 92,
+    "timeOffId": 1,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 713,
+    "employeeEmpId": 92,
+    "timeOffId": 2,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 714,
+    "employeeEmpId": 92,
+    "timeOffId": 3,
+    "yearNumber": 2019,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 22.5
+  },
+  {
+    "id": 715,
+    "employeeEmpId": 92,
+    "timeOffId": 1,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 716,
+    "employeeEmpId": 92,
+    "timeOffId": 2,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 22.5
+  },
+  {
+    "id": 717,
+    "employeeEmpId": 92,
+    "timeOffId": 3,
+    "yearNumber": 2023,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 718,
+    "employeeEmpId": 93,
+    "timeOffId": 1,
+    "yearNumber": 2012,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 719,
+    "employeeEmpId": 93,
+    "timeOffId": 2,
+    "yearNumber": 2012,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 720,
+    "employeeEmpId": 93,
+    "timeOffId": 3,
+    "yearNumber": 2012,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 721,
+    "employeeEmpId": 93,
+    "timeOffId": 1,
+    "yearNumber": 2014,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 722,
+    "employeeEmpId": 93,
+    "timeOffId": 2,
+    "yearNumber": 2014,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 22.5
+  },
+  {
+    "id": 723,
+    "employeeEmpId": 93,
+    "timeOffId": 3,
+    "yearNumber": 2014,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 724,
+    "employeeEmpId": 93,
+    "timeOffId": 1,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 725,
+    "employeeEmpId": 93,
+    "timeOffId": 2,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 726,
+    "employeeEmpId": 93,
+    "timeOffId": 3,
+    "yearNumber": 2019,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 727,
+    "employeeEmpId": 93,
+    "timeOffId": 1,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 728,
+    "employeeEmpId": 93,
+    "timeOffId": 2,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 729,
+    "employeeEmpId": 93,
+    "timeOffId": 3,
+    "yearNumber": 2020,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 730,
+    "employeeEmpId": 93,
+    "timeOffId": 1,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 731,
+    "employeeEmpId": 93,
+    "timeOffId": 2,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 732,
+    "employeeEmpId": 93,
+    "timeOffId": 3,
+    "yearNumber": 2022,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 733,
+    "employeeEmpId": 94,
+    "timeOffId": 1,
+    "yearNumber": 2016,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 734,
+    "employeeEmpId": 94,
+    "timeOffId": 2,
+    "yearNumber": 2016,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 735,
+    "employeeEmpId": 94,
+    "timeOffId": 3,
+    "yearNumber": 2016,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 736,
+    "employeeEmpId": 94,
+    "timeOffId": 1,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 737,
+    "employeeEmpId": 94,
+    "timeOffId": 2,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 738,
+    "employeeEmpId": 94,
+    "timeOffId": 3,
+    "yearNumber": 2023,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 739,
+    "employeeEmpId": 95,
+    "timeOffId": 1,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 740,
+    "employeeEmpId": 95,
+    "timeOffId": 2,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 741,
+    "employeeEmpId": 95,
+    "timeOffId": 3,
+    "yearNumber": 2019,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 22.5
+  },
+  {
+    "id": 742,
+    "employeeEmpId": 95,
+    "timeOffId": 1,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 743,
+    "employeeEmpId": 95,
+    "timeOffId": 2,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 744,
+    "employeeEmpId": 95,
+    "timeOffId": 3,
+    "yearNumber": 2021,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 745,
+    "employeeEmpId": 95,
+    "timeOffId": 1,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 746,
+    "employeeEmpId": 95,
+    "timeOffId": 2,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 747,
+    "employeeEmpId": 95,
+    "timeOffId": 3,
+    "yearNumber": 2022,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 22.5
+  },
+  {
+    "id": 748,
+    "employeeEmpId": 95,
+    "timeOffId": 1,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 749,
+    "employeeEmpId": 95,
+    "timeOffId": 2,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 750,
+    "employeeEmpId": 95,
+    "timeOffId": 3,
+    "yearNumber": 2023,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 751,
+    "employeeEmpId": 96,
+    "timeOffId": 1,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 752,
+    "employeeEmpId": 96,
+    "timeOffId": 2,
+    "yearNumber": 2019,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 753,
+    "employeeEmpId": 96,
+    "timeOffId": 3,
+    "yearNumber": 2019,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 754,
+    "employeeEmpId": 96,
+    "timeOffId": 1,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 755,
+    "employeeEmpId": 96,
+    "timeOffId": 2,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 756,
+    "employeeEmpId": 96,
+    "timeOffId": 3,
+    "yearNumber": 2020,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 757,
+    "employeeEmpId": 96,
+    "timeOffId": 1,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 45
+  },
+  {
+    "id": 758,
+    "employeeEmpId": 96,
+    "timeOffId": 2,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 759,
+    "employeeEmpId": 96,
+    "timeOffId": 3,
+    "yearNumber": 2023,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 760,
+    "employeeEmpId": 97,
+    "timeOffId": 1,
+    "yearNumber": 2015,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 761,
+    "employeeEmpId": 97,
+    "timeOffId": 2,
+    "yearNumber": 2015,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 762,
+    "employeeEmpId": 97,
+    "timeOffId": 3,
+    "yearNumber": 2015,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 22.5
+  },
+  {
+    "id": 763,
+    "employeeEmpId": 97,
+    "timeOffId": 1,
+    "yearNumber": 2018,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 764,
+    "employeeEmpId": 97,
+    "timeOffId": 2,
+    "yearNumber": 2018,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 765,
+    "employeeEmpId": 97,
+    "timeOffId": 3,
+    "yearNumber": 2018,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 22.5
+  },
+  {
+    "id": 766,
+    "employeeEmpId": 97,
+    "timeOffId": 1,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 767,
+    "employeeEmpId": 97,
+    "timeOffId": 2,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 45
+  },
+  {
+    "id": 768,
+    "employeeEmpId": 97,
+    "timeOffId": 3,
+    "yearNumber": 2022,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 769,
+    "employeeEmpId": 98,
+    "timeOffId": 1,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 22.5
+  },
+  {
+    "id": 770,
+    "employeeEmpId": 98,
+    "timeOffId": 2,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 771,
+    "employeeEmpId": 98,
+    "timeOffId": 3,
+    "yearNumber": 2021,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 22.5
+  },
+  {
+    "id": 772,
+    "employeeEmpId": 98,
+    "timeOffId": 1,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 773,
+    "employeeEmpId": 98,
+    "timeOffId": 2,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 774,
+    "employeeEmpId": 98,
+    "timeOffId": 3,
+    "yearNumber": 2022,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 775,
+    "employeeEmpId": 98,
+    "timeOffId": 1,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 776,
+    "employeeEmpId": 98,
+    "timeOffId": 2,
+    "yearNumber": 2023,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 777,
+    "employeeEmpId": 98,
+    "timeOffId": 3,
+    "yearNumber": 2023,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 778,
+    "employeeEmpId": 99,
+    "timeOffId": 1,
+    "yearNumber": 2017,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 60
+  },
+  {
+    "id": 779,
+    "employeeEmpId": 99,
+    "timeOffId": 2,
+    "yearNumber": 2017,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 780,
+    "employeeEmpId": 99,
+    "timeOffId": 3,
+    "yearNumber": 2017,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 781,
+    "employeeEmpId": 99,
+    "timeOffId": 1,
+    "yearNumber": 2018,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 782,
+    "employeeEmpId": 99,
+    "timeOffId": 2,
+    "yearNumber": 2018,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 783,
+    "employeeEmpId": 99,
+    "timeOffId": 3,
+    "yearNumber": 2018,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 784,
+    "employeeEmpId": 99,
+    "timeOffId": 1,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 22.5
+  },
+  {
+    "id": 785,
+    "employeeEmpId": 99,
+    "timeOffId": 2,
+    "yearNumber": 2022,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 786,
+    "employeeEmpId": 99,
+    "timeOffId": 3,
+    "yearNumber": 2022,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 787,
+    "employeeEmpId": 100,
+    "timeOffId": 1,
+    "yearNumber": 2013,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 788,
+    "employeeEmpId": 100,
+    "timeOffId": 2,
+    "yearNumber": 2013,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 789,
+    "employeeEmpId": 100,
+    "timeOffId": 3,
+    "yearNumber": 2013,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 790,
+    "employeeEmpId": 100,
+    "timeOffId": 1,
+    "yearNumber": 2017,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 791,
+    "employeeEmpId": 100,
+    "timeOffId": 2,
+    "yearNumber": 2017,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 792,
+    "employeeEmpId": 100,
+    "timeOffId": 3,
+    "yearNumber": 2017,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 793,
+    "employeeEmpId": 100,
+    "timeOffId": 1,
+    "yearNumber": 2018,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 794,
+    "employeeEmpId": 100,
+    "timeOffId": 2,
+    "yearNumber": 2018,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 795,
+    "employeeEmpId": 100,
+    "timeOffId": 3,
+    "yearNumber": 2018,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 37.5
+  },
+  {
+    "id": 796,
+    "employeeEmpId": 100,
+    "timeOffId": 1,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 797,
+    "employeeEmpId": 100,
+    "timeOffId": 2,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 798,
+    "employeeEmpId": 100,
+    "timeOffId": 3,
+    "yearNumber": 2020,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 799,
+    "employeeEmpId": 100,
+    "timeOffId": 1,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 800,
+    "employeeEmpId": 100,
+    "timeOffId": 2,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 801,
+    "employeeEmpId": 100,
+    "timeOffId": 3,
+    "yearNumber": 2021,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 30
+  },
+  {
+    "id": 802,
+    "employeeEmpId": 101,
+    "timeOffId": 1,
+    "yearNumber": 2013,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 803,
+    "employeeEmpId": 101,
+    "timeOffId": 2,
+    "yearNumber": 2013,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 804,
+    "employeeEmpId": 101,
+    "timeOffId": 3,
+    "yearNumber": 2013,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 15
+  },
+  {
+    "id": 805,
+    "employeeEmpId": 101,
+    "timeOffId": 1,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 7.5
+  },
+  {
+    "id": 806,
+    "employeeEmpId": 101,
+    "timeOffId": 2,
+    "yearNumber": 2020,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 807,
+    "employeeEmpId": 101,
+    "timeOffId": 3,
+    "yearNumber": 2020,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 808,
+    "employeeEmpId": 101,
+    "timeOffId": 1,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 809,
+    "employeeEmpId": 101,
+    "timeOffId": 2,
+    "yearNumber": 2021,
+    "hoursAllowed": 180,
+    "cumulativeHoursTaken": 22.5
+  },
+  {
+    "id": 810,
+    "employeeEmpId": 101,
+    "timeOffId": 3,
+    "yearNumber": 2021,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 811,
+    "employeeEmpId": 1,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 812,
+    "employeeEmpId": 1,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 813,
+    "employeeEmpId": 1,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 814,
+    "employeeEmpId": 2,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 815,
+    "employeeEmpId": 2,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 816,
+    "employeeEmpId": 2,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 817,
+    "employeeEmpId": 3,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 818,
+    "employeeEmpId": 3,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 819,
+    "employeeEmpId": 3,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 820,
+    "employeeEmpId": 4,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 821,
+    "employeeEmpId": 4,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 822,
+    "employeeEmpId": 4,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 823,
+    "employeeEmpId": 5,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 824,
+    "employeeEmpId": 5,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 825,
+    "employeeEmpId": 5,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 826,
+    "employeeEmpId": 6,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 827,
+    "employeeEmpId": 6,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 828,
+    "employeeEmpId": 6,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 829,
+    "employeeEmpId": 7,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 830,
+    "employeeEmpId": 7,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 831,
+    "employeeEmpId": 7,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 832,
+    "employeeEmpId": 8,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 833,
+    "employeeEmpId": 8,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 834,
+    "employeeEmpId": 8,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 835,
+    "employeeEmpId": 9,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 836,
+    "employeeEmpId": 9,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 837,
+    "employeeEmpId": 9,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 838,
+    "employeeEmpId": 10,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 839,
+    "employeeEmpId": 10,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 840,
+    "employeeEmpId": 10,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 841,
+    "employeeEmpId": 11,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 150,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 842,
+    "employeeEmpId": 11,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 843,
+    "employeeEmpId": 11,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 844,
+    "employeeEmpId": 12,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 845,
+    "employeeEmpId": 12,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 846,
+    "employeeEmpId": 12,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 847,
+    "employeeEmpId": 13,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 150,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 848,
+    "employeeEmpId": 13,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 849,
+    "employeeEmpId": 13,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 850,
+    "employeeEmpId": 14,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 851,
+    "employeeEmpId": 14,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 852,
+    "employeeEmpId": 14,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 853,
+    "employeeEmpId": 15,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 854,
+    "employeeEmpId": 15,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 855,
+    "employeeEmpId": 15,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 856,
+    "employeeEmpId": 16,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 22.5,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 857,
+    "employeeEmpId": 16,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 858,
+    "employeeEmpId": 16,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 859,
+    "employeeEmpId": 17,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 860,
+    "employeeEmpId": 17,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 861,
+    "employeeEmpId": 17,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 862,
+    "employeeEmpId": 18,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 863,
+    "employeeEmpId": 18,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 864,
+    "employeeEmpId": 18,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 865,
+    "employeeEmpId": 19,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 22.5,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 866,
+    "employeeEmpId": 19,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 867,
+    "employeeEmpId": 19,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 868,
+    "employeeEmpId": 20,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 869,
+    "employeeEmpId": 20,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 870,
+    "employeeEmpId": 20,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 871,
+    "employeeEmpId": 21,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 872,
+    "employeeEmpId": 21,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 873,
+    "employeeEmpId": 21,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 874,
+    "employeeEmpId": 22,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 875,
+    "employeeEmpId": 22,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 876,
+    "employeeEmpId": 22,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 877,
+    "employeeEmpId": 23,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 878,
+    "employeeEmpId": 23,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 879,
+    "employeeEmpId": 23,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 880,
+    "employeeEmpId": 24,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 881,
+    "employeeEmpId": 24,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 882,
+    "employeeEmpId": 24,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 883,
+    "employeeEmpId": 25,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 884,
+    "employeeEmpId": 25,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 885,
+    "employeeEmpId": 25,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 886,
+    "employeeEmpId": 26,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 887,
+    "employeeEmpId": 26,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 888,
+    "employeeEmpId": 26,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 889,
+    "employeeEmpId": 27,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 890,
+    "employeeEmpId": 27,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 891,
+    "employeeEmpId": 27,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 892,
+    "employeeEmpId": 28,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 893,
+    "employeeEmpId": 28,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 894,
+    "employeeEmpId": 28,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 895,
+    "employeeEmpId": 29,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 22.5,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 896,
+    "employeeEmpId": 29,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 897,
+    "employeeEmpId": 29,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 898,
+    "employeeEmpId": 30,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 22.5,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 899,
+    "employeeEmpId": 30,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 900,
+    "employeeEmpId": 30,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 901,
+    "employeeEmpId": 31,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 902,
+    "employeeEmpId": 31,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 903,
+    "employeeEmpId": 31,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 904,
+    "employeeEmpId": 32,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 905,
+    "employeeEmpId": 32,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 906,
+    "employeeEmpId": 32,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 907,
+    "employeeEmpId": 33,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 908,
+    "employeeEmpId": 33,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 909,
+    "employeeEmpId": 33,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 910,
+    "employeeEmpId": 34,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 911,
+    "employeeEmpId": 34,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 912,
+    "employeeEmpId": 34,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 913,
+    "employeeEmpId": 35,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 914,
+    "employeeEmpId": 35,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 915,
+    "employeeEmpId": 35,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 916,
+    "employeeEmpId": 36,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 917,
+    "employeeEmpId": 36,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 918,
+    "employeeEmpId": 36,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 919,
+    "employeeEmpId": 37,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 920,
+    "employeeEmpId": 37,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 921,
+    "employeeEmpId": 37,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 922,
+    "employeeEmpId": 38,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 923,
+    "employeeEmpId": 38,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 924,
+    "employeeEmpId": 38,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 925,
+    "employeeEmpId": 39,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 926,
+    "employeeEmpId": 39,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 927,
+    "employeeEmpId": 39,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 928,
+    "employeeEmpId": 40,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 929,
+    "employeeEmpId": 40,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 930,
+    "employeeEmpId": 40,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 931,
+    "employeeEmpId": 41,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 22.5,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 932,
+    "employeeEmpId": 41,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 933,
+    "employeeEmpId": 41,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 934,
+    "employeeEmpId": 42,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 935,
+    "employeeEmpId": 42,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 936,
+    "employeeEmpId": 42,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 937,
+    "employeeEmpId": 43,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 22.5,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 938,
+    "employeeEmpId": 43,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 939,
+    "employeeEmpId": 43,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 940,
+    "employeeEmpId": 44,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 941,
+    "employeeEmpId": 44,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 942,
+    "employeeEmpId": 44,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 943,
+    "employeeEmpId": 45,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 944,
+    "employeeEmpId": 45,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 945,
+    "employeeEmpId": 45,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 946,
+    "employeeEmpId": 46,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 947,
+    "employeeEmpId": 46,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 948,
+    "employeeEmpId": 46,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 949,
+    "employeeEmpId": 47,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 950,
+    "employeeEmpId": 47,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 951,
+    "employeeEmpId": 47,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 952,
+    "employeeEmpId": 48,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 953,
+    "employeeEmpId": 48,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 954,
+    "employeeEmpId": 48,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 955,
+    "employeeEmpId": 49,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 956,
+    "employeeEmpId": 49,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 957,
+    "employeeEmpId": 49,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 958,
+    "employeeEmpId": 50,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 959,
+    "employeeEmpId": 50,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 960,
+    "employeeEmpId": 50,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 961,
+    "employeeEmpId": 51,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 962,
+    "employeeEmpId": 51,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 963,
+    "employeeEmpId": 51,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 964,
+    "employeeEmpId": 52,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 965,
+    "employeeEmpId": 52,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 966,
+    "employeeEmpId": 52,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 967,
+    "employeeEmpId": 53,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 150,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 968,
+    "employeeEmpId": 53,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 969,
+    "employeeEmpId": 53,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 970,
+    "employeeEmpId": 54,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 971,
+    "employeeEmpId": 54,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 972,
+    "employeeEmpId": 54,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 973,
+    "employeeEmpId": 55,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 974,
+    "employeeEmpId": 55,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 975,
+    "employeeEmpId": 55,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 976,
+    "employeeEmpId": 56,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 977,
+    "employeeEmpId": 56,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 978,
+    "employeeEmpId": 56,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 979,
+    "employeeEmpId": 57,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 980,
+    "employeeEmpId": 57,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 981,
+    "employeeEmpId": 57,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 982,
+    "employeeEmpId": 58,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 983,
+    "employeeEmpId": 58,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 984,
+    "employeeEmpId": 58,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 985,
+    "employeeEmpId": 59,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 986,
+    "employeeEmpId": 59,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 987,
+    "employeeEmpId": 59,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 988,
+    "employeeEmpId": 60,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 22.5,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 989,
+    "employeeEmpId": 60,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 990,
+    "employeeEmpId": 60,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 991,
+    "employeeEmpId": 61,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 150,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 992,
+    "employeeEmpId": 61,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 993,
+    "employeeEmpId": 61,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 994,
+    "employeeEmpId": 62,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 22.5,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 995,
+    "employeeEmpId": 62,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 996,
+    "employeeEmpId": 62,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 997,
+    "employeeEmpId": 63,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 22.5,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 998,
+    "employeeEmpId": 63,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 999,
+    "employeeEmpId": 63,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1000,
+    "employeeEmpId": 64,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1001,
+    "employeeEmpId": 64,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1002,
+    "employeeEmpId": 64,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1003,
+    "employeeEmpId": 65,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1004,
+    "employeeEmpId": 65,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1005,
+    "employeeEmpId": 65,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1006,
+    "employeeEmpId": 66,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1007,
+    "employeeEmpId": 66,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1008,
+    "employeeEmpId": 66,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1009,
+    "employeeEmpId": 67,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1010,
+    "employeeEmpId": 67,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1011,
+    "employeeEmpId": 67,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1012,
+    "employeeEmpId": 68,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1013,
+    "employeeEmpId": 68,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1014,
+    "employeeEmpId": 68,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1015,
+    "employeeEmpId": 69,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1016,
+    "employeeEmpId": 69,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1017,
+    "employeeEmpId": 69,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1018,
+    "employeeEmpId": 70,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1019,
+    "employeeEmpId": 70,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1020,
+    "employeeEmpId": 70,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1021,
+    "employeeEmpId": 71,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 22.5,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1022,
+    "employeeEmpId": 71,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1023,
+    "employeeEmpId": 71,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1024,
+    "employeeEmpId": 72,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1025,
+    "employeeEmpId": 72,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1026,
+    "employeeEmpId": 72,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1027,
+    "employeeEmpId": 73,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1028,
+    "employeeEmpId": 73,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1029,
+    "employeeEmpId": 73,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1030,
+    "employeeEmpId": 74,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 22.5,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1031,
+    "employeeEmpId": 74,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1032,
+    "employeeEmpId": 74,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1033,
+    "employeeEmpId": 75,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1034,
+    "employeeEmpId": 75,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1035,
+    "employeeEmpId": 75,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1036,
+    "employeeEmpId": 76,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 22.5,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1037,
+    "employeeEmpId": 76,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1038,
+    "employeeEmpId": 76,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1039,
+    "employeeEmpId": 77,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1040,
+    "employeeEmpId": 77,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1041,
+    "employeeEmpId": 77,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1042,
+    "employeeEmpId": 78,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1043,
+    "employeeEmpId": 78,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1044,
+    "employeeEmpId": 78,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1045,
+    "employeeEmpId": 79,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1046,
+    "employeeEmpId": 79,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1047,
+    "employeeEmpId": 79,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1048,
+    "employeeEmpId": 80,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1049,
+    "employeeEmpId": 80,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1050,
+    "employeeEmpId": 80,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1051,
+    "employeeEmpId": 81,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1052,
+    "employeeEmpId": 81,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1053,
+    "employeeEmpId": 81,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1054,
+    "employeeEmpId": 82,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1055,
+    "employeeEmpId": 82,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1056,
+    "employeeEmpId": 82,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1057,
+    "employeeEmpId": 83,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1058,
+    "employeeEmpId": 83,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1059,
+    "employeeEmpId": 83,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1060,
+    "employeeEmpId": 84,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1061,
+    "employeeEmpId": 84,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1062,
+    "employeeEmpId": 84,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1063,
+    "employeeEmpId": 85,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1064,
+    "employeeEmpId": 85,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1065,
+    "employeeEmpId": 85,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1066,
+    "employeeEmpId": 86,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 150,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1067,
+    "employeeEmpId": 86,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1068,
+    "employeeEmpId": 86,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1069,
+    "employeeEmpId": 87,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 150,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1070,
+    "employeeEmpId": 87,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1071,
+    "employeeEmpId": 87,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1072,
+    "employeeEmpId": 88,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1073,
+    "employeeEmpId": 88,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1074,
+    "employeeEmpId": 88,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1075,
+    "employeeEmpId": 89,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1076,
+    "employeeEmpId": 89,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1077,
+    "employeeEmpId": 89,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1078,
+    "employeeEmpId": 90,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1079,
+    "employeeEmpId": 90,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1080,
+    "employeeEmpId": 90,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1081,
+    "employeeEmpId": 91,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1082,
+    "employeeEmpId": 91,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1083,
+    "employeeEmpId": 91,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1084,
+    "employeeEmpId": 92,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1085,
+    "employeeEmpId": 92,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1086,
+    "employeeEmpId": 92,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1087,
+    "employeeEmpId": 93,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1088,
+    "employeeEmpId": 93,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1089,
+    "employeeEmpId": 93,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1090,
+    "employeeEmpId": 94,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1091,
+    "employeeEmpId": 94,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1092,
+    "employeeEmpId": 94,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1093,
+    "employeeEmpId": 95,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1094,
+    "employeeEmpId": 95,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1095,
+    "employeeEmpId": 95,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1096,
+    "employeeEmpId": 96,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1097,
+    "employeeEmpId": 96,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1098,
+    "employeeEmpId": 96,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 75,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1099,
+    "employeeEmpId": 97,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1100,
+    "employeeEmpId": 97,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1101,
+    "employeeEmpId": 97,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1102,
+    "employeeEmpId": 98,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1103,
+    "employeeEmpId": 98,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1104,
+    "employeeEmpId": 98,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1105,
+    "employeeEmpId": 99,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 22.5,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1106,
+    "employeeEmpId": 99,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1107,
+    "employeeEmpId": 99,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1108,
+    "employeeEmpId": 100,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1109,
+    "employeeEmpId": 100,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1110,
+    "employeeEmpId": 100,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 35,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1111,
+    "employeeEmpId": 101,
+    "timeOffId": 1,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1112,
+    "employeeEmpId": 101,
+    "timeOffId": 2,
+    "yearNumber": 2024,
+    "hoursAllowed": 0,
+    "cumulativeHoursTaken": 0
+  },
+  {
+    "id": 1113,
+    "employeeEmpId": 101,
+    "timeOffId": 3,
+    "yearNumber": 2024,
+    "hoursAllowed": 15,
+    "cumulativeHoursTaken": 0
+  }
+]
