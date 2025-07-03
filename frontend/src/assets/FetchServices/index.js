@@ -28,5 +28,6 @@ service.task = require("./Task");
 service.taskName = require("./TaskName");
 service.surveyQuestion = require("./SurveyQuestion");
 service.surveyResponse = require("./SurveyResponse");
+service.communication = require("./Communication");
 
 module.exports = service;

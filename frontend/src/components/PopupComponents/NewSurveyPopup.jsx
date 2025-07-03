@@ -194,7 +194,7 @@ export default function NewSurveyPopup({close, refresh, initialSurvey, style}) {
                 return {
                     empId: e.empId,
                     category: "Employee",
-                    teamName: e.team.teamName,
+                    teamName: e.team && e.team.teamName ? e.team.teamName : "New Team", // Added by Ankit: set default team name
                     name: `${e.firstName} ${e.lastName}`
                 }
             });

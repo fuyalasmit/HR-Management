@@ -13,6 +13,7 @@ import UpdatesPage from "../components/UpdatesPage/UpdatesPage";
 import TimeOffPage from "../components/TimeOffPage/TimeOffPage";
 import SettingsPage from "../components/SettingsPage/SettingsPage";
 import SurveysPage from "../components/SurveysPage/SurveysPage";
+import CommunicationsPage from "../components/CommunicationsPage/CommunicationsPage";
 import { SettingsProvider } from "../components/SettingsPage/context";
 const api = require("../assets/FetchServices");
 
@@ -21,6 +22,8 @@ const dashboardMenu = {
   myinfo: false,
   people: false,
   timeoff: false,
+  surveys: false,
+  communications: false,
   reporting: false,
   settings: false,
 };
@@ -123,14 +126,15 @@ export default function Dashboard() {
           {current.home && <UpdatesPage />}
           {/* {current.myinfo && <MyInfoHome />} */}
           {current.people && <PeopleHome />}
-          {/* {current.timeoff && <TimeOffPage />}
+          {/* {current.timeoff && <TimeOffPage />} */}
           {current.surveys && <SurveysPage />}
-          {current.reporting && <ReportsMain />} */}
-          {/* {current.settings && (
+          {current.communications && <CommunicationsPage />}
+          {/* {current.reporting && <ReportsMain />} */}
+          {current.settings && (
             <SettingsProvider>
               <SettingsPage />
             </SettingsProvider>
-          )} */}
+          )}
         </Box>
       </Stack>
     </Box>

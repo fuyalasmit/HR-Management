@@ -96,7 +96,7 @@ function formatTableData({
   data.forEach(async (emp) => {
     emp.name = `${emp.firstName} ${emp.lastName}`;
     emp.role = emp.role && emp.role.roleTitle;
-    emp.team = emp.team && emp.team.teamName;
+    emp.team = emp.team && emp.team.teamName ? emp.team.teamName : "New Team"; // Added by Ankit: set default team name
     emp.department = emp.department && emp.department.departmentName;
     emp.manager =
       emp.Manager && `${emp.Manager.firstName} ${emp.Manager.lastName}`;
