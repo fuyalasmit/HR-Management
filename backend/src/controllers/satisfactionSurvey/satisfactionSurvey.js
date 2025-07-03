@@ -158,7 +158,7 @@ const createRespondents = async ({ surveyId, anonymous, empIds }) => {
       .update(accessToken)
       .digest("hex");
 
-    let teamName = null;
+    let teamName = "No Team"; // Added by Ankit: Default value for employees without teams
     if (anonymous) {
       teamName = "Anonymous";
     } else if (employee.team) {

@@ -124,6 +124,8 @@ db.satisfactionSurveyRecipient =
 
 // satisfaction models end here
 
+db.massEmail = require("./massEmail")(sequelize, Sequelize);
+
 db.onBoarding = require("./onBoarding")(sequelize, Sequelize);
 db.video = require("./video")(sequelize, Sequelize);
 db.file = require("./file")(sequelize, Sequelize);

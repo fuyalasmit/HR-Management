@@ -41,6 +41,7 @@ class EmailService {
       resetpassword: this.loadTemplate("password_reset"),
       newEmployeeActivation: this.loadTemplate("new_employee_activation"),
       satisfactionSurveyInvitation: this.loadTemplate("satisfaction_survey_invitation"),
+      mass_email: this.loadTemplate("mass_email"),
     };
 
     /**

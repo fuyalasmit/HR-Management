@@ -33,6 +33,7 @@ const task = require("./task");
 const taskName = require("./taskName.js");
 const surveyQuestion = require("./surveyQuestion");
 const surveyResponse = require("./surveyResponse");
+const massEmail = require("./massEmail");
 
 module.exports = (router) => {
   authentication(router);
@@ -65,6 +66,7 @@ module.exports = (router) => {
   surveyQuestion(router);
   surveyResponse(router);
   satisfactionSurvey(router);
+  massEmail(router);
 
   return router;
 };
