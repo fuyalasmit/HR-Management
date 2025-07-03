@@ -168,11 +168,10 @@ function SingupPage({ user, token, onSubmit }) {
         // Get associated employee record
         const employee = await api.employee.fetchOneByEmail(user.email);
         stateContext.updateStates({ user, employee });
-        if(employee){
+        if (employee) {
           navigate("/onboarding", { replace: true });
-        }
-        else{ 
-           navigate("/dashboard", { replace: true });
+        } else {
+          navigate("/dashboard", { replace: true });
         }
       } else {
         //Admin sign up
@@ -183,15 +182,60 @@ function SingupPage({ user, token, onSubmit }) {
         const authUser = res;
         // Update stateContext with the auth user
         stateContext.updateState("user", authUser);
+
+        // Initialize the entire application
+        // Added Deparment data
+        const departmentData = async () => {
+          const data = {
+            companyName: "Pulchowk Campus",
+            companyWebsite: "https://" + "pcampus.edu.np",
+            companyLogo: null,
+            administratorEmail:
+              stateContext.state.user && stateContext.state.user.email,
+          };
+          //Send the PUT request
+          try {
+            const response = await api.company.createOne(data);
+            console.log(response);
+            // if (companyLogo) {
+            //   stateContext.updateState("logo", companyLogo);
+            // }
+          } catch (error) {
+            console.log(error);
+          }
+        };
+
+        // Added Department names and roles
+        const fillDepartmentNamesAndRoles = async () => {
+          const data = [
+            { departmentName: "Electronics" },
+            { departmentName: "Computer" },
+          ];
+          await api.department.createMany(data);
+          await api.role.createMany([
+            { roleTitle: "Teacher" },
+            { roleTitle: "Staff" },
+          ]);
+        };
+
+        const initializeData = async () => {
+          await departmentData();
+          await fillDepartmentNamesAndRoles();
+
+          navigate("/dashboard", { replace: true });
+        };
+
+        initializeData();
       }
 
-      if (onSubmit) {
-        onSubmit();
-      }
+      // if (onSubmit) {
+      //   onSubmit();
+      // }
     } catch (err) {
       console.log(err);
     }
   };
+
   return (
     <div className="sign-up-body">
       <div className="sign-up-container">
@@ -259,7 +303,7 @@ function SingupPage({ user, token, onSubmit }) {
           <Constraint text={"Must match"} passed={validators.match} />
 
           <button disabled={disableButton()} className="create-account-button">
-           {user ? "Activate" : "Get started"}
+            {user ? "Activate" : "Get started"}
           </button>
         </form>
       </div>
