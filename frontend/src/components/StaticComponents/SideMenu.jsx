@@ -63,9 +63,9 @@ function CustomizedListItem(props) {
 
 const items = [
   { name: "Home", menuItem: "home" },
-  { name: "My Info", menuItem: "myinfo" },
+  // { name: "My Info", menuItem: "myinfo" },
   { name: "People", menuItem: "people" },
-  { name: "Time off", menuItem: "timeoff" },
+  // { name: "Time off", menuItem: "timeoff" },
  // { name: "Reporting", menuItem: "reporting" },
 ];
 
@@ -137,7 +137,7 @@ export default function SideMenu({ style, onSelect }) {
               />
             );
           })}
-            {(isAdmin || isManager) && (
+            {/* {(isAdmin || isManager) && (
             <>
               <CustomizedListItem
                 primary={"Surveys"}
@@ -163,7 +163,7 @@ export default function SideMenu({ style, onSelect }) {
               selected={selectedIndex === 6}
               handleListItemClick={handleListItemClick}
             />
-          )}
+          )} */}
         </List>
       </Box>
       <Box>

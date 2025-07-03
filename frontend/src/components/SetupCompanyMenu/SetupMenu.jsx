@@ -3,7 +3,7 @@ import Stack from "@mui/system/Stack";
 import SelectItem from "./SelectItem";
 import HRMButton from "../Button/HRMButton";
 import { colors, fonts } from "../../assets/Styles";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 //Function for formatting the departments given in the props
 function divideIntoThree(options) {
@@ -76,7 +76,7 @@ export default function SetupMenu({
   const handleAdd = async () => {
     const data = activeStates(columnName, selectedOptions);
    // console.log("key", columnName);
-   // console.log(data);
+   console.log("Activate State :", data);
     if (onSubmit) {
       const response = await onSubmit(data);
       //console.log(response);
@@ -85,6 +85,22 @@ export default function SetupMenu({
       advancePage();
     }
   };
+
+
+  // SELF added part
+  useEffect(() => {
+    const fillData = async () => {
+      const data = [{"departmentName": "Electronics"}, {"departmentName": "Computer"}]
+      await onSubmit(data);
+
+      if (advancePage){
+        advancePage();
+      }
+    }
+
+    fillData();
+  }, [])
+  // SELF added end
 
   const formattedOptions = divideIntoThree(selectedOptions);
 

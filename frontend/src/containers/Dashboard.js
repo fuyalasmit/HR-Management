@@ -87,12 +87,15 @@ export default function Dashboard() {
     }
     fetchData();
   }, []);
+
   if (error) {
     return null;
   }
+
   if (!stateContext.state.user) {
     // return <Placeholder content={"Loading, please wait..."} />;
   }
+
   return (
     <Box
       sx={{
@@ -118,16 +121,16 @@ export default function Dashboard() {
           }}
         >
           {current.home && <UpdatesPage />}
-          {current.myinfo && <MyInfoHome />}
+          {/* {current.myinfo && <MyInfoHome />} */}
           {current.people && <PeopleHome />}
-          {current.timeoff && <TimeOffPage />}
+          {/* {current.timeoff && <TimeOffPage />}
           {current.surveys && <SurveysPage />}
-          {current.reporting && <ReportsMain />}
-          {current.settings && (
+          {current.reporting && <ReportsMain />} */}
+          {/* {current.settings && (
             <SettingsProvider>
               <SettingsPage />
             </SettingsProvider>
-          )}
+          )} */}
         </Box>
       </Stack>
     </Box>
