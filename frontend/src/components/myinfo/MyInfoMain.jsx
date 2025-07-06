@@ -7,9 +7,10 @@ import { Box } from "@mui/material";
 import StateContext from "../../context/StateContext";
 import NoContentComponent from "../PeopleComponents/NoContentComponent";
 
-export default function MyInfoMain({style, onClickEdit}) {
+export default function MyInfoMain({style, onClickEdit, employee: DefaultEmployee}) {
   const {state} = useContext(StateContext);
-  const employee = state.employee;
+  const employee = DefaultEmployee || state.employee;
+
 
   if (!employee) {
     return <NoContentComponent>

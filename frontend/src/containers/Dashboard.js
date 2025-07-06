@@ -124,7 +124,7 @@ export default function Dashboard() {
           }}
         >
           {current.home && <UpdatesPage />}
-          {/* {current.myinfo && <MyInfoHome />} */}
+          {current.myinfo && <MyInfoHome />}
           {current.people && <PeopleHome />}
           {/* {current.timeoff && <TimeOffPage />} */}
           {current.surveys && <SurveysPage />}

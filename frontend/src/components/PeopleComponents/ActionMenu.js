@@ -13,6 +13,7 @@ export default function ActionMenu({ actions, disableMenu }) {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
+    event.stopPropagation(); // Prevent row click
     setAnchorEl(event.currentTarget);
   };
   const handleClose = () => {
@@ -35,15 +36,20 @@ export default function ActionMenu({ actions, disableMenu }) {
         id="basic-menu"
         anchorEl={anchorEl}
         open={open}
-        onClose={handleClose}
+        onClose={(event) => {
+          if (event) event.stopPropagation();
+          handleClose();
+        }}
         MenuListProps={{
           "aria-labelledby": "basic-button",
+          onClick: (event) => event.stopPropagation(), // Prevent row click from menu clicks
         }}
       >
         {actions.map((item) => {
           return (
             <MenuItem
-              onClick={() => {
+              onClick={(event) => {
+                event.stopPropagation(); // Prevent row click
                 handleClose();
                 item.action();
               }}

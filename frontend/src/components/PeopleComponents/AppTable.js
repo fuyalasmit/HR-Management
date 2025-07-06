@@ -90,10 +90,10 @@ const getColumnName = (data) => {
 };
 
 // Utility function to create a TableRow.
-function CreateTableRow(headCell, headCellIds, row, rowIndex, handleSelection) {
+function CreateTableRow(headCell, headCellIds, row, rowIndex, handleSelection, handleRowClick) {
   if (row.cells) {
     return (
-      <TableRow tabIndex={-1} key={rowIndex}>
+      <TableRow tabIndex={-1} key={rowIndex} sx={{ cursor: "pointer" }} onClick={() => handleRowClick(row)}>
         {row.cells.map((cell, index) => {
           if (headCell[index].visible) {
             return cell;
@@ -103,7 +103,7 @@ function CreateTableRow(headCell, headCellIds, row, rowIndex, handleSelection) {
     );
   }
   return (
-    <TableRow tabIndex={-1} key={rowIndex}>
+    <TableRow tabIndex={-1} key={rowIndex} sx={{ cursor: "pointer" }} onClick={() => handleRowClick(row)}>
       {headCellIds.map((key, index) => {
         if (row[key]) {
           return (
@@ -229,6 +229,7 @@ export default function AppTable(props) {
     handleSelection,
     loading,
     showActionHeader,
+    handleRowClick,
   } = props;
   const [order, setOrder] = useState("asc");
   const [orderBy, setOrderBy] = useState("name");
@@ -313,7 +314,8 @@ export default function AppTable(props) {
                   columnNames,
                   row,
                   index,
-                  handleSelection
+                  handleSelection,
+                  handleRowClick
                 );
               })}
             </TableBody>

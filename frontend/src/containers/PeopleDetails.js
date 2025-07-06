@@ -13,6 +13,9 @@ import AppTabs from "../components/PeopleComponents/AppTabs";
 import ActionMenu from "../components/PeopleComponents/ActionMenu";
 import { formatPhoneNumber } from "../assets/utils";
 import StateContext from "../context/StateContext";
+import { useNavigate } from "react-router-dom";
+import MyInfoMain from "../components/myinfo/MyInfoMain";
+import EmployeeForm from "../components/PeopleComponents/EmployeeForm";
 /**
  * Expected headCell format for the table. Each object represents a
  * column. Note, AppTable implementation depends on this format to make the
@@ -152,6 +155,7 @@ const tabItems = ({
   hasTeam,
   team,
   terminated,
+  handleRowClick,
 }) => {
   const tabs = [
     {
@@ -164,6 +168,7 @@ const tabItems = ({
           rowsPerPage={rowsPerPage}
           loading={loading}
           showActionHeader={showActionHeader}
+          handleRowClick={handleRowClick}
         />
       ),
     },
@@ -180,6 +185,7 @@ const tabItems = ({
           rowsPerPage={rowsPerPage}
           loading={loading}
           showActionHeader={true}
+          handleRowClick={handleRowClick}
         />
       ),
     };
@@ -197,6 +203,7 @@ const tabItems = ({
           rowsPerPage={rowsPerPage}
           loading={loading}
           showActionHeader={false}
+          handleRowClick={handleRowClick}
         />
       ),
     };
@@ -221,17 +228,18 @@ export default function People({
   const [myTeam, setMyTeam] = useState([]);
   const [terminated, setTerminated] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [viewDetails, setViewDetails] = useState(false);
+  const [selectedEmployee, setSelectedEmployee] = useState(null);
+  // const [editEmployee, setEditEmployee] = useState(false);
+  const navigate = useNavigate();
   const isAdmin =
     stateContext.state.user && stateContext.state.user.permission.id === 1;
   const headCells = isAdmin ? tableView.admin : tableView.others;
-  //permission.id 1 is for admin, 2 for managers, 3 for employees
   const hasTeam =
     stateContext.state.user && stateContext.state.user.permission.id < 3;
-  //Get the employee id of the system user if any. Note employee can be null.
   const empId = stateContext.state.employee
     ? stateContext.state.employee.empId
     : -1;
-  // Get the permission id of the system user
   const permissionId = stateContext.state.user
     ? stateContext.state.user.permission.id
     : -1;
@@ -249,10 +257,8 @@ export default function People({
 
   useEffect(() => {
     async function fetchData() {
-      // You can await here
       try {
         if (stateContext.state.pdEmployees) {
-          //pd stands for people details
           setEmployees(stateContext.state.pdEmployees);
           setLoading(false);
         } else {
@@ -295,6 +301,24 @@ export default function People({
     }
     fetchData();
   }, []);
+
+  const handleRowClick = (row) => {
+    setSelectedEmployee(row);
+    setViewDetails(true);
+  };
+
+  const handleGoBack = () => {
+    setViewDetails(false);
+    setSelectedEmployee(null);
+  };
+
+  // Find the original employee object by empId before editing
+  const handleEditFromDetails = () => {
+    if (!selectedEmployee) return;
+    // Try to find the original employee from the employees array (raw data)
+    const original = employees.find(e => e.empId === selectedEmployee.empId);
+    handleEdit(original || selectedEmployee);
+  };
 
   return (
     <Stack sx={{ minWidth: window.innerWidth < 1550 ? 1100 : 1350 }}>
@@ -360,7 +384,34 @@ export default function People({
           mb: 5,
         }}
       >
-        {
+        {viewDetails ? (
+          <Box>
+            <Button
+              variant="contained"
+              disableElevation
+              onClick={handleGoBack}
+              sx={{
+                width: "auto",
+                height: "34px",
+                border: "1px solid #D0D5DD",
+                backgroundColor: "#FFFFFF",
+                color: "#000000",
+                fontSize: 13,
+                fontWeight: 400,
+                fontFamily: "Inter",
+                textTransform: "none",
+                mb: 2,
+                "&:hover": {
+                  backgroundColor: "#F5F5F5",
+                  border: "1px solid #D0D5DD",
+                },
+              }}
+            >
+              Go back
+            </Button>
+            <MyInfoMain employee={selectedEmployee} onClickEdit={handleEditFromDetails} />
+          </Box>
+        ) : (
           <AppTabs
             items={tabItems({
               isAdmin,
@@ -371,9 +422,10 @@ export default function People({
               team: myTeam,
               headCells,
               terminated,
+              handleRowClick,
             })}
           />
-        }
+        )}
       </Stack>
     </Stack>
   );
