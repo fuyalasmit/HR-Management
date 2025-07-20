@@ -32,7 +32,8 @@
     "emergencyContactName": "Staffard Grimmert",
     "emergencyContactRelationship": "Step-mother",
     "emergencyContactPhoneNumber": "6473779554",
-    "effectiveDate": "2017-02-05T14:33:40.773Z"
+    "effectiveDate": "2017-02-05T14:33:40.773Z",
+    "position": "Senior Instructor"
   },
   {
     "empId": 2,
@@ -67,7 +68,8 @@
     "emergencyContactName": "Ada Culbard",
     "emergencyContactRelationship": "Step-mother",
     "emergencyContactPhoneNumber": "3062303182",
-    "effectiveDate": "2020-11-23T19:54:03.145Z"
+    "effectiveDate": "2020-11-23T19:54:03.145Z",
+    "position": "Staff"
   },
   {
     "empId": 3,
@@ -102,7 +104,8 @@
     "emergencyContactName": "Jocelin Zuanelli",
     "emergencyContactRelationship": "Father",
     "emergencyContactPhoneNumber": "9054555525",
-    "effectiveDate": "2014-08-19T04:34:16.949Z"
+    "effectiveDate": "2014-08-19T04:34:16.949Z",
+    "position": "Instructor"
   },
   {
     "empId": 4,
@@ -137,7 +140,8 @@
     "emergencyContactName": "Bidget Corthes",
     "emergencyContactRelationship": "Mother",
     "emergencyContactPhoneNumber": "5192801008",
-    "effectiveDate": "2015-10-05T08:38:03.059Z"
+    "effectiveDate": "2015-10-05T08:38:03.059Z",
+    "position": "Senior Instructor"
   },
   {
     "empId": 5,
@@ -172,7 +176,8 @@
     "emergencyContactName": "Anne Swapp",
     "emergencyContactRelationship": "Father",
     "emergencyContactPhoneNumber": "5198217183",
-    "effectiveDate": "2013-09-15T06:25:29.350Z"
+    "effectiveDate": "2013-09-15T06:25:29.350Z",
+    "position": "Staff"
   },
   {
     "empId": 6,
@@ -207,7 +212,8 @@
     "emergencyContactName": "Carrissa Riggeard",
     "emergencyContactRelationship": "Auntie",
     "emergencyContactPhoneNumber": "5067244414",
-    "effectiveDate": "2011-07-13T23:12:02.823Z"
+    "effectiveDate": "2011-07-13T23:12:02.823Z",
+    "position": "Assistant Professor"
   },
   {
     "empId": 7,
@@ -242,7 +248,8 @@
     "emergencyContactName": "Stephana Mudge",
     "emergencyContactRelationship": "Auntie",
     "emergencyContactPhoneNumber": "4507568618",
-    "effectiveDate": "2012-09-15T19:45:25.796Z"
+    "effectiveDate": "2012-09-15T19:45:25.796Z",
+    "position": "Staff"
   },
   {
     "empId": 8,
@@ -277,7 +284,8 @@
     "emergencyContactName": "Anna-diane Chanter",
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "6133886700",
-    "effectiveDate": "2017-07-11T14:00:50.889Z"
+    "effectiveDate": "2017-07-11T14:00:50.889Z",
+    "position": "Lecturer"
   },
   {
     "empId": 9,
@@ -312,7 +320,8 @@
     "emergencyContactName": "Blinnie Toupe",
     "emergencyContactRelationship": "Father",
     "emergencyContactPhoneNumber": "3067366774",
-    "effectiveDate": "2015-03-19T05:09:12.740Z"
+    "effectiveDate": "2015-03-19T05:09:12.740Z",
+    "position": "Senior Instructor"
   },
   {
     "empId": 10,
@@ -347,7 +356,8 @@
     "emergencyContactName": "Bryon Troop",
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "7097307544",
-    "effectiveDate": "2015-04-07T10:51:37.821Z"
+    "effectiveDate": "2015-04-07T10:51:37.821Z",
+    "position": "Senior Instructor"
   },
   {
     "empId": 11,
@@ -382,7 +392,8 @@
     "emergencyContactName": "Odey Joel",
     "emergencyContactRelationship": "Auntie",
     "emergencyContactPhoneNumber": "5879279754",
-    "effectiveDate": "2011-01-16T00:39:54.968Z"
+    "effectiveDate": "2011-01-16T00:39:54.968Z",
+    "position": "Senior Instructor"
   },
   {
     "empId": 12,
@@ -417,7 +428,8 @@
     "emergencyContactName": "Franky Renwick",
     "emergencyContactRelationship": "Uncle",
     "emergencyContactPhoneNumber": "4034594789",
-    "effectiveDate": "2015-02-24T10:32:39.696Z"
+    "effectiveDate": "2015-02-24T10:32:39.696Z",
+    "position": "Instructor"
   },
   {
     "empId": 13,
@@ -452,7 +464,8 @@
     "emergencyContactName": "Glenda Provost",
     "emergencyContactRelationship": "Step-mother",
     "emergencyContactPhoneNumber": "5143603634",
-    "effectiveDate": "2011-01-18T09:48:40.664Z"
+    "effectiveDate": "2011-01-18T09:48:40.664Z",
+    "position": "Senior Instructor"
   },
   {
     "empId": 14,
@@ -487,7 +500,8 @@
     "emergencyContactName": "Camey Blanque",
     "emergencyContactRelationship": "Daughter",
     "emergencyContactPhoneNumber": "4169343274",
-    "effectiveDate": "2013-11-06T17:59:10.219Z"
+    "effectiveDate": "2013-11-06T17:59:10.219Z",
+    "position": "Lecturer"
   },
   {
     "empId": 15,
@@ -522,7 +536,8 @@
     "emergencyContactName": "Sky Beautyman",
     "emergencyContactRelationship": "Son",
     "emergencyContactPhoneNumber": "2045441452",
-    "effectiveDate": "2019-02-27T07:27:06.810Z"
+    "effectiveDate": "2019-02-27T07:27:06.810Z",
+    "position": "Associate Professor"
   },
   {
     "empId": 16,
@@ -557,7 +572,8 @@
     "emergencyContactName": "Thane Hradsky",
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "9025458366",
-    "effectiveDate": "2010-02-14T06:18:14.996Z"
+    "effectiveDate": "2010-02-14T06:18:14.996Z",
+    "position": "Staff"
   },
   {
     "empId": 17,
@@ -592,7 +608,8 @@
     "emergencyContactName": "Kari Stanistreet",
     "emergencyContactRelationship": "Uncle",
     "emergencyContactPhoneNumber": "4032285928",
-    "effectiveDate": "2015-03-06T19:26:31.235Z"
+    "effectiveDate": "2015-03-06T19:26:31.235Z",
+    "position": "Associate Professor"
   },
   {
     "empId": 18,
@@ -627,7 +644,8 @@
     "emergencyContactName": "Thomasa D' Angelo",
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "2503109866",
-    "effectiveDate": "2015-06-19T07:25:10.985Z"
+    "effectiveDate": "2015-06-19T07:25:10.985Z",
+    "position": "Instructor"
   },
   {
     "empId": 19,
@@ -662,7 +680,8 @@
     "emergencyContactName": "Jonis Strivens",
     "emergencyContactRelationship": "Daughter",
     "emergencyContactPhoneNumber": "7807498217",
-    "effectiveDate": "2010-04-02T18:04:44.086Z"
+    "effectiveDate": "2010-04-02T18:04:44.086Z",
+    "position": "Instructor"
   },
   {
     "empId": 20,
@@ -697,7 +716,8 @@
     "emergencyContactName": "Aubrey Maxworthy",
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "2043202578",
-    "effectiveDate": "2014-10-02T13:11:06.659Z"
+    "effectiveDate": "2014-10-02T13:11:06.659Z",
+    "position": "Professor"
   },
   {
     "empId": 21,
@@ -732,7 +752,8 @@
     "emergencyContactName": "Patience McGlade",
     "emergencyContactRelationship": "Mother",
     "emergencyContactPhoneNumber": "4163781194",
-    "effectiveDate": "2018-04-07T02:02:15.389Z"
+    "effectiveDate": "2018-04-07T02:02:15.389Z",
+    "position": "Associate Professor"
   },
   {
     "empId": 22,
@@ -767,7 +788,8 @@
     "emergencyContactName": "Jourdan Merriday",
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "5196545733",
-    "effectiveDate": "2015-04-30T06:14:25.740Z"
+    "effectiveDate": "2015-04-30T06:14:25.740Z",
+    "position": "Professor"
   },
   {
     "empId": 23,
@@ -802,7 +824,8 @@
     "emergencyContactName": "Claretta Meller",
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "4165767947",
-    "effectiveDate": "2020-12-14T23:06:41.848Z"
+    "effectiveDate": "2020-12-14T23:06:41.848Z",
+    "position": "Instructor"
   },
   {
     "empId": 24,
@@ -837,7 +860,8 @@
     "emergencyContactName": "Chiquita Dignall",
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "4185056796",
-    "effectiveDate": "2011-09-21T17:12:59.624Z"
+    "effectiveDate": "2011-09-21T17:12:59.624Z",
+    "position": "Associate Professor"
   },
   {
     "empId": 25,
@@ -872,7 +896,8 @@
     "emergencyContactName": "Davita Shillinglaw",
     "emergencyContactRelationship": "Step-mother",
     "emergencyContactPhoneNumber": "3067858519",
-    "effectiveDate": "2018-04-12T14:09:34.477Z"
+    "effectiveDate": "2018-04-12T14:09:34.477Z",
+    "position": "Lecturer"
   },
   {
     "empId": 26,
@@ -907,7 +932,8 @@
     "emergencyContactName": "Napoleon Flemyng",
     "emergencyContactRelationship": "Son",
     "emergencyContactPhoneNumber": "4165405742",
-    "effectiveDate": "2017-01-25T13:02:28.291Z"
+    "effectiveDate": "2017-01-25T13:02:28.291Z",
+    "position": "Assistant Professor"
   },
   {
     "empId": 27,
@@ -942,7 +968,8 @@
     "emergencyContactName": "Lilyan Redmell",
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "4509645714",
-    "effectiveDate": "2019-05-18T23:14:00.695Z"
+    "effectiveDate": "2019-05-18T23:14:00.695Z",
+    "position": "Professor"
   },
   {
     "empId": 28,
@@ -977,7 +1004,8 @@
     "emergencyContactName": "Egor Luppitt",
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "2044643724",
-    "effectiveDate": "2012-05-28T09:37:26.286Z"
+    "effectiveDate": "2012-05-28T09:37:26.286Z",
+    "position": "Associate Professor"
   },
   {
     "empId": 29,
@@ -1012,7 +1040,8 @@
     "emergencyContactName": "Pammi Kew",
     "emergencyContactRelationship": "Mother",
     "emergencyContactPhoneNumber": "5198029333",
-    "effectiveDate": "2012-11-16T22:22:30.184Z"
+    "effectiveDate": "2012-11-16T22:22:30.184Z",
+    "position": "Lecturer"
   },
   {
     "empId": 30,
@@ -1047,7 +1076,8 @@
     "emergencyContactName": "Bartholomeo Pankettman",
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "6139973313",
-    "effectiveDate": "2012-03-09T01:07:48.294Z"
+    "effectiveDate": "2012-03-09T01:07:48.294Z",
+    "position": "Assistant Professor"
   },
   {
     "empId": 31,
@@ -1082,7 +1112,8 @@
     "emergencyContactName": "Brittne McGarvie",
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "9026371893",
-    "effectiveDate": "2016-04-10T00:06:02.044Z"
+    "effectiveDate": "2016-04-10T00:06:02.044Z",
+    "position": "Assistant Professor"
   },
   {
     "empId": 32,
@@ -1117,7 +1148,8 @@
     "emergencyContactName": "Julio Caddies",
     "emergencyContactRelationship": "Step-father",
     "emergencyContactPhoneNumber": "8196401157",
-    "effectiveDate": "2010-02-22T09:43:57.811Z"
+    "effectiveDate": "2010-02-22T09:43:57.811Z",
+    "position": "Associate Professor"
   },
   {
     "empId": 33,
@@ -1152,7 +1184,8 @@
     "emergencyContactName": "Kirsteni Wiz",
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "4189579235",
-    "effectiveDate": "2010-08-27T07:34:17.250Z"
+    "effectiveDate": "2010-08-27T07:34:17.250Z",
+    "position": "Instructor"
   },
   {
     "empId": 34,
@@ -1187,7 +1220,8 @@
     "emergencyContactName": "Brig Dinnis",
     "emergencyContactRelationship": "Son",
     "emergencyContactPhoneNumber": "3065126957",
-    "effectiveDate": "2014-01-11T07:43:47.703Z"
+    "effectiveDate": "2014-01-11T07:43:47.703Z",
+    "position": "Senior Instructor"
   },
   {
     "empId": 35,
@@ -1222,7 +1256,8 @@
     "emergencyContactName": "Helen-elizabeth Gallihaulk",
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "5199169947",
-    "effectiveDate": "2020-10-10T13:39:44.181Z"
+    "effectiveDate": "2020-10-10T13:39:44.181Z",
+    "position": "Professor"
   },
   {
     "empId": 36,
@@ -1257,7 +1292,8 @@
     "emergencyContactName": "Nessie Eley",
     "emergencyContactRelationship": "Step-father",
     "emergencyContactPhoneNumber": "6474939972",
-    "effectiveDate": "2016-01-11T05:20:51.083Z"
+    "effectiveDate": "2016-01-11T05:20:51.083Z",
+    "position": "Associate Professor"
   },
   {
     "empId": 37,
@@ -1292,7 +1328,8 @@
     "emergencyContactName": "Simona Wrate",
     "emergencyContactRelationship": "Mother",
     "emergencyContactPhoneNumber": "4037406301",
-    "effectiveDate": "2018-07-12T19:52:37.634Z"
+    "effectiveDate": "2018-07-12T19:52:37.634Z",
+    "position": "Senior Instructor"
   },
   {
     "empId": 38,
@@ -1327,7 +1364,8 @@
     "emergencyContactName": "Maxy Kibblewhite",
     "emergencyContactRelationship": "Uncle",
     "emergencyContactPhoneNumber": "2048916880",
-    "effectiveDate": "2015-07-19T00:18:33.741Z"
+    "effectiveDate": "2015-07-19T00:18:33.741Z",
+    "position": "Lecturer"
   },
   {
     "empId": 39,
@@ -1362,7 +1400,8 @@
     "emergencyContactName": "Raviv Croan",
     "emergencyContactRelationship": "Step-mother",
     "emergencyContactPhoneNumber": "9057619096",
-    "effectiveDate": "2014-01-22T13:48:05.580Z"
+    "effectiveDate": "2014-01-22T13:48:05.580Z",
+    "position": "Associate Professor"
   },
   {
     "empId": 40,
@@ -1397,7 +1436,8 @@
     "emergencyContactName": "Kariotta Badder",
     "emergencyContactRelationship": "Step-father",
     "emergencyContactPhoneNumber": "2044033412",
-    "effectiveDate": "2020-08-08T04:51:37.289Z"
+    "effectiveDate": "2020-08-08T04:51:37.289Z",
+    "position": "Lecturer"
   },
   {
     "empId": 41,
@@ -1432,7 +1472,8 @@
     "emergencyContactName": "Janos Skeldon",
     "emergencyContactRelationship": "Father",
     "emergencyContactPhoneNumber": "4503709605",
-    "effectiveDate": "2020-05-05T11:23:20.612Z"
+    "effectiveDate": "2020-05-05T11:23:20.612Z",
+    "position": "Associate Professor"
   },
   {
     "empId": 42,
@@ -1467,7 +1508,8 @@
     "emergencyContactName": "Ivette Espinho",
     "emergencyContactRelationship": "Father",
     "emergencyContactPhoneNumber": "5144098973",
-    "effectiveDate": "2013-03-28T16:53:06.648Z"
+    "effectiveDate": "2013-03-28T16:53:06.648Z",
+    "position": "Associate Professor"
   },
   {
     "empId": 43,
@@ -1502,7 +1544,8 @@
     "emergencyContactName": "Letisha Borrell",
     "emergencyContactRelationship": "Son",
     "emergencyContactPhoneNumber": "5195966777",
-    "effectiveDate": "2014-06-28T13:22:14.710Z"
+    "effectiveDate": "2014-06-28T13:22:14.710Z",
+    "position": "Associate Professor"
   },
   {
     "empId": 44,
@@ -1537,7 +1580,8 @@
     "emergencyContactName": "Waldemar Persicke",
     "emergencyContactRelationship": "Daughter",
     "emergencyContactPhoneNumber": "7059291066",
-    "effectiveDate": "2015-07-06T23:09:12.100Z"
+    "effectiveDate": "2015-07-06T23:09:12.100Z",
+    "position": "Staff"
   },
   {
     "empId": 45,
@@ -1572,7 +1616,8 @@
     "emergencyContactName": "Sybil Stanlack",
     "emergencyContactRelationship": "Son",
     "emergencyContactPhoneNumber": "2892909926",
-    "effectiveDate": "2011-07-31T14:42:26.719Z"
+    "effectiveDate": "2011-07-31T14:42:26.719Z",
+    "position": "Associate Professor"
   },
   {
     "empId": 46,
@@ -1607,7 +1652,8 @@
     "emergencyContactName": "Cesaro Leopold",
     "emergencyContactRelationship": "Auntie",
     "emergencyContactPhoneNumber": "6042461939",
-    "effectiveDate": "2011-02-11T13:52:28.113Z"
+    "effectiveDate": "2011-02-11T13:52:28.113Z",
+    "position": "Senior Instructor"
   },
   {
     "empId": 47,
@@ -1642,7 +1688,8 @@
     "emergencyContactName": "Alleyn Durward",
     "emergencyContactRelationship": "Step-father",
     "emergencyContactPhoneNumber": "2049062398",
-    "effectiveDate": "2017-10-06T23:39:59.638Z"
+    "effectiveDate": "2017-10-06T23:39:59.638Z",
+    "position": "Staff"
   },
   {
     "empId": 48,
@@ -1677,7 +1724,8 @@
     "emergencyContactName": "Chicky Fenelon",
     "emergencyContactRelationship": "Auntie",
     "emergencyContactPhoneNumber": "5792218899",
-    "effectiveDate": "2015-11-06T05:39:15.590Z"
+    "effectiveDate": "2015-11-06T05:39:15.590Z",
+    "position": "Professor"
   },
   {
     "empId": 49,
@@ -1712,7 +1760,8 @@
     "emergencyContactName": "Ruperta Alman",
     "emergencyContactRelationship": "Father",
     "emergencyContactPhoneNumber": "5067759602",
-    "effectiveDate": "2018-07-10T06:22:48.130Z"
+    "effectiveDate": "2018-07-10T06:22:48.130Z",
+    "position": "Assistant Professor"
   },
   {
     "empId": 50,
@@ -1747,7 +1796,8 @@
     "emergencyContactName": "Celine Vedmore",
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "5069281317",
-    "effectiveDate": "2019-01-17T22:59:19.687Z"
+    "effectiveDate": "2019-01-17T22:59:19.687Z",
+    "position": "Professor"
   },
   {
     "empId": 51,
@@ -1782,7 +1832,8 @@
     "emergencyContactName": "Cate Kentwell",
     "emergencyContactRelationship": "Son",
     "emergencyContactPhoneNumber": "5812424147",
-    "effectiveDate": "2020-05-25T22:54:05.491Z"
+    "effectiveDate": "2020-05-25T22:54:05.491Z",
+    "position": "Staff"
   },
   {
     "empId": 52,
@@ -1817,7 +1868,8 @@
     "emergencyContactName": "Kristo Overel",
     "emergencyContactRelationship": "Uncle",
     "emergencyContactPhoneNumber": "3064325728",
-    "effectiveDate": "2016-09-10T04:39:52.883Z"
+    "effectiveDate": "2016-09-10T04:39:52.883Z",
+    "position": "Instructor"
   },
   {
     "empId": 53,
@@ -1852,7 +1904,8 @@
     "emergencyContactName": "Gerardo Aleavy",
     "emergencyContactRelationship": "Auntie",
     "emergencyContactPhoneNumber": "9024594794",
-    "effectiveDate": "2012-02-20T05:53:13.491Z"
+    "effectiveDate": "2012-02-20T05:53:13.491Z",
+    "position": "Assistant Professor"
   },
   {
     "empId": 54,
@@ -1887,7 +1940,8 @@
     "emergencyContactName": "Elane Ivanovic",
     "emergencyContactRelationship": "Father",
     "emergencyContactPhoneNumber": "6477954370",
-    "effectiveDate": "2017-11-27T05:36:31.402Z"
+    "effectiveDate": "2017-11-27T05:36:31.402Z",
+    "position": "Associate Professor"
   },
   {
     "empId": 55,
@@ -1922,7 +1976,8 @@
     "emergencyContactName": "Walker Lightbowne",
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "6479919728",
-    "effectiveDate": "2018-08-03T17:16:15.194Z"
+    "effectiveDate": "2018-08-03T17:16:15.194Z",
+    "position": "Lecturer"
   },
   {
     "empId": 56,
@@ -1957,7 +2012,8 @@
     "emergencyContactName": "Ruggiero Hamilton",
     "emergencyContactRelationship": "Auntie",
     "emergencyContactPhoneNumber": "4167505788",
-    "effectiveDate": "2014-12-10T11:03:03.520Z"
+    "effectiveDate": "2014-12-10T11:03:03.520Z",
+    "position": "Associate Professor"
   },
   {
     "empId": 57,
@@ -1992,7 +2048,8 @@
     "emergencyContactName": "Otha Daunay",
     "emergencyContactRelationship": "Father",
     "emergencyContactPhoneNumber": "8074711611",
-    "effectiveDate": "2019-12-21T12:43:44.116Z"
+    "effectiveDate": "2019-12-21T12:43:44.116Z",
+    "position": "Senior Instructor"
   },
   {
     "empId": 58,
@@ -2027,7 +2084,8 @@
     "emergencyContactName": "Deina Fice",
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "4509607084",
-    "effectiveDate": "2017-04-21T03:55:57.373Z"
+    "effectiveDate": "2017-04-21T03:55:57.373Z",
+    "position": "Assistant Professor"
   },
   {
     "empId": 59,
@@ -2062,7 +2120,8 @@
     "emergencyContactName": "Portia Bauer",
     "emergencyContactRelationship": "Daughter",
     "emergencyContactPhoneNumber": "5066233574",
-    "effectiveDate": "2015-04-26T12:54:03.401Z"
+    "effectiveDate": "2015-04-26T12:54:03.401Z",
+    "position": "Staff"
   },
   {
     "empId": 60,
@@ -2097,7 +2156,8 @@
     "emergencyContactName": "Drugi Bernolet",
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "4503359318",
-    "effectiveDate": "2016-09-11T18:13:25.392Z"
+    "effectiveDate": "2016-09-11T18:13:25.392Z",
+    "position": "Instructor"
   },
   {
     "empId": 61,
@@ -2132,7 +2192,8 @@
     "emergencyContactName": "Holly Kettlestringe",
     "emergencyContactRelationship": "Son",
     "emergencyContactPhoneNumber": "5199657891",
-    "effectiveDate": "2014-11-26T05:26:32.148Z"
+    "effectiveDate": "2014-11-26T05:26:32.148Z",
+    "position": "Professor"
   },
   {
     "empId": 62,
@@ -2167,7 +2228,8 @@
     "emergencyContactName": "Rene Attiwill",
     "emergencyContactRelationship": "Step-father",
     "emergencyContactPhoneNumber": "5875804763",
-    "effectiveDate": "2019-06-13T19:42:31.657Z"
+    "effectiveDate": "2019-06-13T19:42:31.657Z",
+    "position": "Associate Professor"
   },
   {
     "empId": 63,
@@ -2202,7 +2264,8 @@
     "emergencyContactName": "Antonina Daouze",
     "emergencyContactRelationship": "Father",
     "emergencyContactPhoneNumber": "7808865238",
-    "effectiveDate": "2014-05-15T11:40:23.135Z"
+    "effectiveDate": "2014-05-15T11:40:23.135Z",
+    "position": "Staff"
   },
   {
     "empId": 64,
@@ -2237,7 +2300,8 @@
     "emergencyContactName": "Zebadiah Spellworth",
     "emergencyContactRelationship": "Uncle",
     "emergencyContactPhoneNumber": "6137996699",
-    "effectiveDate": "2014-12-03T20:06:38.736Z"
+    "effectiveDate": "2014-12-03T20:06:38.736Z",
+    "position": "Instructor"
   },
   {
     "empId": 65,
@@ -2272,7 +2336,8 @@
     "emergencyContactName": "Gabriel Shaughnessy",
     "emergencyContactRelationship": "Son",
     "emergencyContactPhoneNumber": "5144641095",
-    "effectiveDate": "2015-11-15T13:53:36.501Z"
+    "effectiveDate": "2015-11-15T13:53:36.501Z",
+    "position": "Professor"
   },
   {
     "empId": 66,
@@ -2307,7 +2372,8 @@
     "emergencyContactName": "Reba Teesdale",
     "emergencyContactRelationship": "Son",
     "emergencyContactPhoneNumber": "4188558858",
-    "effectiveDate": "2019-09-03T23:35:38.219Z"
+    "effectiveDate": "2019-09-03T23:35:38.219Z",
+    "position": "Senior Instructor"
   },
   {
     "empId": 67,
@@ -2342,7 +2408,8 @@
     "emergencyContactName": "Powell Botting",
     "emergencyContactRelationship": "Daughter",
     "emergencyContactPhoneNumber": "9057332380",
-    "effectiveDate": "2012-07-16T23:05:25.053Z"
+    "effectiveDate": "2012-07-16T23:05:25.053Z",
+    "position": "Staff"
   },
   {
     "empId": 68,
@@ -2377,7 +2444,8 @@
     "emergencyContactName": "Frankie Callcott",
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "4502755885",
-    "effectiveDate": "2018-09-12T07:17:31.206Z"
+    "effectiveDate": "2018-09-12T07:17:31.206Z",
+    "position": "Professor"
   },
   {
     "empId": 69,
@@ -2412,7 +2480,8 @@
     "emergencyContactName": "Charita Bridge",
     "emergencyContactRelationship": "Uncle",
     "emergencyContactPhoneNumber": "2897763176",
-    "effectiveDate": "2010-04-19T04:57:39.839Z"
+    "effectiveDate": "2010-04-19T04:57:39.839Z",
+    "position": "Professor"
   },
   {
     "empId": 70,
@@ -2447,7 +2516,8 @@
     "emergencyContactName": "Tore Castelyn",
     "emergencyContactRelationship": "Auntie",
     "emergencyContactPhoneNumber": "7807514803",
-    "effectiveDate": "2018-12-31T12:14:46.715Z"
+    "effectiveDate": "2018-12-31T12:14:46.715Z",
+    "position": "Staff"
   },
   {
     "empId": 71,
@@ -2482,7 +2552,8 @@
     "emergencyContactName": "Waldon Sholl",
     "emergencyContactRelationship": "Auntie",
     "emergencyContactPhoneNumber": "2499916038",
-    "effectiveDate": "2014-04-10T01:23:03.619Z"
+    "effectiveDate": "2014-04-10T01:23:03.619Z",
+    "position": "Associate Professor"
   },
   {
     "empId": 72,
@@ -2517,7 +2588,8 @@
     "emergencyContactName": "Wilbur Filipic",
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "8678982238",
-    "effectiveDate": "2019-03-18T01:05:03.005Z"
+    "effectiveDate": "2019-03-18T01:05:03.005Z",
+    "position": "Associate Professor"
   },
   {
     "empId": 73,
@@ -2552,7 +2624,8 @@
     "emergencyContactName": "Gail Huddles",
     "emergencyContactRelationship": "Auntie",
     "emergencyContactPhoneNumber": "4162364355",
-    "effectiveDate": "2020-03-06T22:05:21.901Z"
+    "effectiveDate": "2020-03-06T22:05:21.901Z",
+    "position": "Staff"
   },
   {
     "empId": 74,
@@ -2587,7 +2660,8 @@
     "emergencyContactName": "Kinsley Clewes",
     "emergencyContactRelationship": "Step-father",
     "emergencyContactPhoneNumber": "6133664039",
-    "effectiveDate": "2015-07-06T03:40:06.129Z"
+    "effectiveDate": "2015-07-06T03:40:06.129Z",
+    "position": "Senior Instructor"
   },
   {
     "empId": 75,
@@ -2622,7 +2696,8 @@
     "emergencyContactName": "Rhonda Roskelley",
     "emergencyContactRelationship": "Daughter",
     "emergencyContactPhoneNumber": "4185195473",
-    "effectiveDate": "2015-09-29T17:07:42.476Z"
+    "effectiveDate": "2015-09-29T17:07:42.476Z",
+    "position": "Associate Professor"
   },
   {
     "empId": 76,
@@ -2657,7 +2732,8 @@
     "emergencyContactName": "Irene Barrat",
     "emergencyContactRelationship": "Uncle",
     "emergencyContactPhoneNumber": "5194129431",
-    "effectiveDate": "2017-06-18T03:20:39.018Z"
+    "effectiveDate": "2017-06-18T03:20:39.018Z",
+    "position": "Professor"
   },
   {
     "empId": 77,
@@ -2692,7 +2768,8 @@
     "emergencyContactName": "Ario Cainey",
     "emergencyContactRelationship": "Uncle",
     "emergencyContactPhoneNumber": "5194403616",
-    "effectiveDate": "2019-08-20T21:49:18.831Z"
+    "effectiveDate": "2019-08-20T21:49:18.831Z",
+    "position": "Staff"
   },
   {
     "empId": 78,
@@ -2727,7 +2804,8 @@
     "emergencyContactName": "Lucia Kilmary",
     "emergencyContactRelationship": "Mother",
     "emergencyContactPhoneNumber": "9055492655",
-    "effectiveDate": "2010-08-19T03:11:54.890Z"
+    "effectiveDate": "2010-08-19T03:11:54.890Z",
+    "position": "Staff"
   },
   {
     "empId": 79,
@@ -2762,7 +2840,8 @@
     "emergencyContactName": "Bethina Parkman",
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "5792176858",
-    "effectiveDate": "2020-01-30T05:42:32.433Z"
+    "effectiveDate": "2020-01-30T05:42:32.433Z",
+    "position": "Lecturer"
   },
   {
     "empId": 80,
@@ -2797,7 +2876,8 @@
     "emergencyContactName": "Gert Weatherell",
     "emergencyContactRelationship": "Daughter",
     "emergencyContactPhoneNumber": "8679696528",
-    "effectiveDate": "2017-01-10T05:43:59.547Z"
+    "effectiveDate": "2017-01-10T05:43:59.547Z",
+    "position": "Lecturer"
   },
   {
     "empId": 81,
@@ -2832,7 +2912,8 @@
     "emergencyContactName": "Mellisa Braunes",
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "6138478524",
-    "effectiveDate": "2012-09-07T15:19:33.120Z"
+    "effectiveDate": "2012-09-07T15:19:33.120Z",
+    "position": "Staff"
   },
   {
     "empId": 82,
@@ -2867,7 +2948,8 @@
     "emergencyContactName": "Esteban Cheel",
     "emergencyContactRelationship": "Father",
     "emergencyContactPhoneNumber": "5194751111",
-    "effectiveDate": "2020-06-20T10:07:41.523Z"
+    "effectiveDate": "2020-06-20T10:07:41.523Z",
+    "position": "Professor"
   },
   {
     "empId": 83,
@@ -2902,7 +2984,8 @@
     "emergencyContactName": "Pancho Phlippi",
     "emergencyContactRelationship": "Son",
     "emergencyContactPhoneNumber": "3068395573",
-    "effectiveDate": "2014-04-10T16:20:08.173Z"
+    "effectiveDate": "2014-04-10T16:20:08.173Z",
+    "position": "Assistant Professor"
   },
   {
     "empId": 84,
@@ -2937,7 +3020,8 @@
     "emergencyContactName": "Randal Labram",
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "3063549834",
-    "effectiveDate": "2019-03-27T13:57:52.955Z"
+    "effectiveDate": "2019-03-27T13:57:52.955Z",
+    "position": "Professor"
   },
   {
     "empId": 85,
@@ -2972,7 +3056,8 @@
     "emergencyContactName": "Alf Barringer",
     "emergencyContactRelationship": "Father",
     "emergencyContactPhoneNumber": "2896635350",
-    "effectiveDate": "2012-06-13T09:28:55.566Z"
+    "effectiveDate": "2012-06-13T09:28:55.566Z",
+    "position": "Staff"
   },
   {
     "empId": 86,
@@ -3007,7 +3092,8 @@
     "emergencyContactName": "Marie-ann Perez",
     "emergencyContactRelationship": "Step-father",
     "emergencyContactPhoneNumber": "6137287245",
-    "effectiveDate": "2011-03-11T18:34:13.315Z"
+    "effectiveDate": "2011-03-11T18:34:13.315Z",
+    "position": "Instructor"
   },
   {
     "empId": 87,
@@ -3042,7 +3128,8 @@
     "emergencyContactName": "Nelie Carlisso",
     "emergencyContactRelationship": "Father",
     "emergencyContactPhoneNumber": "7786819027",
-    "effectiveDate": "2010-06-08T00:24:53.618Z"
+    "effectiveDate": "2010-06-08T00:24:53.618Z",
+    "position": "Associate Professor"
   },
   {
     "empId": 88,
@@ -3077,7 +3164,8 @@
     "emergencyContactName": "Cecile Metham",
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "2263588740",
-    "effectiveDate": "2012-01-31T00:50:46.022Z"
+    "effectiveDate": "2012-01-31T00:50:46.022Z",
+    "position": "Senior Instructor"
   },
   {
     "empId": 89,
@@ -3112,7 +3200,8 @@
     "emergencyContactName": "Homere Jillins",
     "emergencyContactRelationship": "Mother",
     "emergencyContactPhoneNumber": "4183149108",
-    "effectiveDate": "2015-03-13T16:06:02.274Z"
+    "effectiveDate": "2015-03-13T16:06:02.274Z",
+    "position": "Professor"
   },
   {
     "empId": 90,
@@ -3147,7 +3236,8 @@
     "emergencyContactName": "Helga Segge",
     "emergencyContactRelationship": "Auntie",
     "emergencyContactPhoneNumber": "6133688100",
-    "effectiveDate": "2012-01-25T15:10:48.291Z"
+    "effectiveDate": "2012-01-25T15:10:48.291Z",
+    "position": "Associate Professor"
   },
   {
     "empId": 91,
@@ -3182,7 +3272,8 @@
     "emergencyContactName": "Avery Growden",
     "emergencyContactRelationship": "Step-mother",
     "emergencyContactPhoneNumber": "4188804862",
-    "effectiveDate": "2014-04-13T09:55:49.778Z"
+    "effectiveDate": "2014-04-13T09:55:49.778Z",
+    "position": "Associate Professor"
   },
   {
     "empId": 92,
@@ -3217,7 +3308,8 @@
     "emergencyContactName": "Nowell Abade",
     "emergencyContactRelationship": "Uncle",
     "emergencyContactPhoneNumber": "7783486289",
-    "effectiveDate": "2011-03-04T06:59:37.796Z"
+    "effectiveDate": "2011-03-04T06:59:37.796Z",
+    "position": "Staff"
   },
   {
     "empId": 93,
@@ -3252,7 +3344,8 @@
     "emergencyContactName": "Jeri Mattheissen",
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "7785839042",
-    "effectiveDate": "2020-07-18T10:03:34.795Z"
+    "effectiveDate": "2020-07-18T10:03:34.795Z",
+    "position": "Assistant Professor"
   },
   {
     "empId": 94,
@@ -3287,7 +3380,8 @@
     "emergencyContactName": "Griz Bagg",
     "emergencyContactRelationship": "Son",
     "emergencyContactPhoneNumber": "4039146797",
-    "effectiveDate": "2016-01-10T00:08:12.543Z"
+    "effectiveDate": "2016-01-10T00:08:12.543Z",
+    "position": "Instructor"
   },
   {
     "empId": 95,
@@ -3322,7 +3416,8 @@
     "emergencyContactName": "Harley Battelle",
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "6139905716",
-    "effectiveDate": "2014-06-04T11:47:39.961Z"
+    "effectiveDate": "2014-06-04T11:47:39.961Z",
+    "position": "Senior Instructor"
   },
   {
     "empId": 96,
@@ -3357,7 +3452,8 @@
     "emergencyContactName": "Barrie Ainley",
     "emergencyContactRelationship": "Son",
     "emergencyContactPhoneNumber": "5192916924",
-    "effectiveDate": "2015-06-13T00:55:30.178Z"
+    "effectiveDate": "2015-06-13T00:55:30.178Z",
+    "position": "Lecturer"
   },
   {
     "empId": 97,
@@ -3392,7 +3488,8 @@
     "emergencyContactName": "Loreen Sparshutt",
     "emergencyContactRelationship": "Mother",
     "emergencyContactPhoneNumber": "9057265700",
-    "effectiveDate": "2014-09-24T05:08:26.304Z"
+    "effectiveDate": "2014-09-24T05:08:26.304Z",
+    "position": "Lecturer"
   },
   {
     "empId": 98,
@@ -3427,7 +3524,8 @@
     "emergencyContactName": "Sebastiano Spilsted",
     "emergencyContactRelationship": "Son",
     "emergencyContactPhoneNumber": "4189309622",
-    "effectiveDate": "2020-06-05T08:57:19.709Z"
+    "effectiveDate": "2020-06-05T08:57:19.709Z",
+    "position": "Assistant Professor"
   },
   {
     "empId": 99,
@@ -3462,7 +3560,8 @@
     "emergencyContactName": "Renado Grinaway",
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "5877332379",
-    "effectiveDate": "2015-05-30T11:28:45.034Z"
+    "effectiveDate": "2015-05-30T11:28:45.034Z",
+    "position": "Professor"
   },
   {
     "empId": 100,
@@ -3497,7 +3596,8 @@
     "emergencyContactName": "Parke Crosher",
     "emergencyContactRelationship": "Father",
     "emergencyContactPhoneNumber": "7785389042",
-    "effectiveDate": "2011-03-13T17:50:08.225Z"
+    "effectiveDate": "2011-03-13T17:50:08.225Z",
+    "position": "Associate Professor"
   },
   {
     "empId": 101,
@@ -3532,6 +3632,7 @@
     "emergencyContactName": "John Chin",
     "emergencyContactRelationship": "Father",
     "emergencyContactPhoneNumber": "5877332379",
-    "effectiveDate": "2014-12-30T05:03:51.578Z"
+    "effectiveDate": "2014-12-30T05:03:51.578Z",
+    "position": "Associate Professor"
   }
 ]

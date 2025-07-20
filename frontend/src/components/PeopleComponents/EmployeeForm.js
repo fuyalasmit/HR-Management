@@ -923,6 +923,15 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
                 validator={validator}
                 restricted={restricted}
               />
+              <CustomisedSelectTag
+                label={"Academic Position"}
+                name={"position"}
+                value={inputs.position || ""}
+                options={selectOptions.position}
+                handleChange={handleChange}
+                validator={validator}
+                restricted={restricted}
+              />
             </RowStack>
             <RowStack>
               <CustomisedInput
@@ -1228,6 +1237,10 @@ const validateForm = async (employee) => {
   if (isEmpty(employee._role)) {
     valid = false;
     results._role = "Please, select a position";
+  }
+  if (isEmpty(employee.position)) {
+    valid = false;
+    results.position = "Please, select an academic position";
   }
   check = validateNumberInput("Salary", employee.salary);
   if (!check.valid) {

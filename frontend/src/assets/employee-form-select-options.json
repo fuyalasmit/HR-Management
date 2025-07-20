@@ -22,6 +22,16 @@
     "Salary & commission",
     "Total compensation"
   ],
+  "position": [
+    "",
+    "Professor",
+    "Associate Professor",
+    "Assistant Professor",
+    "Lecturer",
+    "Senior Instructor",
+    "Instructor",
+    "Staff"
+  ],
   "maritalStatus": [
     "",
     "Married",

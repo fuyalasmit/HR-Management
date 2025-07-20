@@ -97,6 +97,19 @@ module.exports = (sequelize, Sequelize) => {
         type: Sequelize.INTEGER,
         allowNull: true,
       },
+      position: {
+        type: Sequelize.ENUM(
+          "Professor",
+          "Associate Professor", 
+          "Assistant Professor",
+          "Lecturer",
+          "Senior Instructor",
+          "Instructor",
+          "Staff"
+        ),
+        allowNull: false,
+        defaultValue: "Staff",
+      },
       emergencyContactName: {
         type: Sequelize.STRING,
         allowNull: false,

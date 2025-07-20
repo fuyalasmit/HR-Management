@@ -28,6 +28,13 @@ function LoginPage() {
       const { user, employee } = await getAuthUser(email);
       stateContext.updateStates({ user, employee });
 
+      // Store session in localStorage for persistence - temporarily disabled
+      /*
+      const { SessionManager } = require("../../assets/utils");
+      const sessionHours = rememberMe ? 24 * 30 : 24; // 30 days if remember me, otherwise 24 hours
+      SessionManager.setSession({ user, employee }, sessionHours);
+      */
+
       navigate("/dashboard", { replace: true });
     } catch (error) {
       if (error.response && error.response.data) {
