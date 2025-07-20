@@ -300,7 +300,7 @@ export default function People({
       }
     }
     fetchData();
-  }, []);
+  }, [stateContext.state.pdEmployees, stateContext.state.pdMyTeam, stateContext.state.pdTerminated]);
 
   const handleRowClick = (row) => {
     setSelectedEmployee(row);

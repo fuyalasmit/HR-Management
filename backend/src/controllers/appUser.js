@@ -125,17 +125,18 @@ exports.createRecord = async (req, res) => {
       passwordCreatedAt: new Date(),
     });
 
-    // Create and send email
-    const context = await createEmailContext({ email, db });
-    context.resetUrl = resetUrl;  
-    const emailService = new EmailService();
-    const messageId = await emailService.buildAndSendEmail(
-      "newEmployeeActivation", // Template name
-      context, 
-      email, // receiver's email
-      "Account Activation" // Subject
-    );
-    console.log(`Email sent successfully! Message ID: ${messageId}`);
+    // Create and send email - DISABLED
+    // const context = await createEmailContext({ email, db });
+    // context.resetUrl = resetUrl;  
+    // const emailService = new EmailService();
+    // const messageId = await emailService.buildAndSendEmail(
+    //   "newEmployeeActivation", // Template name
+    //   context, 
+    //   email, // receiver's email
+    //   "Account Activation" // Subject
+    // );
+    // console.log(`Email sent successfully! Message ID: ${messageId}`);
+    console.log(`Email sending disabled for user: ${email}`);
 
     res.status(200).json({
       status: "success",

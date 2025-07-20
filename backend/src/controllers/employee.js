@@ -380,14 +380,40 @@ exports.createRecord = async (req, res) => {
       await user.save();
       res.status(201).json(data);
     } else {
-      req.body = {
+      // Create new appUser but don't let it handle the response
+      const appUserData = {
         empId,
         email,
         firstName: inputs.firstName,
         lastName: inputs.lastName,
         frontendUrl: req.body.frontendUrl,
       };
-      appUser.createRecord(req, res);
+      
+      // Create appUser directly without calling the controller
+      const resetToken = require("crypto").randomBytes(64).toString("hex");
+      const hashedResetToken = require("crypto")
+        .createHash("sha256")
+        .update(resetToken)
+        .digest("hex");
+
+      const expiresAt = new Date();
+      expiresAt.setDate(expiresAt.getDate() + 30); // 30 days from now
+
+      const userData = {
+        empId,
+        firstName: inputs.firstName,
+        lastName: inputs.lastName,
+        email,
+        passwordResetToken: hashedResetToken,
+        passwordResetTokenExpiresAt: expiresAt,
+        password: require("crypto").randomBytes(64).toString("hex"),
+      };
+      
+      const newUser = await db.appUser.create(userData);
+      console.log(`Email sending disabled for user: ${email}`);
+      
+      // Return the employee data instead of appUser response
+      res.status(201).json(data);
     }
     // Assign time off to new employee
     assignTimeOffToEmployee(empId);
