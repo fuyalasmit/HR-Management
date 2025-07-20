@@ -159,7 +159,7 @@ const tabItems = ({
 }) => {
   const tabs = [
     {
-      label: "Directory",
+      label: "Employees",
       child: (
         <AppTable
           caption={"Company members"}
@@ -189,7 +189,7 @@ const tabItems = ({
         />
       ),
     };
-    tabs.push(teamTab);
+    // tabs.push(teamTab);
   }
 
   if (isAdmin) {

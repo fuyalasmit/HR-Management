@@ -8,11 +8,11 @@
       "label": "Preferred Name",
       "visible": false
     },
-    { "id": "role", "width": 200, "label": "Role", "visible": true },
+    { "id": "role", "width": 200, "label": "Role", "visible": false },
     { "id": "position", "width": 150, "label": "Position", "visible": true },
     { "id": "post", "width": 140, "label": "Post", "visible": true },
-    { "id": "team", "width": 210, "label": "Team", "visible": true },
-    { "id": "manager", "width": 150, "label": "Manager", "visible": true },
+    { "id": "team", "width": 210, "label": "Team", "visible": false },
+    { "id": "manager", "width": 150, "label": "Manager", "visible": false },
     {
       "id": "department",
       "width": 150,
@@ -20,7 +20,7 @@
       "visible": true
     },
     { "id": "phoneNumber", "width": 150, "label": "Phone", "visible": true },
-    { "id": "email", "width": 200, "label": "Email", "visible": true },
+    { "id": "email", "width": 200, "label": "Email", "visible": false },
     { "id": "gender", "width": 50, "label": "Gender", "visible": false },
     {
       "id": "nationality",
@@ -46,7 +46,7 @@
       "id": "employmentType",
       "width": 120,
       "label": "Emp Type",
-      "visible": false
+      "visible": true
     },
     {
       "id": "compensationType",
@@ -59,21 +59,21 @@
       "id": "officeLocation",
       "width": 100,
       "label": "Office",
-      "visible": true
+      "visible": false
     },
     { "id": "action", "width": 30, "label": "Action", "visible": true }
   ],
 
   "others": [
     { "id": "name", "width": 180, "label": "Name", "visible": true },
-    { "id": "role", "width": 200, "label": "Role", "visible": true },
+    { "id": "role", "width": 200, "label": "Role", "visible": false },
     { "id": "position", "width": 150, "label": "Position", "visible": true },
     { "id": "post", "width": 140, "label": "Post", "visible": true },
-    { "id": "team", "width": 210, "label": "Team", "visible": true },
-    { "id": "manager", "width": 150, "label": "Manager", "visible": true },
+    { "id": "team", "width": 210, "label": "Team", "visible": false },
+    { "id": "manager", "width": 150, "label": "Manager", "visible": false },
     { "id": "phoneNumber", "width": 150, "label": "Phone", "visible": true },
-    { "id": "email", "width": 200, "label": "Email", "visible": true },
-    { "id": "officeLocation", "width": 120, "label": "Office", "visible": true },
+    { "id": "email", "width": 200, "label": "Email", "visible": false },
+    { "id": "officeLocation", "width": 120, "label": "Office", "visible": false },
     { "id": "action", "width": 30, "label": "Action", "visible": true }
   ]
 }
