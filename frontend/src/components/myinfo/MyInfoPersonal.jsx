@@ -92,6 +92,62 @@ function MyInfoPersonal({employee}) {
           </ListItem>
           </List>
         </Box>
+        <Typography variant="h2">Education</Typography>
+        <Divider></Divider>
+        <Box>
+          <List>
+            {employee.degrees && employee.degrees.length > 0 ? (
+              employee.degrees.map((degree, index) => (
+                <ListItem key={index} sx={{paddingLeft:'0px'}}>
+                  <Grid container spacing={-35}>
+                    <Grid item xs={6}>
+                      <Typography variant="body1">{degree.type}:</Typography>
+                    </Grid>
+                    <Grid item xs={6}>
+                      <Typography variant="body2">{degree.field}</Typography>
+                    </Grid>
+                  </Grid>
+                </ListItem>
+              ))
+            ) : (
+              <ListItem sx={{paddingLeft:'0px'}}>
+                <Grid container spacing={-35}>
+                  <Grid item xs={12}>
+                    <Typography variant="body2" sx={{fontStyle: 'italic', color: '#6B7280'}}>
+                      No education information available
+                    </Typography>
+                  </Grid>
+                </Grid>
+              </ListItem>
+            )}
+          </List>
+        </Box>
+        {employee.fieldOfInterest && (
+          <>
+            <Typography variant="h2">Field of Interest</Typography>
+            <Divider></Divider>
+            <Box>
+              <List>
+                <ListItem sx={{paddingLeft:'0px'}}>
+                  <Grid container spacing={-35}>
+                    <Grid item xs={12}>
+                      <Typography 
+                        variant="body2" 
+                        sx={{
+                          wordWrap: 'break-word',
+                          maxWidth: '100%',
+                          lineHeight: 1.5
+                        }}
+                      >
+                        {employee.fieldOfInterest}
+                      </Typography>
+                    </Grid>
+                  </Grid>
+                </ListItem>
+              </List>
+            </Box>
+          </>
+        )}
         <Typography variant="h2">Address</Typography>
         <Divider></Divider>
         <Box>

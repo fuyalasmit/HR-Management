@@ -401,12 +401,92 @@ function SocialMediaContainer({ children }) {
   );
 }
 
+function DegreeContainer({ children }) {
+  return (
+    <Stack spacing={1}>
+      <Typography>Education</Typography>
+      <Stack spacing={2}>
+        {children}
+      </Stack>
+    </Stack>
+  );
+}
+
+function DegreeInput({ degree, index, onChange, onRemove, validator }) {
+  const handleDegreeChange = (field, value) => {
+    onChange(index, { ...degree, [field]: value });
+  };
+
+  return (
+    <Stack spacing={1} sx={{ border: "1px solid #D0D5DD", borderRadius: "5px", p: 2 }}>
+      <Stack direction="row" justifyContent="space-between" alignItems="center">
+        <Typography sx={{ fontWeight: "bold", fontSize: "14px" }}>
+          Degree {index + 1}
+        </Typography>
+        {index > 0 && (
+          <button
+            type="button"
+            onClick={() => onRemove(index)}
+            style={{
+              background: "none",
+              border: "none",
+              color: "#F04438",
+              cursor: "pointer",
+              fontSize: "12px",
+            }}
+          >
+            Remove
+          </button>
+        )}
+      </Stack>
+      <RowStack>
+        <Stack sx={rootStyle} spacing={1}>
+          <Typography>Degree Type</Typography>
+          <select
+            className={
+              validator[`degree_${index}_type`] ? "select-element field-error" : "select-element"
+            }
+            value={degree.type || ""}
+            onChange={(e) => handleDegreeChange("type", e.target.value)}
+          >
+            {selectOptions.degreeTypes.map((option, optIndex) => (
+              <option key={optIndex} value={option}>
+                {option}
+              </option>
+            ))}
+          </select>
+          {validator[`degree_${index}_type`] && (
+            <Box sx={errorStyle}>{validator[`degree_${index}_type`]}</Box>
+          )}
+        </Stack>
+        <Stack sx={rootStyle} spacing={1}>
+          <Typography>Field of Study</Typography>
+          <input
+            className={
+              validator[`degree_${index}_field`] ? "text-field field-error" : "text-field"
+            }
+            type="text"
+            value={degree.field || ""}
+            onChange={(e) => handleDegreeChange("field", e.target.value)}
+            placeholder="e.g., Computer Science, Business Administration"
+          />
+          {validator[`degree_${index}_field`] && (
+            <Box sx={errorStyle}>{validator[`degree_${index}_field`]}</Box>
+          )}
+        </Stack>
+      </RowStack>
+    </Stack>
+  );
+}
+
 function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
   const [inputs, setInputs] = useState(employee || {});
 
   const [validator, setValidator] = useState({});
   // array of department objects received from the backend
   const [departments, setDepartments] = useState([]);
+  // array of degrees for the employee
+  const [degrees, setDegrees] = useState([{ type: "", field: "" }]);
 
   // To take note of any change to the form. If value is true, there will be
   // a pop asking if user wants to save the changes when discard button is pressed.
@@ -459,6 +539,13 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
     emp["_department"] = emp.department.departmentName || emp.department;
     emp.phoneNumber = deformatNumber(emp.phoneNumber);
     emp.salary = deformatNumber(emp.salary);
+
+    // Load degrees
+    if (emp.degrees && emp.degrees.length > 0) {
+      setDegrees(emp.degrees);
+    } else {
+      setDegrees([{ type: "", field: "" }]);
+    }
 
     const socialProfiles = emp.socialProfiles;
     if (socialProfiles) {
@@ -546,6 +633,10 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
     }
     inputs["socialProfiles"] = newProfiles;
 
+    // Add degrees to inputs
+    const filteredDegrees = degrees.filter(degree => degree.type && degree.field);
+    inputs["degrees"] = filteredDegrees;
+
     delete inputs.createdAt;
     delete inputs.Manager;
     delete inputs._city;
@@ -576,6 +667,26 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
       setInputs((values) => ({ ...values, ["_city"]: null }));
     }
     setChange(true);
+  };
+
+  const handleDegreeChange = (index, updatedDegree) => {
+    const newDegrees = [...degrees];
+    newDegrees[index] = updatedDegree;
+    setDegrees(newDegrees);
+    setChange(true);
+  };
+
+  const addDegree = () => {
+    setDegrees([...degrees, { type: "", field: "" }]);
+    setChange(true);
+  };
+
+  const removeDegree = (index) => {
+    if (degrees.length > 1) {
+      const newDegrees = degrees.filter((_, i) => i !== index);
+      setDegrees(newDegrees);
+      setChange(true);
+    }
   };
 
   const handleSubmit = async () => {
@@ -746,6 +857,60 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
                 validator={validator}
               />
             </SocialMediaContainer>
+            
+            <DegreeContainer>
+              {degrees.map((degree, index) => (
+                <DegreeInput
+                  key={index}
+                  degree={degree}
+                  index={index}
+                  onChange={handleDegreeChange}
+                  onRemove={removeDegree}
+                  validator={validator}
+                />
+              ))}
+              <Box sx={{ display: "flex", justifyContent: "flex-start", mt: 1 }}>
+                <Button
+                  type="button"
+                  variant="outlined"
+                  onClick={addDegree}
+                  sx={{
+                    textTransform: "none",
+                    fontSize: "13px",
+                    color: "#7F56D9",
+                    borderColor: "#7F56D9",
+                    "&:hover": {
+                      borderColor: "#602ece",
+                      color: "#602ece",
+                    },
+                  }}
+                >
+                  + Add Degree
+                </Button>
+              </Box>
+            </DegreeContainer>
+
+            <Stack spacing={1}>
+              <Typography>Field of Interest (Optional)</Typography>
+              <textarea
+                className={
+                  validator.fieldOfInterest ? "text-field field-error" : "text-field"
+                }
+                name="fieldOfInterest"
+                value={inputs.fieldOfInterest || ""}
+                onChange={handleChange}
+                placeholder="Describe your overall areas of interest, research focus, or career aspirations..."
+                rows={4}
+                style={{
+                  resize: "vertical",
+                  minHeight: "80px",
+                  maxHeight: "200px",
+                }}
+              />
+              {validator.fieldOfInterest && (
+                <Box sx={errorStyle}>{validator.fieldOfInterest}</Box>
+              )}
+            </Stack>
           </Stack>
           {/* Personal Information container ends here */}
 

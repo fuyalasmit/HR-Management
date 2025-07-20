@@ -172,6 +172,15 @@ module.exports = (sequelize, Sequelize) => {
         type: Sequelize.DATE,
         allowNull: true,
       },
+      degrees: {
+        type: Sequelize.JSON,
+        allowNull: true,
+        defaultValue: [],
+      },
+      fieldOfInterest: {
+        type: Sequelize.TEXT,
+        allowNull: true,
+      },
     },
     {
       sequelize,

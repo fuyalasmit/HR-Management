@@ -60,5 +60,12 @@
     "Pangender",
     "Transgender",
     "Other"
+  ],
+  "degreeTypes": [
+    "",
+    "PhD",
+    "Masters", 
+    "Bachelors",
+    "+2"
   ]
 }
