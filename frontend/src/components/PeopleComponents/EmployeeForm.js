@@ -102,16 +102,6 @@ const getValues = (arr, key) => {
   return data;
 };
 
-const getManagerNames = (managers) => {
-  const name = [""];
-  if (managers) {
-    for (let manager of managers) {
-      name.push(`${manager.firstName} ${manager.lastName}`);
-    }
-  }
-  return name;
-};
-
 const containerStyle = {
   boxSizing: "border-box",
   display: "flex",
@@ -418,12 +408,6 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
   // array of department objects received from the backend
   const [departments, setDepartments] = useState([]);
 
-  // array of manager objects received from the backend
-  const [managers, setManagers] = useState([]);
-
-  // array of position/role objects received from the back end.
-  const [positions, setPositions] = useState([]);
-
   // To take note of any change to the form. If value is true, there will be
   // a pop asking if user wants to save the changes when discard button is pressed.
   const [change, setChange] = useState(false);
@@ -439,13 +423,6 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
         let res = await api.department.fetchAll();
         res.sort((a, b) => sort(a, b, "departmentName"));
         setDepartments(res);
-
-        res = await api.role.fetchAll();
-        res.sort((a, b) => sort(a, b, "roleTitle"));
-        setPositions(res);
-
-        res = await api.employee.fetchManagers();
-        setManagers(res);
 
         setInputs(
           employee
@@ -480,9 +457,6 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
       emp.city = "Others";
     }
     emp["_department"] = emp.department.departmentName || emp.department;
-    emp["_role"] = emp.role.roleTitle || emp.role;
-    emp["reportTo"] =
-      emp.Manager && `${emp.Manager.firstName} ${emp.Manager.lastName}`;
     emp.phoneNumber = deformatNumber(emp.phoneNumber);
     emp.salary = deformatNumber(emp.salary);
 
@@ -514,6 +488,24 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
     inputs.effectiveDate = new Date(inputs.effectiveDate);
     if (inputs.city === "Others") {
       inputs.city = inputs._city;
+    }
+
+    // Set default values for removed fields that are required in database
+    if (!inputs.roleId) {
+      // Set a default role if not already set from _role field
+      inputs.roleId = 1; // Default role ID
+    }
+    if (!inputs.compensationType) {
+      inputs.compensationType = "Salary"; // Default compensation type
+    }
+    if (!inputs.weeklyHours) {
+      inputs.weeklyHours = 40; // Default weekly hours
+    }
+    if (!inputs.officeLocation) {
+      inputs.officeLocation = "Main Office"; // Default office location
+    }
+    if (!inputs.managerId) {
+      inputs.managerId = null; // This field is optional
     }
 
     const newProfiles = [];
@@ -574,23 +566,11 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
     const name = event.target.name;
     const value = event.target.value;
     setInputs((values) => ({ ...values, [name]: value }));
-    if (name === "reportTo") {
-      const index = event.target.selectedIndex;
-      if (typeof index !== "undefined") {
-        const managerId = index > 0 ? managers[index - 1].empId : null;
-        setInputs((values) => ({ ...values, ["managerId"]: managerId }));
-      }
-    } else if (name === "_department") {
+    if (name === "_department") {
       const index = event.target.selectedIndex;
       if (typeof index !== "undefined") {
         const departmentId = index > 0 ? departments[index - 1].id : null;
         setInputs((values) => ({ ...values, ["departmentId"]: departmentId }));
-      }
-    } else if (name === "_role") {
-      const index = event.target.selectedIndex;
-      if (typeof index !== "undefined") {
-        const roleId = index > 0 ? positions[index - 1].roleId : null;
-        setInputs((values) => ({ ...values, ["roleId"]: roleId }));
       }
     } else if (name === "city" && value !== "Others") {
       setInputs((values) => ({ ...values, ["_city"]: null }));
@@ -895,35 +875,6 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
                 restricted={restricted}
               />
               <CustomisedSelectTag
-                label={"Reporting to"}
-                name={"reportTo"}
-                value={inputs.reportTo || ""}
-                options={getManagerNames(managers)}
-                handleChange={handleChange}
-                validator={validator}
-                restricted={restricted}
-              />
-            </RowStack>
-            <RowStack>
-              <CustomisedSelectTag
-                label={"Department"}
-                name={"_department"}
-                value={inputs._department || ""}
-                options={getValues(departments, "departmentName")}
-                handleChange={handleChange}
-                validator={validator}
-                restricted={restricted}
-              />
-              <CustomisedSelectTag
-                label={"Position"}
-                name={"_role"}
-                value={inputs._role || ""}
-                options={getValues(positions, "roleTitle")}
-                handleChange={handleChange}
-                validator={validator}
-                restricted={restricted}
-              />
-              <CustomisedSelectTag
                 label={"Academic Position"}
                 name={"position"}
                 value={inputs.position || ""}
@@ -932,6 +883,8 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
                 validator={validator}
                 restricted={restricted}
               />
+            </RowStack>
+            <RowStack>
               <CustomisedSelectTag
                 label={"Post"}
                 name={"post"}
@@ -941,32 +894,22 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
                 validator={validator}
                 restricted={restricted}
               />
-            </RowStack>
-            <RowStack>
-              <CustomisedInput
-                label={"Office"}
-                name={"officeLocation"}
-                value={inputs.officeLocation || ""}
+              <CustomisedSelectTag
+                label={"Department"}
+                name={"_department"}
+                value={inputs._department || ""}
+                options={getValues(departments, "departmentName")}
                 handleChange={handleChange}
                 validator={validator}
                 restricted={restricted}
               />
+            </RowStack>
+            <RowStack>
               <CustomisedSelectTag
                 label={"Employment type"}
                 name={"employmentType"}
                 value={inputs.employmentType || ""}
                 options={selectOptions.employmentType}
-                handleChange={handleChange}
-                validator={validator}
-                restricted={restricted}
-              />
-            </RowStack>
-            <RowStack>
-              <CustomisedSelectTag
-                label={"Compensation type"}
-                name={"compensationType"}
-                value={inputs.compensationType || ""}
-                options={selectOptions.compensationType}
                 handleChange={handleChange}
                 validator={validator}
                 restricted={restricted}
@@ -989,14 +932,7 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
                 validator={validator}
                 restricted={restricted}
               />
-              <CustomisedInput
-                label={"Hours per week"}
-                name={"weeklyHours"}
-                value={inputs.weeklyHours || ""}
-                handleChange={handleChange}
-                validator={validator}
-                restricted={restricted}
-              />
+              <Stack sx={{ width: "100%" }}></Stack>
             </RowStack>
           </Stack>
           {/* Job Information container ends here */}
@@ -1243,10 +1179,6 @@ const validateForm = async (employee) => {
     valid = false;
     results.hireDate = "Please select hire date";
   }
-  if (isEmpty(employee._role)) {
-    valid = false;
-    results._role = "Please, select a position";
-  }
   if (isEmpty(employee.position)) {
     valid = false;
     results.position = "Please, select an academic position";
@@ -1264,14 +1196,6 @@ const validateForm = async (employee) => {
   if (isEmpty(employee.employmentType)) {
     valid = false;
     results.employmentType = "Please, select a employment type";
-  }
-  if (isEmpty(employee.compensationType)) {
-    valid = false;
-    results.compensationType = "Please, select a compensation type";
-  }
-  if (isEmpty(employee.officeLocation)) {
-    valid = false;
-    results.officeLocation = "Please, enter office location";
   }
   if (isEmpty(employee.emergencyContactName)) {
     valid = false;
@@ -1310,11 +1234,6 @@ const validateForm = async (employee) => {
       valid = check.valid;
       results.postalZipCode = check.message;
     }
-  }
-  check = validateNumberInput("Hours per week", employee.weeklyHours);
-  if (!check.valid) {
-    valid = check.valid;
-    results.weeklyHours = check.message;
   }
 
   //Check Facebook
