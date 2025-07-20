@@ -33,7 +33,8 @@
     "emergencyContactRelationship": "Step-mother",
     "emergencyContactPhoneNumber": "6473779554",
     "effectiveDate": "2017-02-05T14:33:40.773Z",
-    "position": "Senior Instructor"
+    "position": "Senior Instructor",
+    "post": null
   },
   {
     "empId": 2,
@@ -69,7 +70,8 @@
     "emergencyContactRelationship": "Step-mother",
     "emergencyContactPhoneNumber": "3062303182",
     "effectiveDate": "2020-11-23T19:54:03.145Z",
-    "position": "Staff"
+    "position": "Staff",
+    "post": null
   },
   {
     "empId": 3,
@@ -105,7 +107,8 @@
     "emergencyContactRelationship": "Father",
     "emergencyContactPhoneNumber": "9054555525",
     "effectiveDate": "2014-08-19T04:34:16.949Z",
-    "position": "Instructor"
+    "position": "Instructor",
+    "post": null
   },
   {
     "empId": 4,
@@ -141,7 +144,8 @@
     "emergencyContactRelationship": "Mother",
     "emergencyContactPhoneNumber": "5192801008",
     "effectiveDate": "2015-10-05T08:38:03.059Z",
-    "position": "Senior Instructor"
+    "position": "Senior Instructor",
+    "post": null
   },
   {
     "empId": 5,
@@ -177,7 +181,8 @@
     "emergencyContactRelationship": "Father",
     "emergencyContactPhoneNumber": "5198217183",
     "effectiveDate": "2013-09-15T06:25:29.350Z",
-    "position": "Staff"
+    "position": "Staff",
+    "post": "HOD"
   },
   {
     "empId": 6,
@@ -213,7 +218,8 @@
     "emergencyContactRelationship": "Auntie",
     "emergencyContactPhoneNumber": "5067244414",
     "effectiveDate": "2011-07-13T23:12:02.823Z",
-    "position": "Assistant Professor"
+    "position": "Assistant Professor",
+    "post": "Morning Coordinator"
   },
   {
     "empId": 7,
@@ -249,7 +255,8 @@
     "emergencyContactRelationship": "Auntie",
     "emergencyContactPhoneNumber": "4507568618",
     "effectiveDate": "2012-09-15T19:45:25.796Z",
-    "position": "Staff"
+    "position": "Staff",
+    "post": "HOD"
   },
   {
     "empId": 8,
@@ -285,7 +292,8 @@
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "6133886700",
     "effectiveDate": "2017-07-11T14:00:50.889Z",
-    "position": "Lecturer"
+    "position": "Lecturer",
+    "post": null
   },
   {
     "empId": 9,
@@ -321,7 +329,8 @@
     "emergencyContactRelationship": "Father",
     "emergencyContactPhoneNumber": "3067366774",
     "effectiveDate": "2015-03-19T05:09:12.740Z",
-    "position": "Senior Instructor"
+    "position": "Senior Instructor",
+    "post": "Morning Coordinator"
   },
   {
     "empId": 10,
@@ -357,7 +366,8 @@
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "7097307544",
     "effectiveDate": "2015-04-07T10:51:37.821Z",
-    "position": "Senior Instructor"
+    "position": "Senior Instructor",
+    "post": null
   },
   {
     "empId": 11,
@@ -393,7 +403,8 @@
     "emergencyContactRelationship": "Auntie",
     "emergencyContactPhoneNumber": "5879279754",
     "effectiveDate": "2011-01-16T00:39:54.968Z",
-    "position": "Senior Instructor"
+    "position": "Senior Instructor",
+    "post": null
   },
   {
     "empId": 12,
@@ -429,7 +440,8 @@
     "emergencyContactRelationship": "Uncle",
     "emergencyContactPhoneNumber": "4034594789",
     "effectiveDate": "2015-02-24T10:32:39.696Z",
-    "position": "Instructor"
+    "position": "Instructor",
+    "post": null
   },
   {
     "empId": 13,
@@ -465,7 +477,8 @@
     "emergencyContactRelationship": "Step-mother",
     "emergencyContactPhoneNumber": "5143603634",
     "effectiveDate": "2011-01-18T09:48:40.664Z",
-    "position": "Senior Instructor"
+    "position": "Senior Instructor",
+    "post": null
   },
   {
     "empId": 14,
@@ -501,7 +514,8 @@
     "emergencyContactRelationship": "Daughter",
     "emergencyContactPhoneNumber": "4169343274",
     "effectiveDate": "2013-11-06T17:59:10.219Z",
-    "position": "Lecturer"
+    "position": "Lecturer",
+    "post": "HOD"
   },
   {
     "empId": 15,
@@ -537,7 +551,8 @@
     "emergencyContactRelationship": "Son",
     "emergencyContactPhoneNumber": "2045441452",
     "effectiveDate": "2019-02-27T07:27:06.810Z",
-    "position": "Associate Professor"
+    "position": "Associate Professor",
+    "post": null
   },
   {
     "empId": 16,
@@ -573,7 +588,8 @@
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "9025458366",
     "effectiveDate": "2010-02-14T06:18:14.996Z",
-    "position": "Staff"
+    "position": "Staff",
+    "post": null
   },
   {
     "empId": 17,
@@ -609,7 +625,8 @@
     "emergencyContactRelationship": "Uncle",
     "emergencyContactPhoneNumber": "4032285928",
     "effectiveDate": "2015-03-06T19:26:31.235Z",
-    "position": "Associate Professor"
+    "position": "Associate Professor",
+    "post": "Morning Coordinator"
   },
   {
     "empId": 18,
@@ -645,7 +662,8 @@
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "2503109866",
     "effectiveDate": "2015-06-19T07:25:10.985Z",
-    "position": "Instructor"
+    "position": "Instructor",
+    "post": null
   },
   {
     "empId": 19,
@@ -681,7 +699,8 @@
     "emergencyContactRelationship": "Daughter",
     "emergencyContactPhoneNumber": "7807498217",
     "effectiveDate": "2010-04-02T18:04:44.086Z",
-    "position": "Instructor"
+    "position": "Instructor",
+    "post": null
   },
   {
     "empId": 20,
@@ -717,7 +736,8 @@
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "2043202578",
     "effectiveDate": "2014-10-02T13:11:06.659Z",
-    "position": "Professor"
+    "position": "Professor",
+    "post": null
   },
   {
     "empId": 21,
@@ -753,7 +773,8 @@
     "emergencyContactRelationship": "Mother",
     "emergencyContactPhoneNumber": "4163781194",
     "effectiveDate": "2018-04-07T02:02:15.389Z",
-    "position": "Associate Professor"
+    "position": "Associate Professor",
+    "post": null
   },
   {
     "empId": 22,
@@ -789,7 +810,8 @@
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "5196545733",
     "effectiveDate": "2015-04-30T06:14:25.740Z",
-    "position": "Professor"
+    "position": "Professor",
+    "post": null
   },
   {
     "empId": 23,
@@ -825,7 +847,8 @@
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "4165767947",
     "effectiveDate": "2020-12-14T23:06:41.848Z",
-    "position": "Instructor"
+    "position": "Instructor",
+    "post": null
   },
   {
     "empId": 24,
@@ -861,7 +884,8 @@
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "4185056796",
     "effectiveDate": "2011-09-21T17:12:59.624Z",
-    "position": "Associate Professor"
+    "position": "Associate Professor",
+    "post": null
   },
   {
     "empId": 25,
@@ -897,7 +921,8 @@
     "emergencyContactRelationship": "Step-mother",
     "emergencyContactPhoneNumber": "3067858519",
     "effectiveDate": "2018-04-12T14:09:34.477Z",
-    "position": "Lecturer"
+    "position": "Lecturer",
+    "post": null
   },
   {
     "empId": 26,
@@ -933,7 +958,8 @@
     "emergencyContactRelationship": "Son",
     "emergencyContactPhoneNumber": "4165405742",
     "effectiveDate": "2017-01-25T13:02:28.291Z",
-    "position": "Assistant Professor"
+    "position": "Assistant Professor",
+    "post": "HOD"
   },
   {
     "empId": 27,
@@ -969,7 +995,8 @@
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "4509645714",
     "effectiveDate": "2019-05-18T23:14:00.695Z",
-    "position": "Professor"
+    "position": "Professor",
+    "post": "Morning Coordinator"
   },
   {
     "empId": 28,
@@ -1005,7 +1032,8 @@
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "2044643724",
     "effectiveDate": "2012-05-28T09:37:26.286Z",
-    "position": "Associate Professor"
+    "position": "Associate Professor",
+    "post": "HOD"
   },
   {
     "empId": 29,
@@ -1041,7 +1069,8 @@
     "emergencyContactRelationship": "Mother",
     "emergencyContactPhoneNumber": "5198029333",
     "effectiveDate": "2012-11-16T22:22:30.184Z",
-    "position": "Lecturer"
+    "position": "Lecturer",
+    "post": "DHOD"
   },
   {
     "empId": 30,
@@ -1077,7 +1106,8 @@
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "6139973313",
     "effectiveDate": "2012-03-09T01:07:48.294Z",
-    "position": "Assistant Professor"
+    "position": "Assistant Professor",
+    "post": null
   },
   {
     "empId": 31,
@@ -1113,7 +1143,8 @@
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "9026371893",
     "effectiveDate": "2016-04-10T00:06:02.044Z",
-    "position": "Assistant Professor"
+    "position": "Assistant Professor",
+    "post": null
   },
   {
     "empId": 32,
@@ -1149,7 +1180,8 @@
     "emergencyContactRelationship": "Step-father",
     "emergencyContactPhoneNumber": "8196401157",
     "effectiveDate": "2010-02-22T09:43:57.811Z",
-    "position": "Associate Professor"
+    "position": "Associate Professor",
+    "post": "DHOD"
   },
   {
     "empId": 33,
@@ -1185,7 +1217,8 @@
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "4189579235",
     "effectiveDate": "2010-08-27T07:34:17.250Z",
-    "position": "Instructor"
+    "position": "Instructor",
+    "post": "DHOD"
   },
   {
     "empId": 34,
@@ -1221,7 +1254,8 @@
     "emergencyContactRelationship": "Son",
     "emergencyContactPhoneNumber": "3065126957",
     "effectiveDate": "2014-01-11T07:43:47.703Z",
-    "position": "Senior Instructor"
+    "position": "Senior Instructor",
+    "post": null
   },
   {
     "empId": 35,
@@ -1257,7 +1291,8 @@
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "5199169947",
     "effectiveDate": "2020-10-10T13:39:44.181Z",
-    "position": "Professor"
+    "position": "Professor",
+    "post": "HOD"
   },
   {
     "empId": 36,
@@ -1293,7 +1328,8 @@
     "emergencyContactRelationship": "Step-father",
     "emergencyContactPhoneNumber": "6474939972",
     "effectiveDate": "2016-01-11T05:20:51.083Z",
-    "position": "Associate Professor"
+    "position": "Associate Professor",
+    "post": null
   },
   {
     "empId": 37,
@@ -1329,7 +1365,8 @@
     "emergencyContactRelationship": "Mother",
     "emergencyContactPhoneNumber": "4037406301",
     "effectiveDate": "2018-07-12T19:52:37.634Z",
-    "position": "Senior Instructor"
+    "position": "Senior Instructor",
+    "post": null
   },
   {
     "empId": 38,
@@ -1365,7 +1402,8 @@
     "emergencyContactRelationship": "Uncle",
     "emergencyContactPhoneNumber": "2048916880",
     "effectiveDate": "2015-07-19T00:18:33.741Z",
-    "position": "Lecturer"
+    "position": "Lecturer",
+    "post": null
   },
   {
     "empId": 39,
@@ -1401,7 +1439,8 @@
     "emergencyContactRelationship": "Step-mother",
     "emergencyContactPhoneNumber": "9057619096",
     "effectiveDate": "2014-01-22T13:48:05.580Z",
-    "position": "Associate Professor"
+    "position": "Associate Professor",
+    "post": null
   },
   {
     "empId": 40,
@@ -1437,7 +1476,8 @@
     "emergencyContactRelationship": "Step-father",
     "emergencyContactPhoneNumber": "2044033412",
     "effectiveDate": "2020-08-08T04:51:37.289Z",
-    "position": "Lecturer"
+    "position": "Lecturer",
+    "post": "Morning Coordinator"
   },
   {
     "empId": 41,
@@ -1473,7 +1513,8 @@
     "emergencyContactRelationship": "Father",
     "emergencyContactPhoneNumber": "4503709605",
     "effectiveDate": "2020-05-05T11:23:20.612Z",
-    "position": "Associate Professor"
+    "position": "Associate Professor",
+    "post": "DHOD"
   },
   {
     "empId": 42,
@@ -1509,7 +1550,8 @@
     "emergencyContactRelationship": "Father",
     "emergencyContactPhoneNumber": "5144098973",
     "effectiveDate": "2013-03-28T16:53:06.648Z",
-    "position": "Associate Professor"
+    "position": "Associate Professor",
+    "post": "DHOD"
   },
   {
     "empId": 43,
@@ -1545,7 +1587,8 @@
     "emergencyContactRelationship": "Son",
     "emergencyContactPhoneNumber": "5195966777",
     "effectiveDate": "2014-06-28T13:22:14.710Z",
-    "position": "Associate Professor"
+    "position": "Associate Professor",
+    "post": null
   },
   {
     "empId": 44,
@@ -1581,7 +1624,8 @@
     "emergencyContactRelationship": "Daughter",
     "emergencyContactPhoneNumber": "7059291066",
     "effectiveDate": "2015-07-06T23:09:12.100Z",
-    "position": "Staff"
+    "position": "Staff",
+    "post": "Morning Coordinator"
   },
   {
     "empId": 45,
@@ -1617,7 +1661,8 @@
     "emergencyContactRelationship": "Son",
     "emergencyContactPhoneNumber": "2892909926",
     "effectiveDate": "2011-07-31T14:42:26.719Z",
-    "position": "Associate Professor"
+    "position": "Associate Professor",
+    "post": null
   },
   {
     "empId": 46,
@@ -1653,7 +1698,8 @@
     "emergencyContactRelationship": "Auntie",
     "emergencyContactPhoneNumber": "6042461939",
     "effectiveDate": "2011-02-11T13:52:28.113Z",
-    "position": "Senior Instructor"
+    "position": "Senior Instructor",
+    "post": "HOD"
   },
   {
     "empId": 47,
@@ -1689,7 +1735,8 @@
     "emergencyContactRelationship": "Step-father",
     "emergencyContactPhoneNumber": "2049062398",
     "effectiveDate": "2017-10-06T23:39:59.638Z",
-    "position": "Staff"
+    "position": "Staff",
+    "post": "DHOD"
   },
   {
     "empId": 48,
@@ -1725,7 +1772,8 @@
     "emergencyContactRelationship": "Auntie",
     "emergencyContactPhoneNumber": "5792218899",
     "effectiveDate": "2015-11-06T05:39:15.590Z",
-    "position": "Professor"
+    "position": "Professor",
+    "post": null
   },
   {
     "empId": 49,
@@ -1761,7 +1809,8 @@
     "emergencyContactRelationship": "Father",
     "emergencyContactPhoneNumber": "5067759602",
     "effectiveDate": "2018-07-10T06:22:48.130Z",
-    "position": "Assistant Professor"
+    "position": "Assistant Professor",
+    "post": "DHOD"
   },
   {
     "empId": 50,
@@ -1797,7 +1846,8 @@
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "5069281317",
     "effectiveDate": "2019-01-17T22:59:19.687Z",
-    "position": "Professor"
+    "position": "Professor",
+    "post": null
   },
   {
     "empId": 51,
@@ -1833,7 +1883,8 @@
     "emergencyContactRelationship": "Son",
     "emergencyContactPhoneNumber": "5812424147",
     "effectiveDate": "2020-05-25T22:54:05.491Z",
-    "position": "Staff"
+    "position": "Staff",
+    "post": "HOD"
   },
   {
     "empId": 52,
@@ -1869,7 +1920,8 @@
     "emergencyContactRelationship": "Uncle",
     "emergencyContactPhoneNumber": "3064325728",
     "effectiveDate": "2016-09-10T04:39:52.883Z",
-    "position": "Instructor"
+    "position": "Instructor",
+    "post": null
   },
   {
     "empId": 53,
@@ -1905,7 +1957,8 @@
     "emergencyContactRelationship": "Auntie",
     "emergencyContactPhoneNumber": "9024594794",
     "effectiveDate": "2012-02-20T05:53:13.491Z",
-    "position": "Assistant Professor"
+    "position": "Assistant Professor",
+    "post": "HOD"
   },
   {
     "empId": 54,
@@ -1941,7 +1994,8 @@
     "emergencyContactRelationship": "Father",
     "emergencyContactPhoneNumber": "6477954370",
     "effectiveDate": "2017-11-27T05:36:31.402Z",
-    "position": "Associate Professor"
+    "position": "Associate Professor",
+    "post": "DHOD"
   },
   {
     "empId": 55,
@@ -1977,7 +2031,8 @@
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "6479919728",
     "effectiveDate": "2018-08-03T17:16:15.194Z",
-    "position": "Lecturer"
+    "position": "Lecturer",
+    "post": null
   },
   {
     "empId": 56,
@@ -2013,7 +2068,8 @@
     "emergencyContactRelationship": "Auntie",
     "emergencyContactPhoneNumber": "4167505788",
     "effectiveDate": "2014-12-10T11:03:03.520Z",
-    "position": "Associate Professor"
+    "position": "Associate Professor",
+    "post": "Morning Coordinator"
   },
   {
     "empId": 57,
@@ -2049,7 +2105,8 @@
     "emergencyContactRelationship": "Father",
     "emergencyContactPhoneNumber": "8074711611",
     "effectiveDate": "2019-12-21T12:43:44.116Z",
-    "position": "Senior Instructor"
+    "position": "Senior Instructor",
+    "post": null
   },
   {
     "empId": 58,
@@ -2085,7 +2142,8 @@
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "4509607084",
     "effectiveDate": "2017-04-21T03:55:57.373Z",
-    "position": "Assistant Professor"
+    "position": "Assistant Professor",
+    "post": null
   },
   {
     "empId": 59,
@@ -2121,7 +2179,8 @@
     "emergencyContactRelationship": "Daughter",
     "emergencyContactPhoneNumber": "5066233574",
     "effectiveDate": "2015-04-26T12:54:03.401Z",
-    "position": "Staff"
+    "position": "Staff",
+    "post": null
   },
   {
     "empId": 60,
@@ -2157,7 +2216,8 @@
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "4503359318",
     "effectiveDate": "2016-09-11T18:13:25.392Z",
-    "position": "Instructor"
+    "position": "Instructor",
+    "post": null
   },
   {
     "empId": 61,
@@ -2193,7 +2253,8 @@
     "emergencyContactRelationship": "Son",
     "emergencyContactPhoneNumber": "5199657891",
     "effectiveDate": "2014-11-26T05:26:32.148Z",
-    "position": "Professor"
+    "position": "Professor",
+    "post": null
   },
   {
     "empId": 62,
@@ -2229,7 +2290,8 @@
     "emergencyContactRelationship": "Step-father",
     "emergencyContactPhoneNumber": "5875804763",
     "effectiveDate": "2019-06-13T19:42:31.657Z",
-    "position": "Associate Professor"
+    "position": "Associate Professor",
+    "post": "Morning Coordinator"
   },
   {
     "empId": 63,
@@ -2265,7 +2327,8 @@
     "emergencyContactRelationship": "Father",
     "emergencyContactPhoneNumber": "7808865238",
     "effectiveDate": "2014-05-15T11:40:23.135Z",
-    "position": "Staff"
+    "position": "Staff",
+    "post": null
   },
   {
     "empId": 64,
@@ -2301,7 +2364,8 @@
     "emergencyContactRelationship": "Uncle",
     "emergencyContactPhoneNumber": "6137996699",
     "effectiveDate": "2014-12-03T20:06:38.736Z",
-    "position": "Instructor"
+    "position": "Instructor",
+    "post": "Morning Coordinator"
   },
   {
     "empId": 65,
@@ -2337,7 +2401,8 @@
     "emergencyContactRelationship": "Son",
     "emergencyContactPhoneNumber": "5144641095",
     "effectiveDate": "2015-11-15T13:53:36.501Z",
-    "position": "Professor"
+    "position": "Professor",
+    "post": "HOD"
   },
   {
     "empId": 66,
@@ -2373,7 +2438,8 @@
     "emergencyContactRelationship": "Son",
     "emergencyContactPhoneNumber": "4188558858",
     "effectiveDate": "2019-09-03T23:35:38.219Z",
-    "position": "Senior Instructor"
+    "position": "Senior Instructor",
+    "post": null
   },
   {
     "empId": 67,
@@ -2409,7 +2475,8 @@
     "emergencyContactRelationship": "Daughter",
     "emergencyContactPhoneNumber": "9057332380",
     "effectiveDate": "2012-07-16T23:05:25.053Z",
-    "position": "Staff"
+    "position": "Staff",
+    "post": null
   },
   {
     "empId": 68,
@@ -2445,7 +2512,8 @@
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "4502755885",
     "effectiveDate": "2018-09-12T07:17:31.206Z",
-    "position": "Professor"
+    "position": "Professor",
+    "post": null
   },
   {
     "empId": 69,
@@ -2481,7 +2549,8 @@
     "emergencyContactRelationship": "Uncle",
     "emergencyContactPhoneNumber": "2897763176",
     "effectiveDate": "2010-04-19T04:57:39.839Z",
-    "position": "Professor"
+    "position": "Professor",
+    "post": "DHOD"
   },
   {
     "empId": 70,
@@ -2517,7 +2586,8 @@
     "emergencyContactRelationship": "Auntie",
     "emergencyContactPhoneNumber": "7807514803",
     "effectiveDate": "2018-12-31T12:14:46.715Z",
-    "position": "Staff"
+    "position": "Staff",
+    "post": null
   },
   {
     "empId": 71,
@@ -2553,7 +2623,8 @@
     "emergencyContactRelationship": "Auntie",
     "emergencyContactPhoneNumber": "2499916038",
     "effectiveDate": "2014-04-10T01:23:03.619Z",
-    "position": "Associate Professor"
+    "position": "Associate Professor",
+    "post": null
   },
   {
     "empId": 72,
@@ -2589,7 +2660,8 @@
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "8678982238",
     "effectiveDate": "2019-03-18T01:05:03.005Z",
-    "position": "Associate Professor"
+    "position": "Associate Professor",
+    "post": null
   },
   {
     "empId": 73,
@@ -2625,7 +2697,8 @@
     "emergencyContactRelationship": "Auntie",
     "emergencyContactPhoneNumber": "4162364355",
     "effectiveDate": "2020-03-06T22:05:21.901Z",
-    "position": "Staff"
+    "position": "Staff",
+    "post": null
   },
   {
     "empId": 74,
@@ -2661,7 +2734,8 @@
     "emergencyContactRelationship": "Step-father",
     "emergencyContactPhoneNumber": "6133664039",
     "effectiveDate": "2015-07-06T03:40:06.129Z",
-    "position": "Senior Instructor"
+    "position": "Senior Instructor",
+    "post": null
   },
   {
     "empId": 75,
@@ -2697,7 +2771,8 @@
     "emergencyContactRelationship": "Daughter",
     "emergencyContactPhoneNumber": "4185195473",
     "effectiveDate": "2015-09-29T17:07:42.476Z",
-    "position": "Associate Professor"
+    "position": "Associate Professor",
+    "post": "HOD"
   },
   {
     "empId": 76,
@@ -2733,7 +2808,8 @@
     "emergencyContactRelationship": "Uncle",
     "emergencyContactPhoneNumber": "5194129431",
     "effectiveDate": "2017-06-18T03:20:39.018Z",
-    "position": "Professor"
+    "position": "Professor",
+    "post": null
   },
   {
     "empId": 77,
@@ -2769,7 +2845,8 @@
     "emergencyContactRelationship": "Uncle",
     "emergencyContactPhoneNumber": "5194403616",
     "effectiveDate": "2019-08-20T21:49:18.831Z",
-    "position": "Staff"
+    "position": "Staff",
+    "post": null
   },
   {
     "empId": 78,
@@ -2805,7 +2882,8 @@
     "emergencyContactRelationship": "Mother",
     "emergencyContactPhoneNumber": "9055492655",
     "effectiveDate": "2010-08-19T03:11:54.890Z",
-    "position": "Staff"
+    "position": "Staff",
+    "post": null
   },
   {
     "empId": 79,
@@ -2841,7 +2919,8 @@
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "5792176858",
     "effectiveDate": "2020-01-30T05:42:32.433Z",
-    "position": "Lecturer"
+    "position": "Lecturer",
+    "post": null
   },
   {
     "empId": 80,
@@ -2877,7 +2956,8 @@
     "emergencyContactRelationship": "Daughter",
     "emergencyContactPhoneNumber": "8679696528",
     "effectiveDate": "2017-01-10T05:43:59.547Z",
-    "position": "Lecturer"
+    "position": "Lecturer",
+    "post": "HOD"
   },
   {
     "empId": 81,
@@ -2913,7 +2993,8 @@
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "6138478524",
     "effectiveDate": "2012-09-07T15:19:33.120Z",
-    "position": "Staff"
+    "position": "Staff",
+    "post": null
   },
   {
     "empId": 82,
@@ -2949,7 +3030,8 @@
     "emergencyContactRelationship": "Father",
     "emergencyContactPhoneNumber": "5194751111",
     "effectiveDate": "2020-06-20T10:07:41.523Z",
-    "position": "Professor"
+    "position": "Professor",
+    "post": null
   },
   {
     "empId": 83,
@@ -2985,7 +3067,8 @@
     "emergencyContactRelationship": "Son",
     "emergencyContactPhoneNumber": "3068395573",
     "effectiveDate": "2014-04-10T16:20:08.173Z",
-    "position": "Assistant Professor"
+    "position": "Assistant Professor",
+    "post": "HOD"
   },
   {
     "empId": 84,
@@ -3021,7 +3104,8 @@
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "3063549834",
     "effectiveDate": "2019-03-27T13:57:52.955Z",
-    "position": "Professor"
+    "position": "Professor",
+    "post": null
   },
   {
     "empId": 85,
@@ -3057,7 +3141,8 @@
     "emergencyContactRelationship": "Father",
     "emergencyContactPhoneNumber": "2896635350",
     "effectiveDate": "2012-06-13T09:28:55.566Z",
-    "position": "Staff"
+    "position": "Staff",
+    "post": "Morning Coordinator"
   },
   {
     "empId": 86,
@@ -3093,7 +3178,8 @@
     "emergencyContactRelationship": "Step-father",
     "emergencyContactPhoneNumber": "6137287245",
     "effectiveDate": "2011-03-11T18:34:13.315Z",
-    "position": "Instructor"
+    "position": "Instructor",
+    "post": null
   },
   {
     "empId": 87,
@@ -3129,7 +3215,8 @@
     "emergencyContactRelationship": "Father",
     "emergencyContactPhoneNumber": "7786819027",
     "effectiveDate": "2010-06-08T00:24:53.618Z",
-    "position": "Associate Professor"
+    "position": "Associate Professor",
+    "post": null
   },
   {
     "empId": 88,
@@ -3165,7 +3252,8 @@
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "2263588740",
     "effectiveDate": "2012-01-31T00:50:46.022Z",
-    "position": "Senior Instructor"
+    "position": "Senior Instructor",
+    "post": null
   },
   {
     "empId": 89,
@@ -3201,7 +3289,8 @@
     "emergencyContactRelationship": "Mother",
     "emergencyContactPhoneNumber": "4183149108",
     "effectiveDate": "2015-03-13T16:06:02.274Z",
-    "position": "Professor"
+    "position": "Professor",
+    "post": "Morning Coordinator"
   },
   {
     "empId": 90,
@@ -3237,7 +3326,8 @@
     "emergencyContactRelationship": "Auntie",
     "emergencyContactPhoneNumber": "6133688100",
     "effectiveDate": "2012-01-25T15:10:48.291Z",
-    "position": "Associate Professor"
+    "position": "Associate Professor",
+    "post": null
   },
   {
     "empId": 91,
@@ -3273,7 +3363,8 @@
     "emergencyContactRelationship": "Step-mother",
     "emergencyContactPhoneNumber": "4188804862",
     "effectiveDate": "2014-04-13T09:55:49.778Z",
-    "position": "Associate Professor"
+    "position": "Associate Professor",
+    "post": "DHOD"
   },
   {
     "empId": 92,
@@ -3309,7 +3400,8 @@
     "emergencyContactRelationship": "Uncle",
     "emergencyContactPhoneNumber": "7783486289",
     "effectiveDate": "2011-03-04T06:59:37.796Z",
-    "position": "Staff"
+    "position": "Staff",
+    "post": null
   },
   {
     "empId": 93,
@@ -3345,7 +3437,8 @@
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "7785839042",
     "effectiveDate": "2020-07-18T10:03:34.795Z",
-    "position": "Assistant Professor"
+    "position": "Assistant Professor",
+    "post": null
   },
   {
     "empId": 94,
@@ -3381,7 +3474,8 @@
     "emergencyContactRelationship": "Son",
     "emergencyContactPhoneNumber": "4039146797",
     "effectiveDate": "2016-01-10T00:08:12.543Z",
-    "position": "Instructor"
+    "position": "Instructor",
+    "post": null
   },
   {
     "empId": 95,
@@ -3417,7 +3511,8 @@
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "6139905716",
     "effectiveDate": "2014-06-04T11:47:39.961Z",
-    "position": "Senior Instructor"
+    "position": "Senior Instructor",
+    "post": null
   },
   {
     "empId": 96,
@@ -3453,7 +3548,8 @@
     "emergencyContactRelationship": "Son",
     "emergencyContactPhoneNumber": "5192916924",
     "effectiveDate": "2015-06-13T00:55:30.178Z",
-    "position": "Lecturer"
+    "position": "Lecturer",
+    "post": null
   },
   {
     "empId": 97,
@@ -3489,7 +3585,8 @@
     "emergencyContactRelationship": "Mother",
     "emergencyContactPhoneNumber": "9057265700",
     "effectiveDate": "2014-09-24T05:08:26.304Z",
-    "position": "Lecturer"
+    "position": "Lecturer",
+    "post": null
   },
   {
     "empId": 98,
@@ -3525,7 +3622,8 @@
     "emergencyContactRelationship": "Son",
     "emergencyContactPhoneNumber": "4189309622",
     "effectiveDate": "2020-06-05T08:57:19.709Z",
-    "position": "Assistant Professor"
+    "position": "Assistant Professor",
+    "post": null
   },
   {
     "empId": 99,
@@ -3561,7 +3659,8 @@
     "emergencyContactRelationship": "Spouse",
     "emergencyContactPhoneNumber": "5877332379",
     "effectiveDate": "2015-05-30T11:28:45.034Z",
-    "position": "Professor"
+    "position": "Professor",
+    "post": null
   },
   {
     "empId": 100,
@@ -3597,7 +3696,8 @@
     "emergencyContactRelationship": "Father",
     "emergencyContactPhoneNumber": "7785389042",
     "effectiveDate": "2011-03-13T17:50:08.225Z",
-    "position": "Associate Professor"
+    "position": "Associate Professor",
+    "post": null
   },
   {
     "empId": 101,
@@ -3633,6 +3733,7 @@
     "emergencyContactRelationship": "Father",
     "emergencyContactPhoneNumber": "5877332379",
     "effectiveDate": "2014-12-30T05:03:51.578Z",
-    "position": "Associate Professor"
+    "position": "Associate Professor",
+    "post": "Morning Coordinator"
   }
 ]

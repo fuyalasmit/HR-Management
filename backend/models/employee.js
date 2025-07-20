@@ -110,6 +110,15 @@ module.exports = (sequelize, Sequelize) => {
         allowNull: false,
         defaultValue: "Staff",
       },
+      post: {
+        type: Sequelize.ENUM(
+          "Morning Coordinator",
+          "HOD",
+          "DHOD"
+        ),
+        allowNull: true,
+        defaultValue: null,
+      },
       emergencyContactName: {
         type: Sequelize.STRING,
         allowNull: false,

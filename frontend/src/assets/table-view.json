@@ -10,6 +10,7 @@
     },
     { "id": "role", "width": 200, "label": "Role", "visible": true },
     { "id": "position", "width": 150, "label": "Position", "visible": true },
+    { "id": "post", "width": 140, "label": "Post", "visible": true },
     { "id": "team", "width": 210, "label": "Team", "visible": true },
     { "id": "manager", "width": 150, "label": "Manager", "visible": true },
     {
@@ -67,6 +68,7 @@
     { "id": "name", "width": 180, "label": "Name", "visible": true },
     { "id": "role", "width": 200, "label": "Role", "visible": true },
     { "id": "position", "width": 150, "label": "Position", "visible": true },
+    { "id": "post", "width": 140, "label": "Post", "visible": true },
     { "id": "team", "width": 210, "label": "Team", "visible": true },
     { "id": "manager", "width": 150, "label": "Manager", "visible": true },
     { "id": "phoneNumber", "width": 150, "label": "Phone", "visible": true },

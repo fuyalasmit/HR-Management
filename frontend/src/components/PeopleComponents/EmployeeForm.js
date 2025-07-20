@@ -932,6 +932,15 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
                 validator={validator}
                 restricted={restricted}
               />
+              <CustomisedSelectTag
+                label={"Post"}
+                name={"post"}
+                value={inputs.post || ""}
+                options={selectOptions.post}
+                handleChange={handleChange}
+                validator={validator}
+                restricted={restricted}
+              />
             </RowStack>
             <RowStack>
               <CustomisedInput
