@@ -1,4 +1,4 @@
-import { useMemo, useState, useEffect } from "react";
+import { useMemo, useState, useEffect, useRef } from "react";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
@@ -7,12 +7,14 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import TableSortLabel from "@mui/material/TableSortLabel";
 import { visuallyHidden } from "@mui/utils";
-import { Box, Stack, Typography, Toolbar } from "@mui/material";
+import { Box, Stack, Typography, Toolbar, TextField } from "@mui/material";
 import Paper from "@mui/material/Paper";
 import PropTypes from "prop-types";
 import TablePagination from "./AppTablePagination";
 import FilterButton from "./FilterButton";
 import NoContentComponent from "./NoContentComponent";
+import SearchIcon from "@mui/icons-material/Search";
+import CloseIcon from "@mui/icons-material/Close";
 
 const customStyle = (id, width) => {
   if (id === "action") {
@@ -31,51 +33,102 @@ const customStyle = (id, width) => {
 
 // This is a utility function to create a custom React element.
 function TableToolbar(props) {
-  const { caption, count, column, setColumnData } = props;
+  const { caption, count, column, setColumnData, searchValue, onSearchChange, searchInputRef } = props;
   return (
-    <Toolbar sx={{ ml: -2, mr: -2, my: 2 }}>
-      <Typography
-        variant="h6"
-        id="tableTitle"
-        component="div"
-        color={"inherent"}
-      >
-        {caption}
-      </Typography>
-      {count !== null && (
+    <Stack spacing={2}>
+      <Toolbar sx={{ ml: -2, mr: -2, my: 2 }}>
         <Typography
-          sx={{
-            color: "#6941C6",
-            backgroundColor: "#F9F5FF",
-            ml: 2,
-            pl: 1,
-            pr: 1,
-          }}
-          color="inherit"
-          variant="subtitle1"
+          variant="h6"
+          id="tableTitle"
           component="div"
-          border={2}
-          borderRadius={"30%"}
-          borderColor={"#E9D7FE"}
+          color={"inherent"}
         >
-          {count}
+          {caption}
         </Typography>
-      )}
-      <Box
-        sx={{ flex: "1 1 40%" }}
-        display={"flex"}
-        justifyContent={"right"}
-        alignContent={"right"}
-      >
-        <FilterButton columnData={column} setColumnData={setColumnData} />
+        {count !== null && (
+          <Typography
+            sx={{
+              color: "#6941C6",
+              backgroundColor: "#F9F5FF",
+              ml: 2,
+              pl: 1,
+              pr: 1,
+            }}
+            color="inherit"
+            variant="subtitle1"
+            component="div"
+            border={2}
+            borderRadius={"30%"}
+            borderColor={"#E9D7FE"}
+          >
+            {count}
+          </Typography>
+        )}
+        <Box
+          sx={{ flex: "1 1 40%" }}
+          display={"flex"}
+          justifyContent={"right"}
+          alignContent={"right"}
+        >
+          <FilterButton columnData={column} setColumnData={setColumnData} />
+        </Box>
+      </Toolbar>
+      
+      {/* Search Bar */}
+      <Box sx={{ mb: 2 }}>
+        <TextField
+          inputRef={searchInputRef}
+          fullWidth
+          size="small"
+          placeholder="Search employees by name, position, post, department, or any attribute..."
+          value={searchValue}
+          onChange={(e) => onSearchChange(e.target.value)}
+          sx={{
+            maxWidth: 600,
+            "& .MuiOutlinedInput-root": {
+              borderRadius: "8px",
+              fontSize: "14px",
+            }
+          }}
+          slotProps={{
+            input: {
+              startAdornment: (
+                <SearchIcon 
+                  sx={{ 
+                    color: "#6B7280", 
+                    mr: 1, 
+                    fontSize: "20px" 
+                  }} 
+                />
+              ),
+              endAdornment: searchValue && (
+                <CloseIcon
+                  onClick={() => onSearchChange("")}
+                  sx={{
+                    color: "#6B7280",
+                    cursor: "pointer",
+                    fontSize: "20px",
+                    "&:hover": {
+                      color: "#374151"
+                    }
+                  }}
+                />
+              )
+            }
+          }}
+        />
       </Box>
-    </Toolbar>
+    </Stack>
   );
 }
 TableToolbar.propTypes = {
   caption: PropTypes.string,
   count: PropTypes.number,
-  searchRequest: PropTypes.func.isRequired,
+  column: PropTypes.array,
+  setColumnData: PropTypes.func,
+  searchValue: PropTypes.string,
+  onSearchChange: PropTypes.func,
+  searchInputRef: PropTypes.object,
 };
 
 //Utility function to get the column names
@@ -236,8 +289,49 @@ export default function AppTable(props) {
   const [page, setPage] = useState(1);
   const [column, setColumn] = useState(headCells);
   const [dataSize, setDataSize] = useState(data.length);
+  const [searchValue, setSearchValue] = useState("");
+  const searchInputRef = useRef(null);
 
   const columnNames = getColumnName(headCells);
+
+  // Function to filter data based on search term
+  const getFilteredData = () => {
+    if (!searchValue.trim()) {
+      return data;
+    }
+    
+    const searchTerm = searchValue.toLowerCase().trim();
+    return data.filter((row) => {
+      // Search through all visible columns and common employee attributes
+      const searchableFields = [
+        'name', 'firstName', 'lastName', 'preferredName', 'email', 
+        'phoneNumber', 'position', 'post', 'department', 'role', 
+        'team', 'manager', 'officeLocation', 'nationality', 'gender'
+      ];
+      
+      return searchableFields.some(field => {
+        const value = row[field];
+        if (value) {
+          // Handle different data types
+          if (typeof value === 'string') {
+            return value.toLowerCase().includes(searchTerm);
+          } else if (typeof value === 'object' && value.departmentName) {
+            // Handle department object
+            return value.departmentName.toLowerCase().includes(searchTerm);
+          } else if (typeof value === 'object' && value.roleTitle) {
+            // Handle role object
+            return value.roleTitle.toLowerCase().includes(searchTerm);
+          } else if (typeof value === 'object' && value.firstName && value.lastName) {
+            // Handle manager object
+            return `${value.firstName} ${value.lastName}`.toLowerCase().includes(searchTerm);
+          }
+        }
+        return false;
+      });
+    });
+  };
+
+  const filteredData = getFilteredData();
 
   const handleRequestSort = (event, property) => {
     const isAsc = orderBy === property && order === "asc";
@@ -245,16 +339,21 @@ export default function AppTable(props) {
     setOrderBy(property);
   };
 
+  const handleSearchChange = (value) => {
+    setSearchValue(value);
+    setPage(1); // Reset to first page when searching
+  };
+
   useEffect(() => {
-    setDataSize(data.length);
-  }, [data.length, loading]);
+    setDataSize(filteredData.length);
+  }, [filteredData.length, loading]);
 
   const handleChangePage = (event, newPage) => {
     setPage(newPage);
   };
 
   const handleDataChange = (startIndex, endIndex) => {
-    return sortData(data, order, orderBy).slice(startIndex, endIndex);
+    return sortData(filteredData, order, orderBy).slice(startIndex, endIndex);
   };
 
   const visibleRows = useMemo(
@@ -263,7 +362,7 @@ export default function AppTable(props) {
         (page - 1) * rowsPerPage,
         (page - 1) * rowsPerPage + rowsPerPage
       ),
-    [order, orderBy, page, column, dataSize, loading]
+    [order, orderBy, page, column, filteredData.length, loading, searchValue]
   );
   if (loading) {
     return (
@@ -281,23 +380,39 @@ export default function AppTable(props) {
       </Box>
     );
   }
+  
+  // Check if there are no results after filtering
+  const hasNoSearchResults = filteredData.length === 0 && searchValue.trim();
+
   return (
     <Stack>
       <Stack>
         <TableToolbar
           caption={caption ? caption : "Table"}
-          count={data.length}
+          count={hasNoSearchResults ? 0 : filteredData.length}
           rowsPerPage={rowsPerPage}
           column={headCells}
           setColumnData={(columnData) => setColumn(columnData)}
+          searchValue={searchValue}
+          onSearchChange={handleSearchChange}
+          searchInputRef={searchInputRef}
         />
-        <TableContainer
-          component={Paper}
-          sx={{
-            border: "1px solid #EBEBEB",
-            maxWidth: window.innerWidth < 1550 ? 1000 : 1250,
-            minWidth: "100%"
-          }}
+        
+        {hasNoSearchResults ? (
+          <Box sx={{ padding: 16 }}>
+            <NoContentComponent>
+              <p>No employees found matching "{searchValue}". Try a different search term.</p>
+            </NoContentComponent>
+          </Box>
+        ) : (
+          <>
+            <TableContainer
+              component={Paper}
+              sx={{
+                border: "1px solid #EBEBEB",
+                maxWidth: window.innerWidth < 1550 ? 1000 : 1250,
+                minWidth: "100%"
+              }}
         >
           <Table aria-label="app table">
             <CustomisedTableHead
@@ -321,14 +436,16 @@ export default function AppTable(props) {
             </TableBody>
           </Table>
         </TableContainer>
+        {dataSize > 10 && (
+          <TablePagination
+            count={filteredData.length}
+            rowsPerPage={rowsPerPage}
+            handleChangePage={handleChangePage}
+          />
+        )}
+        </>
+        )}
       </Stack>
-      {dataSize > 10 && (
-        <TablePagination
-          count={data.length}
-          rowsPerPage={rowsPerPage}
-          handleChangePage={handleChangePage}
-        />
-      )}
     </Stack>
   );
 }

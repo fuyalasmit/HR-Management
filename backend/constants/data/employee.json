@@ -14,7 +14,7 @@
     "dateOfBirth": "1984-10-06T03:01:53.758Z",
     "roleId": 25,
     "salary": 93253,
-    "departmentId": 11,
+    "departmentId": 2,
     "managerId": null,
     "employmentType": "Part-time employment",
     "compensationType": "Salary",
@@ -34,7 +34,7 @@
     "emergencyContactPhoneNumber": "6473779554",
     "effectiveDate": "2017-02-05T14:33:40.773Z",
     "position": "Senior Instructor",
-    "post": null
+    "post": "Coordinator"
   },
   {
     "empId": 2,
@@ -51,7 +51,7 @@
     "dateOfBirth": "1955-02-23T09:54:11.511Z",
     "roleId": 23,
     "salary": 5635,
-    "departmentId": 7,
+    "departmentId": 2,
     "managerId": 55,
     "employmentType": "Part-time employment",
     "compensationType": "Hourly compensation",
@@ -88,7 +88,7 @@
     "dateOfBirth": "1993-01-21T09:50:31.621Z",
     "roleId": 13,
     "salary": 10584,
-    "departmentId": 2,
+    "departmentId": 1,
     "managerId": 69,
     "employmentType": "Internship",
     "compensationType": "Salary & commission",
@@ -108,7 +108,7 @@
     "emergencyContactPhoneNumber": "9054555525",
     "effectiveDate": "2014-08-19T04:34:16.949Z",
     "position": "Instructor",
-    "post": null
+    "post": "Coordinator"
   },
   {
     "empId": 4,
@@ -125,7 +125,7 @@
     "dateOfBirth": "1977-08-11T22:32:56.986Z",
     "roleId": 6,
     "salary": 7296,
-    "departmentId": 9,
+    "departmentId": 1,
     "managerId": 71,
     "employmentType": "Traineeship",
     "compensationType": "Hourly compensation",
@@ -162,7 +162,7 @@
     "dateOfBirth": "1978-10-14T07:10:54.753Z",
     "roleId": 19,
     "salary": 9305,
-    "departmentId": 5,
+    "departmentId": 1,
     "managerId": 57,
     "employmentType": "Traineeship",
     "compensationType": "Salary",
@@ -182,7 +182,7 @@
     "emergencyContactPhoneNumber": "5198217183",
     "effectiveDate": "2013-09-15T06:25:29.350Z",
     "position": "Staff",
-    "post": "HOD"
+    "post": "DHOD"
   },
   {
     "empId": 6,
@@ -219,7 +219,7 @@
     "emergencyContactPhoneNumber": "5067244414",
     "effectiveDate": "2011-07-13T23:12:02.823Z",
     "position": "Assistant Professor",
-    "post": "Morning Coordinator"
+    "post": "Coordinator"
   },
   {
     "empId": 7,
@@ -236,7 +236,7 @@
     "dateOfBirth": "1967-03-07T03:29:50.631Z",
     "roleId": 20,
     "salary": 8696,
-    "departmentId": 3,
+    "departmentId": 1,
     "managerId": 9,
     "employmentType": "Internship",
     "compensationType": "Hourly compensation",
@@ -273,7 +273,7 @@
     "dateOfBirth": "1997-11-16T11:22:28.940Z",
     "roleId": 28,
     "salary": 11301,
-    "departmentId": 9,
+    "departmentId": 1,
     "managerId": 71,
     "employmentType": "Part-time employment",
     "compensationType": "Salary & commission",
@@ -310,7 +310,7 @@
     "dateOfBirth": "1952-10-17T16:45:42.136Z",
     "roleId": 9,
     "salary": 11389,
-    "departmentId": 3,
+    "departmentId": 1,
     "managerId": 1,
     "employmentType": "Employment on commission",
     "compensationType": "Hourly compensation",
@@ -384,7 +384,7 @@
     "dateOfBirth": "1956-08-13T02:46:18.826Z",
     "roleId": 5,
     "salary": 14108,
-    "departmentId": 1,
+    "departmentId": 2,
     "managerId": 53,
     "employmentType": "Full-time employment",
     "compensationType": "Salary",
@@ -404,7 +404,7 @@
     "emergencyContactPhoneNumber": "5879279754",
     "effectiveDate": "2011-01-16T00:39:54.968Z",
     "position": "Senior Instructor",
-    "post": null
+    "post": "Coordinator"
   },
   {
     "empId": 12,
@@ -421,7 +421,7 @@
     "dateOfBirth": "1973-11-04T15:13:01.287Z",
     "roleId": 16,
     "salary": 8964,
-    "departmentId": 4,
+    "departmentId": 2,
     "managerId": 42,
     "employmentType": "Probation",
     "compensationType": "Salary & commission",
@@ -458,7 +458,7 @@
     "dateOfBirth": "1963-02-10T19:28:15.623Z",
     "roleId": 13,
     "salary": 10675,
-    "departmentId": 2,
+    "departmentId": 1,
     "managerId": 69,
     "employmentType": "Full-time employment",
     "compensationType": "Bonuses",
@@ -515,7 +515,7 @@
     "emergencyContactPhoneNumber": "4169343274",
     "effectiveDate": "2013-11-06T17:59:10.219Z",
     "position": "Lecturer",
-    "post": "HOD"
+    "post": "DHOD"
   },
   {
     "empId": 15,
@@ -532,7 +532,7 @@
     "dateOfBirth": "1990-06-04T22:24:30.132Z",
     "roleId": 28,
     "salary": 10834,
-    "departmentId": 9,
+    "departmentId": 1,
     "managerId": 71,
     "employmentType": "Internship",
     "compensationType": "Total compensation",
@@ -569,7 +569,7 @@
     "dateOfBirth": "1984-02-20T16:21:43.858Z",
     "roleId": 3,
     "salary": 9731,
-    "departmentId": 1,
+    "departmentId": 2,
     "managerId": 53,
     "employmentType": "Contract employment",
     "compensationType": "Hourly compensation",
@@ -606,7 +606,7 @@
     "dateOfBirth": "1991-03-21T15:29:49.658Z",
     "roleId": 17,
     "salary": 6682,
-    "departmentId": 6,
+    "departmentId": 2,
     "managerId": 32,
     "employmentType": "Employment on commission",
     "compensationType": "Salary & commission",
@@ -626,7 +626,7 @@
     "emergencyContactPhoneNumber": "4032285928",
     "effectiveDate": "2015-03-06T19:26:31.235Z",
     "position": "Associate Professor",
-    "post": "Morning Coordinator"
+    "post": "DHOD"
   },
   {
     "empId": 18,
@@ -643,7 +643,7 @@
     "dateOfBirth": "1991-04-29T23:02:04.891Z",
     "roleId": 18,
     "salary": 6968,
-    "departmentId": 10,
+    "departmentId": 1,
     "managerId": 38,
     "employmentType": "Part-time employment",
     "compensationType": "Salary & commission",
@@ -680,7 +680,7 @@
     "dateOfBirth": "1975-01-19T22:22:58.622Z",
     "roleId": 7,
     "salary": 9853,
-    "departmentId": 9,
+    "departmentId": 1,
     "managerId": 71,
     "employmentType": "Contract employment",
     "compensationType": "Salary & commission",
@@ -717,7 +717,7 @@
     "dateOfBirth": "1978-02-27T07:05:08.097Z",
     "roleId": 4,
     "salary": 9179,
-    "departmentId": 1,
+    "departmentId": 2,
     "managerId": 53,
     "employmentType": "Part-time employment",
     "compensationType": "Total compensation",
@@ -791,7 +791,7 @@
     "dateOfBirth": "1991-07-17T12:49:47.403Z",
     "roleId": 8,
     "salary": 11840,
-    "departmentId": 9,
+    "departmentId": 1,
     "managerId": 71,
     "employmentType": "Apprenticeship",
     "compensationType": "Hourly compensation",
@@ -828,7 +828,7 @@
     "dateOfBirth": "1962-09-10T21:19:50.948Z",
     "roleId": 3,
     "salary": 9535,
-    "departmentId": 1,
+    "departmentId": 2,
     "managerId": 53,
     "employmentType": "Leased employment",
     "compensationType": "Bonuses",
@@ -865,7 +865,7 @@
     "dateOfBirth": "1968-08-08T22:19:40.874Z",
     "roleId": 19,
     "salary": 7616,
-    "departmentId": 5,
+    "departmentId": 2,
     "managerId": 57,
     "employmentType": "Apprenticeship",
     "compensationType": "Salary",
@@ -902,7 +902,7 @@
     "dateOfBirth": "1975-03-06T16:52:03.018Z",
     "roleId": 20,
     "salary": 8253,
-    "departmentId": 3,
+    "departmentId": 1,
     "managerId": 9,
     "employmentType": "Leased employment",
     "compensationType": "Hourly compensation",
@@ -959,7 +959,7 @@
     "emergencyContactPhoneNumber": "4165405742",
     "effectiveDate": "2017-01-25T13:02:28.291Z",
     "position": "Assistant Professor",
-    "post": "HOD"
+    "post": "Morning Coordinator"
   },
   {
     "empId": 27,
@@ -1013,7 +1013,7 @@
     "dateOfBirth": "1991-05-15T23:59:19.400Z",
     "roleId": 8,
     "salary": 14695,
-    "departmentId": 9,
+    "departmentId": 2,
     "managerId": 71,
     "employmentType": "Leased employment",
     "compensationType": "Bonuses",
@@ -1033,7 +1033,7 @@
     "emergencyContactPhoneNumber": "2044643724",
     "effectiveDate": "2012-05-28T09:37:26.286Z",
     "position": "Associate Professor",
-    "post": "HOD"
+    "post": "DHOD"
   },
   {
     "empId": 29,
@@ -1124,7 +1124,7 @@
     "dateOfBirth": "1955-08-25T07:46:23.506Z",
     "roleId": 17,
     "salary": 6571,
-    "departmentId": 6,
+    "departmentId": 2,
     "managerId": 32,
     "employmentType": "Apprenticeship",
     "compensationType": "Salary",
@@ -1161,7 +1161,7 @@
     "dateOfBirth": "1963-06-12T08:00:39.766Z",
     "roleId": 12,
     "salary": 10358,
-    "departmentId": 6,
+    "departmentId": 1,
     "managerId": 1,
     "employmentType": "Part-time employment",
     "compensationType": "Total compensation",
@@ -1181,7 +1181,7 @@
     "emergencyContactPhoneNumber": "8196401157",
     "effectiveDate": "2010-02-22T09:43:57.811Z",
     "position": "Associate Professor",
-    "post": "DHOD"
+    "post": "Morning Coordinator"
   },
   {
     "empId": 33,
@@ -1235,7 +1235,7 @@
     "dateOfBirth": "1983-01-24T07:33:25.385Z",
     "roleId": 11,
     "salary": 9800,
-    "departmentId": 7,
+    "departmentId": 2,
     "managerId": 55,
     "employmentType": "Apprenticeship",
     "compensationType": "Salary",
@@ -1309,7 +1309,7 @@
     "dateOfBirth": "1975-05-19T17:39:06.143Z",
     "roleId": 17,
     "salary": 10480,
-    "departmentId": 6,
+    "departmentId": 2,
     "managerId": 32,
     "employmentType": "Traineeship",
     "compensationType": "Hourly compensation",
@@ -1346,7 +1346,7 @@
     "dateOfBirth": "1972-08-13T13:14:47.897Z",
     "roleId": 17,
     "salary": 8773,
-    "departmentId": 6,
+    "departmentId": 1,
     "managerId": 32,
     "employmentType": "Internship",
     "compensationType": "Hourly compensation",
@@ -1383,7 +1383,7 @@
     "dateOfBirth": "1951-04-28T03:15:57.110Z",
     "roleId": 15,
     "salary": 8051,
-    "departmentId": 10,
+    "departmentId": 1,
     "managerId": 1,
     "employmentType": "Internship",
     "compensationType": "Bonuses",
@@ -1420,7 +1420,7 @@
     "dateOfBirth": "1989-03-02T14:29:14.042Z",
     "roleId": 16,
     "salary": 10424,
-    "departmentId": 4,
+    "departmentId": 1,
     "managerId": 42,
     "employmentType": "Casual employment",
     "compensationType": "Bonuses",
@@ -1457,7 +1457,7 @@
     "dateOfBirth": "1987-12-15T11:16:22.875Z",
     "roleId": 11,
     "salary": 7911,
-    "departmentId": 7,
+    "departmentId": 2,
     "managerId": 55,
     "employmentType": "Employment on commission",
     "compensationType": "Salary & commission",
@@ -1477,7 +1477,7 @@
     "emergencyContactPhoneNumber": "2044033412",
     "effectiveDate": "2020-08-08T04:51:37.289Z",
     "position": "Lecturer",
-    "post": "Morning Coordinator"
+    "post": "HOD"
   },
   {
     "empId": 41,
@@ -1494,7 +1494,7 @@
     "dateOfBirth": "1974-12-01T11:10:29.355Z",
     "roleId": 18,
     "salary": 9052,
-    "departmentId": 10,
+    "departmentId": 2,
     "managerId": 38,
     "employmentType": "Contract employment",
     "compensationType": "Salary & commission",
@@ -1514,7 +1514,7 @@
     "emergencyContactPhoneNumber": "4503709605",
     "effectiveDate": "2020-05-05T11:23:20.612Z",
     "position": "Associate Professor",
-    "post": "DHOD"
+    "post": "Coordinator"
   },
   {
     "empId": 42,
@@ -1531,7 +1531,7 @@
     "dateOfBirth": "1962-01-23T08:30:27.077Z",
     "roleId": 22,
     "salary": 13214,
-    "departmentId": 4,
+    "departmentId": 1,
     "managerId": 1,
     "employmentType": "Internship",
     "compensationType": "Salary",
@@ -1568,7 +1568,7 @@
     "dateOfBirth": "1980-12-20T12:21:05.453Z",
     "roleId": 6,
     "salary": 10187,
-    "departmentId": 9,
+    "departmentId": 1,
     "managerId": 71,
     "employmentType": "Contract employment",
     "compensationType": "Hourly compensation",
@@ -1605,7 +1605,7 @@
     "dateOfBirth": "1957-07-06T19:46:10.226Z",
     "roleId": 6,
     "salary": 9433,
-    "departmentId": 9,
+    "departmentId": 2,
     "managerId": 71,
     "employmentType": "Contingent employment",
     "compensationType": "Hourly compensation",
@@ -1625,7 +1625,7 @@
     "emergencyContactPhoneNumber": "7059291066",
     "effectiveDate": "2015-07-06T23:09:12.100Z",
     "position": "Staff",
-    "post": "Morning Coordinator"
+    "post": "DHOD"
   },
   {
     "empId": 45,
@@ -1642,7 +1642,7 @@
     "dateOfBirth": "1956-11-12T09:05:51.777Z",
     "roleId": 14,
     "salary": 4530,
-    "departmentId": 8,
+    "departmentId": 1,
     "managerId": 50,
     "employmentType": "Contingent employment",
     "compensationType": "Bonuses",
@@ -1679,7 +1679,7 @@
     "dateOfBirth": "1954-04-18T22:51:41.560Z",
     "roleId": 6,
     "salary": 6758,
-    "departmentId": 9,
+    "departmentId": 1,
     "managerId": 71,
     "employmentType": "Seasonal employment",
     "compensationType": "Salary & commission",
@@ -1699,7 +1699,7 @@
     "emergencyContactPhoneNumber": "6042461939",
     "effectiveDate": "2011-02-11T13:52:28.113Z",
     "position": "Senior Instructor",
-    "post": "HOD"
+    "post": "DHOD"
   },
   {
     "empId": 47,
@@ -1736,7 +1736,7 @@
     "emergencyContactPhoneNumber": "2049062398",
     "effectiveDate": "2017-10-06T23:39:59.638Z",
     "position": "Staff",
-    "post": "DHOD"
+    "post": "HOD"
   },
   {
     "empId": 48,
@@ -1753,7 +1753,7 @@
     "dateOfBirth": "1991-02-26T15:30:11.612Z",
     "roleId": 28,
     "salary": 10310,
-    "departmentId": 9,
+    "departmentId": 2,
     "managerId": 71,
     "employmentType": "Seasonal employment",
     "compensationType": "Salary",
@@ -1790,7 +1790,7 @@
     "dateOfBirth": "1953-12-15T16:18:08.637Z",
     "roleId": 13,
     "salary": 10713,
-    "departmentId": 2,
+    "departmentId": 1,
     "managerId": 69,
     "employmentType": "Apprenticeship",
     "compensationType": "Salary",
@@ -1810,7 +1810,7 @@
     "emergencyContactPhoneNumber": "5067759602",
     "effectiveDate": "2018-07-10T06:22:48.130Z",
     "position": "Assistant Professor",
-    "post": "DHOD"
+    "post": "Coordinator"
   },
   {
     "empId": 50,
@@ -1827,7 +1827,7 @@
     "dateOfBirth": "1954-03-02T23:24:10.194Z",
     "roleId": 26,
     "salary": 10224,
-    "departmentId": 8,
+    "departmentId": 1,
     "managerId": 1,
     "employmentType": "Seasonal employment",
     "compensationType": "Bonuses",
@@ -1864,7 +1864,7 @@
     "dateOfBirth": "1963-09-05T06:11:16.318Z",
     "roleId": 5,
     "salary": 11971,
-    "departmentId": 1,
+    "departmentId": 2,
     "managerId": 53,
     "employmentType": "Leased employment",
     "compensationType": "Bonuses",
@@ -1884,7 +1884,7 @@
     "emergencyContactPhoneNumber": "5812424147",
     "effectiveDate": "2020-05-25T22:54:05.491Z",
     "position": "Staff",
-    "post": "HOD"
+    "post": "Morning Coordinator"
   },
   {
     "empId": 52,
@@ -1901,7 +1901,7 @@
     "dateOfBirth": "1955-05-22T11:15:03.055Z",
     "roleId": 17,
     "salary": 6969,
-    "departmentId": 6,
+    "departmentId": 2,
     "managerId": 32,
     "employmentType": "Casual employment",
     "compensationType": "Salary & commission",
@@ -1958,7 +1958,7 @@
     "emergencyContactPhoneNumber": "9024594794",
     "effectiveDate": "2012-02-20T05:53:13.491Z",
     "position": "Assistant Professor",
-    "post": "HOD"
+    "post": "DHOD"
   },
   {
     "empId": 54,
@@ -1975,7 +1975,7 @@
     "dateOfBirth": "1967-11-10T18:09:03.651Z",
     "roleId": 20,
     "salary": 10727,
-    "departmentId": 3,
+    "departmentId": 2,
     "managerId": 9,
     "employmentType": "Probation",
     "compensationType": "Hourly compensation",
@@ -1995,7 +1995,7 @@
     "emergencyContactPhoneNumber": "6477954370",
     "effectiveDate": "2017-11-27T05:36:31.402Z",
     "position": "Associate Professor",
-    "post": "DHOD"
+    "post": "HOD"
   },
   {
     "empId": 55,
@@ -2012,7 +2012,7 @@
     "dateOfBirth": "1951-03-22T10:28:54.529Z",
     "roleId": 10,
     "salary": 9856,
-    "departmentId": 7,
+    "departmentId": 1,
     "managerId": 1,
     "employmentType": "Leased employment",
     "compensationType": "Total compensation",
@@ -2049,7 +2049,7 @@
     "dateOfBirth": "1954-12-29T21:41:30.841Z",
     "roleId": 16,
     "salary": 8802,
-    "departmentId": 4,
+    "departmentId": 1,
     "managerId": 42,
     "employmentType": "Contingent employment",
     "compensationType": "Hourly compensation",
@@ -2069,7 +2069,7 @@
     "emergencyContactPhoneNumber": "4167505788",
     "effectiveDate": "2014-12-10T11:03:03.520Z",
     "position": "Associate Professor",
-    "post": "Morning Coordinator"
+    "post": "HOD"
   },
   {
     "empId": 57,
@@ -2086,7 +2086,7 @@
     "dateOfBirth": "1958-07-08T20:33:25.327Z",
     "roleId": 24,
     "salary": 9036,
-    "departmentId": 5,
+    "departmentId": 2,
     "managerId": 1,
     "employmentType": "Seasonal employment",
     "compensationType": "Hourly compensation",
@@ -2160,7 +2160,7 @@
     "dateOfBirth": "1952-09-28T02:47:11.862Z",
     "roleId": 16,
     "salary": 10234,
-    "departmentId": 4,
+    "departmentId": 2,
     "managerId": 42,
     "employmentType": "Probation",
     "compensationType": "Total compensation",
@@ -2197,7 +2197,7 @@
     "dateOfBirth": "1996-02-17T00:16:43.253Z",
     "roleId": 7,
     "salary": 12579,
-    "departmentId": 9,
+    "departmentId": 2,
     "managerId": 71,
     "employmentType": "Contract employment",
     "compensationType": "Salary & commission",
@@ -2234,7 +2234,7 @@
     "dateOfBirth": "1962-09-06T08:37:40.714Z",
     "roleId": 28,
     "salary": 10887,
-    "departmentId": 9,
+    "departmentId": 1,
     "managerId": 71,
     "employmentType": "Full-time employment",
     "compensationType": "Total compensation",
@@ -2271,7 +2271,7 @@
     "dateOfBirth": "1967-12-21T21:03:41.304Z",
     "roleId": 23,
     "salary": 7348,
-    "departmentId": 7,
+    "departmentId": 1,
     "managerId": 55,
     "employmentType": "Contract employment",
     "compensationType": "Hourly compensation",
@@ -2291,7 +2291,7 @@
     "emergencyContactPhoneNumber": "5875804763",
     "effectiveDate": "2019-06-13T19:42:31.657Z",
     "position": "Associate Professor",
-    "post": "Morning Coordinator"
+    "post": "DHOD"
   },
   {
     "empId": 63,
@@ -2308,7 +2308,7 @@
     "dateOfBirth": "1996-01-26T02:50:18.115Z",
     "roleId": 16,
     "salary": 7833,
-    "departmentId": 4,
+    "departmentId": 1,
     "managerId": 42,
     "employmentType": "Contract employment",
     "compensationType": "Total compensation",
@@ -2345,7 +2345,7 @@
     "dateOfBirth": "1974-06-30T18:14:48.018Z",
     "roleId": 4,
     "salary": 9060,
-    "departmentId": 1,
+    "departmentId": 2,
     "managerId": 53,
     "employmentType": "Employment on commission",
     "compensationType": "Total compensation",
@@ -2365,7 +2365,7 @@
     "emergencyContactPhoneNumber": "6137996699",
     "effectiveDate": "2014-12-03T20:06:38.736Z",
     "position": "Instructor",
-    "post": "Morning Coordinator"
+    "post": "Coordinator"
   },
   {
     "empId": 65,
@@ -2382,7 +2382,7 @@
     "dateOfBirth": "1969-01-10T04:37:34.581Z",
     "roleId": 23,
     "salary": 7062,
-    "departmentId": 7,
+    "departmentId": 1,
     "managerId": 55,
     "employmentType": "Part-time employment",
     "compensationType": "Bonuses",
@@ -2419,7 +2419,7 @@
     "dateOfBirth": "1996-02-06T07:35:46.933Z",
     "roleId": 18,
     "salary": 7910,
-    "departmentId": 10,
+    "departmentId": 1,
     "managerId": 38,
     "employmentType": "Apprenticeship",
     "compensationType": "Total compensation",
@@ -2493,7 +2493,7 @@
     "dateOfBirth": "1970-11-26T20:42:50.408Z",
     "roleId": 28,
     "salary": 11607,
-    "departmentId": 9,
+    "departmentId": 1,
     "managerId": 71,
     "employmentType": "Probation",
     "compensationType": "Bonuses",
@@ -2550,7 +2550,7 @@
     "emergencyContactPhoneNumber": "2897763176",
     "effectiveDate": "2010-04-19T04:57:39.839Z",
     "position": "Professor",
-    "post": "DHOD"
+    "post": "Morning Coordinator"
   },
   {
     "empId": 70,
@@ -2567,7 +2567,7 @@
     "dateOfBirth": "1991-01-25T19:38:15.543Z",
     "roleId": 5,
     "salary": 13722,
-    "departmentId": 1,
+    "departmentId": 2,
     "managerId": 53,
     "employmentType": "Employment on commission",
     "compensationType": "Salary",
@@ -2604,7 +2604,7 @@
     "dateOfBirth": "1967-10-30T13:47:36.093Z",
     "roleId": 27,
     "salary": 11564,
-    "departmentId": 9,
+    "departmentId": 1,
     "managerId": 1,
     "employmentType": "Contract employment",
     "compensationType": "Bonuses",
@@ -2641,7 +2641,7 @@
     "dateOfBirth": "1990-03-28T04:53:04.695Z",
     "roleId": 11,
     "salary": 8526,
-    "departmentId": 7,
+    "departmentId": 1,
     "managerId": 55,
     "employmentType": "Probation",
     "compensationType": "Salary & commission",
@@ -2678,7 +2678,7 @@
     "dateOfBirth": "1956-08-13T08:04:45.314Z",
     "roleId": 17,
     "salary": 9894,
-    "departmentId": 6,
+    "departmentId": 1,
     "managerId": 32,
     "employmentType": "Casual employment",
     "compensationType": "Salary",
@@ -2715,7 +2715,7 @@
     "dateOfBirth": "1984-07-02T06:41:17.650Z",
     "roleId": 20,
     "salary": 10950,
-    "departmentId": 3,
+    "departmentId": 1,
     "managerId": 9,
     "employmentType": "Contract employment",
     "compensationType": "Total compensation",
@@ -2789,7 +2789,7 @@
     "dateOfBirth": "1990-08-08T03:50:09.469Z",
     "roleId": 20,
     "salary": 8029,
-    "departmentId": 3,
+    "departmentId": 2,
     "managerId": 9,
     "employmentType": "Contract employment",
     "compensationType": "Total compensation",
@@ -2826,7 +2826,7 @@
     "dateOfBirth": "1994-11-22T07:57:13.904Z",
     "roleId": 19,
     "salary": 7655,
-    "departmentId": 5,
+    "departmentId": 2,
     "managerId": 57,
     "employmentType": "Part-time employment",
     "compensationType": "Hourly compensation",
@@ -2863,7 +2863,7 @@
     "dateOfBirth": "1967-08-01T07:36:18.144Z",
     "roleId": 13,
     "salary": 10201,
-    "departmentId": 2,
+    "departmentId": 1,
     "managerId": 69,
     "employmentType": "Probation",
     "compensationType": "Hourly compensation",
@@ -2900,7 +2900,7 @@
     "dateOfBirth": "1956-03-12T19:14:42.189Z",
     "roleId": 6,
     "salary": 6840,
-    "departmentId": 9,
+    "departmentId": 2,
     "managerId": 71,
     "employmentType": "Employment on commission",
     "compensationType": "Total compensation",
@@ -2937,7 +2937,7 @@
     "dateOfBirth": "1963-12-12T22:16:32.223Z",
     "roleId": 18,
     "salary": 7551,
-    "departmentId": 10,
+    "departmentId": 2,
     "managerId": 38,
     "employmentType": "Leased employment",
     "compensationType": "Hourly compensation",
@@ -2957,7 +2957,7 @@
     "emergencyContactPhoneNumber": "8679696528",
     "effectiveDate": "2017-01-10T05:43:59.547Z",
     "position": "Lecturer",
-    "post": "HOD"
+    "post": "Coordinator"
   },
   {
     "empId": 81,
@@ -2974,7 +2974,7 @@
     "dateOfBirth": "1977-09-26T08:55:35.974Z",
     "roleId": 1,
     "salary": 7357,
-    "departmentId": 1,
+    "departmentId": 2,
     "managerId": 53,
     "employmentType": "Employment on commission",
     "compensationType": "Total compensation",
@@ -3011,7 +3011,7 @@
     "dateOfBirth": "1970-02-10T18:53:32.160Z",
     "roleId": 8,
     "salary": 12512,
-    "departmentId": 9,
+    "departmentId": 1,
     "managerId": 71,
     "employmentType": "Traineeship",
     "compensationType": "Salary & commission",
@@ -3048,7 +3048,7 @@
     "dateOfBirth": "1978-09-29T02:33:27.827Z",
     "roleId": 20,
     "salary": 9286,
-    "departmentId": 3,
+    "departmentId": 2,
     "managerId": 9,
     "employmentType": "Employment on commission",
     "compensationType": "Salary",
@@ -3068,7 +3068,7 @@
     "emergencyContactPhoneNumber": "3068395573",
     "effectiveDate": "2014-04-10T16:20:08.173Z",
     "position": "Assistant Professor",
-    "post": "HOD"
+    "post": "Morning Coordinator"
   },
   {
     "empId": 84,
@@ -3085,7 +3085,7 @@
     "dateOfBirth": "1963-12-09T16:10:45.825Z",
     "roleId": 11,
     "salary": 9496,
-    "departmentId": 7,
+    "departmentId": 2,
     "managerId": 55,
     "employmentType": "Leased employment",
     "compensationType": "Salary",
@@ -3122,7 +3122,7 @@
     "dateOfBirth": "1971-08-18T02:01:39.064Z",
     "roleId": 14,
     "salary": 4536,
-    "departmentId": 8,
+    "departmentId": 1,
     "managerId": 50,
     "employmentType": "Apprenticeship",
     "compensationType": "Hourly compensation",
@@ -3142,7 +3142,7 @@
     "emergencyContactPhoneNumber": "2896635350",
     "effectiveDate": "2012-06-13T09:28:55.566Z",
     "position": "Staff",
-    "post": "Morning Coordinator"
+    "post": "Coordinator"
   },
   {
     "empId": 86,
@@ -3159,7 +3159,7 @@
     "dateOfBirth": "1959-09-12T20:03:46.494Z",
     "roleId": 11,
     "salary": 8454,
-    "departmentId": 7,
+    "departmentId": 1,
     "managerId": 55,
     "employmentType": "Full-time employment",
     "compensationType": "Total compensation",
@@ -3196,7 +3196,7 @@
     "dateOfBirth": "1966-07-08T06:37:58.559Z",
     "roleId": 16,
     "salary": 8576,
-    "departmentId": 4,
+    "departmentId": 1,
     "managerId": 42,
     "employmentType": "Full-time employment",
     "compensationType": "Salary",
@@ -3233,7 +3233,7 @@
     "dateOfBirth": "1965-07-20T08:17:25.161Z",
     "roleId": 6,
     "salary": 7785,
-    "departmentId": 9,
+    "departmentId": 2,
     "managerId": 71,
     "employmentType": "Leased employment",
     "compensationType": "Total compensation",
@@ -3290,7 +3290,7 @@
     "emergencyContactPhoneNumber": "4183149108",
     "effectiveDate": "2015-03-13T16:06:02.274Z",
     "position": "Professor",
-    "post": "Morning Coordinator"
+    "post": "Coordinator"
   },
   {
     "empId": 90,
@@ -3344,7 +3344,7 @@
     "dateOfBirth": "1960-07-22T06:03:11.119Z",
     "roleId": 16,
     "salary": 9229,
-    "departmentId": 4,
+    "departmentId": 1,
     "managerId": 42,
     "employmentType": "Part-time employment",
     "compensationType": "Total compensation",
@@ -3364,7 +3364,7 @@
     "emergencyContactPhoneNumber": "4188804862",
     "effectiveDate": "2014-04-13T09:55:49.778Z",
     "position": "Associate Professor",
-    "post": "DHOD"
+    "post": "HOD"
   },
   {
     "empId": 92,
@@ -3381,7 +3381,7 @@
     "dateOfBirth": "1982-10-15T16:58:16.531Z",
     "roleId": 23,
     "salary": 6722,
-    "departmentId": 7,
+    "departmentId": 1,
     "managerId": 55,
     "employmentType": "Casual employment",
     "compensationType": "Bonuses",
@@ -3418,7 +3418,7 @@
     "dateOfBirth": "1951-07-16T16:09:17.494Z",
     "roleId": 23,
     "salary": 5287,
-    "departmentId": 7,
+    "departmentId": 1,
     "managerId": 55,
     "employmentType": "Traineeship",
     "compensationType": "Salary",
@@ -3455,7 +3455,7 @@
     "dateOfBirth": "1954-04-22T01:28:07.816Z",
     "roleId": 18,
     "salary": 10256,
-    "departmentId": 10,
+    "departmentId": 1,
     "managerId": 38,
     "employmentType": "Apprenticeship",
     "compensationType": "Hourly compensation",
@@ -3492,7 +3492,7 @@
     "dateOfBirth": "1987-03-12T03:37:48.024Z",
     "roleId": 6,
     "salary": 8386,
-    "departmentId": 9,
+    "departmentId": 1,
     "managerId": 71,
     "employmentType": "Seasonal employment",
     "compensationType": "Salary & commission",
@@ -3529,7 +3529,7 @@
     "dateOfBirth": "1995-07-12T21:41:31.359Z",
     "roleId": 16,
     "salary": 6969,
-    "departmentId": 4,
+    "departmentId": 1,
     "managerId": 42,
     "employmentType": "Employment on commission",
     "compensationType": "Salary",
@@ -3566,7 +3566,7 @@
     "dateOfBirth": "1951-05-29T08:07:17.105Z",
     "roleId": 14,
     "salary": 4812,
-    "departmentId": 8,
+    "departmentId": 1,
     "managerId": 50,
     "employmentType": "Apprenticeship",
     "compensationType": "Salary & commission",
@@ -3586,7 +3586,7 @@
     "emergencyContactPhoneNumber": "9057265700",
     "effectiveDate": "2014-09-24T05:08:26.304Z",
     "position": "Lecturer",
-    "post": null
+    "post": "Coordinator"
   },
   {
     "empId": 98,
@@ -3603,7 +3603,7 @@
     "dateOfBirth": "1954-04-07T16:14:12.361Z",
     "roleId": 5,
     "salary": 11878,
-    "departmentId": 1,
+    "departmentId": 2,
     "managerId": 53,
     "employmentType": "Traineeship",
     "compensationType": "Salary & commission",
@@ -3677,7 +3677,7 @@
     "dateOfBirth": "1978-04-10T04:51:16.121Z",
     "roleId": 20,
     "salary": 11392,
-    "departmentId": 3,
+    "departmentId": 2,
     "managerId": 9,
     "employmentType": "Apprenticeship",
     "compensationType": "Salary",
@@ -3714,7 +3714,7 @@
     "dateOfBirth": "1952-04-18T19:17:57.434Z",
     "roleId": 11,
     "salary": 10122,
-    "departmentId": 7,
+    "departmentId": 1,
     "managerId": 55,
     "employmentType": "Leased employment",
     "compensationType": "Salary & commission",
@@ -3734,6 +3734,6 @@
     "emergencyContactPhoneNumber": "5877332379",
     "effectiveDate": "2014-12-30T05:03:51.578Z",
     "position": "Associate Professor",
-    "post": "Morning Coordinator"
+    "post": "DHOD"
   }
 ]

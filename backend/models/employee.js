@@ -114,7 +114,8 @@ module.exports = (sequelize, Sequelize) => {
         type: Sequelize.ENUM(
           "Morning Coordinator",
           "HOD",
-          "DHOD"
+          "DHOD",
+          "Coordinator"
         ),
         allowNull: true,
         defaultValue: null,
