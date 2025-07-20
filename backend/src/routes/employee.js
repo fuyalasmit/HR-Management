@@ -3,6 +3,7 @@ const { requireAuth } = require("../../config/authJwt");
 
 module.exports = (router) => {
   router.route("/employees").get(requireAuth, controller.showAll);
+  router.route("/employees/public").get(controller.showAll); // Public route without auth
   router.route("/terminated").get(requireAuth, controller.showAllTerminated);
   router.route("/managers").get(requireAuth, controller.showManagers);
   router.route("/employees/:id").post(requireAuth, controller.showOne);
@@ -17,32 +18,18 @@ module.exports = (router) => {
   router.route("/employees/manager/none").get(requireAuth, controller.showEmployeeWithNoManager);
   router.route("/employees/manager/list").get(requireAuth, controller.showManagers);
   // Statistics/summary routes
-  router
-    .route("/employees/summaries/departments")
-    .get(requireAuth, controller.summarizeByDepartments);
-  router
-    .route("/employees/summaries/jobtitles")
-    .get(requireAuth, controller.summarizeByJobTitles);
+  router.route("/employees/summaries/departments").get(requireAuth, controller.summarizeByDepartments);
+  router.route("/employees/summaries/jobtitles").get(requireAuth, controller.summarizeByJobTitles);
 
-  router
-    .route("/employees/summaries/nationalities")
-    .get(requireAuth, controller.summarizeByNationalities);
+  router.route("/employees/summaries/nationalities").get(requireAuth, controller.summarizeByNationalities);
 
-  router
-    .route("/employees/summaries/locations")
-    .get(requireAuth, controller.summarizeByLocations);
+  router.route("/employees/summaries/locations").get(requireAuth, controller.summarizeByLocations);
   // endpoint for chart
-  router
-    .route("/employees/summaries/departments/chartdata")
-    .get(requireAuth, controller.summarizeByDepartmentsChartData);
+  router.route("/employees/summaries/departments/chartdata").get(requireAuth, controller.summarizeByDepartmentsChartData);
 
-  router
-    .route("/employees/summaries/headcounts/:year")
-    .get(requireAuth, controller.summarizeByHeadcounts);
+  router.route("/employees/summaries/headcounts/:year").get(requireAuth, controller.summarizeByHeadcounts);
 
   // Bulk change routes
-  router
-    .route("/employees/change/department")
-    .post(requireAuth, controller.changeDepartment);
+  router.route("/employees/change/department").post(requireAuth, controller.changeDepartment);
   router.route("/employees/change/job").post(requireAuth, controller.changeJob);
 };
