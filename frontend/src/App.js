@@ -7,20 +7,21 @@ import CompleteSignup from "./components/LoginComponents/CompleteSignupPage.js";
 // import OffboardingPage from "./components/OffboardingComponents/OffboardingPage.jsx";
 import EmployeeOnboarding from "./containers/EmployeeOnboarding.js";
 import ErrorPage from "./components/Error/ErrorPage.jsx";
-
+import ViewEmployees from "./components/ViewEmployees/ViewEmployees.jsx";
 
 function App() {
-     return (
+  return (
     <StateProvider>
-       <Routes>
+      <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/onboarding" element={<EmployeeOnboarding />} />
         <Route path="/resetpassword/:id" element={<SetNewPasswordPage />} />
         <Route path="/complete-signup/:token" element={<CompleteSignup />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/viewemployees" element={<ViewEmployees />} />
         {/* <Route path="/off-boarding/:token" element={<OffboardingPage />} /> */}
         <Route path="*" element={<ErrorPage />} />
-      </Routes> 
+      </Routes>
     </StateProvider>
   );
 }
