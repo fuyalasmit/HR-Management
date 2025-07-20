@@ -1,20 +1,31 @@
 import Box from "@mui/system/Box";
-import Stack from "@mui/system/Stack";
-import { useContext } from "react";
-import dayjs from "dayjs";
-import UpdatesMenu from "./UpdatesMenu";
+import { Stack, Typography, Card, CardContent, Grid } from "@mui/material";
+import { useContext, useEffect, useState } from "react";
 import StateContext from "../../context/StateContext";
 
+const api = require("../../assets/FetchServices");
+
 /**
- * Home page of the HRM application. Contains the updates menu.
+ * Home page of the HRM application. Contains employee statistics and dashboard.
  *
  * Props:
  * - style<Object>: Optional prop for adding further inline styling.
  *      Default: {}
  */
 export default function UpdatesPage({ style }) {
-  //ID of the currently logged in employee
   const stateContext = useContext(StateContext);
+  const [stats, setStats] = useState({
+    totalEmployees: 0,
+    contractEmployees: 0,
+    fullTimeEmployees: 0,
+    partTimeEmployees: 0,
+    departmentBreakdown: [],
+    terminatedEmployees: 0,
+    employmentTypes: {},
+    recentHires: 0,
+    loading: true
+  });
+
   let firstName = "Guest";
   if (stateContext.state.employee) {
     firstName = stateContext.state.employee.firstName;
@@ -22,21 +33,223 @@ export default function UpdatesPage({ style }) {
     firstName = stateContext.state.user.firstName;
   }
 
+  useEffect(() => {
+    const fetchEmployeeStats = async () => {
+      try {
+        setStats(prev => ({ ...prev, loading: true }));
+        
+        // Fetch all employees
+        const allEmployees = await api.employee.fetchAll();
+        
+        // Fetch terminated employees
+        const terminatedEmployees = await api.employee.fetchTerminated();
+        
+        // Fetch department summary
+        const departmentSummary = await api.employee.fetchSummaryByDepartments();
+        
+        // Calculate employment type statistics
+        const employmentTypes = {};
+        allEmployees.forEach(emp => {
+          if (emp.employmentType) {
+            const type = emp.employmentType;
+            employmentTypes[type] = (employmentTypes[type] || 0) + 1;
+          }
+        });
+
+        const contractEmployees = allEmployees.filter(emp => 
+          emp.employmentType && (
+            emp.employmentType.toLowerCase().includes('contract') ||
+            emp.employmentType.toLowerCase().includes('commission')
+          )
+        ).length;
+        
+        const fullTimeEmployees = allEmployees.filter(emp => 
+          emp.employmentType && emp.employmentType.toLowerCase().includes('full-time')
+        ).length;
+        
+        const partTimeEmployees = allEmployees.filter(emp => 
+          emp.employmentType && emp.employmentType.toLowerCase().includes('part-time')
+        ).length;
+
+        // Calculate recent hires (last 30 days)
+        const thirtyDaysAgo = new Date();
+        thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
+        const recentHires = allEmployees.filter(emp => 
+          emp.hireDate && new Date(emp.hireDate) >= thirtyDaysAgo
+        ).length;
+
+        setStats({
+          totalEmployees: allEmployees.length,
+          contractEmployees,
+          fullTimeEmployees,
+          partTimeEmployees,
+          departmentBreakdown: departmentSummary,
+          terminatedEmployees: terminatedEmployees.length,
+          employmentTypes,
+          recentHires,
+          loading: false
+        });
+      } catch (error) {
+        console.error('Error fetching employee statistics:', error);
+        setStats(prev => ({ ...prev, loading: false }));
+      }
+    };
+
+    fetchEmployeeStats();
+  }, []);
+
+  const StatCard = ({ title, value, subtitle, color = "#7F56D9" }) => (
+    <Card sx={{ minWidth: 200, boxShadow: '0 2px 8px rgba(0,0,0,0.1)', borderRadius: 2 }}>
+      <CardContent>
+        <Typography color="textSecondary" gutterBottom variant="body2">
+          {title}
+        </Typography>
+        <Typography variant="h4" component="div" sx={{ color, fontWeight: 'bold' }}>
+          {stats.loading ? '...' : value}
+        </Typography>
+        {subtitle && (
+          <Typography variant="body2" color="textSecondary">
+            {subtitle}
+          </Typography>
+        )}
+      </CardContent>
+    </Card>
+  );
+
   return (
     <Box sx={style}>
-      <Stack
-        direction="row"
-        alignItems="center"
-        justifyContent="space-between"
-        sx={{
-          marginBottom: "16px",
-          minWidth: "1042px",
-        }}
-      >
-        <h3>Hello, {firstName}</h3>
-        <p>Today is {dayjs().format("dddd, MMMM D, YYYY")}</p>
-      </Stack>
-      <UpdatesMenu />
+      <Typography variant="h4" component="h1" gutterBottom sx={{ fontWeight: 'bold', color: '#101828' }}>
+        Welcome back, {firstName}!
+      </Typography>
+      <Typography variant="body1" color="textSecondary" sx={{ mb: 4 }}>
+        Here's an overview of your organization
+      </Typography>
+
+      <Grid container spacing={3}>
+        {/* Main Statistics Row */}
+        <Grid item xs={12} sm={6} md={3}>
+          <StatCard 
+            title="Total Employees" 
+            value={stats.totalEmployees}
+            subtitle="Active employees"
+            color="#7F56D9"
+          />
+        </Grid>
+        
+        <Grid item xs={12} sm={6} md={3}>
+          <StatCard 
+            title="Contract Employees" 
+            value={stats.contractEmployees}
+            subtitle="Contract-based"
+            color="#2E90FA"
+          />
+        </Grid>
+        
+        <Grid item xs={12} sm={6} md={3}>
+          <StatCard 
+            title="Full-time Employees" 
+            value={stats.fullTimeEmployees}
+            subtitle="Full-time staff"
+            color="#12B76A"
+          />
+        </Grid>
+        
+        <Grid item xs={12} sm={6} md={3}>
+          <StatCard 
+            title="Part-time Employees" 
+            value={stats.partTimeEmployees}
+            subtitle="Part-time staff"
+            color="#F79009"
+          />
+        </Grid>
+
+        {/* Terminated Employees */}
+        <Grid item xs={12} sm={6} md={3}>
+          <StatCard 
+            title="Terminated Employees" 
+            value={stats.terminatedEmployees}
+            subtitle="Former employees"
+            color="#F04438"
+          />
+        </Grid>
+
+        {/* Recent Hires */}
+        <Grid item xs={12} sm={6} md={3}>
+          <StatCard 
+            title="Recent Hires" 
+            value={stats.recentHires}
+            subtitle="Last 30 days"
+            color="#9E77ED"
+          />
+        </Grid>
+
+        {/* Employment Types Overview */}
+        <Grid item xs={12} md={4}>
+          <Card sx={{ boxShadow: '0 2px 8px rgba(0,0,0,0.1)', borderRadius: 2 }}>
+            <CardContent>
+              <Typography variant="h6" component="h2" gutterBottom sx={{ fontWeight: 'bold' }}>
+                Employment Types
+              </Typography>
+              {stats.loading ? (
+                <Typography>Loading employment data...</Typography>
+              ) : Object.keys(stats.employmentTypes).length > 0 ? (
+                <Stack spacing={1}>
+                  {Object.entries(stats.employmentTypes)
+                    .sort(([,a], [,b]) => b - a)
+                    .slice(0, 4)
+                    .map(([type, count]) => (
+                    <Box key={type} sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                      <Typography variant="body2" sx={{ fontSize: '0.875rem' }}>{type}</Typography>
+                      <Typography variant="body1" sx={{ fontWeight: 'bold', color: '#2E90FA' }}>
+                        {count}
+                      </Typography>
+                    </Box>
+                  ))}
+                  {Object.keys(stats.employmentTypes).length > 4 && (
+                    <Typography variant="body2" color="textSecondary" sx={{ fontSize: '0.75rem' }}>
+                      +{Object.keys(stats.employmentTypes).length - 4} more types
+                    </Typography>
+                  )}
+                </Stack>
+              ) : (
+                <Typography color="textSecondary">No employment type data available</Typography>
+              )}
+            </CardContent>
+          </Card>
+        </Grid>
+
+        {/* Department Breakdown */}
+        <Grid item xs={12} md={8}>
+          <Card sx={{ boxShadow: '0 2px 8px rgba(0,0,0,0.1)', borderRadius: 2 }}>
+            <CardContent>
+              <Typography variant="h6" component="h2" gutterBottom sx={{ fontWeight: 'bold' }}>
+                Department Breakdown
+              </Typography>
+              {stats.loading ? (
+                <Typography>Loading department data...</Typography>
+              ) : stats.departmentBreakdown.length > 0 ? (
+                <Stack spacing={2}>
+                  {stats.departmentBreakdown.slice(0, 6).map((dept, index) => (
+                    <Box key={index} sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                      <Typography variant="body1">{dept.departmentName}</Typography>
+                      <Typography variant="h6" sx={{ fontWeight: 'bold', color: '#7F56D9' }}>
+                        {dept.count}
+                      </Typography>
+                    </Box>
+                  ))}
+                  {stats.departmentBreakdown.length > 6 && (
+                    <Typography variant="body2" color="textSecondary">
+                      And {stats.departmentBreakdown.length - 6} more departments...
+                    </Typography>
+                  )}
+                </Stack>
+              ) : (
+                <Typography color="textSecondary">No department data available</Typography>
+              )}
+            </CardContent>
+          </Card>
+        </Grid>
+      </Grid>
     </Box>
   );
 }
