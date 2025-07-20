@@ -75,7 +75,7 @@ function TableToolbar(props) {
       </Toolbar>
       
       {/* Search Bar */}
-      <Box sx={{ mb: 2 }}>
+      <Box sx={{ mb: 4 }}>
         <TextField
           inputRef={searchInputRef}
           fullWidth
@@ -411,7 +411,8 @@ export default function AppTable(props) {
               sx={{
                 border: "1px solid #EBEBEB",
                 maxWidth: window.innerWidth < 1550 ? 1000 : 1250,
-                minWidth: "100%"
+                minWidth: "100%",
+                mt: 3
               }}
         >
           <Table aria-label="app table">
