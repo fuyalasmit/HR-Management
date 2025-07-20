@@ -19,6 +19,7 @@ import { useState, forwardRef, useContext } from "react";
 import { Link as RouterLink } from "react-router-dom";
 import { colors } from "../../assets/Styles";
 import StateContext from "../../context/StateContext";
+import PulchowkLogo from "./PulchowkLogo";
 const Link = forwardRef(function Link(itemProps, ref) {
   return (
     <RouterLink
@@ -117,14 +118,11 @@ export default function SideMenu({ style, onSelect }) {
         paddingLeft: "32px",
         paddingRight: "32px"
       }}>
-        <img
-          src={stateContext.state.logo}
-          alt="Company Logo"
+        <PulchowkLogo 
           style={{
-            maxWidth: "200px",
-            //height: "40px",
             marginTop: "40px",
-            marginBottom: "24px"
+            marginBottom: "24px",
+            fontSize: "24px"
           }}
         />
         <List>

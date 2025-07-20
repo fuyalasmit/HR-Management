@@ -20,7 +20,7 @@ exports.sendEmail = async (option) => {
 
   // Define email options
   const emailOptions = {
-    from: `BlueWave HRM support<${process.env.EMAIL}>`,
+    from: `HR Management System<${process.env.EMAIL}>`,
     to: option.email,
     subject: option.subject,
     text: option.message,

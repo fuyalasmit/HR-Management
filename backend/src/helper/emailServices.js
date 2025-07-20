@@ -76,7 +76,7 @@ class EmailService {
 
     const sendEmail = async (to, subject, html) => {
       const info = await this.transporter.sendMail({
-        from: `BlueWave HRM support<${process.env.EMAIL}>`,
+        from: `HR Management System<${process.env.EMAIL}>`,
         to: to,
         subject: subject,
         html: html,

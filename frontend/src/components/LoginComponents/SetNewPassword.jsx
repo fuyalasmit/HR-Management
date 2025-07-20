@@ -7,6 +7,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import StateContext from "../../context/StateContext";
 import axios from "axios";
 import PageContext from "../../context/PageContext";
+import PulchowkLogo from "../StaticComponents/PulchowkLogo";
 const { login } = require("../../assets/utils");
 const api = require("../../assets/FetchServices");
 
@@ -142,7 +143,7 @@ function SetNewPassword({ user, onSubmit }) {
     <div className="sign-up-body">
       <div className="sign-up-container">
         <div className="logo-container">
-          <img src={stateContext.state.logo} alt="logo" />
+          <PulchowkLogo style={{ marginBottom: '20px' }} />
         </div>
         <h2 style={{ marginBottom: "0px" }}>Set new Password</h2>
         <h3>

@@ -5,6 +5,7 @@ import PageContext from "../../context/PageContext";
 import StateContext from "../../context/StateContext";
 import { useNavigate } from "react-router-dom";
 import { getAuthUser } from "../../assets/utils";
+import PulchowkLogo from "../StaticComponents/PulchowkLogo";
 const validator = require("validator");
 const api = require("../../assets/FetchServices");
 
@@ -48,7 +49,7 @@ function LoginPage() {
     <div className="login-body">
       <div className="login-container">
         <div className="logo-container">
-          <img src={stateContext.state.logo} alt="logo" />
+          <PulchowkLogo style={{ marginBottom: '20px' }} />
         </div>
         <h2>Log in to your account</h2>
         {message && <div className="error-alert">{message}</div>}

@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import StateContext from "../../context/StateContext";
 import PageContext from "../../context/PageContext";
 import "./login.css";
+import PulchowkLogo from "../StaticComponents/PulchowkLogo";
 const { logout } = require("../../assets/utils");
 
 function PasswordResetPage() {
@@ -29,7 +30,7 @@ function PasswordResetPage() {
     <div className="login-body">
       <div className="login-container">
         <div className="logo-container">
-          <img src={stateContext.state.logo} alt="logo" />
+          <PulchowkLogo style={{ marginBottom: '20px' }} />
         </div>
         <h2 style={{ marginBottom: "0px" }}>Password reset</h2>
         <h3>

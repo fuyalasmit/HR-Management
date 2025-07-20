@@ -3,6 +3,7 @@ import "./login.css";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import StateContext from "../../context/StateContext";
 import PageContext from "../../context/PageContext";
+import PulchowkLogo from "../StaticComponents/PulchowkLogo";
 const api = require("../../assets/FetchServices");
 
 const CheckYourEmailPage = () => {
@@ -29,7 +30,7 @@ const CheckYourEmailPage = () => {
     <body class="login-body">
       <div className="login-container">
         <div className="logo-container">
-          <img src={stateContext.state.logo} alt="logo" />
+          <PulchowkLogo style={{ marginBottom: '20px' }} />
         </div>
         <h2>Check Your Email</h2>
         <h3 style={{ margin: "0px" }}>{message}</h3>

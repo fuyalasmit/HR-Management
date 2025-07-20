@@ -3,6 +3,7 @@ import "./login.css";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import StateContext from "../../context/StateContext";
 import PageContext from "../../context/PageContext";
+import PulchowkLogo from "../StaticComponents/PulchowkLogo";
 const validator = require("validator");
 const api = require("../../assets/FetchServices");
 
@@ -36,7 +37,7 @@ const ForgotPasswordPage = () => {
     <body class="login-body">
       <div className="login-container">
         <div className="logo-container">
-          <img src={stateContext.state.logo} alt="logo" />
+          <PulchowkLogo style={{ marginBottom: '20px' }} />
         </div>
         <h2 style={{ marginBottom: "0px" }}>Forgot password?</h2>
         <h3>No worries, we'll send you reset instructions.</h3>

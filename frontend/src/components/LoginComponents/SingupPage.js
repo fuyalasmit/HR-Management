@@ -4,6 +4,7 @@ import "./signup.css";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import StateContext from "../../context/StateContext";
 import { useNavigate } from "react-router-dom";
+import PulchowkLogo from "../StaticComponents/PulchowkLogo";
 const validator = require("validator");
 const api = require("../../assets/FetchServices");
 
@@ -240,10 +241,10 @@ function SingupPage({ user, token, onSubmit }) {
     <div className="sign-up-body">
       <div className="sign-up-container">
         <div className="logo-container">
-          <img src={stateContext.state.logo} alt="logo" />
+          <PulchowkLogo style={{ marginBottom: '20px' }} />
         </div>
         <h2 style={{ marginBottom: "0px" }}>
-          {user ? "Activate account" : "Create HRM admin account"}
+          {user ? "Activate account" : "Create admin account"}
         </h2>
         <form onSubmit={handleSubmit}>
           <Input
