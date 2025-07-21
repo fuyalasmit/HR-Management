@@ -340,16 +340,29 @@ const ViewEmployees = () => {
                           </Typography>
                         )}
 
-                        {/* Separator line for future content */}
-                        <Box
-                          sx={{
-                            mt: 2,
-                            pt: 2,
-                            borderTop: "1px solid #e2e8f0",
-                          }}
-                        >
-                          {/* Future content will go here */}
-                        </Box>
+                        {/* Separator line and field of interest - only show if fieldOfInterest exists */}
+                        {employee.fieldOfInterest && (
+                          <Box
+                            sx={{
+                              mt: 2,
+                              pt: 2,
+                              borderTop: "1px solid #e2e8f0",
+                            }}
+                          >
+                            <Typography
+                              variant="body2"
+                              sx={{
+                                color: "#4a5568",
+                                fontSize: "0.85rem",
+                                textAlign: "center",
+                                fontStyle: "italic",
+                                lineHeight: 1.4,
+                              }}
+                            >
+                              {employee.fieldOfInterest}
+                            </Typography>
+                          </Box>
+                        )}
                       </Box>
                     </Card>
                   </Box>
