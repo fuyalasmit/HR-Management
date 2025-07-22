@@ -327,7 +327,7 @@ const ViewEmployees = () => {
 
                     {/* Profile Picture - Half Above Card */}
                     <Avatar
-                      src={employee.photo}
+                      src={employee.photo ? `data:image/png;base64,${atob(employee.photo)}` : undefined}
                       className="profile-avatar"
                       sx={{
                         width: 100,
