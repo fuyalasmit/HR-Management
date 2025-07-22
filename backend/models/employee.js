@@ -115,7 +115,15 @@ module.exports = (sequelize, Sequelize) => {
           "Morning Coordinator",
           "HOD",
           "DHOD",
-          "Coordinator"
+          "Coordinator",
+          "Assistant Dean (IOE)",
+          "Assistant Director (CARD)",
+          "Director (CIT)",
+          "IC Chair",
+          "Coordinator (MsDSA)",
+          "Coordinator (MsCSKE)",
+          "Coordinator (MsICE)",
+          "Coordinator (MsNCS)"
         ),
         allowNull: true,
         defaultValue: null,

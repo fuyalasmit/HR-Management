@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Box, Card, Typography, Avatar, Grid, CircularProgress, Container, Stack, Alert, Chip } from "@mui/material";
 import "./ViewEmployees.css";
 
+import departmentPhoto from "../../assets/images/departmentPhoto.jpg";
+
 const BASE_URL = require("../../assets/FetchServices/BaseUrl.json").value;
 
 const ViewEmployees = () => {
@@ -137,36 +139,113 @@ const ViewEmployees = () => {
 
   return (
     <Box className="view-employees-container">
-      <Container maxWidth="lg" sx={{ py: 6 }}>
-        {/* Header Section */}
-        <Box textAlign="center" mb={8}>
+      {/* Department Cover Photo - Full Width Banner */}
+      <Box
+        sx={{
+          width: "100vw",
+          height: { xs: "200px", sm: "250px", md: "350px" },
+          position: "relative",
+          left: "50%",
+          right: "50%",
+          marginLeft: "-50vw",
+          marginRight: "-50vw",
+          backgroundImage: `url(${departmentPhoto})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          mb: 2,
+        }}
+      >
+        {/* Dark overlay for better text readability */}
+        <Box
+          sx={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            backgroundColor: "rgba(0, 0, 0, 0.4)",
+            zIndex: 1,
+          }}
+        />
+
+        {/* Title overlay on the banner */}
+        <Box sx={{ textAlign: "center", zIndex: 2, color: "white", maxWidth: "90%" }}>
           <Typography
             variant="h2"
             component="h1"
-            fontWeight={700}
             sx={{
-              color: "#1a202c",
+              fontSize: { xs: "2.5rem", sm: "3.5rem", md: "4.5rem" },
+              fontWeight: 700,
+              textShadow: "2px 2px 4px rgba(0,0,0,0.8)",
               mb: 2,
-              fontSize: { xs: "2.5rem", md: "3.5rem" },
+              letterSpacing: { xs: "0.02em", md: "0.03em" },
+              fontFamily: "'Inter', 'Roboto', sans-serif",
+              color: "white",
+              textTransform: "uppercase",
             }}
           >
             Faculty
           </Typography>
-          <Typography
-            variant="h6"
+          <Box
             sx={{
-              color: "#4a5568",
-              maxWidth: "600px",
-              mx: "auto",
-              fontSize: "1.125rem",
-              fontWeight: 400,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              gap: 2,
+              mb: 1,
             }}
           >
-            Department of Electronics and Computer Engineering
+            <Box
+              sx={{
+                width: { xs: "30px", md: "50px" },
+                height: "2px",
+                background: "linear-gradient(90deg, transparent 0%, #60a5fa 100%)",
+              }}
+            />
+            <Typography
+              variant="h5"
+              sx={{
+                fontSize: { xs: "0.9rem", sm: "1.1rem", md: "1.3rem" },
+                fontWeight: 300,
+                textShadow: "2px 2px 4px rgba(0,0,0,0.6)",
+                letterSpacing: "0.1em",
+                fontFamily: "'Inter', 'Roboto', sans-serif",
+                textTransform: "uppercase",
+                color: "#e2e8f0",
+              }}
+            >
+              Department of Electronics & Computer Engineering
+            </Typography>
+            <Box
+              sx={{
+                width: { xs: "30px", md: "50px" },
+                height: "2px",
+                background: "linear-gradient(90deg, #60a5fa 0%, transparent 100%)",
+              }}
+            />
+          </Box>
+          <Typography
+            variant="body1"
+            sx={{
+              fontSize: { xs: "0.75rem", sm: "0.85rem", md: "0.95rem" },
+              fontWeight: 400,
+              textShadow: "1px 1px 2px rgba(0,0,0,0.5)",
+              letterSpacing: "0.15em",
+              fontFamily: "'Inter', 'Roboto', sans-serif",
+              color: "#cbd5e1",
+              opacity: 0.9,
+            }}
+          >
+            ENGINEERING • INNOVATION • FUTURE
           </Typography>
         </Box>
+      </Box>
 
-        {/* Employee Cards Grouped by Position */}
+      <Container maxWidth="lg" sx={{ py: 6 }}>
         {Object.entries(employees).map(([position, employeeList]) => (
           <Box key={position} mb={8}>
             {/* Position Section Header */}
@@ -186,7 +265,7 @@ const ViewEmployees = () => {
                     bottom: "-8px",
                     left: "50%",
                     transform: "translateX(-50%)",
-                    width: "80px",
+                    width: "90%",
                     height: "3px",
                     backgroundColor: "#667eea",
                     borderRadius: "2px",
@@ -340,16 +419,29 @@ const ViewEmployees = () => {
                           </Typography>
                         )}
 
-                        {/* Separator line for future content */}
-                        <Box
-                          sx={{
-                            mt: 2,
-                            pt: 2,
-                            borderTop: "1px solid #e2e8f0",
-                          }}
-                        >
-                          {/* Future content will go here */}
-                        </Box>
+                        {/* Separator line and field of interest - only show if fieldOfInterest exists */}
+                        {employee.fieldOfInterest && (
+                          <Box
+                            sx={{
+                              mt: 2,
+                              pt: 2,
+                              borderTop: "1px solid #e2e8f0",
+                            }}
+                          >
+                            <Typography
+                              variant="body2"
+                              sx={{
+                                color: "#4a5568",
+                                fontSize: "0.85rem",
+                                textAlign: "center",
+                                fontStyle: "italic",
+                                lineHeight: 1.4,
+                              }}
+                            >
+                              {employee.fieldOfInterest}
+                            </Typography>
+                          </Box>
+                        )}
                       </Box>
                     </Card>
                   </Box>
