@@ -594,6 +594,11 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
     if (!inputs.managerId) {
       inputs.managerId = null; // This field is optional
     }
+    
+    // Convert empty post field to null since the backend ENUM doesn't accept empty strings
+    if (inputs.post === "" || inputs.post === undefined) {
+      inputs.post = null;
+    }
 
     const newProfiles = [];
     if (!isEmpty(inputs._facebook)) {
