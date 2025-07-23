@@ -6408,78 +6408,6 @@
     "cumulativeHoursTaken": 30
   },
   {
-    "id": 802,
-    "employeeEmpId": 101,
-    "timeOffId": 1,
-    "yearNumber": 2013,
-    "hoursAllowed": 180,
-    "cumulativeHoursTaken": 0
-  },
-  {
-    "id": 803,
-    "employeeEmpId": 101,
-    "timeOffId": 2,
-    "yearNumber": 2013,
-    "hoursAllowed": 180,
-    "cumulativeHoursTaken": 0
-  },
-  {
-    "id": 804,
-    "employeeEmpId": 101,
-    "timeOffId": 3,
-    "yearNumber": 2013,
-    "hoursAllowed": 75,
-    "cumulativeHoursTaken": 15
-  },
-  {
-    "id": 805,
-    "employeeEmpId": 101,
-    "timeOffId": 1,
-    "yearNumber": 2020,
-    "hoursAllowed": 180,
-    "cumulativeHoursTaken": 7.5
-  },
-  {
-    "id": 806,
-    "employeeEmpId": 101,
-    "timeOffId": 2,
-    "yearNumber": 2020,
-    "hoursAllowed": 180,
-    "cumulativeHoursTaken": 0
-  },
-  {
-    "id": 807,
-    "employeeEmpId": 101,
-    "timeOffId": 3,
-    "yearNumber": 2020,
-    "hoursAllowed": 75,
-    "cumulativeHoursTaken": 0
-  },
-  {
-    "id": 808,
-    "employeeEmpId": 101,
-    "timeOffId": 1,
-    "yearNumber": 2021,
-    "hoursAllowed": 180,
-    "cumulativeHoursTaken": 0
-  },
-  {
-    "id": 809,
-    "employeeEmpId": 101,
-    "timeOffId": 2,
-    "yearNumber": 2021,
-    "hoursAllowed": 180,
-    "cumulativeHoursTaken": 22.5
-  },
-  {
-    "id": 810,
-    "employeeEmpId": 101,
-    "timeOffId": 3,
-    "yearNumber": 2021,
-    "hoursAllowed": 75,
-    "cumulativeHoursTaken": 0
-  },
-  {
     "id": 811,
     "employeeEmpId": 1,
     "timeOffId": 1,
@@ -8877,30 +8805,6 @@
     "timeOffId": 3,
     "yearNumber": 2024,
     "hoursAllowed": 35,
-    "cumulativeHoursTaken": 0
-  },
-  {
-    "id": 1111,
-    "employeeEmpId": 101,
-    "timeOffId": 1,
-    "yearNumber": 2024,
-    "hoursAllowed": 0,
-    "cumulativeHoursTaken": 0
-  },
-  {
-    "id": 1112,
-    "employeeEmpId": 101,
-    "timeOffId": 2,
-    "yearNumber": 2024,
-    "hoursAllowed": 0,
-    "cumulativeHoursTaken": 0
-  },
-  {
-    "id": 1113,
-    "employeeEmpId": 101,
-    "timeOffId": 3,
-    "yearNumber": 2024,
-    "hoursAllowed": 15,
     "cumulativeHoursTaken": 0
   }
 ]

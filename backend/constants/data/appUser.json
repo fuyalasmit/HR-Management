@@ -1298,18 +1298,5 @@
     "firstName": "Beret",
     "lastName": "Goodban",
     "access": "Revoked"
-  },
-  {
-    "id": 39,
-    "email": "alissa.futter@bluewavelabs.ca",
-    "password": "Password1!",
-    "empId": 101,
-    "passwordChangedAt": "2024-01-31T05:00:00.000Z",
-    "passwordResetToken": null,
-    "passwordResetTokenExpiresAt": null,
-    "permissionId": 3,
-    "firstName": "Alissa",
-    "lastName": "Futter",
-    "access": "Revoked"
   }
 ]

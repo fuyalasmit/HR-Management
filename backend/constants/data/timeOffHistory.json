@@ -2275,19 +2275,6 @@
       "status": "Approved"
     },
     {
-      "id": 176,
-      "startDate": "2018-03-28T01:05:57.394Z",
-      "endDate": "2018-03-30T01:05:57.394Z",
-      "hours": 15,
-      "note": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. V",
-      "empId": 101,
-      "timeOffId": 1,
-      "approvalAuthorityId": 71,
-      "requestDate": "2018-03-23T01:05:57.394Z",
-      "decisionDate": "2018-03-26T01:05:57.394Z",
-      "status": "Declined"
-    },
-    {
       "id": 177,
       "startDate": "2022-07-20T13:08:06.976Z",
       "endDate": "2022-07-24T13:08:06.976Z",
@@ -2610,19 +2597,6 @@
       "approvalAuthorityId": 32,
       "requestDate": "2018-04-22T17:04:14.633Z",
       "decisionDate": "2018-04-25T17:04:14.633Z",
-      "status": "Approved"
-    },
-    {
-      "id": 202,
-      "startDate": "2020-02-25T12:51:52.044Z",
-      "endDate": "2020-02-26T12:51:52.044Z",
-      "hours": 7.5,
-      "note": "ed lectus vestibulum mattis ullamcorper. Lacinia at quis risus sed vulputate odio.,Sit amet nisl purus in mollis nunc sed id",
-      "empId": 101,
-      "timeOffId": 1,
-      "approvalAuthorityId": 71,
-      "requestDate": "2020-02-20T12:51:52.044Z",
-      "decisionDate": "2020-02-24T12:51:52.044Z",
       "status": "Approved"
     },
     {
@@ -6331,19 +6305,6 @@
       "status": "Approved"
     },
     {
-      "id": 488,
-      "startDate": "2021-12-30T14:25:21.550Z",
-      "endDate": "2022-01-02T14:25:21.550Z",
-      "hours": 22.5,
-      "note": "sem nulla pharetra. Nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper. Est pellentesque elit ullamcorper dignissim cr",
-      "empId": 101,
-      "timeOffId": 2,
-      "approvalAuthorityId": 71,
-      "requestDate": "2021-12-25T14:25:21.550Z",
-      "decisionDate": "2021-12-26T14:25:21.550Z",
-      "status": "Approved"
-    },
-    {
       "id": 489,
       "startDate": "2022-03-23T05:20:37.643Z",
       "endDate": "2022-03-24T05:20:37.643Z",
@@ -6419,19 +6380,6 @@
       "approvalAuthorityId": 53,
       "requestDate": "2023-01-15T01:40:04.684Z",
       "decisionDate": "2023-01-16T01:40:04.684Z",
-      "status": "Approved"
-    },
-    {
-      "id": 495,
-      "startDate": "2013-12-31T06:24:26.673Z",
-      "endDate": "2014-01-02T06:24:26.673Z",
-      "hours": 15,
-      "note": "mattis molestie a iaculis at erat.,Etiam erat velit scelerisque in. Aliquet enim tortor at auctor urna. Donec pretium vulputa",
-      "empId": 101,
-      "timeOffId": 3,
-      "approvalAuthorityId": 71,
-      "requestDate": "2013-12-26T06:24:26.673Z",
-      "decisionDate": "2013-12-29T06:24:26.673Z",
       "status": "Approved"
     },
     {

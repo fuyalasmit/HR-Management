@@ -1636,23 +1636,5 @@
     "empId": 100,
     "empMgrId": 1,
     "priority": 3
-  },
-  {
-    "id": 274,
-    "empId": 101,
-    "empMgrId": 65,
-    "priority": 1
-  },
-  {
-    "id": 275,
-    "empId": 101,
-    "empMgrId": 55,
-    "priority": 2
-  },
-  {
-    "id": 276,
-    "empId": 101,
-    "empMgrId": 1,
-    "priority": 3
   }
 ]

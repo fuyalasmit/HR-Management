@@ -392,22 +392,6 @@
     "changeTo": "Apprenticeship"
   },
   {
-    "id": 50,
-    "empId": 101,
-    "date": "2022-08-16T22:14:53.843Z",
-    "changeType": "Position Change",
-    "changeFrom": "Legal Counsel",
-    "changeTo": "Backend Developer"
-  },
-  {
-    "id": 51,
-    "empId": 101,
-    "date": "2022-02-25T23:22:42.439Z",
-    "changeType": "Position Change",
-    "changeFrom": "Accounting Manager",
-    "changeTo": "Backend Developer"
-  },
-  {
     "id": 52,
     "empId": 35,
     "date": "2022-08-25T18:03:00.240Z",
@@ -1182,14 +1166,6 @@
     "changeType": "Department Change",
     "changeFrom": "Product Management",
     "changeTo": "Engineering and Development"
-  },
-  {
-    "id": 149,
-    "empId": 101,
-    "date": "2022-08-05T09:34:22.773Z",
-    "changeType": "Employment Type Change",
-    "changeFrom": "Part-time employment",
-    "changeTo": "Probation"
   },
   {
     "id": 150,

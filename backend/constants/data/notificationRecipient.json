@@ -6,11 +6,6 @@
   },
   {
     "notificationId": 1,
-    "employeeEmpId": 101,
-    "status": "waiting"
-  },
-  {
-    "notificationId": 1,
     "employeeEmpId": 67,
     "status": "seen"
   },
@@ -228,11 +223,6 @@
     "notificationId": 8,
     "employeeEmpId": 44,
     "status": "waiting"
-  },
-  {
-    "notificationId": 8,
-    "employeeEmpId": 101,
-    "status": "seen"
   },
   {
     "notificationId": 8,

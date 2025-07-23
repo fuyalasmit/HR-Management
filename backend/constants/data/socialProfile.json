@@ -1798,23 +1798,5 @@
     "mediumName": "Linkedin",
     "empId": 100,
     "profileUrl": "https://linkedin.com/in/beretgoodban"
-  },
-  {
-    "id": 301,
-    "mediumName": "Facebook",
-    "empId": 101,
-    "profileUrl": "https://facebook.com/afutter"
-  },
-  {
-    "id": 302,
-    "mediumName": "Twitter",
-    "empId": 101,
-    "profileUrl": "https://twitter.com/afutter"
-  },
-  {
-    "id": 303,
-    "mediumName": "Linkedin",
-    "empId": 101,
-    "profileUrl": "https://linkedin.com/in/afutter"
   }
 ]
