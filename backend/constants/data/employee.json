@@ -7,32 +7,32 @@
     "gender": "Male",
     "email": "elwyn.ginnety@bluewavelabs.ca",
     "phoneNumber": "6049251438",
-    "nationality": "Saint Lucian",
-    "maritalStatus": "Separated",
-    "addressId": 37,
-    "hireDate": "2017-02-05T14:33:40.773Z",
-    "dateOfBirth": "1984-10-06T03:01:53.758Z",
-    "roleId": 25,
-    "salary": 93253,
-    "departmentId": 2,
-    "managerId": null,
-    "employmentType": "Part-time employment",
-    "compensationType": "Salary",
-    "weeklyHours": 37,
-    "officeLocation": "Oliver",
+    "nationality": "Saint Lucian", //set to nepal for all employees
+    "maritalStatus": "Separated", //set to Single for all employees
+    "addressId": 37, 
+    "hireDate": "2017-02-05T14:33:40.773Z", //set to 2017-02-05T14:33:40.773Z for all employees
+    "dateOfBirth": "1984-10-06T03:01:53.758Z", //set to 1984-10-06T03:01:53.758Z for all employees
+    "roleId": 25, //set to 25 for all employees
+    "salary": 93253, // set to 93253 for all employees
+    "departmentId": 2, // set to 2 for all employees
+    "managerId": null, // set to null for all employees
+    "employmentType": "Part-time employment", // set to permanent employment for all employees
+    "compensationType": "Salary", // set to Salary for all employees
+    "weeklyHours": 37, 
+    "officeLocation": "Oliver", //set to pulchowk for all employees
     "teamId": 2,
-    "photo": null,
+    "photo": null, //set to null for all employees
     "emergencyContactId": 85,
-    "streetAddress": "00900 Oakridge Alley",
-    "unitSuite": "Apt 1765",
-    "postalZipCode": "L5V 1E5",
-    "city": "Stony Plain",
-    "country": "Canada",
-    "stateProvince": "Alberta",
+    "streetAddress": "00900 Oakridge Alley", // Pulchowk
+    "unitSuite": "Apt 1765", // set to Apt 1765 for all employees
+    "postalZipCode": "L5V 1E5", // set to L5V 1E5 for all employees
+    "city": "Stony Plain", // set Kathmandu for all employees
+    "country": "Canada", // set to Nepal for all employees
+    "stateProvince": "Alberta", // set to Bagmati for all employees
     "emergencyContactName": "Staffard Grimmert",
     "emergencyContactRelationship": "Step-mother",
     "emergencyContactPhoneNumber": "6473779554",
-    "effectiveDate": "2017-02-05T14:33:40.773Z",
+    "effectiveDate": "2017-02-05T14:33:40.773Z", // set to 2017-02-05T14:33:40.773Z for all employees
     "position": "Professor",
     "post": null,
     "fieldOfInterest": "Computer Engineering"

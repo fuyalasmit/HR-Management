@@ -1,1 +1,0 @@
-changed require("bcrypt") to require("bcryptjs") in appUser.js, passwordHistory.js and authentication.js due to errors
