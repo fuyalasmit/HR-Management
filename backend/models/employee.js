@@ -105,6 +105,7 @@ module.exports = (sequelize, Sequelize) => {
           "Lecturer",
           "Senior Instructor",
           "Instructor",
+          'Assistant Instructor',
           "Staff"
         ),
         allowNull: false,

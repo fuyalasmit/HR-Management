@@ -24,6 +24,10 @@
     "selected": false
   },
   {
+    "name": "Assistant Instructor",
+    "selected": false
+  },
+  {
     "name": "Staff",
     "selected": false
   }

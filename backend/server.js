@@ -69,4 +69,4 @@ Note:
    altering database tables at each run of the application.
 */
 
-populateDatabaseTables({ all: true });
+//  populateDatabaseTables({ all: true });

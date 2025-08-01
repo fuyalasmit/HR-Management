@@ -49,6 +49,7 @@ const ViewEmployees = () => {
       "Lecturer",
       "Senior Instructor",
       "Instructor",
+      "Assistant Instructor",
       "Staff",
     ];
 

@@ -17,6 +17,7 @@ positions = [
     'Lecturer',
     'Senior Instructor',
     'Instructor',
+    'Assistant Instructor',
     'Staff'
 ]
 
