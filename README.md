@@ -1,23 +1,46 @@
 ## Start the backend
 
-### Navigate to it
+This guide provides the definitive steps to set up and run the backend, ensuring a consistent development environment by using a database backup.
+
+### 1. Navigate to the Backend Directory
 
 ```bash
 cd backend
 ```
-### Install the node modules (the dependencies)
+
+### 2. Install Dependencies
 
 ```bash
 pnpm install
 ```
 
-### Setup the Database
+### 3. Reset and Restore the Database
+
+To guarantee a clean and consistent state, the setup process involves resetting the database and restoring it from the `database_backup.sql` file.
+
+**Warning:** This process is destructive and will replace your existing local database.
+
+**Step 3.1: Stop Running Containers and Delete Old Data**
 
 ```bash
-docker compose up
+docker-compose down && docker volume rm backend_postgres_data
 ```
 
-### Start the backend
+**Step 3.2: Start a Fresh Database Container**
+
+```bash
+docker-compose up -d
+```
+
+**Step 3.3: Restore the Database from the Backup File**
+
+```bash
+cat database_backup.sql | docker-compose exec -T database psql -U admin -d SingleDatabase
+```
+
+### 4. Start the Backend Server
+
+With the database restored, start the application server.
 
 ```bash
 pnpm run start
