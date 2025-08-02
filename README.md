@@ -23,19 +23,52 @@ To guarantee a clean and consistent state, the setup process involves resetting 
 **Step 3.1: Stop Running Containers and Delete Old Data**
 
 ```bash
-docker-compose down && docker volume rm backend_postgres_data
+docker compose down && docker volume rm backend_postgres_data
 ```
 
 **Step 3.2: Start a Fresh Database Container**
 
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 
 **Step 3.3: Restore the Database from the Backup File**
 
+If you encounter UTF-8 encoding errors, use this method:
+
 ```bash
-cat database_backup.sql | docker-compose exec -T database psql -U admin -d SingleDatabase
+# Copy the backup file into the container (avoids encoding issues)
+docker compose cp database_backup.sql database:/tmp/backup.sql
+
+# Restore from inside the container
+docker compose exec database psql -U admin -d SingleDatabase -f /tmp/backup.sql
+```
+
+**Alternative method (if the above doesn't work):**
+
+```bash
+# First, check the encoding of your backup file
+file -i database_backup.sql
+
+# Convert from UTF-16LE to UTF-8 (most common case for this error)
+iconv -f UTF-16LE -t UTF-8 database_backup.sql > database_backup_utf8.sql
+
+# Or if it shows a different encoding, try these alternatives:
+# iconv -f ISO-8859-1 -t UTF-8 database_backup.sql > database_backup_utf8.sql
+# iconv -f WINDOWS-1252 -t UTF-8 database_backup.sql > database_backup_utf8.sql
+
+# Then restore using the converted file
+cat database_backup_utf8.sql | docker compose exec -T database psql -U admin -d SingleDatabase
+```
+
+**If you're still getting errors, try this method:**
+
+```bash
+# Remove any BOM (Byte Order Mark) and convert encoding
+sed '1s/^\xEF\xBB\xBF//' database_backup.sql | iconv -f UTF-16LE -t UTF-8 > database_backup_clean.sql
+
+# Then restore
+cat database_backup_clean.sql | docker compose exec -T database psql -U admin -d SingleDatabase
 ```
 
 ### 4. Start the Backend Server
