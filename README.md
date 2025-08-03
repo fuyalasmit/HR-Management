@@ -23,19 +23,31 @@ To guarantee a clean and consistent state, the setup process involves resetting 
 **Step 3.1: Stop Running Containers and Delete Old Data**
 
 ```bash
-docker-compose down && docker volume rm backend_postgres_data
+docker compose down && docker volume rm backend_postgres_data
 ```
 
 **Step 3.2: Start a Fresh Database Container**
 
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 
 **Step 3.3: Restore the Database from the Backup File**
 
+For Windows: 
+
 ```bash
-cat database_backup.sql | docker-compose exec -T database psql -U admin -d SingleDatabase
+# Use the UTF-8 converted backup file
+cat database_backup.sql | docker compose exec -T database psql -U admin -d SingleDatabase
+```
+
+
+
+For Linux: Use the pre-converted UTF-8 backup file:
+
+```bash
+# Use the UTF-8 converted backup file
+cat database_backup_utf8_fixed.sql | docker compose exec -T database psql -U admin -d SingleDatabase
 ```
 
 ### 4. Start the Backend Server

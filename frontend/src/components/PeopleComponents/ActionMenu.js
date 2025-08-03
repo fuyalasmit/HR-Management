@@ -45,13 +45,19 @@ export default function ActionMenu({ actions, disableMenu }) {
           onClick: (event) => event.stopPropagation(), // Prevent row click from menu clicks
         }}
       >
-        {actions.map((item) => {
+        {actions.map((item, index) => {
           return (
             <MenuItem
+              key={`${item.label}-${index}`}
               onClick={(event) => {
+                console.log("🎯 ActionMenu MenuItem clicked:", item.label);
                 event.stopPropagation(); // Prevent row click
                 handleClose();
-                item.action();
+                // Add small delay to ensure menu closes before action
+                setTimeout(() => {
+                  console.log("🚀 Executing action for:", item.label);
+                  item.action();
+                }, 50);
               }}
               disableRipple
             >

@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import { Box } from "@mui/material";
 import PeopleDetails from "./PeopleDetails";
 import EmployeeForm from "../components/PeopleComponents/EmployeeForm";
@@ -31,14 +31,81 @@ function PeopleHome() {
   const [openEndEmployment, setOpenEndEmployment] = useState(false);
   const [linkSent, setLinkSent] = useState(false);
 
-  const handleEdit = (data) => {
-    setViewOnly(false);
-    setSelectedEmployee({ ...data });
+  // Add useEffect to track state changes
+  useEffect(() => {
+    console.log("📊 State change - viewOnly:", viewOnly);
+  }, [viewOnly]);
+
+  useEffect(() => {
+    console.log("📊 State change - selectedEmployee:", selectedEmployee?.empId, selectedEmployee?.firstName);
+  }, [selectedEmployee]);
+
+  useEffect(() => {
+    console.log("📊 State change - openEndEmployment:", openEndEmployment);
+  }, [openEndEmployment]);
+
+  const handleEdit = async (data) => {
+    console.log("📝 PeopleHome handleEdit called with data:", data?.empId, data?.firstName, data?.lastName);
+    
+    if (!data) {
+      console.error("❌ handleEdit called with null/undefined data");
+      return;
+    }
+    
+    try {
+      console.log("🔄 Clearing cached employee data and fetching fresh data...");
+      // Clear cached employee data to force fresh fetch
+      stateContext.updateState("pdEmployees", null);
+      stateContext.updateState("pdMyTeam", null);
+      
+      // Force fresh data fetch for editing to avoid stale cache issues
+      console.log("🌐 Making API call to fetch employee:", data.empId);
+      const freshEmployeeData = await api.employee.fetchOne(data.empId);
+      console.log("🌐 API response:", freshEmployeeData ? "Success" : "Failed", freshEmployeeData);
+      
+      if (freshEmployeeData) {
+        console.log("✅ Fresh employee data fetched successfully, switching to edit mode");
+        console.log("🔍 Current viewOnly state before change:", viewOnly);
+        console.log("🔍 Current selectedEmployee before change:", selectedEmployee?.empId);
+        setViewOnly(false);
+        setSelectedEmployee({ ...freshEmployeeData });
+        console.log("🔍 State changes called - viewOnly set to false, selectedEmployee set to:", freshEmployeeData.empId);
+        
+        // Force a re-render by using a setTimeout
+        setTimeout(() => {
+          console.log("⏰ After timeout - viewOnly:", viewOnly, "selectedEmployee:", selectedEmployee?.empId);
+        }, 100);
+      } else {
+        console.warn("⚠️ Could not fetch fresh data, using cached data");
+        console.log("🔍 Current viewOnly state before change:", viewOnly);
+        setViewOnly(false);
+        setSelectedEmployee({ ...data });
+        console.log("🔍 State changes called - viewOnly set to false, selectedEmployee set to:", data.empId);
+      }
+    } catch (error) {
+      console.error("❌ Error fetching fresh employee data:", error);
+      console.log("🔄 Falling back to cached data");
+      console.log("🔍 Current viewOnly state before change:", viewOnly);
+      setViewOnly(false);
+      setSelectedEmployee({ ...data });
+      console.log("🔍 State changes called - viewOnly set to false, selectedEmployee set to:", data.empId);
+    }
   };
 
   const handleTermination = (data) => {
+    console.log("🛑 PeopleHome handleTermination called with data:", data?.empId, data?.firstName, data?.lastName);
+    
+    // Clear cached data to ensure fresh data on return
+    console.log("🔄 Clearing cached data for termination");
+    stateContext.updateState("pdEmployees", null);
+    stateContext.updateState("pdMyTeam", null);
+    
+    console.log("🔍 Current openEndEmployment state before change:", openEndEmployment);
+    console.log("🔍 Current selectedEmployee before change:", selectedEmployee?.empId);
+    console.log("✅ Opening end employment dialog");
     setOpenEndEmployment(true);
     setSelectedEmployee(data);
+    console.log("🔍 State changes called - openEndEmployment set to true, selectedEmployee set to:", data?.empId);
   };
 
   const handleSurvey = async (data) => {
@@ -72,6 +139,10 @@ function PeopleHome() {
     setAlert(alertData);
     stateContext.updateState("pdEmployees", null); // Force reload of data
   };
+  
+  // Add render logging to track what's being displayed
+  console.log("🖥️ PeopleHome render - viewOnly:", viewOnly, "openEndEmployment:", openEndEmployment, "selectedEmployee:", selectedEmployee?.empId);
+  
   return (
     <Box>
       {linkSent && (
@@ -81,35 +152,44 @@ function PeopleHome() {
         />
       )}
       {openEndEmployment && (
-        <ActionButtonEmployee
-          empId={selectedEmployee && selectedEmployee.empId}
-          open={openEndEmployment}
-          onClose={setOpenEndEmployment}
-        />
+        <>
+          {console.log("🖥️ Rendering ActionButtonEmployee dialog")}
+          <ActionButtonEmployee
+            empId={selectedEmployee && selectedEmployee.empId}
+            open={openEndEmployment}
+            onClose={setOpenEndEmployment}
+          />
+        </>
       )}
       {viewOnly && (
-        <Box>
-          <EmployeeSnackbar isOpen={alert.show} message={alert.message} />
-          <PeopleDetails
-            handleSurvey={handleSurvey}
-            handleTermination={handleTermination}
-            handleEdit={handleEdit}
-            handleAddNewEmployee={handleAddNewEmployee}
-          />
-        </Box>
+        <>
+          {console.log("🖥️ Rendering PeopleDetails (view only mode)")}
+          <Box>
+            <EmployeeSnackbar isOpen={alert.show} message={alert.message} />
+            <PeopleDetails
+              handleSurvey={handleSurvey}
+              handleTermination={handleTermination}
+              handleEdit={handleEdit}
+              handleAddNewEmployee={handleAddNewEmployee}
+            />
+          </Box>
+        </>
       )}
       {!viewOnly && (
-        <EmployeeForm
-          employee={selectedEmployee}
-          onDiscard={() => {
-            setViewOnly(true);
-            setAlert({
-              show: false,
-              message: "",
-            });
-          }}
-          onSave={handleSave}
-        />
+        <>
+          {console.log("🖥️ Rendering EmployeeForm (edit mode)")}
+          <EmployeeForm
+            employee={selectedEmployee}
+            onDiscard={() => {
+              setViewOnly(true);
+              setAlert({
+                show: false,
+                message: "",
+              });
+            }}
+            onSave={handleSave}
+          />
+        </>
       )}
     </Box>
   );

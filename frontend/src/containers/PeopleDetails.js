@@ -36,27 +36,47 @@ function formatTableData({
   handleSurvey,
   handleTermination,
 }) {
-  // Create set of actions
+  // Store original employee data for editing
+  const originalEmployeeData = new Map();
+  
+  // Create set of actions - ensure fresh functions each time
   const actions = (employee) => {
+    const empId = employee.empId;
     const data = [];
-    // Create and push handleEdit function menu
+    
+    // Create and push handleEdit function menu - use original data
     data.push({
       label: "Edit employee",
-      action: () => handleEdit(employee),
+      action: () => {
+        console.log("🔵 Edit Employee button clicked for employee:", empId, employee.firstName, employee.lastName);
+        const originalEmployee = originalEmployeeData.get(empId);
+        if (originalEmployee) {
+          console.log("✅ Using original employee data for edit");
+          handleEdit(originalEmployee);
+        } else {
+          console.log("⚠️ Using fallback employee data for edit");
+          handleEdit(employee);
+        }
+      },
     });
 
-    // Create and push handleSurvey function menu
-    // data.push({ //  It can be displayed in newer version of the application
-    //   label: "Send exit survey",
-    //   action: () => handleSurvey(employee),
-    // });
     // Create and push handleTermination function menu
     data.push({
       label: "End employment",
-      action: () => handleTermination(employee),
+      action: () => {
+        console.log("🔴 End Employment button clicked for employee:", empId, employee.firstName, employee.lastName);
+        const originalEmployee = originalEmployeeData.get(empId);
+        if (originalEmployee) {
+          console.log("✅ Using original employee data for termination");
+          handleTermination(originalEmployee);
+        } else {
+          console.log("⚠️ Using fallback employee data for termination");
+          handleTermination(employee);
+        }
+      },
     });
 
-    //If user has admin permision, show all functions. Otherwise, show only edit function
+    //If user has admin permission, show all functions. Otherwise, show only edit function
     return permissionId === 1 ? data : [data[0]];
   };
 
@@ -97,6 +117,10 @@ function formatTableData({
   };
 
   data.forEach(async (emp) => {
+    // Store original employee data before formatting for display
+    originalEmployeeData.set(emp.empId, { ...emp });
+    
+    // Now format for display
     emp.name = `${emp.firstName} ${emp.lastName}`;
     emp.role = emp.role && emp.role.roleTitle;
     emp.team = emp.team && emp.team.teamName ? emp.team.teamName : "New Team"; // Added by Ankit: set default team name
@@ -132,6 +156,7 @@ function formatTableData({
       } else if (showActionMenu(key)) {
         cell = createActionTableCell(
           <ActionMenu
+            key={`action-menu-${row.empId}`}
             actions={actions(row)}
             disableMenu={disableActionMenu(row, empId)}
           />
@@ -259,40 +284,48 @@ export default function People({
     async function fetchData() {
       try {
         if (stateContext.state.pdEmployees) {
-          setEmployees(stateContext.state.pdEmployees);
+          // Create fresh copy of data to avoid mutation issues
+          const employeesCopy = JSON.parse(JSON.stringify(stateContext.state.pdEmployees));
+          const freshParams = { ...params, data: employeesCopy };
+          formatTableData(freshParams);
+          setEmployees(freshParams.data);
           setLoading(false);
         } else {
           const res = await api.employee.fetchAll();
           setLoading(false);
-          params.data = res;
-          formatTableData(params);
-          setEmployees(params.data);
-          stateContext.updateState("pdEmployees", params.data);
+          const freshParams = { ...params, data: res };
+          formatTableData(freshParams);
+          setEmployees(freshParams.data);
+          stateContext.updateState("pdEmployees", freshParams.data);
         }
 
         if (stateContext.state.employee) {
           if (stateContext.state.pdMyTeam) {
-            setMyTeam(stateContext.state.pdMyTeam);
+            const teamCopy = JSON.parse(JSON.stringify(stateContext.state.pdMyTeam));
+            const freshParams = { ...params, data: teamCopy, addActionMenu: true };
+            formatTableData(freshParams);
+            setMyTeam(freshParams.data);
           } else {
             const managerId = stateContext.state.employee.empId;
             const team = await api.employee.fetchMyTeam(managerId);
-            params.data = team;
-            params.addActionMenu = true;
-            formatTableData(params);
-            setMyTeam(params.data);
-            stateContext.updateState("pdMyTeam", params.data);
+            const freshParams = { ...params, data: team, addActionMenu: true };
+            formatTableData(freshParams);
+            setMyTeam(freshParams.data);
+            stateContext.updateState("pdMyTeam", freshParams.data);
           }
         }
         if (isAdmin) {
           if (stateContext.state.pdTerminated) {
-            setTerminated(stateContext.state.pdTerminated);
+            const terminatedCopy = JSON.parse(JSON.stringify(stateContext.state.pdTerminated));
+            const freshParams = { ...params, data: terminatedCopy, addActionMenu: false };
+            formatTableData(freshParams);
+            setTerminated(freshParams.data);
           } else {
             const terms = await api.employee.fetchTerminated();
-            params.data = terms;
-            params.addActionMenu = false;
-            formatTableData(params);
-            setTerminated(params.data);
-            stateContext.updateState("pdTerminated", params.data);
+            const freshParams = { ...params, data: terms, addActionMenu: false };
+            formatTableData(freshParams);
+            setTerminated(freshParams.data);
+            stateContext.updateState("pdTerminated", freshParams.data);
           }
         }
       } catch (err) {
