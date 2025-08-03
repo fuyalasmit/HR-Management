@@ -51,26 +51,30 @@ function MyInfoJob({employee}) {
               </Grid>
             </Grid>
           </ListItem>
-          <ListItem sx={{paddingLeft:'0px'}}>
-            <Grid container spacing={-35}>
-              <Grid item xs={6}>
-                <Typography variant="body1">Reports to:</Typography>
+          {employee.Manager && employee.Manager.firstName && employee.Manager.lastName && (
+            <ListItem sx={{paddingLeft:'0px'}}>
+              <Grid container spacing={-35}>
+                <Grid item xs={6}>
+                  <Typography variant="body1">Reports to:</Typography>
+                </Grid>
+                <Grid item xs={6}>
+                  <Typography variant="body2">{`${employee.Manager.firstName} ${employee.Manager.lastName}`}</Typography>
+                </Grid>
               </Grid>
-              <Grid item xs={6}>
-                <Typography variant="body2">{employee.Manager && `${employee.Manager.firstName} ${employee.Manager.lastName}`}</Typography>
+            </ListItem>
+          )}
+          {employee.role && employee.role.roleTitle && (
+            <ListItem sx={{paddingLeft:'0px'}}>
+              <Grid container spacing={-35}>
+                <Grid item xs={6}>
+                  <Typography variant="body1">Position:</Typography>
+                </Grid>
+                <Grid item xs={6}>
+                  <Typography variant="body2">{employee.role.roleTitle}</Typography>
+                </Grid>
               </Grid>
-            </Grid>
-          </ListItem>
-          <ListItem sx={{paddingLeft:'0px'}}>
-            <Grid container spacing={-35}>
-              <Grid item xs={6}>
-                <Typography variant="body1">Position:</Typography>
-              </Grid>
-              <Grid item xs={6}>
-                <Typography variant="body2">{employee.role.roleTitle}</Typography>
-              </Grid>
-            </Grid>
-          </ListItem>
+            </ListItem>
+          )}
           <ListItem sx={{paddingLeft:'0px'}}>
             <Grid container spacing={-35}>
               <Grid item xs={6}>

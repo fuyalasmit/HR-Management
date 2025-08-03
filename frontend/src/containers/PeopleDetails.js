@@ -36,13 +36,19 @@ function formatTableData({
   handleSurvey,
   handleTermination,
 }) {
+  // Store original employee data for editing
+  const originalEmployeeData = new Map();
+  
   // Create set of actions
   const actions = (employee) => {
     const data = [];
-    // Create and push handleEdit function menu
+    // Create and push handleEdit function menu - use original data
     data.push({
       label: "Edit employee",
-      action: () => handleEdit(employee),
+      action: () => {
+        const originalEmployee = originalEmployeeData.get(employee.empId);
+        handleEdit(originalEmployee || employee);
+      },
     });
 
     // Create and push handleSurvey function menu
@@ -53,7 +59,7 @@ function formatTableData({
     // Create and push handleTermination function menu
     data.push({
       label: "End employment",
-      action: () => handleTermination(employee),
+      action: () => handleTermination(originalEmployeeData.get(employee.empId) || employee),
     });
 
     //If user has admin permision, show all functions. Otherwise, show only edit function
@@ -97,6 +103,10 @@ function formatTableData({
   };
 
   data.forEach(async (emp) => {
+    // Store original employee data before formatting for display
+    originalEmployeeData.set(emp.empId, { ...emp });
+    
+    // Now format for display
     emp.name = `${emp.firstName} ${emp.lastName}`;
     emp.role = emp.role && emp.role.roleTitle;
     emp.team = emp.team && emp.team.teamName ? emp.team.teamName : "New Team"; // Added by Ankit: set default team name

@@ -139,18 +139,20 @@ function MyInfoPersonalCard({ employee }) {
                 height: "100px",
               }}
             />
-            <Item
-              sx={{
-                height: "44px",
-              }}
-            >
-              <Typography variant="body3" className="header">
-                Role
-              </Typography>
-              <Typography variant="body2" className="data">
-                {employee.role.roleTitle}
-              </Typography>
-            </Item>
+            {employee.role && employee.role.roleTitle && (
+              <Item
+                sx={{
+                  height: "44px",
+                }}
+              >
+                <Typography variant="body3" className="header">
+                  Role
+                </Typography>
+                <Typography variant="body2" className="data">
+                  {employee.role.roleTitle}
+                </Typography>
+              </Item>
+            )}
             <Item
               sx={{
                 height: "44px",
@@ -175,19 +177,20 @@ function MyInfoPersonalCard({ employee }) {
                 {formatPhoneNumber(employee.phoneNumber)}
               </Typography>
             </Item>
-            <Item
-              sx={{
-                height: "44px",
-              }}
-            >
-              <Typography variant="body3" className="header">
-                Reporting to
-              </Typography>
-              <Typography variant="body2" className="data">
-                {employee.Manager &&
-                  `${employee.Manager.firstName} ${employee.Manager.lastName}`}
-              </Typography>
-            </Item>
+            {employee.Manager && employee.Manager.firstName && employee.Manager.lastName && (
+              <Item
+                sx={{
+                  height: "44px",
+                }}
+              >
+                <Typography variant="body3" className="header">
+                  Reporting to
+                </Typography>
+                <Typography variant="body2" className="data">
+                  {`${employee.Manager.firstName} ${employee.Manager.lastName}`}
+                </Typography>
+              </Item>
+            )}
           </Stack>
         </ThemeProvider>
         <StyledCardContent>

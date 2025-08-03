@@ -31,9 +31,29 @@ function PeopleHome() {
   const [openEndEmployment, setOpenEndEmployment] = useState(false);
   const [linkSent, setLinkSent] = useState(false);
 
-  const handleEdit = (data) => {
-    setViewOnly(false);
-    setSelectedEmployee({ ...data });
+  const handleEdit = async (data) => {
+    if (!data) {
+      console.error("handleEdit called with null/undefined data");
+      return;
+    }
+    
+    try {
+      // Force fresh data fetch for editing to avoid stale cache issues
+      const freshEmployeeData = await api.employee.fetchOne(data.empId);
+      
+      if (freshEmployeeData) {
+        setViewOnly(false);
+        setSelectedEmployee({ ...freshEmployeeData });
+      } else {
+        console.warn("Could not fetch fresh data, using cached data");
+        setViewOnly(false);
+        setSelectedEmployee({ ...data });
+      }
+    } catch (error) {
+      console.error("Error fetching fresh employee data:", error);
+      setViewOnly(false);
+      setSelectedEmployee({ ...data });
+    }
   };
 
   const handleTermination = (data) => {
