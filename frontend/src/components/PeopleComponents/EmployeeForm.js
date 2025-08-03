@@ -1127,13 +1127,24 @@ const validateName = (fieldName, name) => {
     return { valid: false, message: `Please, enter ${fieldName}.` };
   }
   name = name.trim();
-  const regex = /^[a-zA-Z\-\']+$/;
+  
+  // Updated regex to allow spaces for middle names
+  const regex = /^[a-zA-Z\-\'\s]+$/;
   if (!regex.test(name)) {
     return {
       valid: false,
-      message: `Invalid character. Only alphabets, approstrophe and hyphen are allowed.`,
+      message: `Invalid character. Only alphabets, spaces, apostrophe and hyphen are allowed.`,
     };
   }
+  
+  // Check for multiple consecutive spaces
+  if (/\s{2,}/.test(name)) {
+    return {
+      valid: false,
+      message: "Multiple consecutive spaces are not allowed.",
+    };
+  }
+  
   let hyphenCount = 0;
   let approstropheCount = 0;
   for (let char of name) {
@@ -1142,7 +1153,7 @@ const validateName = (fieldName, name) => {
       if (hyphenCount > 1) {
         return {
           valid: false,
-          message: "Multiple hypens are not allowed.",
+          message: "Multiple hyphens are not allowed.",
         };
       }
     }
@@ -1151,7 +1162,7 @@ const validateName = (fieldName, name) => {
       if (approstropheCount > 1) {
         return {
           valid: false,
-          message: "Multiple approstrophes are not allowed.",
+          message: "Multiple apostrophes are not allowed.",
         };
       }
     }
