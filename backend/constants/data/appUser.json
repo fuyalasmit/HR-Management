@@ -1,15 +1,15 @@
 [
   {
     "id": 61,
-    "email": "subarna.shakya@bluewavelabs.ca",
+    "email": "admin@admin.com",
     "password": "Password1!",
     "empId": 1,
     "passwordChangedAt": "2024-01-31T05:00:00.000Z",
     "passwordResetToken": null,
     "passwordResetTokenExpiresAt": null,
     "permissionId": 1,
-    "firstName": "Subarna",
-    "lastName": "Shakya",
+    "firstName": "Admin",
+    "lastName": "Admin",
     "access": "Permitted"
   }
 ]
