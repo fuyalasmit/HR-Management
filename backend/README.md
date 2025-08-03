@@ -67,3 +67,20 @@ To create a backup of your local database, run the following command from your t
 ```bash
 docker-compose exec -T database pg_dump -U admin -d SingleDatabase > database_backup.sql
 ```
+
+
+
+### Incase of error with login:
+Paste the following into database_backup.sql under the section "Data for Name: appUser; Type: TABLE DATA; Schema: public; Owner: admin", on line 1955, replacing whatever is stored there. The email will be reset to admin@admin.com and password to Password1! 
+
+```
+
+--
+-- Data for Name: appUser; Type: TABLE DATA; Schema: public; Owner: admin
+--
+
+
+COPY public."appUser" (id, "firstName", "lastName", email, password, "empId", access, "permissionId", "passwordChangedAt", "passwordResetToken", "passwordResetTokenExpiresAt", "autoDeleteAt", "createdAt", "updatedAt", "deletedAt") FROM stdin;
+1	Admin	Admin	admin@admin.com	$2b$10$YVo3UzO5TqzyeoJnmc5I9.KGIDhBKE7xN.GCXIdBQeUwVSeNq/LfG	100	Permitted	1	2024-01-31 05:00:00+00	\N	\N	\N	2025-08-03 17:38:05.751+00	2025-08-03 17:40:07.271+00	\N
+\.
+```
