@@ -1,6 +1,5 @@
 const db = require("../../models");
 require("dotenv").config();
-const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs");
 const crypto = require("crypto");
 const EmailService = require("../helper/emailServices");
@@ -8,13 +7,54 @@ const { createEmailContext } = require("../helper/utils");
 const { validatePassword } = require("../helper/validation");
 const message = require("../../constants/messages.json");
 
-// create json web token
-const maxAge = 3 * 60 * 60; // 3 hours
-const createToken = (id) => {
-  return jwt.sign({ id }, process.env.secret, {
-    expiresIn: maxAge,
-  });
+// Simple session storage (in production, use Redis or a proper session store)
+const activeSessions = new Map();
+
+// Generate session token
+const generateSessionToken = () => {
+  return crypto.randomBytes(32).toString('hex');
 };
+
+// Create session
+const createSession = (userEmail) => {
+  const sessionToken = generateSessionToken();
+  const expiresAt = new Date(Date.now() + 3 * 60 * 60 * 1000); // 3 hours
+  
+  activeSessions.set(sessionToken, {
+    userEmail,
+    expiresAt,
+    createdAt: new Date()
+  });
+  
+  return sessionToken;
+};
+
+// Validate session
+const validateSession = (sessionToken) => {
+  const session = activeSessions.get(sessionToken);
+  if (!session) return null;
+  
+  if (new Date() > session.expiresAt) {
+    activeSessions.delete(sessionToken);
+    return null;
+  }
+  
+  return session;
+};
+
+// Clean up expired sessions (call this periodically)
+const cleanupExpiredSessions = () => {
+  const now = new Date();
+  for (const [token, session] of activeSessions.entries()) {
+    if (now > session.expiresAt) {
+      activeSessions.delete(token);
+    }
+  }
+  console.log(`Session cleanup completed. Active sessions: ${activeSessions.size}`);
+};
+
+// Run cleanup every hour
+setInterval(cleanupExpiredSessions, 60 * 60 * 1000);
 
 const signup = async (req, res) => {
   try {
@@ -25,9 +65,14 @@ const signup = async (req, res) => {
       password: user.password,
       passwordCreatedAt: new Date(),
     });
-    const token = createToken(user.email);
-    res.cookie("jwt", token, { httpOnly: true, maxAge: maxAge * 1000 });
-    res.status(201).json({ user: user.email });
+    
+    // Create session instead of JWT
+    const sessionToken = createSession(user.email);
+    
+    res.status(201).json({ 
+      user: user.email,
+      sessionToken: sessionToken 
+    });
   } catch (err) {
     console.log(err);
     res.send(err.message);
@@ -47,9 +92,13 @@ const login = async (req, res) => {
     if (user) {
       const auth = await bcrypt.compare(password, user.password); // Check if the password matched
       if (auth) {
-        const token = createToken(user.email);
-        res.cookie("jwt", token, { httpOnly: true, maxAge: maxAge * 1000 });
-        return res.status(200).json({ user: user.email });
+        // Create session instead of JWT
+        const sessionToken = createSession(user.email);
+        
+        return res.status(200).json({ 
+          user: user.email,
+          sessionToken: sessionToken 
+        });
       }
     }
     return res.status(400).json({ error: message.loginError });
@@ -59,8 +108,18 @@ const login = async (req, res) => {
 };
 
 const logout = async (req, res) => {
-  res.cookie("jwt", "", { maxAge: 1 });
-  res.status(200).json({ message: "You've successfully logged out." });
+  try {
+    const sessionToken = req.headers['x-session-token'] || req.headers['authorization']?.replace('Bearer ', '');
+    
+    if (sessionToken) {
+      // Remove session from active sessions
+      activeSessions.delete(sessionToken);
+    }
+    
+    res.status(200).json({ message: "You've successfully logged out." });
+  } catch (err) {
+    res.status(200).json({ message: "You've successfully logged out." });
+  }
 };
 
 // This api sends a password resetToken to user
@@ -203,17 +262,24 @@ const resetPassword = async (req, res) => {
 
 // This api enables verified user to change password
 const resetPasswordAuth = async (req, res) => {
-  const token = req.cookies.jwt;
   try {
-    const result = jwt.verify(token, process.env.secret);
+    const sessionToken = req.headers['x-session-token'] || req.headers['authorization']?.replace('Bearer ', '');
+    const session = validateSession(sessionToken);
+    
+    if (!session) {
+      return res.status(401).json({ error: message.sessionExpired });
+    }
+    
     const { password, newPassword, confirmNewPassword } = req.body;
     const user = await db.appUser.findOne({
-      where: { email: result.id },
+      where: { email: session.userEmail },
     });
+    
     if (!user) {
       // This is not expected to happen
       return res.status(404).json({ error: message.notFound });
     }
+    
     const auth = await bcrypt.compare(password, user.password); // Check if the password matched
     if (!auth) {
       return res.status(400).json({ error: message.passwordError });
@@ -254,4 +320,6 @@ module.exports = {
   forgotPassword,
   resetPassword,
   resetPasswordAuth,
+  validateSession,
+  createSession
 };

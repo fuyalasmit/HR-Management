@@ -1,6 +1,7 @@
 // Session Manager for handling authentication sessions
 const SESSION_KEY = 'hrm_session';
 const SESSION_EXPIRY_KEY = 'hrm_session_expiry';
+const SESSION_TOKEN_KEY = 'hrm_session_token';
 
 class SessionManager {
   /**
@@ -59,6 +60,7 @@ class SessionManager {
     try {
       localStorage.removeItem(SESSION_KEY);
       localStorage.removeItem(SESSION_EXPIRY_KEY);
+      localStorage.removeItem(SESSION_TOKEN_KEY);
       console.log('Session cleared');
     } catch (error) {
       console.error('Failed to clear session:', error);
@@ -71,7 +73,8 @@ class SessionManager {
    */
   static isSessionValid() {
     const session = this.getSession();
-    return session !== null;
+    const sessionToken = localStorage.getItem(SESSION_TOKEN_KEY);
+    return session !== null && sessionToken !== null;
   }
 
   /**
@@ -111,6 +114,31 @@ class SessionManager {
     } catch (error) {
       console.error('Failed to get time remaining:', error);
       return 0;
+    }
+  }
+
+  /**
+   * Get session token
+   * @returns {string|null} Session token or null if not found
+   */
+  static getSessionToken() {
+    try {
+      return localStorage.getItem(SESSION_TOKEN_KEY);
+    } catch (error) {
+      console.error('Failed to get session token:', error);
+      return null;
+    }
+  }
+
+  /**
+   * Set session token
+   * @param {string} token - Session token to store
+   */
+  static setSessionToken(token) {
+    try {
+      localStorage.setItem(SESSION_TOKEN_KEY, token);
+    } catch (error) {
+      console.error('Failed to set session token:', error);
     }
   }
 }

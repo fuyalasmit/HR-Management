@@ -1,29 +1,17 @@
 import axios from 'axios';
 
-// Get credentials setting from config
-const getCredentialsConfig = () => {
-  try {
-    const config = require("../assets/FetchServices/withCredentials.json");
-    return config.withCredentials;
-  } catch (error) {
-    console.log('Could not load credentials config, defaulting to false');
-    return false;
-  }
-};
-
-const shouldUseCredentials = getCredentialsConfig();
-
-// Set up axios defaults for session handling
-if (shouldUseCredentials) {
-  axios.defaults.withCredentials = true;
-}
-
-// Request interceptor to ensure credentials are sent
+// Request interceptor to include session token
 axios.interceptors.request.use(
   (config) => {
-    // Only set withCredentials if enabled in config
-    if (shouldUseCredentials) {
-      config.withCredentials = true;
+    // Get session token from SessionManager
+    try {
+      const SessionManager = require("./sessionManager").default;
+      const sessionToken = SessionManager.getSessionToken();
+      if (sessionToken) {
+        config.headers['x-session-token'] = sessionToken;
+      }
+    } catch (error) {
+      console.error('Error getting session token:', error);
     }
     return config;
   },
@@ -38,8 +26,8 @@ axios.interceptors.response.use(
     return response;
   },
   (error) => {
-    // Handle 401 (Unauthorized) responses only if using credentials
-    if (shouldUseCredentials && error.response && error.response.status === 401) {
+    // Handle 401 (Unauthorized) responses - session expired
+    if (error.response && error.response.status === 401) {
       console.log('Session expired, clearing stored session');
       
       // Clear stored session

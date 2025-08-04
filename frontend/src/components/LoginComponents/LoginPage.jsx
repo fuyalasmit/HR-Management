@@ -4,10 +4,9 @@ import "./signup.css";
 import PageContext from "../../context/PageContext";
 import StateContext from "../../context/StateContext";
 import { useNavigate } from "react-router-dom";
-import { getAuthUser } from "../../assets/utils";
+import { login } from "../../assets/utils";
 import PulchowkLogo from "../StaticComponents/PulchowkLogo";
 const validator = require("validator");
-const api = require("../../assets/FetchServices");
 
 function LoginPage() {
   const [email, setEmail] = useState("");
@@ -25,23 +24,21 @@ function LoginPage() {
   const handleSubmit = async (e) => {
     try {
       e.preventDefault();
-      const res = await api.authentication.login({email, password});
-      const { user, employee } = await getAuthUser(email);
-      stateContext.updateStates({ user, employee });
-
-      // Store session in localStorage for persistence - temporarily disabled
-      /*
-      const { SessionManager } = require("../../assets/utils");
-      const sessionHours = rememberMe ? 24 * 30 : 24; // 30 days if remember me, otherwise 24 hours
-      SessionManager.setSession({ user, employee }, sessionHours);
-      */
+      
+      // Use the updated login function from utils that handles session management
+      await login({
+        stateContext,
+        email,
+        password,
+        rememberMe
+      });
 
       navigate("/dashboard", { replace: true });
     } catch (error) {
       if (error.response && error.response.data) {
         setMessage(error.response.data.error);
       }
-      console.log("Login operation failed to due an error", error);
+      console.log("Login operation failed due to an error", error);
     }
   };
 

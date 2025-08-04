@@ -1,11 +1,10 @@
 import axios from "axios";
 const BASE_URL = require("./BaseUrl.json").value;
-const addCred = require("./withCredentials.json");
 
 export const fetchAll = async () => {
   try {
     const url = `${BASE_URL}/api/appusers`;
-    const res = await axios.get(url, addCred);
+    const res = await axios.get(url);
     return res.data;
   } catch (err) {
     console.log(err);
@@ -16,7 +15,7 @@ export const fetchAll = async () => {
 export const fetchOne = async (userId) => {
   try {
     const url = `${BASE_URL}/api/appusers/${userId}`;
-    const res = await axios.post(url, addCred);
+    const res = await axios.post(url);
     return res.data;
   } catch (err) {
     console.log(err);
@@ -27,7 +26,7 @@ export const fetchOne = async (userId) => {
 export const createOne = async (data) => {
   try {
     const url = `${BASE_URL}/api/appusers`;
-    const res = await axios.post(url, data, addCred);
+    const res = await axios.post(url, data);
     return res.data;
   } catch (err) {
     console.log(err);
@@ -43,7 +42,7 @@ export const createOne = async (data) => {
 export const update = async (data) => {
   try {
     const url = `${BASE_URL}/api/appusers`;
-    const res = await axios.put(url, data, addCred);
+    const res = await axios.put(url, data);
     return res.data;
   } catch (err) {
     console.log(err);
@@ -68,7 +67,7 @@ export const update = async (data) => {
 export const updateMany = async (data) => {
   try {
     const url = `${BASE_URL}/api/appusers/update/bulk`;
-    const res = await axios.put(url, data, addCred);
+    const res = await axios.put(url, data);
     return res.data;
   } catch (err) {
     console.log(err);
@@ -79,7 +78,7 @@ export const updateMany = async (data) => {
 export const remove = async (userId) => {
   try {
     const url = `${BASE_URL}/api/appusers/${userId}`;
-    const res = await axios.delete(url, addCred);
+    const res = await axios.delete(url);
     return res.data;
   } catch (err) {
     console.log(err);
@@ -90,7 +89,7 @@ export const remove = async (userId) => {
 export const exists = async () => {
   try {
     const url = `${BASE_URL}/api/appusers/find/init/check`;
-    const res = await axios.post(url, addCred);
+    const res = await axios.post(url);
     return res.data;
   } catch (err) {
     console.log(err);
@@ -101,7 +100,7 @@ export const exists = async () => {
 export const fetchOneByEmail = async (email) => {
   try {
     const url = `${BASE_URL}/api/appusers/find/email`;
-    const res = await axios.post(url, { email: email }, addCred);
+    const res = await axios.post(url, { email: email });
     return res.data;
   } catch (err) {
     console.log(err);
@@ -111,7 +110,7 @@ export const fetchOneByEmail = async (email) => {
 export const fetchOneByToken = async (token) => {
   try {
     const url = `${BASE_URL}/api/appusers/find/token`;
-    const res = await axios.post(url, { token: token }, addCred);
+    const res = await axios.post(url, { token: token });
     return res.data;
   } catch (err) {
     console.log(err);
@@ -122,7 +121,7 @@ export const fetchOneByToken = async (token) => {
 export const refresh = async () => {
   try {
     const url = `${BASE_URL}/api/appusers/refresh`;
-    const res = await axios.get(url, addCred);
+    const res = await axios.get(url);
     // console.log("refresh data:", res.data);
     return res.data;
   } catch (err) {

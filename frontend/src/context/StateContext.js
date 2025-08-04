@@ -10,8 +10,7 @@ export const StateProvider = ({ children }) => {
 
   useEffect(() => {
     async function fetchData() {
-      // Check for stored session first - temporarily disabled to debug
-      /*
+      // Check for stored session first
       try {
         const SessionManager = require("../utils/sessionManager").default;
         const storedSession = SessionManager.getSession();
@@ -24,7 +23,6 @@ export const StateProvider = ({ children }) => {
       } catch (error) {
         console.log("No stored session found or error loading session");
       }
-      */
 
       // Get logo
       try {
@@ -63,15 +61,13 @@ export const StateProvider = ({ children }) => {
 
   // Remove all items in the state object except items that do not dependend on a session such as logo.
   const clearState = () => {
-    // Clear session storage - temporarily disabled to debug
-    /*
+    // Clear session storage
     try {
       const SessionManager = require("../utils/sessionManager").default;
       SessionManager.clearSession();
     } catch (error) {
       console.log("Error clearing session storage:", error);
     }
-    */
     
     // You may include other items
     const data = {

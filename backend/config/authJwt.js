@@ -1,37 +1,33 @@
-const jwt = require("jsonwebtoken");
-require("dotenv").config();
 const message = require("../constants/messages.json");
-const e = require("express");
 
 const requireAuth = (req, res, next) => {
-  const token = req.cookies.jwt;
+  const sessionToken = req.headers['x-session-token'] || req.headers['authorization']?.replace('Bearer ', '');
 
-  // check json web token exists & is verified
-  if (token) {
-    jwt.verify(token, process.env.secret, (err, decodedToken) => {
-      if (err) {
-       next();
-       // res.status(404).json({ message: message.sessionExpired });
-      } else {
-        next();
-      }
-    });
-  } else {
-    next();
-
-    // res.status(404).json({ message: message.sessionExpired });
+  if (!sessionToken) {
+    return res.status(401).json({ message: message.sessionExpired });
   }
+
+  // Import here to avoid circular dependency
+  const { validateSession } = require("../src/controllers/authentication");
+  const session = validateSession(sessionToken);
+
+  if (!session) {
+    return res.status(401).json({ message: message.sessionExpired });
+  }
+
+  // Add session info to request
+  req.session = session;
+  req.userEmail = session.userEmail;
+  next();
 };
 
-function parseJwt(token) {
-  return JSON.parse(Buffer.from(token.split(".")[1], "base64").toString());
-}
-
-const getAuthUser = (token) => {
-  if (token) {
-    return parseJwt(token).id;
-  }
-  return null;
+const getAuthUser = (sessionToken) => {
+  if (!sessionToken) return null;
+  
+  const { validateSession } = require("../src/controllers/authentication");
+  const session = validateSession(sessionToken);
+  
+  return session ? session.userEmail : null;
 };
 
 module.exports = { requireAuth, getAuthUser };

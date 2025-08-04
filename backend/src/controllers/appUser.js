@@ -219,14 +219,23 @@ exports.deleteRecord = async (req, res) => {
 };
 
 exports.refresh = async (req, res) => {
-  const token = req.cookies.jwt;
-  if (!token) {
+  try {
+    const sessionToken = req.headers['x-session-token'] || req.headers['authorization']?.replace('Bearer ', '');
+    
+    if (!sessionToken) {
+      return res.status(401).send(null);
+    }
+    
+    const { validateSession } = require("./authentication");
+    const session = validateSession(sessionToken);
+    
+    if (!session) {
+      return res.status(401).send(null);
+    }
+    
+    req.body = { email: session.userEmail };
+    this.findByEmail(req, res);
+  } catch (err) {
     return res.status(401).send(null);
   }
-  const email = getAuthUser(token);
-  if (!email) {
-    return res.status(401).send(null);
-  }
-  req.body = { email };
-  this.findByEmail(req, res);
 };

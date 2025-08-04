@@ -1,5 +1,5 @@
 const api = require("./FetchServices")
-// const SessionManager = require("../utils/sessionManager").default; // Temporarily disabled
+const SessionManager = require("../utils/sessionManager").default;
 
 /**
  * Formats a number phone into a format (123) 456 -7890.
@@ -60,15 +60,19 @@ const getAuthUser = async (email) => {
 };
 
 const login = async ({stateContext, email, password, rememberMe = false}) => {
-    await api.authentication.login({email, password});
+    const response = await api.authentication.login({email, password});
+    
+    // Store session token using SessionManager
+    if (response.sessionToken) {
+      SessionManager.setSessionToken(response.sessionToken);
+    }
+    
     const { user, employee } = await getAuthUser(email);
     const sessionData = {user, employee};
     
-    // Store session in localStorage for persistence - temporarily disabled
-    /*
+    // Store session in localStorage for persistence
     const sessionHours = rememberMe ? 24 * 30 : 24; // 30 days if remember me, otherwise 24 hours
     SessionManager.setSession(sessionData, sessionHours);
-    */
     
     stateContext.updateStates(sessionData);
 };
@@ -76,8 +80,8 @@ const login = async ({stateContext, email, password, rememberMe = false}) => {
 const logout = async ({pageContext, navigate}) => {
   await api.authentication.logout();
   
-  // Clear session storage - temporarily disabled
-  // SessionManager.clearSession();
+  // Clear session storage
+  SessionManager.clearSession();
   
   console.log("Logged out");
   pageContext.navigateTo("login");

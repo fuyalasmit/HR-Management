@@ -44,8 +44,13 @@ export default function Dashboard() {
   useEffect(() => {
     async function fetchData() {
       try {
+        console.log('Dashboard: Current user in state:', stateContext.state.user);
+        
         if (!stateContext.state.user) {
+          console.log('Dashboard: No user in state, attempting refresh...');
           const currentUser = await api.user.refresh();
+          console.log('Dashboard: Refresh result:', currentUser);
+          
           if (currentUser) {
             // Get associated employee record
             const currentEmployee = await api.employee.fetchOneByEmail(
@@ -67,14 +72,17 @@ export default function Dashboard() {
               console.log("Error, failed to reload logo");
             }
             stateContext.updateStates(data);
+            console.log('Dashboard: Updated state with user data');
             const isAdmin = data.user && data.user.permission.id === 1;
             const initialMenu = isAdmin ? "home" : "people";
             displayMenu(initialMenu);
             setError(false);
           } else {
+            console.log('Dashboard: No user found after refresh, redirecting to login');
             throw "No active session, please log in.";
           }
         } else {
+          console.log('Dashboard: User found in state:', stateContext.state.user);
           const isAdmin =
             stateContext.state.user &&
             stateContext.state.user.permission.id === 1;
@@ -83,7 +91,7 @@ export default function Dashboard() {
           setError(false);
         }
       } catch (err) {
-        console.log(err);
+        console.log('Dashboard: Error occurred:', err);
         setError(true);
         navigate("/", { replace: true }); // Redirect to login page
       }

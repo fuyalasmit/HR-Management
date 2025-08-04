@@ -1,11 +1,10 @@
 import axios from "axios";
 const BASE_URL = require("./BaseUrl.json").value; 
-const addCred = require("./withCredentials.json");
 
 /**
  * logs in a potential user.
  * @param {*} loginCredentials  an object containing email and password properties.
- * @returns an object containing email address of the autheticated user.
+ * @returns an object containing email address of the authenticated user and session token.
  */
 export const login = async (loginCredentials) => {
   const url = `${BASE_URL}/api/login`;
@@ -30,7 +29,21 @@ export const signup = async (signupData) => {
 export const logout = async () => {
   const url = `${BASE_URL}/api/logout`;
   try {
-    const res = await axios.get(url);
+    // Get session token using SessionManager
+    let sessionToken;
+    try {
+      const SessionManager = require("../../utils/sessionManager").default;
+      sessionToken = SessionManager.getSessionToken();
+    } catch (error) {
+      console.error('Error getting session token:', error);
+    }
+    
+    const headers = {};
+    if (sessionToken) {
+      headers['x-session-token'] = sessionToken;
+    }
+    
+    const res = await axios.post(url, {}, { headers });
     return res.data;
   } catch (err) {
     throw err;
@@ -60,7 +73,21 @@ export const resetPassword = async (data, id) => {
 export const resetPasswordAuth = async (data) => {
   const url = `${BASE_URL}/api/resetPasswordauth`;
   try {
-    let res = await axios.patch(url, data, addCred);
+    // Get session token using SessionManager
+    let sessionToken;
+    try {
+      const SessionManager = require("../../utils/sessionManager").default;
+      sessionToken = SessionManager.getSessionToken();
+    } catch (error) {
+      console.error('Error getting session token:', error);
+    }
+    
+    const headers = {};
+    if (sessionToken) {
+      headers['x-session-token'] = sessionToken;
+    }
+    
+    let res = await axios.patch(url, data, { headers });
     return res.data;
   } catch (err) {
     throw err;
