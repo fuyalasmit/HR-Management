@@ -14,6 +14,7 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import StateContext from "../../context/StateContext";
 import dayjs from "dayjs";
+import DocumentViewer from "../DocumentViewer/DocumentViewer";
 const api = require("../../assets/FetchServices");
 
 const MyinfoDocument = () => {
@@ -25,6 +26,10 @@ const MyinfoDocument = () => {
   const [currentfilename, setCurrentFileName] = useState("");
   const [filesize, setFileSize] = useState(0);
   const [filelist, setFileList] = useState([]);
+  
+  // Document viewer modal state
+  const [viewerOpen, setViewerOpen] = useState(false);
+  const [selectedDocument, setSelectedDocument] = useState(null);
 
   useEffect(() => {
     async function fetchData() {
@@ -140,7 +145,18 @@ const MyinfoDocument = () => {
 
     // Delete from the backend
     api.document.remove(id);
+  };
 
+  // Handle document viewing
+  const handleViewDocument = (document) => {
+    setSelectedDocument(document);
+    setViewerOpen(true);
+  };
+
+  // Close document viewer
+  const handleCloseViewer = () => {
+    setViewerOpen(false);
+    setSelectedDocument(null);
   };
   
 
@@ -311,7 +327,17 @@ const MyinfoDocument = () => {
                 >
                   Date uploaded
                 </TableCell>
-                <TableCell align="right"></TableCell>
+                <TableCell 
+                  align="right"
+                  sx={{
+                    fontSize: "12px",
+                    fontWeight: "medium",
+                    color: "#475467",
+                    fontFamily: "Inter",
+                  }}
+                >
+                  Actions
+                </TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
@@ -330,7 +356,23 @@ const MyinfoDocument = () => {
                       fontFamily: "Inter",
                     }}
                   >
-                    {file.documentName}
+                    <Link
+                      component="button"
+                      underline="none"
+                      onClick={() => handleViewDocument(file)}
+                      sx={{
+                        fontSize: "14px",
+                        fontWeight: "600",
+                        color: "#7F56D9",
+                        fontFamily: "Inter",
+                        textAlign: "left",
+                        '&:hover': {
+                          color: "#6941C6",
+                        },
+                      }}
+                    >
+                      {file.documentName}
+                    </Link>
                   </TableCell>
                   <TableCell
                     align="left"
@@ -348,7 +390,26 @@ const MyinfoDocument = () => {
                       direction="row"
                       display="flex"
                       justifyContent="right"
+                      spacing={1}
                     >
+                      <Link
+                        component="button"
+                        underline="none"
+                        onClick={() => handleViewDocument(file)}
+                        sx={{
+                          fontSize: "14px",
+                          fontWeight: "600",
+                          color: "#7F56D9",
+                          fontFamily: "Inter",
+                          marginBottom: "4px",
+                          marginRight: "8px",
+                          '&:hover': {
+                            color: "#6941C6",
+                          },
+                        }}
+                      >
+                        View
+                      </Link>
                       <Link
                         component="button"
                         underline="none"
@@ -372,6 +433,13 @@ const MyinfoDocument = () => {
           </Table>
         </TableContainer>
       )}
+
+      {/* Document Viewer Modal */}
+      <DocumentViewer
+        open={viewerOpen}
+        onClose={handleCloseViewer}
+        document={selectedDocument}
+      />
     </>
   );
 };
