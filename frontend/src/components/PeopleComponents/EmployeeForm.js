@@ -301,7 +301,7 @@ function CustomisedSelectTag(props) {
           {options &&
             options.map((option, index) => {
               return (
-                <option key={index} value={option}>
+                <option key={`${props.name || 'select'}-${option}-${index}`} value={option}>
                   {option}
                 </option>
               );
@@ -335,7 +335,7 @@ function GenderSelectTag(props) {
           {options &&
             options.map((option, index) => {
               return (
-                <option key={index} value={option}>
+                <option key={`${props.name || 'gender'}-${option}-${index}`} value={option}>
                   {option}
                 </option>
               );

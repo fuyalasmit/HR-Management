@@ -160,12 +160,12 @@ function CreateTableRow(headCell, headCellIds, row, rowIndex, handleSelection, h
       {headCellIds.map((key, index) => {
         if (row[key]) {
           return (
-            <TableCell key={index} align="left">
+            <TableCell key={`${rowIndex}-${key}-${index}`} align="left">
               {row[key]}
             </TableCell>
           );
         } else {
-          return <TableCell key={index} align="left"></TableCell>;
+          return <TableCell key={`${rowIndex}-${key}-${index}`} align="left"></TableCell>;
         }
       })}
     </TableRow>

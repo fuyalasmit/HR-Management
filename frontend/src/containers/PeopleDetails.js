@@ -84,10 +84,10 @@ function formatTableData({
   const createTableCell = (item, key) => {
     return <TableCell key={key}> {item ? item : " "}</TableCell>;
   };
-  const createActionTableCell = (item) => {
+  const createActionTableCell = (item, key) => {
     return (
       <TableCell
-        key={-1}
+        key={key}
         style={{
           position: "sticky",
           backgroundColor: "white",
@@ -139,7 +139,7 @@ function formatTableData({
   data.forEach((row) => {
     const newData = [];
 
-    keys.map((key, index) => {
+    keys.forEach((key, index) => {
       let cell;
       if (key === "name") {
         cell = createTableCell(
@@ -151,7 +151,7 @@ function formatTableData({
             />
             <Box sx={{ paddingTop: 0.5 }}>{row.name}</Box>
           </Stack>,
-          index
+          `name-${row.empId}-${index}`
         );
       } else if (showActionMenu(key)) {
         cell = createActionTableCell(
@@ -159,10 +159,11 @@ function formatTableData({
             key={`action-menu-${row.empId}`}
             actions={actions(row)}
             disableMenu={disableActionMenu(row, empId)}
-          />
+          />,
+          `action-${row.empId}`
         );
       } else if (key !== "action") {
-        cell = createTableCell(row[key], index);
+        cell = createTableCell(row[key], `${key}-${row.empId}-${index}`);
       }
       newData.push(cell);
     });

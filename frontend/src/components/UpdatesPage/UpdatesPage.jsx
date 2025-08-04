@@ -230,7 +230,7 @@ export default function UpdatesPage({ style }) {
               ) : stats.departmentBreakdown.length > 0 ? (
                 <Stack spacing={2}>
                   {stats.departmentBreakdown.slice(0, 6).map((dept, index) => (
-                    <Box key={index} sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <Box key={`dept-${dept.departmentName}-${index}`} sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                       <Typography variant="body1">{dept.departmentName}</Typography>
                       <Typography variant="h6" sx={{ fontWeight: 'bold', color: '#7F56D9' }}>
                         {dept.count}
