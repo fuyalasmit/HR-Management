@@ -55,6 +55,13 @@ const Text = styled(Typography)({
   color: " #344054",
 });
 
+const RequiredText = ({ children, required = false }) => (
+  <Text>
+    {children}
+    {required && <span style={{ color: 'red', marginLeft: '4px' }}>*</span>}
+  </Text>
+);
+
 const parseDefaultValues = (company) => ({
   companyName: company?.companyName || "",
   companyWebsite: company?.companyWebsite || "",
@@ -179,7 +186,7 @@ export default function CompanyProfileForm({ style }) {
           </Grid>
           {/*Textfield for company name*/}
           <Grid item xs={3}>
-            <Text>Company name</Text>
+            <RequiredText required={true}>Company name</RequiredText>
           </Grid>
           <Grid item xs={7} alignContent="center">
             <TextField
@@ -221,7 +228,7 @@ export default function CompanyProfileForm({ style }) {
           </Grid>
           {/*Textfield for company domain*/}
           <Grid item xs={3}>
-            <Text>Company domain</Text>
+            <RequiredText required={true}>Company domain</RequiredText>
           </Grid>
           <Grid item xs={7} alignContent="center">
             <TextField
@@ -239,7 +246,7 @@ export default function CompanyProfileForm({ style }) {
           </Grid>
           {/*Textfield for administrator email*/}
           <Grid item xs={3}>
-            <Text>Administrator email</Text>
+            <RequiredText required={true}>Administrator email</RequiredText>
           </Grid>
           <Grid item xs={7} alignContent="center">
             <TextField
@@ -294,7 +301,7 @@ export default function CompanyProfileForm({ style }) {
           </Grid>
           {/*Textfield for address line 1*/}
           <Grid item xs={3}>
-            <Text>Address line 1</Text>
+            <RequiredText required={true}>Address line 1</RequiredText>
           </Grid>
           <Grid item xs={7} alignContent="center">
             <TextField
@@ -322,7 +329,7 @@ export default function CompanyProfileForm({ style }) {
           </Grid>
           {/*Textfield for city*/}
           <Grid item xs={3}>
-            <Text>City</Text>
+            <RequiredText required={true}>City</RequiredText>
           </Grid>
           <Grid item xs={7} alignContent="center">
             <TextField
@@ -352,7 +359,7 @@ export default function CompanyProfileForm({ style }) {
           </Grid>
           {/*Textfield for Postal code*/}
           <Grid item xs={3}>
-            <Text>Postal code</Text>
+            <RequiredText required={true}>Postal code</RequiredText>
           </Grid>
           <Grid item xs={7} alignContent="center">
             <TextField

@@ -9,8 +9,8 @@ const PulchowkLogo = ({ style }) => {
       fontFamily: 'Roboto, sans-serif',
       ...style 
     }}>
-      <span style={{ color: '#000000' }}>Pulchowk</span>
-      <span style={{ color: '#8B5CF6', marginLeft: '8px' }}>Campus</span>
+      <span style={{ color: '#000000' }}>DoECE</span>
+      <span style={{ color: '#8B5CF6', marginLeft: '8px' }}>Pulchowk</span>
     </div>
   );
 };

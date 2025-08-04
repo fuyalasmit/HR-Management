@@ -259,10 +259,13 @@ function ImagePicker(props) {
 }
 
 function CustomisedDatePicker(props) {
-  const { label, name, value, handleChange, validator } = props;
+  const { label, name, value, handleChange, validator, required } = props;
   return (
     <Stack sx={rootStyle} spacing={1}>
-   <Typography>{label}</Typography>
+      <Typography>
+        {label}
+        {required && <span style={{ color: 'red', marginLeft: '4px' }}>*</span>}
+      </Typography>
       <Typography>
         <HRMDatePicker
           name={name}
@@ -277,11 +280,14 @@ function CustomisedDatePicker(props) {
 }
 
 function CustomisedSelectTag(props) {
-  const { label, name, value, options, handleChange, validator, restricted } =
+  const { label, name, value, options, handleChange, validator, restricted, required } =
     props;
   return (
     <Stack sx={rootStyle} spacing={1}>
-      <Typography>{label}</Typography>
+      <Typography>
+        {label}
+        {required && <span style={{ color: 'red', marginLeft: '4px' }}>*</span>}
+      </Typography>
       <Typography>
         <select
           className={
@@ -307,11 +313,14 @@ function CustomisedSelectTag(props) {
   );
 }
 function GenderSelectTag(props) {
-  const { label, name, value, options, handleChange, validator, restricted } =
+  const { label, name, value, options, handleChange, validator, restricted, required } =
     props;
   return (
     <Stack sx={rootStyle} spacing={1}>
-    <Typography>{label}</Typography>
+      <Typography>
+        {label}
+        {required && <span style={{ color: 'red', marginLeft: '4px' }}>*</span>}
+      </Typography>
       <Typography>
         <select
           className={
@@ -346,10 +355,14 @@ function CustomisedInput(props) {
     placeholder,
     validator,
     restricted,
+    required,
   } = props;
   return (
     <Stack sx={rootStyle} spacing={1}>
-      <Typography>{label}</Typography>
+      <Typography>
+        {label}
+        {required && <span style={{ color: 'red', marginLeft: '4px' }}>*</span>}
+      </Typography>
       <Typography>
         <input
           className={validator[name] ? `text-field field-error` : `text-field`}
@@ -785,6 +798,7 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
                 value={inputs.firstName || ""}
                 handleChange={handleChange}
                 validator={validator}
+                required={true}
               />
               <CustomisedInput
                 label={"Last name"}
@@ -792,6 +806,7 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
                 value={inputs.lastName || ""}
                 handleChange={handleChange}
                 validator={validator}
+                required={true}
               />
             </RowStack>
             <RowStack>
@@ -809,6 +824,7 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
                 options={selectOptions.gender}
                 handleChange={handleChange}
                 validator={validator}
+                required={true}
               />
             </RowStack>
             <RowStack>
@@ -818,6 +834,7 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
                 value={inputs.dateOfBirth || dayjs().format("MMM D, YYYY")}
                 handleChange={handleChange}
                 validator={validator}
+                required={true}
               />
               <ImagePicker employee={employee} handleChange={handleChange} />
             </RowStack>
@@ -829,6 +846,7 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
                 options={getNationality()}
                 handleChange={handleChange}
                 validator={validator}
+                required={true}
               />
               <CustomisedSelectTag
                 label={"Marital status"}
@@ -837,6 +855,7 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
                 options={selectOptions.maritalStatus}
                 handleChange={handleChange}
                 validator={validator}
+                required={true}
               />
             </RowStack>
             <SocialMediaContainer>
@@ -929,6 +948,7 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
                 value={inputs.phoneNumber || ""}
                 handleChange={handleChange}
                 validator={validator}
+                required={true}
               />
               <CustomisedInput
                 label={"Work email"}
@@ -937,6 +957,7 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
                 handleChange={handleChange}
                 validator={validator}
                 restricted={restricted}
+                required={true}
               />
             </RowStack>
             <RowStack>
@@ -946,6 +967,7 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
                 value={inputs.streetAddress || ""}
                 handleChange={handleChange}
                 validator={validator}
+                required={true}
               />
               <CustomisedInput
                 label={"Address line 2"}
@@ -963,6 +985,7 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
                 options={getCountryName()}
                 handleChange={handleChange}
                 validator={validator}
+                required={true}
               />
               <CustomisedSelectTag
                 label={"State (if applicable)"}
@@ -982,6 +1005,7 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
                   options={getCities(inputs.country, inputs.stateProvince)}
                   handleChange={handleChange}
                   validator={validator}
+                  required={true}
                 />
                 {inputs.city === "Others" && (
                   <CustomisedInput
@@ -991,6 +1015,7 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
                     handleChange={handleChange}
                     placeholder={"Please specify city"}
                     validator={validator}
+                    required={true}
                   />
                 )}
               </Stack>
@@ -1010,6 +1035,7 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
                 value={inputs.emergencyContactName || ""}
                 handleChange={handleChange}
                 validator={validator}
+                required={true}
               />
               <CustomisedInput
                 label={"Emergency contact relationship"}
@@ -1017,6 +1043,7 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
                 value={inputs.emergencyContactRelationship || ""}
                 handleChange={handleChange}
                 validator={validator}
+                required={true}
               />
             </RowStack>
             <RowStack>
@@ -1026,6 +1053,7 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
                 value={inputs.emergencyContactPhoneNumber || ""}
                 handleChange={handleChange}
                 validator={validator}
+                required={true}
               />
               <Stack sx={{ width: "100%" }}></Stack>
             </RowStack>
@@ -1043,6 +1071,7 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
                 handleChange={handleChange}
                 validator={validator}
                 restricted={restricted}
+                required={true}
               />
               <CustomisedSelectTag
                 label={"Academic Position"}
@@ -1052,6 +1081,7 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
                 handleChange={handleChange}
                 validator={validator}
                 restricted={restricted}
+                required={true}
               />
             </RowStack>
             <RowStack>
@@ -1072,6 +1102,7 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
                 handleChange={handleChange}
                 validator={validator}
                 restricted={restricted}
+                required={true}
               />
             </RowStack>
             <RowStack>
@@ -1083,6 +1114,7 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
                 handleChange={handleChange}
                 validator={validator}
                 restricted={restricted}
+                required={true}
               />
               <CustomisedInput
                 label={"Salary"}
@@ -1091,6 +1123,7 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
                 handleChange={handleChange}
                 validator={validator}
                 restricted={restricted}
+                required={true}
               />
             </RowStack>
             <RowStack>
