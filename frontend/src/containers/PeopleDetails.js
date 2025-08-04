@@ -187,7 +187,7 @@ const tabItems = ({
       label: "Employees",
       child: (
         <AppTable
-          caption={"Company members"}
+          caption={"College Employees"}
           headCells={headCells}
           data={employees}
           rowsPerPage={rowsPerPage}

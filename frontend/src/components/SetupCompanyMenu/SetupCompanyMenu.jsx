@@ -91,7 +91,7 @@ export default function SetupCompanyMenu({ advancePage, style }) {
         justifyContent="space-between"
         sx={{ marginBottom: "20px"}}
       >
-        <h4>Company name</h4>
+        <h4>Comp name</h4>
         <TextField
           id="company-name"
           value={companyName}

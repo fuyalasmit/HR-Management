@@ -7,7 +7,7 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import TableSortLabel from "@mui/material/TableSortLabel";
 import { visuallyHidden } from "@mui/utils";
-import { Box, Stack, Typography, Toolbar, TextField } from "@mui/material";
+import { Box, Stack, Typography, Toolbar, TextField, Select, MenuItem, FormControl } from "@mui/material";
 import Paper from "@mui/material/Paper";
 import PropTypes from "prop-types";
 import TablePagination from "./AppTablePagination";
@@ -194,12 +194,32 @@ Utility function to format the tableHead.
 @param props custom properties of the tableHead.
 */
 function CustomisedTableHead(props) {
-  const { headCells, order, orderBy, onRequestSort, showActionHeader } = props;
+  const { headCells, order, orderBy, onRequestSort, showActionHeader, columnFilters, onFilterChange, data } = props;
   const createSortHandler = (property) => (event) => {
     onRequestSort(event, property);
   };
+
+  // Function to get unique values for dropdown options
+  const getUniqueValues = (fieldId) => {
+    if (!data || data.length === 0) return [];
+    
+    const values = data.map(row => {
+      let value = row[fieldId];
+      if (typeof value === 'object' && value !== null) {
+        // Handle nested objects
+        if (value.departmentName) value = value.departmentName;
+        else if (value.roleTitle) value = value.roleTitle;
+        else if (value.firstName && value.lastName) value = `${value.firstName} ${value.lastName}`;
+      }
+      return value;
+    }).filter(val => val != null && val !== '');
+    
+    return [...new Set(values)].sort();
+  };
+
   return (
     <TableHead sx={{ backgroundColor: "#F9FAFB" }}>
+      {/* Header Row */}
       <TableRow>
         {headCells.map((cell) => {
           if (cell.visible && cell.id !== "action") {
@@ -242,6 +262,57 @@ function CustomisedTableHead(props) {
           </TableCell>
         )}
       </TableRow>
+      
+      {/* Filter Row */}
+      <TableRow sx={{ backgroundColor: "#F3F4F6" }}>
+        {headCells.map((cell) => {
+          if (cell.visible && cell.id !== "action") {
+            const uniqueValues = getUniqueValues(cell.id);
+            return (
+              <TableCell
+                key={`filter-${cell.id}`}
+                align="left"
+                padding="none"
+                sx={customStyle(cell.id, cell.width)}
+              >
+                <FormControl size="small" fullWidth sx={{ minWidth: 80 }}>
+                  <Select
+                    value={columnFilters[cell.id] || ''}
+                    onChange={(e) => onFilterChange(cell.id, e.target.value)}
+                    displayEmpty
+                    sx={{
+                      fontSize: '12px',
+                      backgroundColor: 'white',
+                      '& .MuiSelect-select': {
+                        padding: '4px 8px',
+                      },
+                    }}
+                  >
+                    <MenuItem value="">
+                      <em>All</em>
+                    </MenuItem>
+                    {uniqueValues.map((value) => (
+                      <MenuItem key={value} value={value} sx={{ fontSize: '12px' }}>
+                        {value}
+                      </MenuItem>
+                    ))}
+                  </Select>
+                </FormControl>
+              </TableCell>
+            );
+          }
+        })}
+        {showActionHeader && (
+          <TableCell
+            key={"filter-action"}
+            align="left"
+            padding="none"
+            sx={customStyle("action", 30)}
+          >
+            {/* Empty cell for action column */}
+          </TableCell>
+        )}
+      </TableRow>
     </TableHead>
   );
 }
@@ -259,6 +330,10 @@ CustomisedTableHead.propTypes = {
   order: PropTypes.oneOf(["asc", "desc"]).isRequired,
   orderBy: PropTypes.string.isRequired,
   onRequestSort: PropTypes.func.isRequired,
+  showActionHeader: PropTypes.bool,
+  columnFilters: PropTypes.object,
+  onFilterChange: PropTypes.func,
+  data: PropTypes.array,
 };
 
 /**
@@ -290,45 +365,79 @@ export default function AppTable(props) {
   const [column, setColumn] = useState(headCells);
   const [dataSize, setDataSize] = useState(data.length);
   const [searchValue, setSearchValue] = useState("");
+  const [columnFilters, setColumnFilters] = useState({});
   const searchInputRef = useRef(null);
 
   const columnNames = getColumnName(headCells);
 
-  // Function to filter data based on search term
-  const getFilteredData = () => {
-    if (!searchValue.trim()) {
-      return data;
-    }
-    
-    const searchTerm = searchValue.toLowerCase().trim();
-    return data.filter((row) => {
-      // Search through all visible columns and common employee attributes
-      const searchableFields = [
-        'name', 'firstName', 'lastName', 'preferredName', 'email', 
-        'phoneNumber', 'position', 'post', 'department', 'role', 
-        'team', 'manager', 'officeLocation', 'nationality', 'gender'
-      ];
+  // Function to handle column filter changes
+  const handleFilterChange = (columnId, filterValue) => {
+    setColumnFilters(prev => ({
+      ...prev,
+      [columnId]: filterValue
+    }));
+    setPage(1); // Reset to first page when filter changes
+  };
+
+  // Function to check if row matches column filters
+  const matchesColumnFilters = (row) => {
+    return Object.entries(columnFilters).every(([columnId, filterValue]) => {
+      if (!filterValue) return true; // No filter applied
       
-      return searchableFields.some(field => {
-        const value = row[field];
-        if (value) {
-          // Handle different data types
-          if (typeof value === 'string') {
-            return value.toLowerCase().includes(searchTerm);
-          } else if (typeof value === 'object' && value.departmentName) {
-            // Handle department object
-            return value.departmentName.toLowerCase().includes(searchTerm);
-          } else if (typeof value === 'object' && value.roleTitle) {
-            // Handle role object
-            return value.roleTitle.toLowerCase().includes(searchTerm);
-          } else if (typeof value === 'object' && value.firstName && value.lastName) {
-            // Handle manager object
-            return `${value.firstName} ${value.lastName}`.toLowerCase().includes(searchTerm);
-          }
-        }
-        return false;
-      });
+      let rowValue = row[columnId];
+      
+      // Handle nested objects
+      if (typeof rowValue === 'object' && rowValue !== null) {
+        if (rowValue.departmentName) rowValue = rowValue.departmentName;
+        else if (rowValue.roleTitle) rowValue = rowValue.roleTitle;
+        else if (rowValue.firstName && rowValue.lastName) rowValue = `${rowValue.firstName} ${rowValue.lastName}`;
+      }
+      
+      return String(rowValue) === String(filterValue);
     });
+  };
+
+  // Function to filter data based on search term and column filters
+  const getFilteredData = () => {
+    let filtered = data;
+
+    // Apply column filters first
+    filtered = filtered.filter(matchesColumnFilters);
+
+    // Then apply search filter
+    if (searchValue.trim()) {
+      const searchTerm = searchValue.toLowerCase().trim();
+      filtered = filtered.filter((row) => {
+        // Search through all visible columns and common employee attributes
+        const searchableFields = [
+          'name', 'firstName', 'lastName', 'preferredName', 'email', 
+          'phoneNumber', 'position', 'post', 'department', 'role', 
+          'team', 'manager', 'officeLocation', 'nationality', 'gender'
+        ];
+        
+        return searchableFields.some(field => {
+          const value = row[field];
+          if (value) {
+            // Handle different data types
+            if (typeof value === 'string') {
+              return value.toLowerCase().includes(searchTerm);
+            } else if (typeof value === 'object' && value.departmentName) {
+              // Handle department object
+              return value.departmentName.toLowerCase().includes(searchTerm);
+            } else if (typeof value === 'object' && value.roleTitle) {
+              // Handle role object
+              return value.roleTitle.toLowerCase().includes(searchTerm);
+            } else if (typeof value === 'object' && value.firstName && value.lastName) {
+              // Handle manager object
+              return `${value.firstName} ${value.lastName}`.toLowerCase().includes(searchTerm);
+            }
+          }
+          return false;
+        });
+      });
+    }
+
+    return filtered;
   };
 
   const filteredData = getFilteredData();
@@ -362,7 +471,7 @@ export default function AppTable(props) {
         (page - 1) * rowsPerPage,
         (page - 1) * rowsPerPage + rowsPerPage
       ),
-    [order, orderBy, page, column, filteredData.length, loading, searchValue]
+    [order, orderBy, page, column, filteredData.length, loading, searchValue, columnFilters]
   );
   if (loading) {
     return (
@@ -422,6 +531,9 @@ export default function AppTable(props) {
               orderBy={orderBy}
               onRequestSort={handleRequestSort}
               showActionHeader={showActionHeader}
+              columnFilters={columnFilters}
+              onFilterChange={handleFilterChange}
+              data={data}
             />
             <TableBody>
               {visibleRows.map((row, index) => {
