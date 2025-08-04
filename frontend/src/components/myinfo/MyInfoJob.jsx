@@ -78,7 +78,7 @@ function MyInfoJob({employee}) {
           <ListItem sx={{paddingLeft:'0px'}}>
             <Grid container spacing={-35}>
               <Grid item xs={6}>
-                <Typography variant="body1">Office:</Typography>
+                <Typography variant="body1">College:</Typography>
               </Grid>
               <Grid item xs={6}>
                 <Typography variant="body2">{employee.officeLocation}</Typography>
@@ -95,62 +95,6 @@ function MyInfoJob({employee}) {
               </Grid>
             </Grid>
           </ListItem>
-          </List>
-        </Box>
-        <Typography variant="h2">Compensation</Typography>
-        <Divider></Divider>
-        <Box>
-          <List>
-            <ListItem sx={{paddingLeft:'0px'}}>
-              <Grid container spacing={-35}>
-                <Grid item xs={6}>
-                  <Typography variant="body1">Compensation</Typography>
-                </Grid>
-                <Grid item xs={6}>
-                  <Typography variant="body2">{employee.compensation}</Typography>
-                </Grid>
-              </Grid>
-            </ListItem>
-            <ListItem sx={{paddingLeft:'0px'}}>
-              <Grid container spacing={-35}>
-                <Grid item xs={6}>
-                  <Typography variant="body1">Compensation type</Typography>
-                </Grid>
-                <Grid item xs={6}>
-                  <Typography variant="body2">{employee.compensationType}</Typography>
-                </Grid>
-              </Grid>
-            </ListItem>
-            <ListItem sx={{paddingLeft:'0px'}}>
-              <Grid container spacing={-35}>
-                <Grid item xs={6}>
-                  <Typography variant="body1">Salary</Typography>
-                </Grid>
-                <Grid item xs={6}>
-                  <Typography variant="body2">{Number(employee.salary).toLocaleString()}</Typography>
-                </Grid>
-              </Grid>
-            </ListItem>
-            <ListItem sx={{paddingLeft:'0px'}}>
-              <Grid container spacing={-35}>
-                <Grid item xs={6}>
-                  <Typography variant="body1">Effective date</Typography>
-                </Grid>
-                <Grid item xs={6}>
-                  <Typography variant="body2">{new Date(employee.hireDate).toLocaleDateString('en-GB',{year: 'numeric', month: 'long', day: 'numeric'})}</Typography>
-                </Grid>
-              </Grid>
-            </ListItem>
-            <ListItem sx={{paddingLeft:'0px'}}>
-              <Grid container spacing={-35}>
-                <Grid item xs={6}>
-                  <Typography variant="body1">Hours per week</Typography>
-                </Grid>
-                <Grid item xs={6}>
-                  <Typography variant="body2">{employee.weeklyHours}</Typography>
-                </Grid>
-              </Grid>
-            </ListItem>
           </List>
         </Box>
        </ThemeProvider>
