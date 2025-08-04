@@ -7,7 +7,7 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import TableSortLabel from "@mui/material/TableSortLabel";
 import { visuallyHidden } from "@mui/utils";
-import { Box, Stack, Typography, Toolbar, TextField, Select, MenuItem, FormControl } from "@mui/material";
+import { Box, Stack, Typography, Toolbar, TextField, Select, MenuItem, FormControl, Checkbox, Chip, ListItemText } from "@mui/material";
 import Paper from "@mui/material/Paper";
 import PropTypes from "prop-types";
 import TablePagination from "./AppTablePagination";
@@ -277,9 +277,32 @@ function CustomisedTableHead(props) {
               >
                 <FormControl size="small" fullWidth sx={{ minWidth: 80 }}>
                   <Select
-                    value={columnFilters[cell.id] || ''}
+                    multiple
+                    value={columnFilters[cell.id] || []}
                     onChange={(e) => onFilterChange(cell.id, e.target.value)}
                     displayEmpty
+                    renderValue={(selected) => {
+                      if (selected.length === 0) {
+                        return <em>All</em>;
+                      }
+                      if (selected.length === 1) {
+                        return selected[0];
+                      }
+                      return (
+                        <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.5 }}>
+                          <Chip
+                            label={`${selected.length} selected`}
+                            size="small"
+                            sx={{ 
+                              height: '20px', 
+                              fontSize: '10px',
+                              backgroundColor: '#E3F2FD',
+                              color: '#1565C0'
+                            }}
+                          />
+                        </Box>
+                      );
+                    }}
                     sx={{
                       fontSize: '12px',
                       backgroundColor: 'white',
@@ -287,13 +310,28 @@ function CustomisedTableHead(props) {
                         padding: '4px 8px',
                       },
                     }}
+                    MenuProps={{
+                      PaperProps: {
+                        style: {
+                          maxHeight: 250,
+                        },
+                      },
+                    }}
                   >
-                    <MenuItem value="">
-                      <em>All</em>
-                    </MenuItem>
                     {uniqueValues.map((value) => (
                       <MenuItem key={value} value={value} sx={{ fontSize: '12px' }}>
-                        {value}
+                        <Checkbox 
+                          checked={(columnFilters[cell.id] || []).indexOf(value) > -1}
+                          size="small"
+                        />
+                        <ListItemText 
+                          primary={value} 
+                          sx={{ 
+                            '& .MuiTypography-root': { 
+                              fontSize: '12px' 
+                            } 
+                          }} 
+                        />
                       </MenuItem>
                     ))}
                   </Select>
@@ -381,8 +419,8 @@ export default function AppTable(props) {
 
   // Function to check if row matches column filters
   const matchesColumnFilters = (row) => {
-    return Object.entries(columnFilters).every(([columnId, filterValue]) => {
-      if (!filterValue) return true; // No filter applied
+    return Object.entries(columnFilters).every(([columnId, filterValues]) => {
+      if (!filterValues || filterValues.length === 0) return true; // No filter applied
       
       let rowValue = row[columnId];
       
@@ -393,7 +431,8 @@ export default function AppTable(props) {
         else if (rowValue.firstName && rowValue.lastName) rowValue = `${rowValue.firstName} ${rowValue.lastName}`;
       }
       
-      return String(rowValue) === String(filterValue);
+      // Check if the row value is included in the selected filter values
+      return filterValues.includes(String(rowValue));
     });
   };
 
