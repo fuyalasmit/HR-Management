@@ -1,31 +1,34 @@
 const Sequelize = require("sequelize");
 require("dotenv").config();
 
-const sequelize = new Sequelize("SingleDatabase", "admin", "admin", {
-  host: "127.0.0.1",
-  port: "5432",
-  dialect: "postgres",
-  define: {
-    //freezeTableName: true,
-  },
-  dialectOptions: {
-    connectTimeout: 60000
-  }
-});
-
-// const sequelize = new Sequelize(
-//   process.env.DB,
-//   process.env.USER,
-//   process.env.PASSWORD,
-//   {
-//     host: process.env.HOST,
-//     port: process.env.PORT,
-//     dialect: process.env.DIALECT,
-//     define: {
-//       //freezeTableName: true,
-//     },
+// const sequelize = new Sequelize("SingleDatabase", "admin", "admin", {
+//   host: "127.0.0.1",
+//   port: "5432",
+//   dialect: "postgres",
+//   define: {
+//     //freezeTableName: true,
+//   },
+//   dialectOptions: {
+//     connectTimeout: 60000
 //   }
-// );
+// });
+
+const sequelize = new Sequelize(
+  process.env.DB,
+  process.env.USER,
+  process.env.PASSWORD,
+  {
+    host: process.env.HOST,
+    port: process.env.PORT,
+    dialect: process.env.DIALECT,
+    define: {
+      //freezeTableName: true,
+    },
+    dialectOptions: {
+      connectTimeout: 60000
+    }
+  }
+);
 
 sequelize
   .authenticate()
