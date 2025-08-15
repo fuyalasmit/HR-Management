@@ -27,10 +27,14 @@ The HR Management System is a people and resource management application for you
 
 This project uses Docker to run a PostgreSQL database. The data is persisted using a named Docker volume called `postgres_data`, as configured in the `docker-compose.yaml` file.
 
+### Recent Schema Updates
+
+**August 15, 2025**: Updated database schema to include `contractExpiryDate` column in the employee table. This resolves login crashes that occurred when the backend attempted to query non-existent columns. The latest backup file (`database_backup_pg15_fixed_utf8.sql`) includes this fix.
+
 
 ### Restoring the Database
 
-To restore the database from the backup file, you must first ensure the target database is completely empty. The following steps will destroy your current local database and restore it from `database_backup.sql`.
+To restore the database from the backup file, you must first ensure the target database is completely empty. The following steps will destroy your current local database and restore it from the latest backup file.
 
 **Warning:** This is a destructive process that will permanently delete your existing local database data.
 
@@ -55,10 +59,12 @@ To restore the database from the backup file, you must first ensure the target d
     docker-compose up -d
     ```
 
-4.  **Import the backup file:**
+4.  **Import the latest backup file:**
     ```bash
-    cat database_backup.sql | docker-compose exec -T database psql -U admin -d SingleDatabase
+    cat database_backup_pg15_fixed_utf8.sql | docker-compose exec -T database psql -U admin -d SingleDatabase
     ```
+
+**Important:** Use `database_backup_pg15_fixed_utf8.sql` as it contains the most up-to-date schema including all recent fixes and improvements.
     
 ### Backing Up the Database
 

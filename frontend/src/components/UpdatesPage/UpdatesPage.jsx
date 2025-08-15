@@ -228,7 +228,7 @@ export default function UpdatesPage({ style }) {
           <Card sx={{ boxShadow: "0 2px 8px rgba(0,0,0,0.1)", borderRadius: 2 }}>
             <CardContent>
               <Typography variant="h6" component="h2" gutterBottom sx={{ fontWeight: "bold" }}>
-                Department Breakdown
+                Sub Department
               </Typography>
               {stats.loading ? (
                 <Typography>Loading department data...</Typography>
