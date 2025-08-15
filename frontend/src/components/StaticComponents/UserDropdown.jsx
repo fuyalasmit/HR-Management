@@ -69,20 +69,20 @@ export default function UserDropdown({ style }) {
   };
 
   const actions = [
-    {
-      label: "Profile",
-      action: () => {
-        console.log("Navigate to profile page");
-      },
-    },
-    {
-      label: "Password",
-      action: () =>{ console.log("Password")}
-    },
-    {
-      label: "Team",
-      action: () =>{ console.log("Team")}
-    },
+    // {
+    //   label: "Profile",
+    //   action: () => {
+    //     console.log("Navigate to profile page");
+    //   },
+    // },
+    // {
+    //   label: "Password",
+    //   action: () =>{ console.log("Password")}
+    // },
+    // {
+    //   label: "Team",
+    //   action: () =>{ console.log("Team")}
+    // },
     {
       label: "Log out",
       action: logout,
