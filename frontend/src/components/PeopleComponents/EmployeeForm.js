@@ -679,7 +679,6 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
       console.log(msg);
       return;
     }
-    console.log("Form validation passed.");
     const socialProfiles = filterInputs();
     try {
       if (employee) {
@@ -689,11 +688,9 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
           if (profile.id) {
             // Existing profile, update it
             await api.socialProfile.update(profile);
-            console.log(`Social profile - ${profile.mediumName} updated.`);
           } else {
             // New profile, create it.
             await api.socialProfile.createOne(profile);
-            console.log(`Social profile - ${profile.mediumName} created.`);
           }
         }
         if (onSave) {
@@ -706,7 +703,6 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
           frontendUrl: `${getHomePath(location)}/complete-signup/`,
         };
         await api.employee.createOne(data);
-        console.log("Employee successfully added.");
         if (onSave) {
           onSave(null);
         }
@@ -717,7 +713,6 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
   };
 
   const handleDiscard = (value) => {
-    // console.log(change, prompt, value, onDiscard);
     //value is true when discard button is clicked and false when confirm discard button is pressed.
     if (onDiscard && value && !change) {
       onDiscard();

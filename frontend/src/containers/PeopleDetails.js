@@ -41,13 +41,10 @@ function formatTableData({
     data.push({
       label: "Edit employee",
       action: () => {
-        console.log("🔵 Edit Employee button clicked for employee:", empId, employee.firstName, employee.lastName);
         const originalEmployee = originalEmployeeData.get(empId);
         if (originalEmployee) {
-          console.log("✅ Using original employee data for edit");
           handleEdit(originalEmployee);
         } else {
-          console.log("⚠️ Using fallback employee data for edit");
           handleEdit(employee);
         }
       },
@@ -57,13 +54,10 @@ function formatTableData({
     data.push({
       label: "End employment",
       action: () => {
-        console.log("🔴 End Employment button clicked for employee:", empId, employee.firstName, employee.lastName);
         const originalEmployee = originalEmployeeData.get(empId);
         if (originalEmployee) {
-          console.log("✅ Using original employee data for termination");
           handleTermination(originalEmployee);
         } else {
-          console.log("⚠️ Using fallback employee data for termination");
           handleTermination(employee);
         }
       },
@@ -216,7 +210,7 @@ const tabItems = ({ isAdmin, loading, showActionHeader, employees, headCells, ha
  * AppTable, AppTablePagination, AppTab, and AppDatePickers.
  * @returns A React component.
  */
-export default function People({ handleAddNewEmployee, handleEdit, handleSurvey, handleTermination }) {
+export default function People({ handleAddNewEmployee, handleEdit, handleSurvey, handleTermination, preSelectedEmployee }) {
   const stateContext = useContext(StateContext);
   const [employees, setEmployees] = useState([]);
   const [myTeam, setMyTeam] = useState([]);
@@ -292,11 +286,19 @@ export default function People({ handleAddNewEmployee, handleEdit, handleSurvey,
           }
         }
       } catch (err) {
-        console.log(err);
+        console.error("Error fetching data:", err);
       }
     }
     fetchData();
   }, [stateContext.state.pdEmployees, stateContext.state.pdMyTeam, stateContext.state.pdTerminated]);
+
+  // Handle preSelectedEmployee prop from PeopleHome
+  useEffect(() => {
+    if (preSelectedEmployee) {
+      setSelectedEmployee(preSelectedEmployee);
+      setViewDetails(true);
+    }
+  }, [preSelectedEmployee]);
 
   const handleRowClick = (row) => {
     setSelectedEmployee(row);
