@@ -665,3 +665,93 @@ exports.changeJob = async (req, res) => {
     res.status(400).json({ message: message.failed });
   }
 };
+
+// Re-register a terminated employee
+exports.reRegisterEmployee = async (req, res) => {
+  console.log("Re-register endpoint called with body:", req.body);
+  
+  try {
+    const { empId } = req.body;
+    
+    console.log("Attempting to re-register employee with empId:", empId);
+    
+    // Find the terminated employee (including soft-deleted ones)
+    const employee = await db.employee.findByPk(empId, {
+      paranoid: false, // Include soft-deleted records
+    });
+    
+    console.log("Found employee:", employee ? "Yes" : "No");
+    
+    if (!employee) {
+      console.log("Employee not found");
+      throw { message: "Employee not found." };
+    }
+
+    console.log("Employee termination status:", {
+      terminationReason: employee.terminationReason,
+      autoDeleteAt: employee.autoDeleteAt,
+      deletedAt: employee.deletedAt
+    });
+
+    // Check if employee is actually terminated
+    if (!employee.terminationReason && !employee.autoDeleteAt) {
+      console.log("Employee is not terminated");
+      throw { message: "Employee is not terminated." };
+    }
+
+    // Restore the employee by clearing termination data
+    if (employee.deletedAt) {
+      console.log("Restoring soft-deleted employee");
+      await employee.restore(); // Restore if soft-deleted
+    }
+    
+    employee.set({
+      terminationReason: null,
+      terminationNote: null,
+      autoDeleteAt: null,
+    });
+    await employee.save();
+    
+    console.log("Employee data updated successfully");
+
+    // Find and restore the associated user account
+    const user = await db.appUser.findOne({
+      where: {
+        [db.Sequelize.Op.or]: [
+          { email: employee.email },
+          { empId: employee.empId },
+        ],
+      },
+      paranoid: false, // Include soft-deleted records
+    });
+
+    console.log("Found associated user:", user ? "Yes" : "No");
+
+    if (user) {
+      if (user.deletedAt) {
+        console.log("Restoring soft-deleted user");
+        await user.restore(); // Restore if soft-deleted
+      }
+      user.set({
+        access: "Granted", // Restore access
+        autoDeleteAt: null,
+      });
+      await user.save();
+      console.log("User account restored successfully");
+    }
+
+    const responseData = {
+      message: "Employee re-registered successfully.",
+      employee: employee.toJSON(),
+    };
+    
+    console.log("Sending response:", responseData);
+    res.send(responseData);
+    
+  } catch (err) {
+    console.error("Error in reRegisterEmployee:", err);
+    res.status(400).send({
+      message: err.message || "Failed to re-register employee.",
+    });
+  }
+};

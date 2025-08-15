@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import { Box, Stack, Typography, Avatar, TableCell, Button } from "@mui/material";
+import { Box, Stack, Typography, Avatar, TableCell, Button, Dialog, DialogTitle, DialogContent, DialogActions, DialogContentText } from "@mui/material";
 import dayjs from "dayjs";
 import AppTable from "../components/PeopleComponents/AppTable";
 import AppTabs from "../components/PeopleComponents/AppTabs";
@@ -149,7 +149,7 @@ function formatTableData({
     }
   });
 }
-const tabItems = ({ isAdmin, loading, showActionHeader, employees, headCells, hasTeam, team, terminated, handleRowClick }) => {
+const tabItems = ({ isAdmin, loading, showActionHeader, employees, headCells, hasTeam, team, terminated, handleRowClick, handleTerminatedRowClick }) => {
   const tabs = [
     {
       label: "Employees",
@@ -196,7 +196,7 @@ const tabItems = ({ isAdmin, loading, showActionHeader, employees, headCells, ha
           rowsPerPage={rowsPerPage}
           loading={loading}
           showActionHeader={false}
-          handleRowClick={handleRowClick}
+          handleRowClick={handleTerminatedRowClick} // Use function that shows re-register modal
         />
       ),
     };
@@ -218,6 +218,8 @@ export default function People({ handleAddNewEmployee, handleEdit, handleSurvey,
   const [loading, setLoading] = useState(true);
   const [viewDetails, setViewDetails] = useState(false);
   const [selectedEmployee, setSelectedEmployee] = useState(null);
+  const [showReRegisterModal, setShowReRegisterModal] = useState(false);
+  const [employeeToReRegister, setEmployeeToReRegister] = useState(null);
   // const [editEmployee, setEditEmployee] = useState(false);
   const navigate = useNavigate();
   const isAdmin = stateContext.state.user && stateContext.state.user.permission.id === 1;
@@ -301,8 +303,87 @@ export default function People({ handleAddNewEmployee, handleEdit, handleSurvey,
   }, [preSelectedEmployee]);
 
   const handleRowClick = (row) => {
+    // Don't allow viewing profile for terminated employees
+    if (row.terminationReason || row.autoDeleteAt) {
+      return; // Do nothing for terminated employees
+    }
     setSelectedEmployee(row);
     setViewDetails(true);
+  };
+
+  // Handler for terminated employees - shows re-registration modal
+  const handleTerminatedRowClick = (row) => {
+    setEmployeeToReRegister(row);
+    setShowReRegisterModal(true);
+  };
+
+  // Handle re-registration of terminated employee
+  const handleReRegister = async () => {
+    try {
+      console.log("Starting re-registration for employee:", employeeToReRegister);
+      
+      if (!employeeToReRegister) {
+        console.error("No employee selected for re-registration");
+        return;
+      }
+      
+      console.log("Calling API to re-register employee with empId:", employeeToReRegister.empId);
+      
+      // Call API to re-register the employee (remove termination data)
+      const response = await api.employee.reRegister(employeeToReRegister.empId);
+      
+      console.log("API response:", response);
+      
+      if (response && (response.employee || response.message)) {
+        console.log("Re-registration successful, updating UI...");
+        
+        // Update local state - remove from terminated list
+        setTerminated(prev => {
+          const updated = prev.filter(emp => emp.empId !== employeeToReRegister.empId);
+          console.log("Updated terminated list:", updated);
+          return updated;
+        });
+        
+        // If we have employee data, add to active employees
+        if (response.employee) {
+          // Format the restored employee data and add to employees list
+          const freshParams = { 
+            ...params, 
+            data: [response.employee]
+          };
+          formatTableData(freshParams);
+          
+          setEmployees(prev => {
+            const updated = [...prev, ...freshParams.data];
+            console.log("Updated employees list:", updated);
+            return updated;
+          });
+        }
+        
+        // Clear state context to force refresh on next load
+        stateContext.updateState("pdEmployees", null);
+        stateContext.updateState("pdTerminated", null);
+        
+        // Close modal and reset state
+        setShowReRegisterModal(false);
+        setEmployeeToReRegister(null);
+        
+        console.log("Employee re-registered successfully");
+        alert("Employee re-registered successfully!"); // Temporary feedback
+      } else {
+        console.error("Invalid response from API:", response);
+        alert("Failed to re-register employee. Please try again.");
+      }
+    } catch (error) {
+      console.error("Error re-registering employee:", error);
+      alert("Error occurred while re-registering employee: " + error.message);
+    }
+  };
+
+  // Handle modal close
+  const handleCloseReRegisterModal = () => {
+    setShowReRegisterModal(false);
+    setEmployeeToReRegister(null);
   };
 
   const handleGoBack = () => {
@@ -415,10 +496,55 @@ export default function People({ handleAddNewEmployee, handleEdit, handleSurvey,
               headCells,
               terminated,
               handleRowClick,
+              handleTerminatedRowClick,
             })}
           />
         )}
       </Stack>
+
+      {/* Re-registration Modal */}
+      <Dialog
+        open={showReRegisterModal}
+        onClose={handleCloseReRegisterModal}
+        aria-labelledby="re-register-dialog-title"
+        aria-describedby="re-register-dialog-description"
+      >
+        <DialogTitle id="re-register-dialog-title">
+          Re-register Employee
+        </DialogTitle>
+        <DialogContent>
+          <DialogContentText id="re-register-dialog-description">
+            {employeeToReRegister && (
+              <>
+                Do you want to re-register <strong>{employeeToReRegister.firstName} {employeeToReRegister.lastName}</strong>?
+                <br /><br />
+                This will restore the employee to active status and remove them from the terminated employees list.
+              </>
+            )}
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions>
+          <Button 
+            onClick={handleCloseReRegisterModal}
+            sx={{ textTransform: "none" }}
+          >
+            Cancel
+          </Button>
+          <Button 
+            onClick={handleReRegister} 
+            variant="contained"
+            sx={{ 
+              textTransform: "none",
+              backgroundColor: "#7F56D9",
+              "&:hover": {
+                backgroundColor: "#602ece"
+              }
+            }}
+          >
+            Re-register
+          </Button>
+        </DialogActions>
+      </Dialog>
     </Stack>
   );
 }

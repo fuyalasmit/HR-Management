@@ -10,6 +10,7 @@ module.exports = (router) => {
   router.route("/employees/find/myteam/").post(requireAuth, controller.showMyTeam);
   router.route("/employees/find/email").post(requireAuth, controller.findOneByEmail);
   router.route("/employees/onboarding/done").post(requireAuth, controller.finalizeOnboarding);
+  router.route("/employees/reregister").post(requireAuth, controller.reRegisterEmployee);
   router.route("/employees").post(requireAuth, controller.createRecord);
   router.route("/employees").put(requireAuth, controller.updateRecord);
   router.route("/employees/").delete(requireAuth, controller.deleteRecord);

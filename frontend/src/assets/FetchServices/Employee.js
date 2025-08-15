@@ -2,10 +2,27 @@ import axios from "axios";
 const BASE_URL = require("./BaseUrl.json").value;
 const addCred = require("./withCredentials.json");
 
+// Function to get authentication headers with session token
+const getAuthHeaders = () => {
+  try {
+    const SessionManager = require("../../utils/sessionManager").default;
+    const sessionToken = SessionManager.getSessionToken();
+    
+    return {
+      withCredentials: false,
+      headers: sessionToken ? { 'x-session-token': sessionToken } : {}
+    };
+  } catch (error) {
+    console.error('Error getting session token:', error);
+    return { withCredentials: false, headers: {} };
+  }
+};
+
 export const fetchAll = async () => {
   try {
     const url = `${BASE_URL}/api/employees`;
-    const res = await axios.get(url, addCred);
+    const authConfig = getAuthHeaders();
+    const res = await axios.get(url, authConfig);
     return res.data;
   } catch (err) {
     console.log(err);
@@ -16,7 +33,8 @@ export const fetchAll = async () => {
 export const fetchTerminated = async () => {
   try {
     const url = `${BASE_URL}/api/terminated`;
-    const res = await axios.get(url, addCred);
+    const authConfig = getAuthHeaders();
+    const res = await axios.get(url, authConfig);
     return res.data;
   } catch (err) {
     console.log(err);
@@ -27,10 +45,34 @@ export const fetchTerminated = async () => {
 export const fetchOne = async (empId) => {
   try {
     const url = `${BASE_URL}/api/employees/${empId}`;
-    const res = await axios.post(url, addCred);
+    const authConfig = getAuthHeaders();
+    const res = await axios.post(url, {}, authConfig);
     return res.data;
   } catch (err) {
     console.log(err);
+    return null;
+  }
+};
+
+// Alias for fetchOne for better readability
+export const fetchById = async (empId) => {
+  return fetchOne(empId);
+};
+
+// Re-register a terminated employee
+export const reRegister = async (empId) => {
+  try {
+    console.log("API: Re-registering employee with empId:", empId);
+    const url = `${BASE_URL}/api/employees/reregister`;
+    const data = { empId: empId };
+    const authConfig = getAuthHeaders();
+    console.log("API: Making request to:", url, "with data:", data, "and config:", authConfig);
+    const res = await axios.post(url, data, authConfig);
+    console.log("API: Response received:", res.data);
+    return res.data;
+  } catch (err) {
+    console.error("API: Error in reRegister:", err);
+    console.error("API: Error response:", err.response?.data);
     return null;
   }
 };
