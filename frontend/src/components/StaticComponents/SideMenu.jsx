@@ -162,7 +162,7 @@ export default function SideMenu({ style, onSelect }) {
               /> */}
             </>
           )}
-          {isAdmin && (
+          {/* {isAdmin && (
             <CustomizedListItem
               primary={"Settings"}
               index={7}
@@ -170,7 +170,7 @@ export default function SideMenu({ style, onSelect }) {
               selected={selectedIndex === 7}
               handleListItemClick={handleListItemClick}
             />
-          )}
+          )} */}
         </List>
       </Box>
       <Box>
