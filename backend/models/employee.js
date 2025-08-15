@@ -100,12 +100,12 @@ module.exports = (sequelize, Sequelize) => {
       position: {
         type: Sequelize.ENUM(
           "Professor",
-          "Associate Professor", 
+          "Associate Professor",
           "Assistant Professor",
           "Lecturer",
           "Senior Instructor",
           "Instructor",
-          'Assistant Instructor',
+          "Assistant Instructor", 
           "Staff"
         ),
         allowNull: false,
@@ -188,6 +188,10 @@ module.exports = (sequelize, Sequelize) => {
       },
       fieldOfInterest: {
         type: Sequelize.TEXT,
+        allowNull: true,
+      },
+      contractExpiryDate: {
+        type: Sequelize.DATE,
         allowNull: true,
       },
     },

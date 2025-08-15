@@ -119,7 +119,6 @@ const containerStyle = {
 const rootStyle = {
   width: "100%",
   height: "100%",
-
 };
 
 const errorStyle = {
@@ -128,7 +127,6 @@ const errorStyle = {
   color: "red",
   paddingLeft: "5px",
 };
-
 
 function RowStack({ children }) {
   return (
@@ -151,13 +149,7 @@ function createHeader(employee, handleDiscard) {
         justifyContent: "space-between",
       }}
     >
-      <Typography
-        variant="h5"
-        id="tableTitle"
-        component="div"
-        color={"inherent"}
-        fontWeight={600}
-      >
+      <Typography variant="h5" id="tableTitle" component="div" color={"inherent"} fontWeight={600}>
         {employee ? "Edit my info" : "Add a new employee"}
       </Typography>
 
@@ -226,9 +218,7 @@ function createFooter(employee, handleSubmit) {
 function createSubHead(title) {
   return (
     <Stack sx={{ paddingTop: "30px", fontWeight: "400" }}>
-      <Typography sx={{ fontWeight: "bold", fontSize: "1.1rem" }}>
-        {title}
-      </Typography>
+      <Typography sx={{ fontWeight: "bold", fontSize: "1.1rem" }}>{title}</Typography>
       <Divider />
     </Stack>
   );
@@ -264,15 +254,10 @@ function CustomisedDatePicker(props) {
     <Stack sx={rootStyle} spacing={1}>
       <Typography>
         {label}
-        {required && <span style={{ color: 'red', marginLeft: '4px' }}>*</span>}
+        {required && <span style={{ color: "red", marginLeft: "4px" }}>*</span>}
       </Typography>
       <Typography>
-        <HRMDatePicker
-          name={name}
-          initialValue={value}
-          hasError={validator[name]}
-          onChange={handleChange}
-        />
+        <HRMDatePicker name={name} initialValue={value} hasError={validator[name]} onChange={handleChange} />
         {validator[name] && <Box sx={errorStyle}>{validator[name]} </Box>}
       </Typography>
     </Stack>
@@ -280,19 +265,16 @@ function CustomisedDatePicker(props) {
 }
 
 function CustomisedSelectTag(props) {
-  const { label, name, value, options, handleChange, validator, restricted, required } =
-    props;
+  const { label, name, value, options, handleChange, validator, restricted, required } = props;
   return (
     <Stack sx={rootStyle} spacing={1}>
       <Typography>
         {label}
-        {required && <span style={{ color: 'red', marginLeft: '4px' }}>*</span>}
+        {required && <span style={{ color: "red", marginLeft: "4px" }}>*</span>}
       </Typography>
       <Typography>
         <select
-          className={
-            validator[name] ? "select-element field-error" : "select-element"
-          }
+          className={validator[name] ? "select-element field-error" : "select-element"}
           name={name}
           value={value}
           onChange={handleChange}
@@ -301,7 +283,7 @@ function CustomisedSelectTag(props) {
           {options &&
             options.map((option, index) => {
               return (
-                <option key={`${props.name || 'select'}-${option}-${index}`} value={option}>
+                <option key={`${props.name || "select"}-${option}-${index}`} value={option}>
                   {option}
                 </option>
               );
@@ -313,19 +295,16 @@ function CustomisedSelectTag(props) {
   );
 }
 function GenderSelectTag(props) {
-  const { label, name, value, options, handleChange, validator, restricted, required } =
-    props;
+  const { label, name, value, options, handleChange, validator, restricted, required } = props;
   return (
     <Stack sx={rootStyle} spacing={1}>
       <Typography>
         {label}
-        {required && <span style={{ color: 'red', marginLeft: '4px' }}>*</span>}
+        {required && <span style={{ color: "red", marginLeft: "4px" }}>*</span>}
       </Typography>
       <Typography>
         <select
-          className={
-            validator[name] ? "select-element field-error" : "select-element"
-          }
+          className={validator[name] ? "select-element field-error" : "select-element"}
           name={name}
           value={value}
           onChange={handleChange}
@@ -335,7 +314,7 @@ function GenderSelectTag(props) {
           {options &&
             options.map((option, index) => {
               return (
-                <option key={`${props.name || 'gender'}-${option}-${index}`} value={option}>
+                <option key={`${props.name || "gender"}-${option}-${index}`} value={option}>
                   {option}
                 </option>
               );
@@ -347,21 +326,12 @@ function GenderSelectTag(props) {
   );
 }
 function CustomisedInput(props) {
-  const {
-    label,
-    name,
-    value,
-    handleChange,
-    placeholder,
-    validator,
-    restricted,
-    required,
-  } = props;
+  const { label, name, value, handleChange, placeholder, validator, restricted, required } = props;
   return (
     <Stack sx={rootStyle} spacing={1}>
       <Typography>
         {label}
-        {required && <span style={{ color: 'red', marginLeft: '4px' }}>*</span>}
+        {required && <span style={{ color: "red", marginLeft: "4px" }}>*</span>}
       </Typography>
       <Typography>
         <input
@@ -386,11 +356,7 @@ function CustomisedSocialMediaInput(props) {
       <Stack direction={"row"}>
         <Box className="text-field-social-media-title">{title}</Box>
         <input
-          className={
-            validator[name]
-              ? "text-field-social-media field-error"
-              : "text-field-social-media"
-          }
+          className={validator[name] ? "text-field-social-media field-error" : "text-field-social-media"}
           type="text"
           name={name}
           value={value}
@@ -418,9 +384,7 @@ function DegreeContainer({ children }) {
   return (
     <Stack spacing={1}>
       <Typography>Education</Typography>
-      <Stack spacing={2}>
-        {children}
-      </Stack>
+      <Stack spacing={2}>{children}</Stack>
     </Stack>
   );
 }
@@ -433,9 +397,7 @@ function DegreeInput({ degree, index, onChange, onRemove, validator }) {
   return (
     <Stack spacing={1} sx={{ border: "1px solid #D0D5DD", borderRadius: "5px", p: 2 }}>
       <Stack direction="row" justifyContent="space-between" alignItems="center">
-        <Typography sx={{ fontWeight: "bold", fontSize: "14px" }}>
-          Degree {index + 1}
-        </Typography>
+        <Typography sx={{ fontWeight: "bold", fontSize: "14px" }}>Degree {index + 1}</Typography>
         {index > 0 && (
           <button
             type="button"
@@ -456,9 +418,7 @@ function DegreeInput({ degree, index, onChange, onRemove, validator }) {
         <Stack sx={rootStyle} spacing={1}>
           <Typography>Degree Type</Typography>
           <select
-            className={
-              validator[`degree_${index}_type`] ? "select-element field-error" : "select-element"
-            }
+            className={validator[`degree_${index}_type`] ? "select-element field-error" : "select-element"}
             value={degree.type || ""}
             onChange={(e) => handleDegreeChange("type", e.target.value)}
           >
@@ -468,24 +428,18 @@ function DegreeInput({ degree, index, onChange, onRemove, validator }) {
               </option>
             ))}
           </select>
-          {validator[`degree_${index}_type`] && (
-            <Box sx={errorStyle}>{validator[`degree_${index}_type`]}</Box>
-          )}
+          {validator[`degree_${index}_type`] && <Box sx={errorStyle}>{validator[`degree_${index}_type`]}</Box>}
         </Stack>
         <Stack sx={rootStyle} spacing={1}>
           <Typography>Field of Study</Typography>
           <input
-            className={
-              validator[`degree_${index}_field`] ? "text-field field-error" : "text-field"
-            }
+            className={validator[`degree_${index}_field`] ? "text-field field-error" : "text-field"}
             type="text"
             value={degree.field || ""}
             onChange={(e) => handleDegreeChange("field", e.target.value)}
             placeholder="e.g., Computer Science, Business Administration"
           />
-          {validator[`degree_${index}_field`] && (
-            <Box sx={errorStyle}>{validator[`degree_${index}_field`]}</Box>
-          )}
+          {validator[`degree_${index}_field`] && <Box sx={errorStyle}>{validator[`degree_${index}_field`]}</Box>}
         </Stack>
       </RowStack>
     </Stack>
@@ -586,6 +540,12 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
     inputs.dateOfBirth = new Date(inputs.dateOfBirth);
     inputs.hireDate = new Date(inputs.hireDate);
     inputs.effectiveDate = new Date(inputs.effectiveDate);
+
+    // Handle contract expiry date
+    if (inputs.contractExpiryDate) {
+      inputs.contractExpiryDate = new Date(inputs.contractExpiryDate);
+    }
+
     if (inputs.city === "Others") {
       inputs.city = inputs._city;
     }
@@ -607,7 +567,7 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
     if (!inputs.managerId) {
       inputs.managerId = null; // This field is optional
     }
-    
+
     // Convert empty post field to null since the backend ENUM doesn't accept empty strings
     if (inputs.post === "" || inputs.post === undefined) {
       inputs.post = null;
@@ -652,7 +612,7 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
     inputs["socialProfiles"] = newProfiles;
 
     // Add degrees to inputs
-    const filteredDegrees = degrees.filter(degree => degree.type && degree.field);
+    const filteredDegrees = degrees.filter((degree) => degree.type && degree.field);
     inputs["degrees"] = filteredDegrees;
 
     delete inputs.createdAt;
@@ -683,6 +643,9 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
       }
     } else if (name === "city" && value !== "Others") {
       setInputs((values) => ({ ...values, ["_city"]: null }));
+    } else if (name === "employmentType" && value !== "Contract employment") {
+      // Clear contract expiry date when employment type is not contract
+      setInputs((values) => ({ ...values, ["contractExpiryDate"]: null }));
     }
     setChange(true);
   };
@@ -712,13 +675,10 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
     setValidator(result);
     if (!result.valid) {
       const count = Object.keys(result).length - 1;
-      const msg = `Form validation failed. ${count} ${
-        count === 1 ? "error" : "errors"
-      } found.`;
+      const msg = `Form validation failed. ${count} ${count === 1 ? "error" : "errors"} found.`;
       console.log(msg);
       return;
     }
-    console.log("Form validation passed.");
     const socialProfiles = filterInputs();
     try {
       if (employee) {
@@ -728,11 +688,9 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
           if (profile.id) {
             // Existing profile, update it
             await api.socialProfile.update(profile);
-            console.log(`Social profile - ${profile.mediumName} updated.`);
           } else {
             // New profile, create it.
             await api.socialProfile.createOne(profile);
-            console.log(`Social profile - ${profile.mediumName} created.`);
           }
         }
         if (onSave) {
@@ -745,7 +703,6 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
           frontendUrl: `${getHomePath(location)}/complete-signup/`,
         };
         await api.employee.createOne(data);
-        console.log("Employee successfully added.");
         if (onSave) {
           onSave(null);
         }
@@ -756,7 +713,6 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
   };
 
   const handleDiscard = (value) => {
-    // console.log(change, prompt, value, onDiscard);
     //value is true when discard button is clicked and false when confirm discard button is pressed.
     if (onDiscard && value && !change) {
       onDiscard();
@@ -776,15 +732,9 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
       //direction="column"
       //alignItems="center"
       //justifyContent="center"
-      sx={{ minHeight: "100vh" ,border: "0px solid red"}}
+      sx={{ minHeight: "100vh", border: "0px solid red" }}
     >
-      {change && prompt && (
-        <PopupModal
-          onAccept={handleSubmit}
-          onDiscard={() => handleDiscard(false)}
-          onCancel={handleCancel}
-        />
-      )}
+      {change && prompt && <PopupModal onAccept={handleSubmit} onDiscard={() => handleDiscard(false)} onCancel={handleCancel} />}
       {createHeader(employee, handleDiscard)}
       <form>
         <Stack spacing={5} sx={{ border: "0px blue solid", width: "100%", minWidth: "100%" }}>
@@ -881,7 +831,7 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
                 validator={validator}
               />
             </SocialMediaContainer>
-            
+
             <DegreeContainer>
               {degrees.map((degree, index) => (
                 <DegreeInput
@@ -917,9 +867,7 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
             <Stack spacing={1}>
               <Typography>Field of Interest (Optional)</Typography>
               <textarea
-                className={
-                  validator.fieldOfInterest ? "text-field field-error" : "text-field"
-                }
+                className={validator.fieldOfInterest ? "text-field field-error" : "text-field"}
                 name="fieldOfInterest"
                 value={inputs.fieldOfInterest || ""}
                 onChange={handleChange}
@@ -931,9 +879,7 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
                   maxHeight: "200px",
                 }}
               />
-              {validator.fieldOfInterest && (
-                <Box sx={errorStyle}>{validator.fieldOfInterest}</Box>
-              )}
+              {validator.fieldOfInterest && <Box sx={errorStyle}>{validator.fieldOfInterest}</Box>}
             </Stack>
           </Stack>
           {/* Personal Information container ends here */}
@@ -1137,6 +1083,21 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
               />
               <Stack sx={{ width: "100%" }}></Stack>
             </RowStack>
+            {/* Contract Expiry Date - Only show for Contract employment */}
+            {inputs.employmentType === "Contract employment" && (
+              <RowStack>
+                <CustomisedDatePicker
+                  label={"Contract expiry date"}
+                  name={"contractExpiryDate"}
+                  value={inputs.contractExpiryDate || ""}
+                  handleChange={handleChange}
+                  validator={validator}
+                  restricted={restricted}
+                  required={false}
+                />
+                <Stack sx={{ width: "100%" }}></Stack>
+              </RowStack>
+            )}
           </Stack>
           {/* Job Information container ends here */}
 
@@ -1150,17 +1111,14 @@ function EmployeeForm({ employee, restricted, onDiscard, onSave }) {
 export default EmployeeForm;
 
 //***Form validation functions begin here***
-const isEmpty = (text) =>
-  text === null ||
-  typeof text === "undefined" ||
-  text.toString().trim().length === 0;
+const isEmpty = (text) => text === null || typeof text === "undefined" || text.toString().trim().length === 0;
 
 const validateName = (fieldName, name) => {
   if (isEmpty(name)) {
     return { valid: false, message: `Please, enter ${fieldName}.` };
   }
   name = name.trim();
-  
+
   // Updated regex to allow spaces for middle names
   const regex = /^[a-zA-Z\-\'\s]+$/;
   if (!regex.test(name)) {
@@ -1169,7 +1127,7 @@ const validateName = (fieldName, name) => {
       message: `Invalid character. Only alphabets, spaces, apostrophe and hyphen are allowed.`,
     };
   }
-  
+
   // Check for multiple consecutive spaces
   if (/\s{2,}/.test(name)) {
     return {
@@ -1177,7 +1135,7 @@ const validateName = (fieldName, name) => {
       message: "Multiple consecutive spaces are not allowed.",
     };
   }
-  
+
   let hyphenCount = 0;
   let approstropheCount = 0;
   for (let char of name) {
@@ -1411,14 +1369,28 @@ const validateForm = async (employee) => {
     valid = false;
     results.employmentType = "Please, select a employment type";
   }
+
+  // Validate contract expiry date for contract employees (optional field)
+  if (employee.employmentType === "Contract employment" && !isEmpty(employee.contractExpiryDate)) {
+    const contractExpiryDate = dayjs(employee.contractExpiryDate);
+    const hireDate = dayjs(employee.hireDate);
+    const currentDate = dayjs();
+
+    if (contractExpiryDate.isBefore(currentDate, "day")) {
+      valid = false;
+      results.contractExpiryDate = "Contract expiry date cannot be in the past";
+    } else if (contractExpiryDate.isBefore(hireDate, "day")) {
+      valid = false;
+      results.contractExpiryDate = "Contract expiry date cannot be before hire date";
+    }
+  }
   if (isEmpty(employee.emergencyContactName)) {
     valid = false;
     results.emergencyContactName = "Please, enter emergency contact's name";
   }
   if (isEmpty(employee.emergencyContactRelationship)) {
     valid = false;
-    results.emergencyContactRelationship =
-      "Please, enter emergency contact's relationship";
+    results.emergencyContactRelationship = "Please, enter emergency contact's relationship";
   }
   check = validatePhoneNumber(employee.emergencyContactPhoneNumber);
   if (!check.valid) {
@@ -1451,29 +1423,17 @@ const validateForm = async (employee) => {
   }
 
   //Check Facebook
-  check = await validateSocialProfile(
-    employee.empId,
-    "facebook",
-    employee._facebook
-  );
+  check = await validateSocialProfile(employee.empId, "facebook", employee._facebook);
   if (!check.valid) {
     valid = check.valid;
     results._facebook = check.message;
   }
-  check = await validateSocialProfile(
-    employee.empId,
-    "twitter",
-    employee._twitter
-  );
+  check = await validateSocialProfile(employee.empId, "twitter", employee._twitter);
   if (!check.valid) {
     valid = check.valid;
     results._twitter = check.message;
   }
-  check = await validateSocialProfile(
-    employee.empId,
-    "linkedin",
-    employee._linkedin
-  );
+  check = await validateSocialProfile(employee.empId, "linkedin", employee._linkedin);
   if (!check.valid) {
     valid = check.valid;
     results._linkedin = check.message;

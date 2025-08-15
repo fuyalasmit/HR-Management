@@ -1,12 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import {
-  Box,
-  Stack,
-  Typography,
-  Avatar,
-  TableCell,
-  Button,
-} from "@mui/material";
+import { Box, Stack, Typography, Avatar, TableCell, Button } from "@mui/material";
 import dayjs from "dayjs";
 import AppTable from "../components/PeopleComponents/AppTable";
 import AppTabs from "../components/PeopleComponents/AppTabs";
@@ -38,23 +31,20 @@ function formatTableData({
 }) {
   // Store original employee data for editing
   const originalEmployeeData = new Map();
-  
+
   // Create set of actions - ensure fresh functions each time
   const actions = (employee) => {
     const empId = employee.empId;
     const data = [];
-    
+
     // Create and push handleEdit function menu - use original data
     data.push({
       label: "Edit employee",
       action: () => {
-        console.log("🔵 Edit Employee button clicked for employee:", empId, employee.firstName, employee.lastName);
         const originalEmployee = originalEmployeeData.get(empId);
         if (originalEmployee) {
-          console.log("✅ Using original employee data for edit");
           handleEdit(originalEmployee);
         } else {
-          console.log("⚠️ Using fallback employee data for edit");
           handleEdit(employee);
         }
       },
@@ -64,13 +54,10 @@ function formatTableData({
     data.push({
       label: "End employment",
       action: () => {
-        console.log("🔴 End Employment button clicked for employee:", empId, employee.firstName, employee.lastName);
         const originalEmployee = originalEmployeeData.get(empId);
         if (originalEmployee) {
-          console.log("✅ Using original employee data for termination");
           handleTermination(originalEmployee);
         } else {
-          console.log("⚠️ Using fallback employee data for termination");
           handleTermination(employee);
         }
       },
@@ -119,18 +106,16 @@ function formatTableData({
   data.forEach(async (emp) => {
     // Store original employee data before formatting for display
     originalEmployeeData.set(emp.empId, { ...emp });
-    
+
     // Now format for display
     emp.name = `${emp.firstName} ${emp.lastName}`;
     emp.role = emp.role && emp.role.roleTitle;
     emp.team = emp.team && emp.team.teamName ? emp.team.teamName : "New Team"; // Added by Ankit: set default team name
     emp.department = emp.department && emp.department.departmentName;
-    emp.manager =
-      emp.Manager && `${emp.Manager.firstName} ${emp.Manager.lastName}`;
+    emp.manager = emp.Manager && `${emp.Manager.firstName} ${emp.Manager.lastName}`;
     emp.salary = Number(emp.salary).toLocaleString();
     emp.hireDate = emp.hireDate && dayjs(emp.hireDate).format("DD MMMM, YYYY");
-    emp.dateOfBirth =
-      emp.dateOfBirth && dayjs(emp.dateOfBirth).format("DD MMMM, YYYY");
+    emp.dateOfBirth = emp.dateOfBirth && dayjs(emp.dateOfBirth).format("DD MMMM, YYYY");
     emp.phoneNumber = formatPhoneNumber(emp.phoneNumber);
   });
 
@@ -144,22 +129,14 @@ function formatTableData({
       if (key === "name") {
         cell = createTableCell(
           <Stack direction="row" spacing={1}>
-            <Avatar
-              sx={{ width: 25, height: 25 }}
-              alt={row.name}
-              src={"data:image/png;base64," + atob(row.photo)}
-            />
+            <Avatar sx={{ width: 25, height: 25 }} alt={row.name} src={"data:image/png;base64," + atob(row.photo)} />
             <Box sx={{ paddingTop: 0.5 }}>{row.name}</Box>
           </Stack>,
           `name-${row.empId}-${index}`
         );
       } else if (showActionMenu(key)) {
         cell = createActionTableCell(
-          <ActionMenu
-            key={`action-menu-${row.empId}`}
-            actions={actions(row)}
-            disableMenu={disableActionMenu(row, empId)}
-          />,
+          <ActionMenu key={`action-menu-${row.empId}`} actions={actions(row)} disableMenu={disableActionMenu(row, empId)} />,
           `action-${row.empId}`
         );
       } else if (key !== "action") {
@@ -172,17 +149,7 @@ function formatTableData({
     }
   });
 }
-const tabItems = ({
-  isAdmin,
-  loading,
-  showActionHeader,
-  employees,
-  headCells,
-  hasTeam,
-  team,
-  terminated,
-  handleRowClick,
-}) => {
+const tabItems = ({ isAdmin, loading, showActionHeader, employees, headCells, hasTeam, team, terminated, handleRowClick }) => {
   const tabs = [
     {
       label: "Employees",
@@ -243,12 +210,7 @@ const tabItems = ({
  * AppTable, AppTablePagination, AppTab, and AppDatePickers.
  * @returns A React component.
  */
-export default function People({
-  handleAddNewEmployee,
-  handleEdit,
-  handleSurvey,
-  handleTermination,
-}) {
+export default function People({ handleAddNewEmployee, handleEdit, handleSurvey, handleTermination, preSelectedEmployee }) {
   const stateContext = useContext(StateContext);
   const [employees, setEmployees] = useState([]);
   const [myTeam, setMyTeam] = useState([]);
@@ -258,17 +220,11 @@ export default function People({
   const [selectedEmployee, setSelectedEmployee] = useState(null);
   // const [editEmployee, setEditEmployee] = useState(false);
   const navigate = useNavigate();
-  const isAdmin =
-    stateContext.state.user && stateContext.state.user.permission.id === 1;
+  const isAdmin = stateContext.state.user && stateContext.state.user.permission.id === 1;
   const headCells = isAdmin ? tableView.admin : tableView.others;
-  const hasTeam =
-    stateContext.state.user && stateContext.state.user.permission.id < 3;
-  const empId = stateContext.state.employee
-    ? stateContext.state.employee.empId
-    : -1;
-  const permissionId = stateContext.state.user
-    ? stateContext.state.user.permission.id
-    : -1;
+  const hasTeam = stateContext.state.user && stateContext.state.user.permission.id < 3;
+  const empId = stateContext.state.employee ? stateContext.state.employee.empId : -1;
+  const permissionId = stateContext.state.user ? stateContext.state.user.permission.id : -1;
 
   const params = {
     data: null,
@@ -330,11 +286,19 @@ export default function People({
           }
         }
       } catch (err) {
-        console.log(err);
+        console.error("Error fetching data:", err);
       }
     }
     fetchData();
   }, [stateContext.state.pdEmployees, stateContext.state.pdMyTeam, stateContext.state.pdTerminated]);
+
+  // Handle preSelectedEmployee prop from PeopleHome
+  useEffect(() => {
+    if (preSelectedEmployee) {
+      setSelectedEmployee(preSelectedEmployee);
+      setViewDetails(true);
+    }
+  }, [preSelectedEmployee]);
 
   const handleRowClick = (row) => {
     setSelectedEmployee(row);
@@ -350,7 +314,7 @@ export default function People({
   const handleEditFromDetails = () => {
     if (!selectedEmployee) return;
     // Try to find the original employee from the employees array (raw data)
-    const original = employees.find(e => e.empId === selectedEmployee.empId);
+    const original = employees.find((e) => e.empId === selectedEmployee.empId);
     handleEdit(original || selectedEmployee);
   };
 
@@ -367,13 +331,7 @@ export default function People({
           justifyContent: "space-between",
         }}
       >
-        <Typography
-          variant="h5"
-          id="tableTitle"
-          component="div"
-          color={"inherent"}
-          fontWeight={600}
-        >
+        <Typography variant="h5" id="tableTitle" component="div" color={"inherent"} fontWeight={600}>
           People
         </Typography>
         {isAdmin && (

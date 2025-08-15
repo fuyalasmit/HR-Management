@@ -44,18 +44,12 @@ export default function Dashboard() {
   useEffect(() => {
     async function fetchData() {
       try {
-        console.log('Dashboard: Current user in state:', stateContext.state.user);
-        
         if (!stateContext.state.user) {
-          console.log('Dashboard: No user in state, attempting refresh...');
           const currentUser = await api.user.refresh();
-          console.log('Dashboard: Refresh result:', currentUser);
-          
+
           if (currentUser) {
             // Get associated employee record
-            const currentEmployee = await api.employee.fetchOneByEmail(
-              currentUser.email
-            );
+            const currentEmployee = await api.employee.fetchOneByEmail(currentUser.email);
 
             const data = {
               user: currentUser,
@@ -72,31 +66,40 @@ export default function Dashboard() {
               console.log("Error, failed to reload logo");
             }
             stateContext.updateStates(data);
-            console.log('Dashboard: Updated state with user data');
             const isAdmin = data.user && data.user.permission.id === 1;
             const initialMenu = isAdmin ? "home" : "people";
             displayMenu(initialMenu);
             setError(false);
           } else {
-            console.log('Dashboard: No user found after refresh, redirecting to login');
             throw "No active session, please log in.";
           }
         } else {
-          console.log('Dashboard: User found in state:', stateContext.state.user);
-          const isAdmin =
-            stateContext.state.user &&
-            stateContext.state.user.permission.id === 1;
+          const isAdmin = stateContext.state.user && stateContext.state.user.permission.id === 1;
           const initialMenu = isAdmin ? "home" : "people";
           displayMenu(initialMenu);
           setError(false);
         }
       } catch (err) {
-        console.log('Dashboard: Error occurred:', err);
+        console.log("Dashboard: Error occurred:", err);
         setError(true);
         navigate("/", { replace: true }); // Redirect to login page
       }
     }
     fetchData();
+  }, []);
+
+  // Add event listener for navigation to people menu
+  useEffect(() => {
+    const handleNavigateToPeople = (event) => {
+      console.log("🎯 Dashboard received navigateToPeople event:", event.detail);
+      displayMenu("people");
+    };
+
+    window.addEventListener("navigateToPeople", handleNavigateToPeople);
+
+    return () => {
+      window.removeEventListener("navigateToPeople", handleNavigateToPeople);
+    };
   }, []);
 
   if (error) {

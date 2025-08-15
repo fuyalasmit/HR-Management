@@ -42,21 +42,16 @@ const autoDelete = async () => {
     }
   }
   const endTime = dayjs();
-  console.log(
-    `Auto delete completed at" ${dayjs().format("YYYY-MM-DD hh:mm:ss:A")}`
-  );
-  const str = `${employeeCount} employee record(s) and ${userCount} user record(s) removed in ${endTime.diff(
-    startTime
-  )} millisecond(s)`;
+  console.log(`Auto delete completed at" ${dayjs().format("YYYY-MM-DD hh:mm:ss:A")}`);
+  const str = `${employeeCount} employee record(s) and ${userCount} user record(s) removed in ${endTime.diff(startTime)} millisecond(s)`;
   console.log(str);
 };
 try {
   runAtSpecificTimeOfDay(23, 59, autoDelete);
 } catch (error) {
   console.log(error);
-  console.log("Auto delete failed.")
+  console.log("Auto delete failed.");
 }
-
 
 const predefinedColors = [
   "#7F56D9", // 1st place
@@ -99,8 +94,7 @@ const getTopFive = (results) => {
 const convertPhotoToBase64 = (employee) => {
   employee.photo = employee.photo && employee.photo.toString("base64");
   if (employee.Manager) {
-    employee.Manager.photo =
-      employee.Manager.photo && employee.Manager.photo.toString("base64");
+    employee.Manager.photo = employee.Manager.photo && employee.Manager.photo.toString("base64");
   }
 };
 
@@ -280,12 +274,9 @@ exports.showAllByManager = async (req, res) => {
     return res.send("No results found");
   }
   for (let index = 0; index < employee.length; index++) {
-    employee[index].photo =
-      employee[index].photo && employee[index].photo.toString("base64");
+    employee[index].photo = employee[index].photo && employee[index].photo.toString("base64");
     if (employee[index].Manager) {
-      employee[index].Manager.photo =
-        employee[index].Manager.photo &&
-        employee[index].Manager.photo.toString("base64");
+      employee[index].Manager.photo = employee[index].Manager.photo && employee[index].Manager.photo.toString("base64");
     }
   }
   res.send(employee);
@@ -388,13 +379,10 @@ exports.createRecord = async (req, res) => {
         lastName: inputs.lastName,
         frontendUrl: req.body.frontendUrl,
       };
-      
+
       // Create appUser directly without calling the controller
       const resetToken = require("crypto").randomBytes(64).toString("hex");
-      const hashedResetToken = require("crypto")
-        .createHash("sha256")
-        .update(resetToken)
-        .digest("hex");
+      const hashedResetToken = require("crypto").createHash("sha256").update(resetToken).digest("hex");
 
       const expiresAt = new Date();
       expiresAt.setDate(expiresAt.getDate() + 30); // 30 days from now
@@ -408,10 +396,10 @@ exports.createRecord = async (req, res) => {
         passwordResetTokenExpiresAt: expiresAt,
         password: require("crypto").randomBytes(64).toString("hex"),
       };
-      
+
       const newUser = await db.appUser.create(userData);
       console.log(`Email sending disabled for user: ${email}`);
-      
+
       // Return the employee data instead of appUser response
       res.status(201).json(data);
     }
@@ -436,9 +424,7 @@ exports.updateRecord = async (req, res) => {
      * The columns to be updated in appUser table are: firstName, lastName, email & empId.
      * The other columns can be updated through appUser controller
      */
-    const email = req.body.email
-      ? req.body.email.toLowerCase()
-      : req.body.email;
+    const email = req.body.email ? req.body.email.toLowerCase() : req.body.email;
     const empId = req.body.empId;
 
     const user = await db.appUser.findOne({
@@ -601,20 +587,7 @@ exports.summarizeByHeadcounts = async (req, res) => {
     const [results2, metadata2] = await db.sequelize.query(query2, {
       replacements: { year: year },
     });
-    const months = [
-      "Jan",
-      "Feb",
-      "Mar",
-      "Apr",
-      "May",
-      "Jun",
-      "Jul",
-      "Aug",
-      "Sep",
-      "Oct",
-      "Nov",
-      "Dec",
-    ];
+    const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
     const data = [];
     for (let i = 0; i < monthCount; i++) {
       const d = { id: i + 1, month: months[i], value: 0 };
