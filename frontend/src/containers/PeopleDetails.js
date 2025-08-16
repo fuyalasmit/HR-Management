@@ -1,5 +1,17 @@
 import { useContext, useEffect, useState } from "react";
-import { Box, Stack, Typography, Avatar, TableCell, Button, Dialog, DialogTitle, DialogContent, DialogActions, DialogContentText } from "@mui/material";
+import {
+  Box,
+  Stack,
+  Typography,
+  Avatar,
+  TableCell,
+  Button,
+  Dialog,
+  DialogTitle,
+  DialogContent,
+  DialogActions,
+  DialogContentText,
+} from "@mui/material";
 import dayjs from "dayjs";
 import AppTable from "../components/PeopleComponents/AppTable";
 import AppTabs from "../components/PeopleComponents/AppTabs";
@@ -9,6 +21,7 @@ import StateContext from "../context/StateContext";
 import { useNavigate } from "react-router-dom";
 import MyInfoMain from "../components/myinfo/MyInfoMain";
 import EmployeeForm from "../components/PeopleComponents/EmployeeForm";
+import { generateEmployeeFormPDF } from "../components/PeopleComponents/EmployeeFormPDF";
 /**
  * Expected headCell format for the table. Each object represents a
  * column. Note, AppTable implementation depends on this format to make the
@@ -149,7 +162,18 @@ function formatTableData({
     }
   });
 }
-const tabItems = ({ isAdmin, loading, showActionHeader, employees, headCells, hasTeam, team, terminated, handleRowClick, handleTerminatedRowClick }) => {
+const tabItems = ({
+  isAdmin,
+  loading,
+  showActionHeader,
+  employees,
+  headCells,
+  hasTeam,
+  team,
+  terminated,
+  handleRowClick,
+  handleTerminatedRowClick,
+}) => {
   const tabs = [
     {
       label: "Employees",
@@ -321,53 +345,53 @@ export default function People({ handleAddNewEmployee, handleEdit, handleSurvey,
   const handleReRegister = async () => {
     try {
       console.log("Starting re-registration for employee:", employeeToReRegister);
-      
+
       if (!employeeToReRegister) {
         console.error("No employee selected for re-registration");
         return;
       }
-      
+
       console.log("Calling API to re-register employee with empId:", employeeToReRegister.empId);
-      
+
       // Call API to re-register the employee (remove termination data)
       const response = await api.employee.reRegister(employeeToReRegister.empId);
-      
+
       console.log("API response:", response);
-      
+
       if (response && (response.employee || response.message)) {
         console.log("Re-registration successful, updating UI...");
-        
+
         // Update local state - remove from terminated list
-        setTerminated(prev => {
-          const updated = prev.filter(emp => emp.empId !== employeeToReRegister.empId);
+        setTerminated((prev) => {
+          const updated = prev.filter((emp) => emp.empId !== employeeToReRegister.empId);
           console.log("Updated terminated list:", updated);
           return updated;
         });
-        
+
         // If we have employee data, add to active employees
         if (response.employee) {
           // Format the restored employee data and add to employees list
-          const freshParams = { 
-            ...params, 
-            data: [response.employee]
+          const freshParams = {
+            ...params,
+            data: [response.employee],
           };
           formatTableData(freshParams);
-          
-          setEmployees(prev => {
+
+          setEmployees((prev) => {
             const updated = [...prev, ...freshParams.data];
             console.log("Updated employees list:", updated);
             return updated;
           });
         }
-        
+
         // Clear state context to force refresh on next load
         stateContext.updateState("pdEmployees", null);
         stateContext.updateState("pdTerminated", null);
-        
+
         // Close modal and reset state
         setShowReRegisterModal(false);
         setEmployeeToReRegister(null);
-        
+
         console.log("Employee re-registered successfully");
         alert("Employee re-registered successfully!"); // Temporary feedback
       } else {
@@ -416,26 +440,49 @@ export default function People({ handleAddNewEmployee, handleEdit, handleSurvey,
           People
         </Typography>
         {isAdmin && (
-          <Button
-            variant="contained"
-            disableElevation
-            onClick={(evt) => handleAddNewEmployee()}
-            sx={{
-              width: "166px",
-              height: "34px",
-              border: "1px solid #7F56D9",
-              backgroundColor: "#7F56D9",
-              fontSize: 13,
-              fontWeight: 400,
-              textTransform: "none",
-              "&:hover": {
-                backgroundColor: "#602ece",
-                border: "1px solid #602ece",
-              },
-            }}
-          >
-            Add new employee
-          </Button>
+          <Box sx={{ display: "flex", gap: 2 }}>
+            <Button
+              variant="outlined"
+              disableElevation
+              onClick={() => generateEmployeeFormPDF()}
+              sx={{
+                width: "auto",
+                height: "34px",
+                border: "1px solid #7F56D9",
+                color: "#7F56D9",
+                fontSize: 13,
+                fontWeight: 400,
+                textTransform: "none",
+                "&:hover": {
+                  backgroundColor: "#f5f3ff",
+                  border: "1px solid #602ece",
+                  color: "#602ece",
+                },
+              }}
+            >
+              Download Form
+            </Button>
+            <Button
+              variant="contained"
+              disableElevation
+              onClick={(evt) => handleAddNewEmployee()}
+              sx={{
+                width: "166px",
+                height: "34px",
+                border: "1px solid #7F56D9",
+                backgroundColor: "#7F56D9",
+                fontSize: 13,
+                fontWeight: 400,
+                textTransform: "none",
+                "&:hover": {
+                  backgroundColor: "#602ece",
+                  border: "1px solid #602ece",
+                },
+              }}
+            >
+              Add new employee
+            </Button>
+          </Box>
         )}
       </Box>
 
@@ -509,36 +556,36 @@ export default function People({ handleAddNewEmployee, handleEdit, handleSurvey,
         aria-labelledby="re-register-dialog-title"
         aria-describedby="re-register-dialog-description"
       >
-        <DialogTitle id="re-register-dialog-title">
-          Re-register Employee
-        </DialogTitle>
+        <DialogTitle id="re-register-dialog-title">Re-register Employee</DialogTitle>
         <DialogContent>
           <DialogContentText id="re-register-dialog-description">
             {employeeToReRegister && (
               <>
-                Do you want to re-register <strong>{employeeToReRegister.firstName} {employeeToReRegister.lastName}</strong>?
-                <br /><br />
+                Do you want to re-register{" "}
+                <strong>
+                  {employeeToReRegister.firstName} {employeeToReRegister.lastName}
+                </strong>
+                ?
+                <br />
+                <br />
                 This will restore the employee to active status and remove them from the terminated employees list.
               </>
             )}
           </DialogContentText>
         </DialogContent>
         <DialogActions>
-          <Button 
-            onClick={handleCloseReRegisterModal}
-            sx={{ textTransform: "none" }}
-          >
+          <Button onClick={handleCloseReRegisterModal} sx={{ textTransform: "none" }}>
             Cancel
           </Button>
-          <Button 
-            onClick={handleReRegister} 
+          <Button
+            onClick={handleReRegister}
             variant="contained"
-            sx={{ 
+            sx={{
               textTransform: "none",
               backgroundColor: "#7F56D9",
               "&:hover": {
-                backgroundColor: "#602ece"
-              }
+                backgroundColor: "#602ece",
+              },
             }}
           >
             Re-register

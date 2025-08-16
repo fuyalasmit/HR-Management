@@ -1,16 +1,13 @@
 FROM node:18-alpine
 
-# Install pnpm
-RUN npm install -g pnpm
-
 # Set working directory
 WORKDIR /app
 
 # Copy package files
-COPY package.json pnpm-lock.yaml ./
+COPY package.json ./
 
 # Install dependencies
-RUN pnpm install
+RUN npm install
 
 # Copy application code
 COPY . .
@@ -19,4 +16,4 @@ COPY . .
 EXPOSE 5000
 
 # Start the application
-CMD ["pnpm", "run", "start"]
+CMD ["npm", "run", "start"]

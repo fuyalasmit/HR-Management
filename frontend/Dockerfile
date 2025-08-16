@@ -1,8 +1,5 @@
 FROM node:18-alpine
 
-# Install pnpm
-RUN npm install -g pnpm
-
 # Set working directory
 WORKDIR /app
 
@@ -10,7 +7,7 @@ WORKDIR /app
 COPY package.json ./
 
 # Install dependencies
-RUN pnpm install
+RUN npm install
 
 # Copy application code
 COPY . .
@@ -19,4 +16,4 @@ COPY . .
 EXPOSE 3000
 
 # Start the application
-CMD ["pnpm", "run", "start"]
+CMD ["npm", "run", "start"]
