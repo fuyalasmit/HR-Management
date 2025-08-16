@@ -2,19 +2,25 @@ version: "3.8"
 
 services:
   database:
-    image: postgres:15
+    image: postgres:15-alpine
     ports:
       - "5432:5432"
-    restart: always
+    restart: unless-stopped
     environment:
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: admin
       POSTGRES_DB: SingleDatabase
+      POSTGRES_INITDB_ARGS: "--encoding=UTF-8"
     volumes:
       - postgres_data:/var/lib/postgresql/data
       - ./backend/database_backup_pg15_fixed_utf8.sql:/docker-entrypoint-initdb.d/init.sql:ro
     networks:
       - app-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U admin -d SingleDatabase"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
 
   backend:
     build:
@@ -22,8 +28,9 @@ services:
       dockerfile: Dockerfile
     ports:
       - "5000:5000"
-    restart: always
+    restart: unless-stopped
     environment:
+      NODE_ENV: production
       DB: SingleDatabase
       USER: admin
       PASSWORD: admin
@@ -35,9 +42,19 @@ services:
       EMAIL: dev@example.com
       EMAIL_PASSWORD: dev_email_password
     depends_on:
-      - database
+      database:
+        condition: service_healthy
     networks:
       - app-network
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:5000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    # Remove problematic volume mounts for production
+    # volumes:
+    #   - .:/app
+    #   - /app/node_modules
 
   frontend:
     build:
@@ -45,19 +62,23 @@ services:
       dockerfile: Dockerfile
     ports:
       - "3000:3000"
-    restart: always
+    restart: unless-stopped
     environment:
+      NODE_ENV: production
       REACT_APP_BACKEND_URL: http://backend:5000
+      GENERATE_SOURCEMAP: false
     depends_on:
-      - backend
+      backend:
+        condition: service_healthy
     networks:
       - app-network
 
   uipanel:
-    image: adminer
-    restart: always
+    image: adminer:4-standalone
+    restart: unless-stopped
     depends_on:
-      - database
+      database:
+        condition: service_healthy
     ports:
       - "8080:8080"
     networks:
